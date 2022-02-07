@@ -4234,7 +4234,7 @@ height:100vh;
 
 
 
-        .homepage:before{
+        /* .homepage:before{
           content: "accessing the grid";
         position:absolute;
         display: flex;
@@ -4255,6 +4255,6 @@ height:100vh;
         background-size: 50%;
         background-position:center 50px;
     
-        }
+        } */
 
 .intro{border:0px solid orange !important;}

@@ -100,18 +100,18 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
-<ReactPlayer
+{/* <ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
+          url={[
+            iframeUrl,
+            Suggestion1,
+            Suggestion2,
+            Suggestion3
+          ]}
           width="200px"
           height=""
-          style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'flex', width:'100%', justifyContent:'center', margin:'0 auto', right:'42%'}}
+          style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'grid', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', margin:'0 auto', right:'0', left:'0', border:'1px solid red'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
@@ -121,7 +121,7 @@ const TestPage = ({data}) => (
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'flex', justifyContent:'center', top:'-150px', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px' , }}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'grid', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center',  verticalAlign:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px' , }}>
           
         <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'100%', marginBottom:''}}>
           
@@ -135,7 +135,7 @@ const TestPage = ({data}) => (
             light="../assets/transparent.png"
           />
 
-<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div>
+<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
 
 
 
