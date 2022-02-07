@@ -71,7 +71,7 @@ const TestPage = ({data}) => (
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', display:'flex', justifyContent:'center', zIndex:'0', top:'-100px', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px' ,display:'none', }}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', display:'flex', justifyContent:'center', zIndex:'0', top:'-100px', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px' , }}>
           
         <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'100%', marginBottom:''}}>
           
@@ -201,10 +201,9 @@ to="#mylink" title="Coming Soon" />
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
       {/* <div className="frontdrop"></div> */}
-      <ReactPlayer
+      {/* <ReactPlayer
           className='youtubehide1'
           style={{margin:'0 0 0 0', position:'absolute', top:'', zIndex:'-1', background:'transparent'}}
-          // url="https://www.youtube.com/embed/QsDJIZwzjVA"
           url="https://www.youtube.com/embed/LltRzgvyrps"
           width="100vw"
           height="100vh"
@@ -216,7 +215,17 @@ to="#mylink" title="Coming Soon" />
           loop
           playing
           playsinline
-          />
+          /> */}
+
+<div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+      
+    </div>
+</div>
+</div>
 
 {/* <video autoPlay muted loop style={{zIndex:'-1', width:'100%', height:'100%', objectFit: 'cover'}}>
         <source src={TechBG} type="video/mp4" />
@@ -601,11 +610,13 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-actionfigu
 
 
 
-<div className="" style={{position:'relative', padding:'0rem', width:'70%', fontSize:'clamp(.7rem, 3vw, 3.2rem)', top:'3%'}}>
+<div className="" style={{position:'relative', padding:'0rem', width:'100vw', fontSize:'clamp(.7rem, 3vw, 3.2rem)', top:'3%'}}>
   
-<blockquote className="tronText" style={{lineHeight:'170%', position:'absolute', background:'rgba(0,0,0,0.50)',
+<blockquote className="tronText" style={{lineHeight:'170%', position:'', margin:'30% auto 0 auto', maxWidth:'90vw', background:'rgba(0,0,0,0.50)',
   backdropFilter:'blur(4px)'}}>
-<p>You promised that we would change the world, together.</p>
+<p>You promised that we would
+  <br />
+change the world, together.</p>
 <br />
 <p className="TRON" style={{fontSize:'70%'}}> You broke your promise...</p>
 <br />
@@ -622,7 +633,17 @@ style={{maxHeight:'', maxWidth:'100%', position:'absolute', right:'0', bottom:'0
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 </Link>
 
-<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+<div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+      
+    </div>
+</div>
+</div>
+
+{/* <iframe style={{position:'relative', display:'grid', placeContent:'center', alignSelf:'center'}} title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe> */}
 
       
 
@@ -651,9 +672,37 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
           playsinline
           /> */}
 
-<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+{/* <ReactPlayer
+          className='youtubehide1'
+          style={{margin:'0 0 0 0', position:'relative', top:'-5vh', background:'transparent', zIndex:'-1', width:'100%', height:'100%', objectFit: 'cover'}}
+          // url="https://www.youtube.com/embed/QsDJIZwzjVA"
+          url="https://www.youtube.com/embed/LltRzgvyrps"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:2, end:120, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          /> */}
 
-      <div className="frontdrop"></div>
+<div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+      
+    </div>
+</div>
+</div>
+
+{/* <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe> */}
+
+      {/* <div className="frontdrop"></div> */}
 <QuoraStrike style={{maxHeight:'100vh', maxWidth:'90%', position:'absolute', right:'0', bottom:'0',  }} />
 
 </div>
@@ -720,7 +769,17 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
 </div>
 
-<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+<div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+      
+    </div>
+</div>
+</div>
+
+{/* <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe> */}
 
       {/* <LoveSignal style={{maxHeight:'80vh', maxWidth:'50%', position:'absolute', right:'30px', bottom:'',  }} /> */}
 

@@ -125,7 +125,7 @@ display: none !important;
     height:100vh; */
     top: 0;
     left: 0;
-    background:#000;
+    /* background:#000; */
   }
 
   .react-player66 {
@@ -134,7 +134,7 @@ display: none !important;
     height:100vh; */
     top: 0;
     left: 0;
-    background:#000;
+    /* background:#000; */
   }
 
 
@@ -2391,7 +2391,7 @@ blockquote.frontquote {
   margin:0 auto;
   padding:0;
   cursor:default;
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.30);
   backdrop-filter: blur(4px);
   border:1px solid #000;
 }
@@ -2408,7 +2408,7 @@ blockquote.frontquote {
   margin:0 auto;
   padding:0;
   cursor:default;
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.30);
   backdrop-filter: blur(24px);
   border:1px solid #000;
 }
@@ -2425,7 +2425,7 @@ blockquote.frontquote {
   margin:0 auto;
   padding:0;
   cursor:default;
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.30);
   backdrop-filter: blur(4px);
 }
 
