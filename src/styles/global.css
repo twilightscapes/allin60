@@ -2396,6 +2396,11 @@ blockquote.frontquote {
   border:1px solid #000;
 }
 
+.backer{
+  background: rgba(0,0,0,0.40);
+  backdrop-filter: blur(3px);
+}
+
 .blur::before{
   content:'';
   width:100%;
@@ -2941,48 +2946,6 @@ border:1px solid #222;
 
 
 
-
-      .intro:before, .poof{
-        position:fixed;
-        top:0;
-        left:0;
-        z-index: 1;
-        width:100%;
-        height: 70vh;
-        background-repeat: no-repeat;
-        background-position: left top;
-        /* background-image: linear-gradient(#111212 40%, #232325  100%); */
-          
-            animation: poof 1s forwards;
-            animation-delay: 3s;
-            overflow: hidden !important;
-            border:0px solid pink !important;
-        }
-
-
-
-        /* body.homepage .intro:before{
-          content: "A Pioneer In Night Photography";
-        position:absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self:center;
-
-        animation: poof 1s forwards;
-        animation-delay: 1.5s;
-        overflow: hidden;
-
-        
-        font-size:5vw; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-        background-color:#111;
-        border:0px solid yellow;
-        background-size: 50%;
-        background-position:center 50px;
-    
-        } */
-
-.intro{border:0px solid orange !important;}
 
 
 /* body.homepage .intro:after{
@@ -4244,3 +4207,54 @@ height:100vh;
              border:0px solid red !important;
              filter: saturate(1.6)
            }
+
+
+
+
+
+
+
+      .homepage:before, .poof{
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        z-index: 5;
+        width:100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: left top;
+        /* background-image: linear-gradient(#111212 40%, #232325  100%); */
+          
+            /* animation: poof 1s forwards;
+            animation-delay: 3s;
+            overflow: hidden !important;
+            border:0px solid pink !important; */
+        }
+
+
+
+        .homepage:before{
+          content: "accessing the grid";
+        position:absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self:center;
+        background-image: url("data:image/png;base64,")
+;
+
+        animation: poof 1s forwards;
+        animation-delay: 3.5s;
+        overflow: hidden;
+
+        
+        font-size:5vw; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+        background-color:#111;
+        border:0px solid yellow;
+        background-size: 50%;
+        background-position:center 50px;
+    
+        }
+
+.intro{border:0px solid orange !important;}
