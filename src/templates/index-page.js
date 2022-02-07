@@ -1,37 +1,37 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 // import Img from 'gatsby-image'
- import { GatsbyImage } from 'gatsby-plugin-image'
-import { Layout } from "../components/layout"
+//  import { GatsbyImage } from 'gatsby-plugin-image'
+// import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import GalleryMenu from "../components/galleryMenu"
+// import GalleryMenu from "../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import { RiSendPlane2Line } from "react-icons/ri"
-import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+// import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 
 import { Helmet } from "react-helmet"
-import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
-import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
+// import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
+// import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
 import LightCycle from "../../static/assets/light-cycle.svg"
 import TronChick from "../../static/assets/tron-chick1.svg"
-import PrayingMantis from "../../static/assets/yoga-master.svg"
+// import PrayingMantis from "../../static/assets/yoga-master.svg"
 import SamFly from "../../static/assets/sam-fly.svg"
-import GridLines from "../../static/assets/off-the-grid.mp4"
+// import GridLines from "../../static/assets/off-the-grid.mp4"
 import QuoraStrike from "../../static/assets/quora-strike.svg"
 import LoveSignal from "../../static/assets/love-signal.svg"
 
 import { AiOutlineAudioMuted } from "react-icons/ai"
-import TechBG from "../../static/assets/tech-bg.mp4"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
-import { FaHandPointDown } from "react-icons/fa"
-import CommentBox from "../components/commentbox"
-import ShareSocial from '../components/share' 
-import GoBack from "../components/goBack"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import TechBG from "../../static/assets/tech-bg.mp4"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import { FaHandPointDown } from "react-icons/fa"
+// import CommentBox from "../components/commentbox"
+// import ShareSocial from '../components/share' 
+// import GoBack from "../components/goBack"
+// import ScrollAnimation from 'react-animate-on-scroll'
 import ReactPlayer from 'react-player/lazy'
-import Newsignup from "./contact-page"
+// import Newsignup from "./contact-page"
 // import TestIT from "../components/test"
 const TestPage = ({data}) => (
   
@@ -47,6 +47,7 @@ const TestPage = ({data}) => (
       description={`TRON in 60 Seconds - Enter The Grid`}
       image={'https://twilightscapes.com/promo-about-todd.jpg'}
     />
+
 
 
 <ReactPlayer
@@ -88,26 +89,30 @@ const TestPage = ({data}) => (
 
 
 
-  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'100vh', overflow:'hidden', position:'relative', padding:' 0',
+
+  <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100vw', height:'100vh', overflow:'hidden', position:'relative', padding:' 0',
 
   //  aspectRatio: '16 / 9'
 }}>
+
+
+
       
-      <video controls autoPlay muted loop style={{zIndex:'-1', width:'100VW', height:'100vh', objectFit: 'cover'}}>
+      {/* <video controls autoPlay muted loop style={{zIndex:'-1', width:'100VW', height:'100vh', objectFit: 'cover'}}>
       <source src={TechBG} type="video/mp4" />
-    </video>
+    </video> */}
       <div className="frontdrop"></div>
+      
 
-
-  {/* <div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
+  <div className="vidbox" style={{position:'relative', maxHeight:'100vh', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
       
-      <iframe title="Video about Todd Lambert" className="" width="100%" height="350" src="https://www.youtube.com/embed/iHxmNzMfDj4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=iHxmNzMfDj4" frameBorder="0" allowFullScreen></iframe>
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
       
     </div>
 </div>
-</div> */}
+</div>
 
 
   {/* <TwilightLogo className="bglogo" /> */}
@@ -196,25 +201,26 @@ to="#mylink" title="Coming Soon" />
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
       {/* <div className="frontdrop"></div> */}
-      {/* <ReactPlayer
-          className='youtubehide'
-          style={{margin:'-2.5rem 0 0 0', position:'absolute', zIndex:'-1'}}
-          url={TechBG}
+      <ReactPlayer
+          className='youtubehide1'
+          style={{margin:'0 0 0 0', position:'absolute', top:'', zIndex:'-1', background:'transparent'}}
+          // url="https://www.youtube.com/embed/QsDJIZwzjVA"
+          url="https://www.youtube.com/embed/LltRzgvyrps"
           width="100vw"
-          height="68vh"
+          height="100vh"
           config={{
             youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:67, end:118, loop:1  }
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, loop:1  }
             },
           }}
           loop
           playing
           playsinline
-          /> */}
+          />
 
-<video autoPlay muted loop style={{zIndex:'-1', width:'100%', height:'100%', objectFit: 'cover'}}>
+{/* <video autoPlay muted loop style={{zIndex:'-1', width:'100%', height:'100%', objectFit: 'cover'}}>
         <source src={TechBG} type="video/mp4" />
-      </video>
+      </video> */}
   
 {/* <PrayingMantis style={{position:'absolute', bottom:'0', zIndex:'2', maxHeight:'20vw'}} /> */}
 
@@ -616,9 +622,10 @@ style={{maxHeight:'', maxWidth:'100%', position:'absolute', right:'0', bottom:'0
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 </Link>
 
-  <video autoPlay muted loop style={{positon:'absolute', zIndex:'-1', width:'100%', height:'100vh', objectFit: 'cover', top:'0'}}>
-        <source src={TechBG} type="video/mp4" />
-      </video>
+<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+
+      
+
   </div>
 
   
@@ -644,9 +651,8 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
           playsinline
           /> */}
 
-<video controls autoPlay muted loop style={{zIndex:'-1', width:'100VW', height:'100vh', objectFit: 'cover'}}>
-      <source src={TechBG} type="video/mp4" />
-    </video>
+<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
+
       <div className="frontdrop"></div>
 <QuoraStrike style={{maxHeight:'100vh', maxWidth:'90%', position:'absolute', right:'0', bottom:'0',  }} />
 
@@ -714,9 +720,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
 </div>
 
-  <video autoPlay muted loop style={{zIndex:'-1', width:'100%', height:'100%', objectFit: 'cover'}}>
-        <source src={TechBG} type="video/mp4" />
-      </video>
+<iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LltRzgvyrps?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=LltRzgvyrps" frameBorder="0" allowFullScreen></iframe>
 
       {/* <LoveSignal style={{maxHeight:'80vh', maxWidth:'50%', position:'absolute', right:'30px', bottom:'',  }} /> */}
 
