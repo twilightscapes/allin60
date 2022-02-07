@@ -102,7 +102,7 @@ const TestPage = ({data}) => (
 
 <ReactPlayer
           className='playerpp'
-          url="https://www.youtube.com/embed/EZn2593JNuI"
+          url="https://www.youtube.com/embed/S5S6s5dZXNM"
           // url={[
           //   iframeUrl,
           //   Suggestion1,
@@ -285,6 +285,7 @@ to="#mylink" title="Coming Soon" />
     <div className="video-foreground">
       
       <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LD7XTybXwx0?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=130&amp;end=182&amp;playlist=LD7XTybXwx0&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
+
       
     </div>
 </div>
@@ -322,12 +323,36 @@ to="#mylink" title="Coming Soon" />
   <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>Proceed to games.</p>
   </div>
 
-  <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+  {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
       <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/Y7EZBP9j7h0?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=40&amp;end=60&amp;playlist=Y7EZBP9j7h0&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
       
+    </div>
+</div>
+</div> */}
+
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/Y7EZBP9j7h0"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          />
     </div>
 </div>
 </div>
@@ -355,12 +380,35 @@ to="#mylink" title="Coming Soon" />
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
       <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/YyoKXfBQgXw?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=54&amp;end=82&amp;playlist=YyoKXfBQgXw&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
       
+    </div>
+</div>
+</div> */}
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/YyoKXfBQgXw"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:54, end:81, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          />
     </div>
 </div>
 </div>
@@ -376,12 +424,36 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
       <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/YyoKXfBQgXw?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=204&amp;end=221&amp;playlist=YyoKXfBQgXw&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
       
+    </div>
+</div>
+</div> */}
+
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/YyoKXfBQgXw"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          />
     </div>
 </div>
 </div>
@@ -411,7 +483,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
@@ -419,7 +491,32 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
       
     </div>
 </div>
+</div> */}
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/SqSuRdkglxM"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:12, end:49, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          />
+    </div>
 </div>
+</div>
+
+
 
 
 </div>
@@ -434,12 +531,36 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
     <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/3TeUWwsG9kI?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=2&amp;end=120&amp;playlist=3TeUWwsG9kI&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
   
+    </div>
+</div>
+</div> */}
+
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/3TeUWwsG9kI"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:2, end:120, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          />
     </div>
 </div>
 </div>
