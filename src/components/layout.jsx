@@ -91,8 +91,12 @@ export function Layout({ children }) {
 
 
       <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage className="" src="../../static/assets/TSidebarHover.svg" alt="Logo" style={{borderRadius:''}} /></div>
+<div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px', fontSize:'4vw'}}>
+[
+</div>
+
+{/* <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
+<StaticImage className="" src="../../static/assets/TSidebarHover.svg" alt="Logo" style={{borderRadius:''}} /></div> */}
   </label>
 
   {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle"> */}

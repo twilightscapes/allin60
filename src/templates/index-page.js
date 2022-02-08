@@ -31,7 +31,7 @@ import InstallDiscount from "../components/install-discount"
 
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import CommentBox from "../components/commentbox"
 // import ShareSocial from '../components/share' 
@@ -218,14 +218,24 @@ const TestPage = ({data}) => (
 
       
 
-      <div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'center', transform:'', height:'', border:'0px solid red'}}>
+      <div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red'}}>
 
 
-      <h1 className="tronText" style={{display:'', alignContent:'center', textAlign:'center', fontSize:'12vw', zIndex:'2', position:'relative', marginTop:'2rem'}}><span className="TRON" style={{fontWeight:'normal',}}>TRON<span style={{fontSize:'60%', paddingLeft:'2rem'}}>:</span></span><br />
+      <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'12vw', zIndex:'2', position:'relative', marginTop:'2rem'}}>
+
+        <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
+
+        {/* <div style={{fontSize:'60%', paddingLeft:'2rem'}}>:</div> */}
+             <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
+
+        <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
+
+ 
       
-      <div className="TRON" style={{fontWeight:'normal', fontSize:'20%', padding:'0', margin:'-2% 0 0 0',}}>in</div>
       
-      <div className="tronText" style={{fontWeight:'bold', fontSize:'120%', margin:'-8% 0 0 0',}}>60 <span className="TRON" style={{fontSize:'30%'}}>seconds</span></div>
+      
+      <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div>
+      
       </h1>
 
       <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', left:'', top:'0'}}>
@@ -295,7 +305,7 @@ const TestPage = ({data}) => (
 
 </div>
 
-<LightCycle style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'1' }} />
+<LightCycle className="character" style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'1' }} />
 
 </div>
 
@@ -358,7 +368,8 @@ to="#mylink" title="Coming Soon" />
     
     <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 6vw, 4rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
     
-      Characters <div style={{fontSize:'150%', paddingTop:'20px'}}><div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
+      Characters <div style={{fontSize:'150%', paddingTop:'20px'}}>
+        <div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
       </div>
     
     
@@ -369,21 +380,21 @@ to="#mylink" title="Coming Soon" />
 
 
       <Link state={{modal: true}} to="/sam-flynn/">
-    <SamFlynn style={{height:'78%', width:'100%', margin:'100px 60px 0 0', right:''}} /></Link>
+    <SamFlynn className="character" style={{height:'78%', width:'100%', margin:'100px 60px 0 0', right:''}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     //  background:'rgba(6, 70, 90, 0.6)', 
      padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/quora/">
-      <QuoraStand style={{height:'100%', width:'110%', margin:'50px -100px 0 0', right:'', zIndex:'5'}} /></Link>
+      <QuoraStand className="character" style={{height:'100%', width:'110%', margin:'50px -100px 0 0', right:'', zIndex:'5'}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     //  background:'rgba(6, 70, 90, 0.6)', 
      padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
        <Link state={{modal: true}} to="/kevin-flynn/">
-    <KevinFlynn style={{position:'relative', height:'100%', width:'140%', zIndex:'', margin:'0 0 0 -70px'}} /></Link>
+    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'140%', zIndex:'', margin:'0 0 0 -70px'}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink14" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
@@ -391,14 +402,14 @@ to="#mylink" title="Coming Soon" />
     display:'flex', flexDiection:'column', justifyContent:'end',
     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
       <Link state={{modal: true}} to="/tron/">
-    <TronGuy style={{height:'100%', width:'72%', margin:'30px 0 0 0', transform: 'scaleX(-1)'}} /></Link>
+    <TronGuy className="character" style={{height:'100%', width:'72%', margin:'30px 0 0 0', transform: 'scaleX(-1)'}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
     // background:'rgba(6, 70, 90, 0.6)', 
     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/clu/">
-    <CluGuy style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
+    <CluGuy className="character" style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
     </Link>
     </div>
     
@@ -491,7 +502,7 @@ to="#mylink" title="Coming Soon" />
       {/* <div className="frontdrop"></div> */}
       
 <Link state={{modal: true}} to="/contact/">
-<TronChick className="tronchick" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-0', bottom:'0vh',  }} />
+<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-0', bottom:'0vh',  }} />
 </Link>
 
 <div className="" style={{display:'', position:'absolute', zindex:'3', paddingTop:'1rem', width:'60%', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%',textShadow:'0 20px 7px #000',}}>
@@ -515,9 +526,9 @@ to="#mylink" title="Coming Soon" />
 
 
   
-  <Link className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#games" title="Proceed to Games Grid">
+  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#endofline" title="Proceed to Games Grid">
 
-    Proceed to games.</Link>
+    Proceed to games.</AnchorLink>
     </p>
   </div>
 
@@ -565,7 +576,7 @@ to="#mylink" title="Coming Soon" />
 
 
 <Link state={{modal: true}} to="/privacy/">
-<SamFly style={{height:'100vh', maxWidth:'100%', position:'relative', right:'-4vw', top:'0',  }} />
+<SamFly className="character" style={{height:'100vh', maxWidth:'100%', position:'relative', right:'-4vw', top:'0',  }} />
 </Link>
 
 </div>
@@ -689,7 +700,7 @@ to="#mylink" title="Coming Soon" />
 
 
 <Link state={{modal: true}} to="/about-twilightscapes/">
-<StaticImage
+<StaticImage className="character"
 style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'0', bottom:'0',  }}
 alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
 </Link>
@@ -877,7 +888,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
       {/* <div className="frontdrop"></div> */}
-<QuoraStrike style={{maxHeight:'100vh', maxWidth:'90%', position:'absolute', right:'0', bottom:'0',  }} />
+<QuoraStrike className="character" style={{maxHeight:'100vh', maxWidth:'90%', position:'absolute', right:'0', bottom:'0',  }} />
 
 </div>
 
@@ -952,11 +963,11 @@ change the world, together.</p>
 
 
 <Link state={{modal: true}} to="kevin-flynn/">
-<KevinFlynn style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/>
+<KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
 <Link state={{modal: true}} to="/clu/" >
-<CluGuy style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
+<CluGuy className="character" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
 
@@ -988,13 +999,13 @@ change the world, together.</p>
 
 <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-<LoveSignal style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'', bottom:'',  }} />
+<LoveSignal className="character" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'', bottom:'',  }} />
   
 <Link state={{modal: true}} to="kevin-flynn/">
-<KevinFlynn style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/>
+<KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/>
 </Link>
 
-<StaticImage
+<StaticImage className="character"
 style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0', bottom:'0',transform:'scaleX(-1)'}}
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
@@ -1069,7 +1080,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
 
         <div srl_exclude="true" id="mylink21" className="donation2" style={{position:'relative', transform:'', height:'100vh', paddingTop:'60px',}}>
-<StaticImage
+<StaticImage className="character"
 style={{maxHeight:'100vh', paddingTop:''}}
 alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 </div>
