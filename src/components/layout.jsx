@@ -24,7 +24,7 @@ import Theme from "../components/theme"
 import "../assets/scss/style.scss"
 import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
-// import Install from './install-discount'
+import Install from './install-discount'
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
@@ -133,7 +133,7 @@ export function Layout({ children }) {
 
 
 
-  {/* <Install /> */}
+  <Install />
 
 
 
@@ -318,7 +318,7 @@ Contact Me<span>Ordering Questions?</span>
       
       {/* <Consent /> */}
      {/* <Install /> */}
-      <Footer />
+      {/* <Footer /> */}
       
       </>
     </div>

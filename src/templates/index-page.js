@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 // import Img from 'gatsby-image'
 //  import { GatsbyImage } from 'gatsby-plugin-image'
-// import { Layout } from "../components/layout"
+import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 // import GalleryMenu from "../components/galleryMenu"
@@ -26,10 +26,12 @@ import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import GridLines from "../../static/assets/off-the-grid.mp4"
 import QuoraStrike from "../../static/assets/quora-strike.svg"
 import LoveSignal from "../../static/assets/love-signal.svg"
+import InstallDiscount from "../components/install-discount"
+
 
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import CommentBox from "../components/commentbox"
 // import ShareSocial from '../components/share' 
@@ -52,6 +54,7 @@ const TestPage = ({data}) => (
       description={`TRON in 60 Seconds - Enter The Grid`}
       image={'https://twilightscapes.com/promo-about-todd.jpg'}
     />
+    <Layout />
 
 
 {/* VIDEO URLS */}
@@ -114,9 +117,9 @@ const TestPage = ({data}) => (
           //   Suggestion2,
           //   Suggestion3
           // ]}
-          width="200px"
+          width=""
           height=""
-          style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'flex', width:'500px', height:'500px', alignSelf:'center', justifyContent:'center', margin:'0 auto', left:'', margin:'0 auto', border:'4px solid red'}}
+          style={{bottom:'300px', position:'absolute', zIndex:'3', display:'flex', width:'100%', height:'500px', alignSelf:'center', justifyContent:'center', margin:'0 auto',border:'1px solid red'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
@@ -125,20 +128,22 @@ const TestPage = ({data}) => (
           loop
           playing
           playsinline
-          playIcon={
-            <Link to="#gridintro">
-            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'flex', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'1px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', paddingTop:'0', borderRadius:'12px' , }}>
+        //   playIcon={
+
+        //     <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 35%'}} to="/#gridintro" title="Coming Soon">
+
+        //     <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'flex', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'1px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', paddingTop:'0', borderRadius:'12px' , }}>
           
-        <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
+        // <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
           
       
 
-          <div className="popped actionJackson" style={{pozition:'absolute', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
-          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
-          </div>
+        //   <div className="popped actionJackson" style={{pozition:'absolute', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+        //   <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
+        //   </div>
           
-          </div>
-          </button></Link>}
+        //   </div>
+        //   </button></AnchorLink>}
    
             light="../assets/transparent.png"
           />
@@ -309,7 +314,7 @@ to="#mylink" title="Coming Soon" />
 
 
 
-          {/*  */}
+{/*  */}
 {/* Characters */}
 {/*  */}
 
@@ -324,7 +329,7 @@ to="#mylink" title="Coming Soon" />
     
     <ReactPlayer
                   className='youtubehide'
-                  style={{opacity:'.2'}}
+                  style={{opacity:'.4'}}
                   url="https://www.youtube.com/embed/c_V1iD6F1kk"
                   width="100%"
                   height="100%"
@@ -345,11 +350,11 @@ to="#mylink" title="Coming Soon" />
     </div>
     
     
-    <div id="characters sirens" className="row" style={{position:'relative', transform:'', width:'100vw', height:'100vh', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
+    <div id="characters " className="row" style={{position:'relative', transform:'', width:'100vw', height:'100vh', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
     
     <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div>
     
-    <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 7vw, 4.5rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
+    <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 6vw, 4rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
     
       Characters <div style={{fontSize:'150%', paddingTop:'20px'}}><div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
       </div>
@@ -358,8 +363,11 @@ to="#mylink" title="Coming Soon" />
     <div srl_exclude="true" id="mylink18" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
     // background:'rgba(6, 70, 90, 0.6)', 
     padding:'2rem 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+
+
+
       <Link state={{modal: true}} to="/sam-flynn/">
-    <SamFlynn style={{height:'100%', width:'160%', margin:'30px -80px 0 0', right:''}} /></Link>
+    <SamFlynn style={{height:'78%', width:'100%', margin:'100px 60px 0 0', right:''}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
@@ -502,7 +510,12 @@ to="#mylink" title="Coming Soon" />
   
   <br />
   <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>
-    <Link to="#games">Proceed to games.</Link>
+
+
+  
+  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="/#games" title="Proceed to Games Grid">
+
+    Proceed to games.</AnchorLink>
     </p>
   </div>
 
@@ -557,7 +570,7 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div id="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div name="games" id="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -1294,8 +1307,9 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
     <CommentBox />
     </div> */}
-
+<Layout />
 </>
+
 
 )
 
