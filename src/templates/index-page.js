@@ -10,7 +10,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import ShareSocial from '../../components/share' 
 import { RiSendPlane2Line } from "react-icons/ri"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-
+import { ImPlay } from "react-icons/im"
 import { Helmet } from "react-helmet"
 // import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
 // import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
@@ -100,15 +100,15 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
-{/* <ReactPlayer
+<ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
-          url={[
-            iframeUrl,
-            Suggestion1,
-            Suggestion2,
-            Suggestion3
-          ]}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
           width="200px"
           height=""
           style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'grid', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', margin:'0 auto', right:'0', left:'0', border:'1px solid red'}}
@@ -135,7 +135,7 @@ const TestPage = ({data}) => (
             light="../assets/transparent.png"
           />
 
-<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
+<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div>
 
 
 
@@ -144,7 +144,7 @@ const TestPage = ({data}) => (
 
       
 
-  <div className="vidbox" style={{position:'absolute', maxHeight:'100vh', width:'', zIndex:'-1', left:''}}>
+  {/* <div className="vidbox" style={{position:'absolute', maxHeight:'100vh', width:'', zIndex:'-1', left:''}}>
 <div className="video-background">
     <div className="video-foreground">
       
@@ -152,9 +152,37 @@ const TestPage = ({data}) => (
       
     </div>
 </div>
+</div> */}
+
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+      <ReactPlayer
+          className='youtubehide'
+          style={{margin:'0', zIndex:'', top:'0'}}
+          url="https://www.youtube.com/embed/LltRzgvyrps"
+          width="100vw"
+          height="100vh"
+          
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:0, end:120, loop:1  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+         
+          />
+          
+    </div>
+</div>
 </div>
 
 
+
+      
 
 
   <div className="RArrow">
@@ -215,17 +243,44 @@ const TestPage = ({data}) => (
 </div>
 
 
-<LightCycle style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'2' }} />
 
-  <div className="vidbox" style={{position:'absolute', maxHeight:'100vh', width:'', zIndex:'-1', left:''}}>
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/nJ38P5elTkg?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=20&amp;playlist=nJ38P5elTkg&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/nJ38P5elTkg"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:120, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+      //         playIcon={
+      //           <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+      //       <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //         <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      //         </div>
+      //         </button>}
+      //           light="../assets/transparent.png"
+              />
+
+
     </div>
+    
+    
 </div>
+
 </div>
+
+<LightCycle style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'-1' }} />
 
 </div>
 
@@ -280,13 +335,38 @@ to="#mylink" title="Coming Soon" />
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/LD7XTybXwx0?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=130&amp;end=182&amp;playlist=LD7XTybXwx0&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
 
-      
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/LD7XTybXwx0"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:130, end:182, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+                <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+            <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+            </div>
+            
+                        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+                          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+                  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+                          </div>
+                          </button>}
+                            light="../assets/transparent.png"
+              />
+
     </div>
 </div>
 </div>
@@ -323,36 +403,33 @@ to="#mylink" title="Coming Soon" />
   <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>Proceed to games.</p>
   </div>
 
-  {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/Y7EZBP9j7h0?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=40&amp;end=60&amp;playlist=Y7EZBP9j7h0&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/Y7EZBP9j7h0"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+<ReactPlayer
+              className='youtubehides'
+              url="https://www.youtube.com/embed/Y7EZBP9j7h0"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+      //         playIcon={
+      //           <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+      //       <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //         <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      //         </div>
+      //         </button>}
+      //           light="../assets/transparent.png"
+              />
     </div>
 </div>
 </div>
@@ -379,36 +456,38 @@ to="#mylink" title="Coming Soon" />
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-
-{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/YyoKXfBQgXw?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=54&amp;end=82&amp;playlist=YyoKXfBQgXw&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/YyoKXfBQgXw"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:54, end:81, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/YyoKXfBQgXw"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:54, end:81, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../assets/transparent.png"
+              />
+
     </div>
 </div>
 </div>
@@ -438,7 +517,7 @@ to="#mylink" title="Coming Soon" />
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
+      {/* <ReactPlayer
           className='youtubehide'
           style={{margin:'0', zIndex:'', top:'0'}}
           url="https://www.youtube.com/embed/YyoKXfBQgXw"
@@ -453,7 +532,37 @@ to="#mylink" title="Coming Soon" />
           loop
           playing
           playsinline
-          />
+          /> */}
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/YyoKXfBQgXw"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../assets/transparent.png"
+              />
+
+
     </div>
 </div>
 </div>
@@ -496,22 +605,37 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/SqSuRdkglxM"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:12, end:49, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+      
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/SqSuRdkglxM"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:12, end:49, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../assets/transparent.png"
+              />
+
+
     </div>
 </div>
 </div>
@@ -545,22 +669,35 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/3TeUWwsG9kI"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:2, end:120, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+  
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/3TeUWwsG9kI"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:2, end:120, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../assets/transparent.png"
+              />
     </div>
 </div>
 </div>
@@ -581,22 +718,37 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/CvyuuTc8F2o"
-          width="100vw"
-          height="100vh"
+
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/CvyuuTc8F2o"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:120, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
+
           
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
     </div>
 </div>
 </div>
@@ -660,7 +812,7 @@ alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png
 <div className="video-background">
     <div className="video-foreground">
 
-      <ReactPlayer
+      {/* <ReactPlayer
           className='youtubehide'
           style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}
           url="https://www.youtube.com/embed/JoX0bNYg1Wc"
@@ -675,7 +827,38 @@ alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png
           loop
           playing
           playsinline
-          />
+          /> */}
+
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/JoX0bNYg1Wc"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:10, end:25, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
+
+
 </div>
 </div>
 </div>
@@ -731,22 +914,36 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/EZn2593JNuI"
-          width="100vw"
-          height="100vh"
+
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/EZn2593JNuI"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:67, end:122, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
           
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:67, end:122, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
     </div>
 </div>
 </div>
@@ -785,22 +982,35 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/J-FkR8L2X5E"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:15, end:41, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/J-FkR8L2X5E"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:15, end:41, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
+
+
     </div>
 </div>
 </div>
@@ -837,22 +1047,38 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/c_V1iD6F1kk"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+      
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/c_V1iD6F1kk"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:100, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
+
+
+
     </div>
 </div>
 </div>
@@ -974,23 +1200,37 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/yttvb9ByOtY"
-          // 0dEv7mz-GGA
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:15, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          />
+
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/yttvb9ByOtY"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:15, end:100, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../assets/transparent.png"
+              />
+
+
     </div>
 </div>
 </div>
