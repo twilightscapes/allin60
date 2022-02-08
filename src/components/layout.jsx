@@ -49,7 +49,7 @@ export function Layout({ children }) {
       <div style={{overflow:'hidden'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'60px', right:'5vw', padding:'10px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
+          <div style={{position:'fixed', top:'3%', right:'3%', padding:'10px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'red', cursor:'pointer'}}>
             {/* <AiOutlineClose /> */}
             <span className="TRON">[</span>
@@ -91,7 +91,7 @@ export function Layout({ children }) {
 
 
       <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px', fontSize:'4vw'}}>
+<div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'12px', fontSize:'clamp(3rem, 4.5vw, 4.8rem)'}}>
 [
 </div>
 
@@ -151,12 +151,20 @@ export function Layout({ children }) {
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
  <li className="carta" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo />
+<Link title="Return To Home" to="/" aria-label="Return To Home"> 
+
+{/* <TwilightLogo /> */}
+
+<div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
+
 {/* <span>Follow Me Into The Night</span> */}
 </Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> <TwilightLogo />
+<Link title="Return To Home" to="/" aria-label="Return To Home"> 
+
+{/* <TwilightLogo /> */}
+<div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
 {/* <span>Follow Me Into The Night</span> */}
 </Link>
  </li>

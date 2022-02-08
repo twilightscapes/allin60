@@ -409,7 +409,7 @@ to="#mylink" title="Coming Soon" />
     // background:'rgba(6, 70, 90, 0.6)', 
     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/clu/">
-    <CluGuy className="character" style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
+    <CluGuy className="character evil" style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
     </Link>
     </div>
     
@@ -526,7 +526,7 @@ to="#mylink" title="Coming Soon" />
 
 
   
-  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#endofline" title="Proceed to Games Grid">
+  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#ganes" title="Proceed to Games Grid">
 
     Proceed to games.</AnchorLink>
     </p>
@@ -700,7 +700,7 @@ to="#mylink" title="Coming Soon" />
 
 
 <Link state={{modal: true}} to="/about-twilightscapes/">
-<StaticImage className="character"
+<StaticImage className="character evil"
 style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'0', bottom:'0',  }}
 alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
 </Link>
@@ -1147,7 +1147,7 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 
 
 
-<div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+{/* <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 
 
@@ -1189,14 +1189,14 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
     </div>
 
     
-    {/* <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
     <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
     <StaticImage src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  style={{borderRadius:'8px'}} /></a>
     <br />
 Todd sells exceptionally fast and well-built multimedia web apps called VidSocks. They are a complete website solution that costs nothing to run and get top ranks in Google!
     <br /><br />
     <div style={{textAlign:'center',}}><a className="post-card button " href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>VidSocks.com</a></div>
-    </div> */}
+    </div>
 
 
 
@@ -1220,19 +1220,19 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
               loop
               playing
               playsinline
-//               playIcon={
-//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// </div>
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
 
-//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-//               </div>
-//               </button>}
-//                 light="../../static/assets/default-og-image.jpg"
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../../static/assets/default-og-image.jpg"
               />
 
 
@@ -1240,11 +1240,11 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 </div>
 </div>
 
-</div>
+</div> */}
 
 
 
-<div id="mylink" className="donation2" style={{display:'none', position:'relative', transform:'', height:'80vh',}}>
+<div id="mylink" className="donation2" style={{display:'', position:'relative', transform:'', height:'80vh',}}>
 {/* <Link to="/contact"> */}
 
 <div className="" style={{position:'relative', top:'0', margin:'0', padding:'0 0',  width:'50%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
