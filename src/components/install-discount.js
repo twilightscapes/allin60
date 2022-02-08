@@ -48,7 +48,7 @@ const InstallDiscount = () => (
 left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0', zIndex:'5'}}>
 
 
-
+Going to put stuff here
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}
 
@@ -58,7 +58,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 
 
 
-<CookieConsent
+{/* <CookieConsent
 	debug={true}
 	location="none"
 	style={{ display:'flex', flexDirection:'column', color:'inherit',alignItems:'inherit',  textAlign:'center', justifyContent:'center', margin:'0 auto', top:'0', maxWidth:'62vw', position:'', border:'0px solid red',
@@ -77,9 +77,9 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 >
 
 
-<StaticImage src="../../static/assets/overlanding-setup.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} />
 
-{/* <div className="backdrop" style={{left:'0', top:'-60px'}}></div> */}
+
+
 <div className="container" style={{padding:'2rem 0', border:'0px solid #555', borderRadius:'8px', color:'#fff', textAlign:'center', position:'relative', textShadow:'2px 2px 0 #000', overflow:'hidden', borderRadius:'12px'}}>
 
 
@@ -87,10 +87,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 	
 	<p style={{textAlign:'center', fontSize:'clamp(1.6rem, -0.875rem + 7.333vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>Integrated PopUp Windows <br /> <strong></strong></p>
 
-  {/* <Greeter /> */}
-	
-	{/* <p style={{fontSize:'100%', textAlign:'left',}}>
-  Twilightscapes has app functionality. Add it to your home screen to get added features, exclusive content, and fullscreen capability. </p> */}
+
     
     <p style={{fontSize:'90%', }}>
       <strong>(an industry first - we invented em!)</strong>
@@ -121,7 +118,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
     <br />
     </div>
     
-</CookieConsent>
+</CookieConsent> */}
 
 
 </div>

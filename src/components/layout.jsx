@@ -164,7 +164,9 @@ export function Layout({ children }) {
 <Link title="Return To Home" to="/" aria-label="Return To Home"> 
 
 {/* <TwilightLogo /> */}
+<div className="TRON tronText" style={{fontSize:'130%', margin:'0 0 3rem 0'}}>Movies in</div>
 <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
+  <span>More Coming Soon</span>
 {/* <span>Follow Me Into The Night</span> */}
 </Link>
  </li>
@@ -198,11 +200,11 @@ Contact Me<span>Ordering Questions?</span>
        </li> */}
 
 
-      <li className="carto">
+      {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
                 About Todd Lambert<span>As seen on reality TV</span>
               </Link>
-      </li>
+      </li> */}
 
       {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/posts/">Posts<span>My rants &amp; raves</span></Link>
@@ -219,18 +221,18 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-<li className="carto">
-              <Link className="navbar-item txtshadow" to="/photos/">
+<li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/art">
       
-              View Photos <span>Browse Photo Galleries</span>
+              Support This Site! <span>Buy Todd's Photos</span>
               </Link>
       </li> 
 
-      <li className="carto">
+      {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/nft/">
                 NFT Collectibles <span>Limited Editions</span>
               </Link>
-      </li>
+      </li> */}
 
       
 {/* <li className="carto" style={{textAlign:'center'}}>
