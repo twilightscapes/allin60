@@ -6,6 +6,7 @@ import { FaRegPlusSquare } from 'react-icons/fa';
 import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
 import { StaticImage } from "gatsby-plugin-image"
+// import Greeter from "./GreetMe"
 import styled from "styled-components";
 
 
@@ -85,6 +86,8 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 
 	
 	<p style={{textAlign:'center', fontSize:'clamp(1.6rem, -0.875rem + 7.333vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>Integrated PopUp Windows <br /> <strong></strong></p>
+
+  {/* <Greeter /> */}
 	
 	{/* <p style={{fontSize:'100%', textAlign:'left',}}>
   Twilightscapes has app functionality. Add it to your home screen to get added features, exclusive content, and fullscreen capability. </p> */}
