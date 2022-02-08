@@ -13,6 +13,7 @@ body {
   overflow-x: hidden !important;
   /* overflow-y: hidden !important; */
   width:100vw;
+  scroll-behavior: smooth;
 }
 
 body.homepage{

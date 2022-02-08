@@ -31,7 +31,7 @@ import InstallDiscount from "../components/install-discount"
 
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import CommentBox from "../components/commentbox"
 // import ShareSocial from '../components/share' 
@@ -108,6 +108,7 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
+<div style={{display:'grid', placeContent:'center', display:'none'}}>
 <ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
@@ -119,7 +120,7 @@ const TestPage = ({data}) => (
           // ]}
           width=""
           height=""
-          style={{bottom:'300px', position:'absolute', zIndex:'3', display:'flex', width:'100%', height:'500px', alignSelf:'center', justifyContent:'center', margin:'0 auto',border:'1px solid red'}}
+          style={{left:'0', position:'absolute', zIndex:'3', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'1px solid blue'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
@@ -128,26 +129,26 @@ const TestPage = ({data}) => (
           loop
           playing
           playsinline
-        //   playIcon={
+          playIcon={
 
-        //     <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 35%'}} to="/#gridintro" title="Coming Soon">
+            <Link className="txtshadow" style={{cursor:'pointer', width:'', margin:'0'}} to="/#gridintro" title="Coming Soon">
 
-        //     <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'flex', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'1px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', paddingTop:'0', borderRadius:'12px' , }}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'30vw', bottom:'-89vh', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
           
-        // <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
+        <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
           
       
 
-        //   <div className="popped actionJackson" style={{pozition:'absolute', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
-        //   <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
-        //   </div>
+          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
+          </div>
           
-        //   </div>
-        //   </button></AnchorLink>}
+          </div>
+          </button></Link>}
    
-            light="../assets/transparent.png"
+            light="../../static/assets/default-og-image.jpg"
           />
-
+</div>
 {/* <div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
 
 
@@ -282,7 +283,8 @@ const TestPage = ({data}) => (
       // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       //         </div>
       //         </button>}
-      //           light="../assets/transparent.png"
+      //           light="../../static/assets/default-og-image.jpg"
+
               />
 
 
@@ -462,18 +464,18 @@ to="#mylink" title="Coming Soon" />
               playing
               playsinline
               playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-                <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-            <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+                <div style={{position:'relative', height:'100vh', width:'100vw', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+            <StaticImage className="homepage-bg" src="../../static/assets/interactive-photo-banner-.jpg" width="100%" height="" alt="VidSock" style={{height:'100vh', width:'100vw', position:'absolute', top:'0', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
             </div>
             
                         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
                           <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
                   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
                           </div>
-                          </button>}
-                            light="../assets/transparent.png"
+          </button>}
+           light="../../static/assets/quora.png"
               />
 
     </div>
@@ -513,9 +515,9 @@ to="#mylink" title="Coming Soon" />
 
 
   
-  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="/#games" title="Proceed to Games Grid">
+  <Link className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#games" title="Proceed to Games Grid">
 
-    Proceed to games.</AnchorLink>
+    Proceed to games.</Link>
     </p>
   </div>
 
@@ -544,7 +546,7 @@ to="#mylink" title="Coming Soon" />
       // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       //         </div>
       //         </button>}
-      //           light="../assets/transparent.png"
+      //           light="../../static/assets/default-og-image.jpg"
               />
     </div>
 </div>
@@ -570,7 +572,7 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div name="games" id="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div name="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -593,7 +595,7 @@ to="#mylink" title="Coming Soon" />
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -601,7 +603,8 @@ to="#mylink" title="Coming Soon" />
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../assets/transparent.png"
+                light="../../static/assets/default-og-image.jpg
+"
               />
 
     </div>
@@ -667,7 +670,7 @@ to="#mylink" title="Coming Soon" />
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -675,7 +678,8 @@ to="#mylink" title="Coming Soon" />
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../assets/transparent.png"
+                light="../../static/assets/default-og-image.jpg
+"
               />
 
 
@@ -740,7 +744,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -748,7 +752,8 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../assets/transparent.png"
+                light="../../static/assets/default-og-image.jpg
+"
               />
 
 
@@ -804,7 +809,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -812,7 +817,8 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../assets/transparent.png"
+                light="../../static/assets/default-og-image.jpg
+"
               />
     </div>
 </div>
@@ -853,7 +859,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 //                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
 //     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// <StaticImage className="homepage-bg" src="../../static/assets/.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 // </div>
 
 //             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -861,7 +867,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 //       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 //               </div>
 //               </button>}
-//                 light="../assets/transparent.png"
+//                 light="../../static/assets/default-og-image.jpg"
               />
 
           
@@ -927,7 +933,7 @@ change the world, together.</p>
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -935,7 +941,8 @@ change the world, together.</p>
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../assets/transparent.png"
+                light="../../static/assets/default-og-image.jpg
+"
               /> */}
 
 
@@ -944,7 +951,7 @@ change the world, together.</p>
 </div>
 
 
-<Link state={{modal: true}} to="/privacy/">
+<Link state={{modal: true}} to="kevin-flynn/">
 <KevinFlynn style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
@@ -983,11 +990,19 @@ change the world, together.</p>
 
 <LoveSignal style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'', bottom:'',  }} />
   
-<Link state={{modal: true}} to="/clu/">
+<Link state={{modal: true}} to="kevin-flynn/">
+<KevinFlynn style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/>
+</Link>
+
+<StaticImage
+style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0', bottom:'0',transform:'scaleX(-1)'}}
+alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
+
+{/* <Link state={{modal: true}} to="/clu/">
 <StaticImage
 style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', right:'0', bottom:'0'}}
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
-</Link>
+</Link> */}
 <div style={{position:'absolute', padding:'0rem', width:'60%', fontSize:'clamp(.7rem, 3vw, 3.2rem)', top:''}}>
   
 
@@ -1014,7 +1029,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 //                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
 //     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 // </div>
 
 //             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -1022,7 +1037,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 //       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 //               </div>
 //               </button>}
-//                 light="../assets/transparent.png"
+//                 light="../../static/assets/default-og-image.jpg"
               />
           
     </div>
@@ -1088,7 +1103,7 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 //       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 //               </div>
 //               </button>}
-//                 light="../assets/transparent.png"
+//                 light="../../static/assets/default-og-image.jpg"
               />
 
 
@@ -1198,7 +1213,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 //                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
 //     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 // </div>
 
 //             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
@@ -1206,7 +1221,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 //       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 //               </div>
 //               </button>}
-//                 light="../assets/transparent.png"
+//                 light="../../static/assets/default-og-image.jpg"
               />
 
 
