@@ -254,21 +254,24 @@ const TestPage = ({data}) => (
 
 
 
-<div id="gridintro" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="gridintro" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+
+
       
-      <div className="">
- <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', position:'absolute', left:'0', top:'8%', width:'90%'}}>
+
+ <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', }}>
 
 
- <h2 className="tronText TRON" style={{fontSize:'150%', paddingLeft:'2rem'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
+ <h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
 
 
 <blockquote className="tronText" style={{lineHeight:'170%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world<br />I thought I'd never see.</blockquote>
+
 </div>
 
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="vidbox" style={{position:'relative', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 
@@ -310,7 +313,7 @@ const TestPage = ({data}) => (
 </div>
 
 
-</div>
+
 
           {/* <div className="intropanel">
             <AnchorLink 
@@ -362,9 +365,9 @@ to="#mylink" title="Coming Soon" />
     </div>
     
     
-    <div id="characters " className="row" style={{position:'relative', transform:'', width:'100vw', height:'100vh', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
+    <div id="characters " className="row" style={{position:'relative', transform:'', width:'', height:'', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
     
-    <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div>
+    {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
     
     <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 6vw, 4rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
     
@@ -373,9 +376,9 @@ to="#mylink" title="Coming Soon" />
       </div>
     
     
-    <div srl_exclude="true" id="mylink18" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
+    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'', 
     // background:'rgba(6, 70, 90, 0.6)', 
-    padding:'2rem 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+    padding:'2rem 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
 
 
 
@@ -385,14 +388,14 @@ to="#mylink" title="Coming Soon" />
     
     <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     //  background:'rgba(6, 70, 90, 0.6)', 
-     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/quora/">
       <QuoraStand className="character" style={{height:'100%', width:'110%', margin:'50px -100px 0 0', right:'', zIndex:'5'}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     //  background:'rgba(6, 70, 90, 0.6)', 
-     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
        <Link state={{modal: true}} to="/kevin-flynn/">
     <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'140%', zIndex:'', margin:'0 0 0 -70px'}} /></Link>
     </div>
@@ -400,14 +403,14 @@ to="#mylink" title="Coming Soon" />
     <div srl_exclude="true" id="mylink14" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     //  background:'rgba(8, 40, 49, 0.6)', 
     display:'flex', flexDiection:'column', justifyContent:'end',
-    padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+    padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
       <Link state={{modal: true}} to="/tron/">
     <TronGuy className="character" style={{height:'100%', width:'72%', margin:'30px 0 0 0', transform: 'scaleX(-1)'}} /></Link>
     </div>
     
     <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
     // background:'rgba(6, 70, 90, 0.6)', 
-    padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+    padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/clu/">
     <CluGuy className="character evil" style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
     </Link>
