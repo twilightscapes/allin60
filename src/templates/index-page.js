@@ -18,6 +18,11 @@ import LightCycle from "../../static/assets/light-cycle.svg"
 import TronChick from "../../static/assets/tron-chick1.svg"
 // import PrayingMantis from "../../static/assets/yoga-master.svg"
 import SamFly from "../../static/assets/sam-fly.svg"
+import SamFlynn from "../../static/assets/sam-flynn.svg"
+import CluGuy from "../../static/assets/clu.svg"
+import TronGuy from "../../static/assets/tron.svg"
+import QuoraStand from "../../static/assets/quora-ass.svg"
+import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import GridLines from "../../static/assets/off-the-grid.mp4"
 import QuoraStrike from "../../static/assets/quora-strike.svg"
 import LoveSignal from "../../static/assets/love-signal.svg"
@@ -111,7 +116,7 @@ const TestPage = ({data}) => (
           // ]}
           width="200px"
           height=""
-          style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'grid', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', margin:'0 auto', right:'0', left:'0', border:'1px solid red'}}
+          style={{bottom:'-145px', position:'absolute', zIndex:'1', display:'flex', width:'500px', height:'500px', alignSelf:'center', justifyContent:'center', margin:'0 auto', left:'', margin:'0 auto', border:'4px solid red'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
@@ -121,21 +126,24 @@ const TestPage = ({data}) => (
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'grid', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center',  verticalAlign:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px' , }}>
+            <Link to="#gridintro">
+            <button aria-label="Click To Play" className="clickplays" style={{position:'absolute', zIndex:'0', display:'flex', width:'500px', alignSelf:'center', justifyContent:'center', placeContent:'center', top:'-150px', border:'1px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', paddingTop:'0', borderRadius:'12px' , }}>
           
-        <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'100%', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-125px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
           
       
 
-          <div className="popped actionJackson" style={{pozition:'absolute', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div></div><br />
+          <div className="popped actionJackson" style={{pozition:'absolute', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
+          </div>
           
           </div>
-          </button>}
+          </button></Link>}
    
             light="../assets/transparent.png"
           />
 
-<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div>
+{/* <div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
 
 
 
@@ -185,9 +193,9 @@ const TestPage = ({data}) => (
       
 
 
-  <div className="RArrow">
+  {/* <div className="RArrow">
      <span></span>
-    </div>
+    </div> */}
 
 <SimpleReactLightbox>
 
@@ -230,7 +238,7 @@ const TestPage = ({data}) => (
 
 
 
-<div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="gridintro" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
       
       <div className="">
  <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', position:'absolute', left:'0', top:'8%', width:'90%'}}>
@@ -280,7 +288,7 @@ const TestPage = ({data}) => (
 
 </div>
 
-<LightCycle style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'-1' }} />
+<LightCycle style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'1' }} />
 
 </div>
 
@@ -298,6 +306,99 @@ style={{
 }} 
 to="#mylink" title="Coming Soon" />
           </div> */}
+
+
+
+          {/*  */}
+{/* Characters */}
+{/*  */}
+
+  <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+    
+     
+
+    <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+    <div className="video-background">
+        <div className="video-foreground">
+          
+    
+    <ReactPlayer
+                  className='youtubehide'
+                  style={{opacity:'.2'}}
+                  url="https://www.youtube.com/embed/c_V1iD6F1kk"
+                  width="100%"
+                  height="100%"
+                  config={{
+                    youtube: {
+                      playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:16, end:27, loop:1  }
+                    },
+                  }}
+                  loop
+                  playing
+                  playsinline
+                  />
+    
+    
+    
+        </div>
+    </div>
+    </div>
+    
+    
+    <div id="characters sirens" className="row" style={{position:'relative', transform:'', width:'100vw', height:'100vh', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
+    
+    <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div>
+    
+    <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 7vw, 4.5rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
+    
+      Characters <div style={{fontSize:'150%', paddingTop:'20px'}}><div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
+      </div>
+    
+    
+    <div srl_exclude="true" id="mylink18" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
+    // background:'rgba(6, 70, 90, 0.6)', 
+    padding:'2rem 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+      <Link state={{modal: true}} to="/sam-flynn/">
+    <SamFlynn style={{height:'100%', width:'160%', margin:'30px -80px 0 0', right:''}} /></Link>
+    </div>
+    
+    <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+    //  background:'rgba(6, 70, 90, 0.6)', 
+     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+    <Link state={{modal: true}} to="/quora/">
+      <QuoraStand style={{height:'100%', width:'110%', margin:'50px -100px 0 0', right:'', zIndex:'5'}} /></Link>
+    </div>
+    
+    <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+    //  background:'rgba(6, 70, 90, 0.6)', 
+     padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+       <Link state={{modal: true}} to="/kevin-flynn/">
+    <KevinFlynn style={{position:'relative', height:'100%', width:'140%', zIndex:'', margin:'0 0 0 -70px'}} /></Link>
+    </div>
+    
+    <div srl_exclude="true" id="mylink14" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+    //  background:'rgba(8, 40, 49, 0.6)', 
+    display:'flex', flexDiection:'column', justifyContent:'end',
+    padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+      <Link state={{modal: true}} to="/tron/">
+    <TronGuy style={{height:'100%', width:'72%', margin:'30px 0 0 0', transform: 'scaleX(-1)'}} /></Link>
+    </div>
+    
+    <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
+    // background:'rgba(6, 70, 90, 0.6)', 
+    padding:' 0', display:'flex', justifyContents:'center', border:'0px solid red',}}>
+    <Link state={{modal: true}} to="/clu/">
+    <CluGuy style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
+    </Link>
+    </div>
+    
+    
+    </div>
+    </div>
+    
+    {/*  */}
+    {/* Characters */}
+    {/*  */}
 
 
 
@@ -383,7 +484,7 @@ to="#mylink" title="Coming Soon" />
 <TronChick className="tronchick" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-0', bottom:'0vh',  }} />
 </Link>
 
-<div className="" style={{display:'', position:'absolute', zindex:'3', paddingTop:'1rem', width:'60%', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%'}}>
+<div className="" style={{display:'', position:'absolute', zindex:'3', paddingTop:'1rem', width:'60%', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%',textShadow:'0 20px 7px #000',}}>
   
   <p>You will receive an identity disk.</p>
   
@@ -400,7 +501,9 @@ to="#mylink" title="Coming Soon" />
   <p>Mirroring complete. Disk Activated.</p>
   
   <br />
-  <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>Proceed to games.</p>
+  <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>
+    <Link to="#games">Proceed to games.</Link>
+    </p>
   </div>
 
 
@@ -454,7 +557,7 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -787,50 +890,14 @@ change the world, together.</p>
 </div>
  
 
-
-
-{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'140vw', zIndex:'-1', top:'0', right:'-35vw'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/JoX0bNYg1Wc?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=JoX0bNYg1Wc" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
-
-
-<Link state={{modal: true}} to="/clu/">
-<StaticImage
-style={{maxHeight:'100vh', maxWidth:'30%', zIndex:'4', position:'absolute', right:'-20px', bottom:'-65px', border:'0px solid red',}}
-alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png" />
-</Link>
-
-
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
 
-      {/* <ReactPlayer
-          className='youtubehide'
-          style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}
-          url="https://www.youtube.com/embed/JoX0bNYg1Wc"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:10, end:25, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          /> */}
 
 
-<ReactPlayer
+
+{/* <ReactPlayer
               className='youtubehide'
               url="https://www.youtube.com/embed/JoX0bNYg1Wc"
               width="100%"
@@ -843,20 +910,20 @@ alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png
               loop
               playing
               playsinline
-//               playIcon={
-//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// </div>
+    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
 
-//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-//               </div>
-//               </button>}
-//                 light="../assets/transparent.png"
-              />
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                light="../assets/transparent.png"
+              /> */}
 
 
 </div>
@@ -864,11 +931,12 @@ alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png
 </div>
 
 
+<Link state={{modal: true}} to="/privacy/">
+<KevinFlynn style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/>
+</Link>
 
 <Link state={{modal: true}} to="/clu/" >
-<StaticImage
-style={{maxHeight:'80vh', maxWidth:'30%', zIndex:'4', position:'absolute', left:'0', bottom:'0', border:'0px solid red',transform: 'scaleX(-1)'}}
-alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
+<CluGuy style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
 
@@ -963,7 +1031,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
 
 
-  <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+  <div id="endofline" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
   
 
@@ -1033,108 +1101,6 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 
 
 
-
-
-  <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
-    
-        <div className="TRON tronText" style={{position:'absolute', marginTop:'200px 0 0 0', width:'100vw', height:'', right:'', top:'', fontSize:'clamp(1.6rem, 8vw, 5.2rem)', textAlign:'center', justifyContent:'center'}}>
-  Characters
-  </div>
-
-
-
-
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-
-<ReactPlayer
-              className='youtubehide'
-              url="https://www.youtube.com/embed/c_V1iD6F1kk"
-              width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:100, loop:1  }
-                },
-              }}
-              loop
-              playing
-              playsinline
-//               playIcon={
-//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-    
-//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <StaticImage className="homepage-bg" src="../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// </div>
-
-//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-//               </div>
-//               </button>}
-//                 light="../assets/transparent.png"
-              />
-
-
-
-    </div>
-</div>
-</div>
-
-
-<div className=" blocker2 masonry row" style={{position:'relative', transform:'', width:'100vw', height:'100vh', display:'flex', justifyContent:'center', paddingTop:'2rem' }}>
-
-
-
-<div srl_exclude="true" id="mylink18" className="donation2" style={{position:'relative', transform:'', height:'80vh', 
-// background:'rgba(6, 70, 90, 0.6)', 
-padding:''}}>
-<StaticImage
-style={{maxHeight:'90vh',}}
-alt="Todd Lambert Web development for photographers" src="../img/sam-nomask.png" />
-</div>
-
-<div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', height:'80vh',
-//  background:'rgba(6, 70, 90, 0.6)', 
- padding:''}}>
-<StaticImage
-style={{maxHeight:'90vh'}}
-alt="Todd Lambert Web development for photographers" src="../img/quora-ass.png" />
-</div>
-
-<div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', height:'80vh',
-//  background:'rgba(6, 70, 90, 0.6)', 
- padding:''}}>
-<StaticImage
-style={{maxHeight:'90vh'}}
-alt="Todd Lambert Web development for photographers" src="../img/kevin-flynn.png" />
-</div>
-
-<div srl_exclude="true" id="mylink14" className="donation2" style={{position:'relative', transform:'', height:'80vh',
-//  background:'rgba(8, 40, 49, 0.6)', 
- padding:''}}>
-<StaticImage
-style={{maxHeight:'90vh'}}
-alt="Todd Lambert Web development for photographers" src="../img/tronsuit1.png" />
-</div>
-
-
-
-<div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', height:'80vh', 
-// background:'rgba(6, 70, 90, 0.6)', 
-padding:''}}>
-
-<Link state={{modal: true}} to="/privacy/">
-<StaticImage
-style={{maxHeight:'90vh'}}
-alt="Todd Lambert Web development for photographers" src="../img/clu.png" />
-</Link>
-</div>
-
-</div>
-</div>
 
 
 
