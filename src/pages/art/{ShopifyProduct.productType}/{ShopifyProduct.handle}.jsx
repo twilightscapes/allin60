@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
-import CommentBox from "../../../components/commentbox"
+// import CommentBox from "../../../components/commentbox"
 import { formatPrice } from "../../../utils/format-price"
 import { Seo } from "../../../components/seo"
 // import { NumericInput } from "../../../components/numeric-input"
@@ -16,7 +16,7 @@ import ShareSocial from '../../../components/share'
 import GoBack from "../../../components/goBack"
 import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 // import { BiLeftArrow } from "react-icons/bi"
 // import { navigate } from "gatsby";
@@ -362,7 +362,7 @@ export default function Product({ data: { product, suggestions } }) {
     </div>
 </Link>
   
-    <StaticImage src="../../../img/todd-horizons.jpg" alt="Todd in the Field" className="round" />
+    {/* <StaticImage src="../../../img/todd-horizons.jpg" alt="Todd in the Field" className="round" /> */}
         
 </div>
 
@@ -375,7 +375,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit', lineHeight:'1.7rem'}}>
- <StaticImage src="../../../img/urban-fetish-button.jpg" alt="Urban Fetish" className="round" />
+ {/* <StaticImage src="../../../img/urban-fetish-button.jpg" alt="Urban Fetish" className="round" /> */}
  <br />
  
  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
@@ -410,10 +410,10 @@ export default function Product({ data: { product, suggestions } }) {
 
 
 
-<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+{/* <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
      <CommentBox />
      
-     </div>
+     </div> */}
             
             </div>
 

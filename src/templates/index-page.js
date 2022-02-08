@@ -481,7 +481,7 @@ to="#mylink" title="Coming Soon" />
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
                 <div style={{position:'relative', height:'100vh', width:'100vw', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-            <StaticImage className="homepage-bg" src="../../static/assets/interactive-photo-banner-.jpg" width="100%" height="" alt="VidSock" style={{height:'100vh', width:'100vw', position:'absolute', top:'0', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+            <StaticImage className="homepage-bg" src="../../static/assets/interactive-photo-banner-.jpg" width="100%" height="100vh" alt="VidSock" style={{height:'100vh', width:'100vw', position:'absolute', top:'0', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
             </div>
             
                         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
