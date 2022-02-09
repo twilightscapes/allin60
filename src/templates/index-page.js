@@ -857,9 +857,9 @@ Please Wait
 
 
 
-<div id="games" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}></div>
+<div id="games" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
 
-<div id="games" className="" style={{position:'relative', width:'100vw', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', overflow:'hidden'}}>
+
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
