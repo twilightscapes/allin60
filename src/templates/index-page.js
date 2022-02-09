@@ -751,7 +751,7 @@ Please Wait
 {/* <LightCycle className="character" style={{height:'65vh', position:'relative', right:'', bottom:'', zIndex:'1' }} /> */}
 
       <Link state={{modal: true}} to="/quorra/">
-<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100%', width:'100%', position:'absolute', right:'0', bottom:'-5%', paddingTop:'20vh', zIndex:'0' }} />
+<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', right:'0', bottom:'-5%', paddingTop:'0', zIndex:'0' }} />
 </Link>
 
 </div>
