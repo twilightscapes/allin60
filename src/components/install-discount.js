@@ -6,6 +6,9 @@ import { FaRegPlusSquare } from 'react-icons/fa';
 import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
 import { StaticImage } from "gatsby-plugin-image"
+import ReactPlayer from 'react-player/lazy'
+import { Link } from "gatsby"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 // import Greeter from "./GreetMe"
 import styled from "styled-components";
 
@@ -48,7 +51,49 @@ const InstallDiscount = () => (
 left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0', zIndex:'5'}}>
 
 
-Going to put stuff here
+<ReactPlayer
+          className='playerpp'
+          url="https://www.youtube.com/embed/S5S6s5dZXNM"
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          width=""
+          height=""
+          style={{left:'', position:'', zIndex:'30', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'0px solid blue'}}
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          playIcon={
+
+            // <Link className="txtshadow" style={{cursor:'pointer', width:'', margin:'0'}} to="/#gridintro" title="Coming Soon">
+
+            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'30vw', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
+          
+        <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
+          
+      
+
+          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
+          </div>
+          
+          </div>
+          </button>
+          
+          // </Link>
+          
+        }
+   
+            light="../../static/assets/default-og-image.jpg"
+          />
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}
 

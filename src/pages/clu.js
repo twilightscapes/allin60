@@ -2,7 +2,7 @@ import * as React from "react"
 import { Layout } from "../components/layout"
 
 import GoBack from "../components/goBack"
-
+import CluGuy from "../../static/assets/clu.svg"
 
 
 
@@ -34,6 +34,8 @@ export default function CluePage() {
 
       <div className="mobile"><GoBack /></div>
       
+      <CluGuy className="character evil" style={{maxHeight:'30vh',  margin:'0 0 0 0',}} />
+
 <h1>CLU</h1>
 <ul>
 <li>Actor: Jeff Bridges</li>

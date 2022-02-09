@@ -21,6 +21,7 @@ import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
+// import { Link } from "gatsby-plugin-anchor-links"
 import "../assets/scss/style.scss"
 import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
@@ -150,26 +151,30 @@ export function Layout({ children }) {
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
+
+
+
  <li className="carta" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> 
-
+<Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
 {/* <TwilightLogo /> */}
-
 <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
-
-{/* <span>Follow Me Into The Night</span> */}
 </Link>
  </li>
+
  <li className="carto" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/" aria-label="Return To Home"> 
-
+<Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
 {/* <TwilightLogo /> */}
-<div className="TRON tronText" style={{fontSize:'130%', margin:'0 0 3rem 0'}}>Movies in</div>
+<div className="TRON tronText" style={{fontSize:'130%', margin:'0 0 3rem 0'}}>TRON in</div>
 <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
-  <span>More Coming Soon</span>
-{/* <span>Follow Me Into The Night</span> */}
+{/* 
+  <span>More Coming Soon</span> */}
 </Link>
  </li>
+
+
+
+
+
  
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
  <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
@@ -219,12 +224,32 @@ Contact Me<span>Ordering Questions?</span>
               The Vault <span>Full Photo archives</span>
               </Link>
       </li> */}
+<li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#gridintro">
+              The Grid
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+      
+<li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#games">
+              Proceed to Games
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#endofline">
+              End of the Line
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
 
 
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/art">
-      
-              Support This Site! <span>Buy Todd's Photos</span>
+              Support This Site!
+              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li> 
 

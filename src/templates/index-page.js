@@ -108,19 +108,19 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
-{/* <div style={{display:'grid', placeContent:'center', display:'none'}}>
+{/* <div style={{display:'grid', placeContent:'center', display:'', position:'absolute', top:'0'}}>
 <ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
-          url={[
-            iframeUrl,
-            Suggestion1,
-            Suggestion2,
-            Suggestion3
-          ]}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
           width=""
           height=""
-          style={{left:'0', position:'absolute', zIndex:'3', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'1px solid blue'}}
+          style={{left:'0', position:'absolute', zIndex:'30', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'0px solid blue'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
@@ -148,8 +148,8 @@ const TestPage = ({data}) => (
    
             light="../../static/assets/default-og-image.jpg"
           />
-</div>
-<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
+</div> */}
+{/* <div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
 
 
 
@@ -335,7 +335,7 @@ Please Wait
 {/* Characters */}
 {/*  */}
 
-<div id="beta" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="homestart" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-2'}}>
 <div className="video-background">
@@ -462,7 +462,7 @@ Please Wait
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/quora/">
+    <Link state={{modal: true}} to="/quorra/">
       <QuoraStand className="character" style={{height:'100%', width:'90%', margin:'0 0 0 10%', right:'', zIndex:'5'}} /></Link>
     </div>
     
@@ -709,9 +709,9 @@ Please Wait
   <br />
 
   <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'90%', textAlign:''}}>
-  <AnchorLink className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="#games" title="Proceed to Games Grid">
+  <Link className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
 
-    Proceed to games.</AnchorLink>
+    Proceed to games.</Link>
     </p>
 
 
@@ -852,7 +852,7 @@ Please Wait
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="games" className="" style={{position:'relative', width:'100vw', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', overflow:'hidden'}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -891,7 +891,7 @@ Please Wait
 
 <Link state={{modal: true}} to="/about-twilightscapes/">
 <StaticImage className="character evil"
-style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-10vw', bottom:'0',  }}
+style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-40px', bottom:'0',  }}
 alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
 </Link>
 </div>
@@ -1111,7 +1111,7 @@ change the world, together.</p>
 </Link>
 
 <Link state={{modal: true}} to="/clu/" >
-<CluGuy className="character" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
+<CluGuy className="character evil" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
   </div>
@@ -1139,7 +1139,7 @@ change the world, together.</p>
 
 
 
-<div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+<div id="" className="" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <LoveSignal className="character" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'', bottom:'',  }} />
   
@@ -1147,7 +1147,7 @@ change the world, together.</p>
 <KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/>
 </Link>
 
-<StaticImage className="character"
+<StaticImage className="character evil"
 style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0', bottom:'0',transform:'scaleX(-1)'}}
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
