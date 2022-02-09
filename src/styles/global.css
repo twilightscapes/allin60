@@ -3889,7 +3889,7 @@ height:100vh;
                           transform: rotate(-90deg) translateY(-90vw);
                           transform-origin: right top;
                           transition: transform .2s;
-                          /* scroll-padding: 4% 4%; */
+                          scroll-padding: 0 5%;
                           overscroll-behavior: contain;
                         }
                         .horizontal-scroll-wrapper > * {
@@ -3904,14 +3904,14 @@ height:100vh;
  
                         .squares > * {
                           height: 100vh;
-                          margin: 0 0 60% 0;
+                          margin: 0 0 45% 0;
                         }
 
-                        @media (min-width: 58em) {
+                        /* @media (min-width: 58em) {
                          .spares > * {
-                           margin: 0 0 60% 0 !important;
+                           margin: 0 0 20% 0 !important;
                          }
-                       }
+                       } */
            
                          @media (max-width: 48rem) {
                            .sliderholder{height: 100vh;}
@@ -4216,16 +4216,16 @@ height:100vh;
 
            .character:hover{
              border:0px solid rgb(0, 225, 255) !important;
-             filter: saturate(1.6) drop-shadow(3px 4px 10px rgb(0, 225, 255)) !important;
+             filter: saturate(1) drop-shadow(3px 4px 10px rgb(0, 225, 255)) !important;
              cursor:pointer !important;
-             filter:brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(1.6)drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
+             /* filter:brightness(0.3)contrast(4.4)hue-rotate(117deg) */
            }
 
            .character.evil:hover{
             border:0px solid rgb(255, 153, 0) !important;
-            filter: saturate(1.6) drop-shadow(3px 4px 10px rgb(255, 153, 0)) !important;
+            filter: saturate(1) drop-shadow(3px 4px 10px rgb(255, 153, 0)) !important;
             cursor:pointer !important;
-            filter:brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(1.6)drop-shadow(0px 0px 3px rgba(243, 111, 3, 0.8));
+            /* filter:brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(1.6)drop-shadow(0px 0px 3px rgba(243, 111, 3, 0.8)); */
           }
 
 

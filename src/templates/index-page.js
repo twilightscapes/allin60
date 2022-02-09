@@ -191,7 +191,7 @@ const TestPage = ({data}) => (
 
 
 
-      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'38%', display:'block' ,width:'100px'}}>
+      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'53%', display:'block' ,width:'100px'}}>
 
         </div>
 
@@ -681,14 +681,16 @@ Please Wait
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+
+
+
+<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+
       {/* <div className="frontdrop"></div> */}
       
-<Link state={{modal: true}} to="/contact/">
-<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-0', bottom:'0vh',  }} />
-</Link>
 
-<div className="" style={{display:'', position:'absolute', zindex:'3', paddingTop:'1rem', width:'60%', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%',textShadow:'0 20px 7px #000',}}>
+
+<div className="" style={{display:'', position:'relative', zindex:'3', paddingTop:'1rem', width:'60%', height:'100vh', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%',textShadow:'0 20px 7px #000',}}>
   
   <p>You will receive an identity disk.</p>
   
@@ -707,12 +709,17 @@ Please Wait
   <br />
 
   <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'90%', textAlign:''}}>
-  <AnchorLink className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
+  <AnchorLink className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="#games" title="Proceed to Games Grid">
 
     Proceed to games.</AnchorLink>
     </p>
+
+
   </div>
 
+  <Link state={{modal: true}} to="/contact/">
+<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'100%', height:'100vh', width:'100%', position:'absolute', right:'0', bottom:'', }} />
+</Link>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -721,7 +728,7 @@ Please Wait
               className='youtubehides'
               url="https://www.youtube.com/embed/Y7EZBP9j7h0"
               width="100%"
-              height="100%"
+              height="auto"
               config={{
                 youtube: {
                   playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
