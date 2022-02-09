@@ -1435,7 +1435,7 @@ height:100%;
                 transform: rotate(-90deg) translateY(-100vw);
                 transform-origin: right top;
                 /* transition: transform .2s; */
-                scroll-padding: 10% 1%;
+                /* scroll-padding: 10% 1%; */
                 /* scroll-snap-type: y proximity ; */
               }
               .horizontal-scroll-wrapper > * {
@@ -3868,7 +3868,7 @@ height:100vh;
             .horizontal-scroll-wrapper  img{
               cursor:zoom-in !important; 
               object-fit: contain !important;
-              max-height: 65vh ;
+              /* max-height: 65vh ; */
              }
                        
                          /* .sliderholder{
@@ -3882,14 +3882,14 @@ height:100vh;
                           left: 0;
                           width: calc(90vw + 1px);
                           max-height: 100vw;
-                          margin:2vh auto 0 auto;
+                          margin:0 auto 0 auto;
                           padding: 0;
                           overflow-y: auto;
                           overflow-x: hidden;
                           transform: rotate(-90deg) translateY(-90vw);
                           transform-origin: right top;
                           transition: transform .2s;
-                          scroll-padding: 10% 1%;
+                          /* scroll-padding: 4% 4%; */
                           overscroll-behavior: contain;
                         }
                         .horizontal-scroll-wrapper > * {
@@ -3903,13 +3903,13 @@ height:100vh;
                         
  
                         .squares > * {
-                          height: 90vh;
-                          margin: 0 0 50% 0;
+                          height: 100vh;
+                          margin: 0 0 60% 0;
                         }
 
                         @media (min-width: 58em) {
                          .spares > * {
-                           margin: 0 0 55% 0 !important;
+                           margin: 0 0 60% 0 !important;
                          }
                        }
            
@@ -3922,7 +3922,7 @@ height:100vh;
                            }
                            .horizontal-scroll-wrapper img{max-height:95vh !important;}
                            .squares > * {
-                             max-height: 350px !important; 
+                             max-height: 100vh !important; 
                            }
            
                            .horizontal-scroll-wrapper::after{

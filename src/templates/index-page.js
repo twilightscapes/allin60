@@ -191,7 +191,8 @@ const TestPage = ({data}) => (
 
 
 
-      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'', width:'100vw'}}>
+      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'38%', display:'block' ,width:'100px'}}>
+
         </div>
 
   
@@ -251,7 +252,7 @@ const TestPage = ({data}) => (
 
 
 
-<div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red'}}>
+<div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red', display:'none'}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'2'}}>
 <div className="video-background">
@@ -377,13 +378,13 @@ Please Wait
 
 
 
-<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'5vw', zIndex:'2', position:'absolute', top:'10px', marginTop:'', width:'100%', padding:'0 30%', opacity:'.7'}}>
+<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', zIndex:'2', position:'', top:'', marginTop:'', width:'100%', padding:'0 30%', opacity:'.7'}}>
         <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
-             <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
+             {/* <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
 
         <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
       
-      <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div>
+      <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div> */}
       </h1>
 
 
@@ -439,7 +440,7 @@ Please Wait
     </div>
     
     
-    <div id="characters " className="row" style={{position:'relative', transform:'', width:'', height:'', display:'flex', justifyContent:'flex-end', paddingTop:'5%', display:''  }}>
+    <div id="characters " className="" style={{position:'relative', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
     
     {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
     
@@ -704,13 +705,11 @@ Please Wait
   <p>Mirroring complete. Disk Activated.</p>
   
   <br />
-  <p className="tronText TRON" style={{fontSize:'110%', textAlign:''}}>
 
+  <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'90%', textAlign:''}}>
+  <Link className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="#ganes" title="Proceed to Games Grid">
 
-  
-  <AnchorLink className="txtshadow" style={{cursor:'pointer', width:'50%', margin:'0 auto'}} to="#ganes" title="Proceed to Games Grid">
-
-    Proceed to games.</AnchorLink>
+    Proceed to games.</Link>
     </p>
   </div>
 
