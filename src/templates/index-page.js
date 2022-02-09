@@ -440,7 +440,7 @@ Please Wait
     </div>
     
     
-    <div id="characters " className="" style={{position:'relative', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
+    <div id="characters " className="" style={{position:'absolute', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
     
     {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
     
@@ -707,9 +707,9 @@ Please Wait
   <br />
 
   <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'90%', textAlign:''}}>
-  <Link className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="#ganes" title="Proceed to Games Grid">
+  <AnchorLink className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
 
-    Proceed to games.</Link>
+    Proceed to games.</AnchorLink>
     </p>
   </div>
 
