@@ -529,7 +529,7 @@ Please Wait
 
 
 
-<div id="gridintro" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+<div id="gridintro" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
 
  <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', }}>
 
@@ -537,7 +537,7 @@ Please Wait
  <h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
 
 
-<blockquote className="tronText" style={{lineHeight:'170%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world<br />I thought I'd never see.</blockquote>
+<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.3rem, 3.5vw, 4.6rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
 
 </div>
 
@@ -573,7 +573,7 @@ Please Wait
 </div>
 </div>
 
-<LightCycle className="character" style={{maxHeight:'45vh', position:'relative', right:'0', bottom:'0', zIndex:'1' }} />
+<LightCycle className="character" style={{height:'65vh', position:'relative', right:'', bottom:'', zIndex:'1' }} />
 
 </div>
 
@@ -684,13 +684,13 @@ Please Wait
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
+<div id="proceed" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
 
       {/* <div className="frontdrop"></div> */}
       
 
 
-<div className="" style={{display:'', position:'relative', zindex:'3', paddingTop:'1rem', width:'60%', height:'100vh', padding:'2rem 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'4vw', lineHeight:'100%',textShadow:'0 20px 7px #000',}}>
+<div className="" style={{display:'', position:'relative', zindex:'3',   width:'100vw', height:'100%', padding:'20vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'5vw', lineHeight:'100%',textShadow:'0 2px 7px #000',}}>
   
   <p>You will receive an identity disk.</p>
   
@@ -708,8 +708,8 @@ Please Wait
   
   <br />
 
-  <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'90%', textAlign:''}}>
-  <Link className="" style={{cursor:'pointer', width:'', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
+  <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'60%', textAlign:'', width:'50%',}}>
+  <Link className="" style={{cursor:'pointer', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
 
     Proceed to games.</Link>
     </p>
@@ -717,18 +717,16 @@ Please Wait
 
   </div>
 
-  <Link state={{modal: true}} to="/contact/">
-<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'100%', height:'100vh', width:'100%', position:'absolute', right:'0', bottom:'', }} />
-</Link>
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+
+  <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 <ReactPlayer
-              className='youtubehides'
+              className='youtubehide'
               url="https://www.youtube.com/embed/Y7EZBP9j7h0"
               width="100%"
-              height="auto"
+              height="100%"
               config={{
                 youtube: {
                   playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
@@ -750,6 +748,11 @@ Please Wait
     </div>
 </div>
 </div>
+{/* <LightCycle className="character" style={{height:'65vh', position:'relative', right:'', bottom:'', zIndex:'1' }} /> */}
+
+      <Link state={{modal: true}} to="/quorra/">
+<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100%', width:'100%', position:'absolute', right:'0', bottom:'-5%', paddingTop:'20vh', zIndex:'0' }} />
+</Link>
 
 </div>
 
@@ -758,9 +761,11 @@ Please Wait
 
 
 
-<div id="" className="" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+
+<div id="" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 <ReactPlayer
@@ -795,7 +800,7 @@ Please Wait
 
 
 <Link state={{modal: true}} to="/privacy/">
-<SamFly className="character" style={{height:'100vh', maxWidth:'100%', position:'relative', right:'-4vw', top:'0',  }} />
+<SamFly className="character" style={{height:'', maxWidth:'', position:'relative', right:'', bottom:'0',  }} />
 </Link>
 
 </div>

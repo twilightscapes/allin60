@@ -75,14 +75,15 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 
             // <Link className="txtshadow" style={{cursor:'pointer', width:'', margin:'0'}} to="/#gridintro" title="Coming Soon">
 
-            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'30vw', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
           
         <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
           
       
 
-          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
-          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
+          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'40px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}>
+            <AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+          <div className="tronText" style={{fontSize:'1.5vw', fontWeight:'', padding:'0', }}>Play Music From Movie</div>
           </div>
           
           </div>
