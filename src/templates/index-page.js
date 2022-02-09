@@ -108,16 +108,16 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
-<div style={{display:'grid', placeContent:'center', display:'none'}}>
+{/* <div style={{display:'grid', placeContent:'center', display:'none'}}>
 <ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
+          url={[
+            iframeUrl,
+            Suggestion1,
+            Suggestion2,
+            Suggestion3
+          ]}
           width=""
           height=""
           style={{left:'0', position:'absolute', zIndex:'3', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'1px solid blue'}}
@@ -149,7 +149,7 @@ const TestPage = ({data}) => (
             light="../../static/assets/default-og-image.jpg"
           />
 </div>
-{/* <div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
+<div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
 
 
 
@@ -208,56 +208,231 @@ const TestPage = ({data}) => (
       <div className="horizontal-scroll-wrapper squares" style={{ width:'100vh', padding:'0', height:'100vw'}}>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
-      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'50vw',}}>
+      <div id="mylink0" className="donation2" style={{position:'relative', transform:'', height:'', width:'100vw'}}>
         
         
         </div>
 
 
-      
-
-      <div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red'}}>
 
 
-      <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'12vw', zIndex:'2', position:'relative', marginTop:'2rem'}}>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*  */}
+{/* Characters */}
+{/*  */}
+
+<div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+    
+     
+
+     <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'10vw', zIndex:'2', position:'absolute', bottom:'10px', marginTop:'', width:'100%', padding:'0 30%', opacity:'.7'}}>
         <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
-
-        {/* <div style={{fontSize:'60%', paddingLeft:'2rem'}}>:</div> */}
              <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
 
         <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
-
- 
-      
-      
       
       <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div>
-      
       </h1>
 
-      <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', left:'', top:'0'}}>
+
+    <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+    <div className="video-background">
+        <div className="video-foreground">
+          
+    
+    <ReactPlayer
+                  className='youtubehide'
+                  style={{opacity:'.4', width:'100vw', height:'100vh'}}
+                  url="https://www.youtube.com/embed/c_V1iD6F1kk"
+                  width="100%"
+                  height="100%"
+                  config={{
+                    youtube: {
+                      playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:16, end:27, loop:1  }
+                    },
+                  }}
+                  loop
+                  playing
+                  playsinline
+                  />
+    
+    
+    
+        </div>
+    </div>
+    </div>
+    
+    
+    <div id="characters " className="row" style={{position:'relative', transform:'', width:'', height:'', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
+    
+    {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
+    
+    {/* <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 6vw, 4rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
+    
+      Characters <div style={{fontSize:'150%', paddingTop:'20px'}}>
+        <div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
+      </div> */}
+
+
+      
+    
+    
+    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
+    padding:'0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+             <Link state={{modal: true}} to="/sam-flynn/">
+    <SamFlynn className="character" style={{height:'100vh', width:'100%', margin:'0 0 0 0',}} /></Link>
+    </div>
+    
+    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    <Link state={{modal: true}} to="/quora/">
+      <QuoraStand className="character" style={{height:'100%', width:'90%', margin:'0 0 0 10%', right:'', zIndex:'5'}} /></Link>
+    </div>
+    
+    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+     padding:' 0', display:'flex', justifyContent:'center',}}>
+<Link state={{modal: true}} to="/kevin-flynn/">
+    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -10%'}} /></Link>
+    </div>
+    
+    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
+    display:'flex', flexDiection:'column', justifyContent:'center',
+    padding:'5%', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+      <Link state={{modal: true}} to="/tron/">
+    <TronGuy className="character" style={{height:'100%', width:'85%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /></Link>
+    </div>
+    
+    <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
+    // background:'rgba(6, 70, 90, 0.6)', 
+    padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    <Link state={{modal: true}} to="/clu/">
+    <CluGuy className="character evil" style={{height:'100%', width:'100%', margin:'0 0 0 -20%',}} />
+    </Link>
+    </div>
+    
+    
+    </div>
+    </div>
+    
+    {/*  */}
+    {/* Characters */}
+    {/*  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      {/* <div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red'}}> */}
+
+
+      {/* <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'12vw', zIndex:'2', position:'relative', marginTop:'2rem'}}>
+        <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
+             <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
+
+        <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
+      
+      <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div>
+      </h1> */}
+
+      {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', left:'', top:'0'}}>
 <div className="video-background">
     <div className="video-foreground">
       
-      {/* <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/pNOJ7wZqDWA?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=20&amp;playlist=pNOJ7wZqDWA&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe> */}
+      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/pNOJ7wZqDWA?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=20&amp;playlist=pNOJ7wZqDWA&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
       
     </div>
 </div>
-</div>
+</div> */}
 
 
-</div>
+{/* </div> */}
 
 
 
 
 <div id="gridintro" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
-
-
-      
 
  <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', }}>
 
@@ -269,9 +444,7 @@ const TestPage = ({data}) => (
 
 </div>
 
-
-
-<div className="vidbox" style={{position:'relative', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 
@@ -299,130 +472,39 @@ const TestPage = ({data}) => (
       //           light="../../static/assets/default-og-image.jpg"
 
               />
-
-
     </div>
-    
-    
+</div>
 </div>
 
-</div>
-
-<LightCycle className="character" style={{maxHeight:'75vh', position:'absolute', right:'0', bottom:'0', zIndex:'1' }} />
+<LightCycle className="character" style={{maxHeight:'45vh', position:'relative', right:'0', bottom:'0', zIndex:'1' }} />
 
 </div>
 
 
 
 
-          {/* <div className="intropanel">
-            <AnchorLink 
-className="txtshadow"
-style={{
-  cursor:'pointer',
-  width:'50%',
-  margin:'0 auto'
-
-}} 
-to="#mylink" title="Coming Soon" />
-          </div> */}
 
 
 
-{/*  */}
-{/* Characters */}
-{/*  */}
-
-  <div id="mylink27" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
-    
-     
-
-    <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
-    <div className="video-background">
-        <div className="video-foreground">
-          
-    
-    <ReactPlayer
-                  className='youtubehide'
-                  style={{opacity:'.4'}}
-                  url="https://www.youtube.com/embed/c_V1iD6F1kk"
-                  width="100%"
-                  height="100%"
-                  config={{
-                    youtube: {
-                      playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:16, end:27, loop:1  }
-                    },
-                  }}
-                  loop
-                  playing
-                  playsinline
-                  />
-    
-    
-    
-        </div>
-    </div>
-    </div>
-    
-    
-    <div id="characters " className="row" style={{position:'relative', transform:'', width:'', height:'', display:'flex', justifyContent:'flex-end', paddingTop:'',  }}>
-    
-    {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
-    
-    <div className="TRON tronText" style={{position:'absolute',  width:'100vw', height:'', right:'', top:'45vh', zIndex:'6', fontSize:'clamp(1.6rem, 6vw, 4rem)', textAlign:'center', justifyContent:'center', lineSpacing:'50px', opacity:'.7'}}>
-    
-      Characters <div style={{fontSize:'150%', paddingTop:'20px'}}>
-        <div style={{fontSize:'40%', margin:'-20px -20px 0 0'}}>of</div> TRON</div>
-      </div>
-    
-    
-    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'', 
-    // background:'rgba(6, 70, 90, 0.6)', 
-    padding:'2rem 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
 
 
 
-      <Link state={{modal: true}} to="/sam-flynn/">
-    <SamFlynn className="character" style={{height:'78%', width:'100%', margin:'100px 60px 0 0', right:''}} /></Link>
-    </div>
-    
-    <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
-    //  background:'rgba(6, 70, 90, 0.6)', 
-     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/quora/">
-      <QuoraStand className="character" style={{height:'100%', width:'110%', margin:'50px -100px 0 0', right:'', zIndex:'5'}} /></Link>
-    </div>
-    
-    <div srl_exclude="true" id="mylink16" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
-    //  background:'rgba(6, 70, 90, 0.6)', 
-     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-       <Link state={{modal: true}} to="/kevin-flynn/">
-    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'140%', zIndex:'', margin:'0 0 0 -70px'}} /></Link>
-    </div>
-    
-    <div srl_exclude="true" id="mylink14" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
-    //  background:'rgba(8, 40, 49, 0.6)', 
-    display:'flex', flexDiection:'column', justifyContent:'end',
-    padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-      <Link state={{modal: true}} to="/tron/">
-    <TronGuy className="character" style={{height:'100%', width:'72%', margin:'30px 0 0 0', transform: 'scaleX(-1)'}} /></Link>
-    </div>
-    
-    <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
-    // background:'rgba(6, 70, 90, 0.6)', 
-    padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/clu/">
-    <CluGuy className="character evil" style={{height:'100%', width:'125%', margin:'2rem 0 0 -100px',}} />
-    </Link>
-    </div>
-    
-    
-    </div>
-    </div>
-    
-    {/*  */}
-    {/* Characters */}
-    {/*  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -458,12 +540,11 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+{/* <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-
 <ReactPlayer
               className='youtubehide'
               url="https://www.youtube.com/embed/LD7XTybXwx0"
@@ -491,13 +572,15 @@ to="#mylink" title="Coming Soon" />
           </button>}
            light="../../static/assets/quora.png"
               />
-
     </div>
 </div>
 </div>
 
+</div> */}
 
-</div>
+
+
+
 
 
 
@@ -586,7 +669,12 @@ to="#mylink" title="Coming Soon" />
 
 
 
-<div name="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+
+
+
+
+
+{/* <div name="games" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
@@ -617,8 +705,7 @@ to="#mylink" title="Coming Soon" />
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../../static/assets/default-og-image.jpg
-"
+                light="../../static/assets/default-og-image.jpg"
               />
 
     </div>
@@ -626,7 +713,7 @@ to="#mylink" title="Coming Soon" />
 </div>
 
 
-</div>
+</div> */}
 
 
 
@@ -634,38 +721,9 @@ to="#mylink" title="Coming Soon" />
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-
-
-{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/YyoKXfBQgXw?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=204&amp;end=221&amp;playlist=YyoKXfBQgXw&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
-
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      {/* <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/YyoKXfBQgXw"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          /> */}
 
 <ReactPlayer
               className='youtubehide'
@@ -680,31 +738,27 @@ to="#mylink" title="Coming Soon" />
               loop
               playing
               playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
 
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-                light="../../static/assets/default-og-image.jpg
-"
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//           light="../../static/assets/default-og-image.jpg"
               />
-
-
     </div>
 </div>
 </div>
 
-
 <Link state={{modal: true}} to="/about-twilightscapes/">
 <StaticImage className="character evil"
-style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'0', bottom:'0',  }}
+style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-10vw', bottom:'0',  }}
 alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
 </Link>
 </div>
@@ -722,24 +776,11 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
 
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
-
-
-
-{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/SqSuRdkglxM?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=12&amp;end=50&amp;playlist=SqSuRdkglxM&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
+{/* <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-      
 
 <ReactPlayer
               className='youtubehide'
@@ -766,46 +807,26 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../../static/assets/default-og-image.jpg
-"
+          light="../../static/assets/default-og-image.jpg"
               />
-
-
     </div>
 </div>
 </div>
 
-
-
-
-</div>
-
-
-
-
-
-
-
-<div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
-
-
-
-{/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-    <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/3TeUWwsG9kI?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=2&amp;end=120&amp;playlist=3TeUWwsG9kI&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-  
-    </div>
-</div>
 </div> */}
 
+
+
+
+
+
+
+{/* <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
   
-
 <ReactPlayer
               className='youtubehide'
               url="https://www.youtube.com/embed/3TeUWwsG9kI"
@@ -831,16 +852,13 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
               </div>
               </button>}
-                light="../../static/assets/default-og-image.jpg
-"
+        light="../../static/assets/default-og-image.jpg"
               />
     </div>
 </div>
 </div>
 
-
-
-</div>
+</div> */}
 
 
 
@@ -850,11 +868,9 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 <div id="" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
       
-
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-
 
 <ReactPlayer
               className='youtubehide'
@@ -888,8 +904,6 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
     </div>
 </div>
 </div>
-
-
       {/* <div className="frontdrop"></div> */}
 <QuoraStrike className="character" style={{maxHeight:'100vh', maxWidth:'90%', position:'absolute', right:'0', bottom:'0',  }} />
 
@@ -927,10 +941,7 @@ change the world, together.</p>
 <div className="video-background">
     <div className="video-foreground">
 
-
-
-
-{/* <ReactPlayer
+<ReactPlayer
               className='youtubehide'
               url="https://www.youtube.com/embed/JoX0bNYg1Wc"
               width="100%"
@@ -943,23 +954,20 @@ change the world, together.</p>
               loop
               playing
               playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
 
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-                light="../../static/assets/default-og-image.jpg
-"
-              /> */}
-
-
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../../static/assets/default-og-image.jpg"
+              />
 </div>
 </div>
 </div>
@@ -973,8 +981,6 @@ change the world, together.</p>
 <CluGuy className="character" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
 </Link>
 
-
-    
   </div>
 
   
@@ -1012,19 +1018,11 @@ change the world, together.</p>
 style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0', bottom:'0',transform:'scaleX(-1)'}}
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
-{/* <Link state={{modal: true}} to="/clu/">
-<StaticImage
-style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', right:'0', bottom:'0'}}
-alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
-</Link> */}
 <div style={{position:'absolute', padding:'0rem', width:'60%', fontSize:'clamp(.7rem, 3vw, 3.2rem)', top:''}}>
   
-
-
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
-
 
 <ReactPlayer
               className='youtubehide'
@@ -1058,11 +1056,6 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 </div>
 </div>
 
-
-
-
-
-
 </div>
 
   </div>
@@ -1075,16 +1068,13 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
   <div id="endofline" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
-  
-
 <div className=" TRON neonText" style={{position:'', zIndex:'2', padding:'0 0 0 0', margin:'0 auto', width:'100%', fontSize:'clamp(1.6rem, 4vw, 4.2rem)', textAlign:'center', justifyContent:'center', left:'0', right:'0'}}>
   END OF THE MCP
   </div>
 
-
         <div srl_exclude="true" id="mylink21" className="donation2" style={{position:'relative', transform:'', height:'100vh', paddingTop:'60px',}}>
 <StaticImage className="character"
-style={{maxHeight:'100vh', paddingTop:''}}
+style={{maxHeight:'100vh',}}
 alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 </div>
 
@@ -1119,12 +1109,9 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
 //               </button>}
 //                 light="../../static/assets/default-og-image.jpg"
               />
-
-
     </div>
 </div>
 </div>
-
 
 </div>
 
