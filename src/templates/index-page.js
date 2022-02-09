@@ -537,7 +537,7 @@ Please Wait
  <h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
 
 
-<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.3rem, 3.5vw, 4.6rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
+<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.3rem, 2.5vw, 3.6rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
 
 </div>
 
@@ -687,10 +687,12 @@ Please Wait
 <div id="proceed" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
 
       {/* <div className="frontdrop"></div> */}
-      
+      <Link state={{modal: true}} to="/quorra/">
+<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100%', width:'', position:'absolute', right:'0', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
+</Link>
 
 
-<div className="" style={{display:'', position:'relative', zindex:'3',   width:'100vw', height:'100%', padding:'20vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'5vw', lineHeight:'100%',textShadow:'0 2px 7px #000',}}>
+<div className="" style={{display:'', position:'relative', zindex:'3',   width:'100%', height:'100%', padding:'14vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'5vw', lineHeight:'100%',textShadow:'0 2px 7px #000',}}>
   
   <p>You will receive an identity disk.</p>
   
@@ -719,7 +721,7 @@ Please Wait
 
 
 
-  <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
+  <div className="vidbox" style={{position:'absolute', height:'100%', width:'100vw', bottom:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 <ReactPlayer
@@ -745,14 +747,14 @@ Please Wait
       //         </button>}
       //           light="../../static/assets/default-og-image.jpg"
               />
+              
     </div>
+
 </div>
 </div>
 {/* <LightCycle className="character" style={{height:'65vh', position:'relative', right:'', bottom:'', zIndex:'1' }} /> */}
 
-      <Link state={{modal: true}} to="/quorra/">
-<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', right:'0', bottom:'-5%', paddingTop:'0', zIndex:'0' }} />
-</Link>
+
 
 </div>
 
@@ -855,7 +857,7 @@ Please Wait
 
 
 
-
+<div id="games" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}></div>
 
 <div id="games" className="" style={{position:'relative', width:'100vw', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', overflow:'hidden'}}>
 
@@ -896,7 +898,7 @@ Please Wait
 
 <Link state={{modal: true}} to="/about-twilightscapes/">
 <StaticImage className="character evil"
-style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'-40px', bottom:'0',  }}
+style={{height:'65vh', position:'absolute', right:'0', bottom:'0', zIndex:'1' }}
 alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
 </Link>
 </div>
@@ -1204,20 +1206,25 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
 
 
-  <div id="endofline" className="donation2" style={{position:'relative', transform:'', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
+  {/* <div id="endofline" className="donation2" style={{position:'relative', transform:'', width:'100%', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none',}}> */}
 
-<div className=" TRON neonText" style={{position:'', zIndex:'2', padding:'0 0 0 0', margin:'0 auto', width:'100%', fontSize:'clamp(1.6rem, 4vw, 4.2rem)', textAlign:'center', justifyContent:'center', left:'0', right:'0'}}>
+  <div id="endofline" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
+
+
+  {/* <div className=" TRON neonText" style={{position:'relative', zIndex:'20', padding:'0 0 0 0', margin:'0 auto', width:'100%', fontSize:'clamp(1.6rem, 4vw, 4.2rem)', textAlign:'center', justifyContent:'center', left:'0', right:'0', top:'20px', padding:'2rem'}}>
   END OF THE MCP
-  </div>
+  </div> */}
 
-        <div srl_exclude="true" id="mylink21" className="donation2" style={{position:'relative', transform:'', height:'100vh', paddingTop:'60px',}}>
-<StaticImage className="character"
-style={{maxHeight:'100vh',}}
+  <StaticImage className="character evil"
+style={{height:'1200px', width:'', position:'relative', top:'0', display:'grid', placeContent:'center', zindex:'2'}}
 alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
-</div>
 
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+
+
+
+
+<div className="vidbox" style={{position:'absolute', height:'100%', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 <ReactPlayer
@@ -1250,6 +1257,7 @@ alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
     </div>
 </div>
 </div>
+
 
 </div>
 
