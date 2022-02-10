@@ -50,7 +50,7 @@ export function Layout({ children }) {
       <div style={{overflow:'hidden'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'3%', right:'3%', padding:'10px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
+          <div style={{position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'red', cursor:'pointer'}}>
             {/* <AiOutlineClose /> */}
             <span className="TRON">[</span>

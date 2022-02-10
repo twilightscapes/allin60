@@ -1101,6 +1101,9 @@ display: none !important;
   overflow-x: auto !important; */
 }
 
+.ReactModal__Content ReactModal__Content--after-open{}{
+  inset:none !important;
+}
 
 
 
