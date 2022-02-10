@@ -21,6 +21,8 @@ import SamFly from "../../static/assets/sam-fly.svg"
 import SamFlynn from "../../static/assets/sam-flynn.svg"
 import CluGuy from "../../static/assets/clu.svg"
 import TronGuy from "../../static/assets/tron.svg"
+import MCP from "../../static/assets/mcp.svg"
+import McpEffects from "../../static/assets/mcp-effects.svg"
 import QuoraStand from "../../static/assets/quora-ass.svg"
 import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import GridLines from "../../static/assets/off-the-grid.mp4"
@@ -1208,16 +1210,22 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
 
   {/* <div id="endofline" className="donation2" style={{position:'relative', transform:'', width:'100%', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none',}}> */}
 
-  <div id="endofline" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
+  <div id="endofline" className="" style={{position:'relative', width:'', height:'100vh', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'center'}}>
 
 
   {/* <div className=" TRON neonText" style={{position:'relative', zIndex:'20', padding:'0 0 0 0', margin:'0 auto', width:'100%', fontSize:'clamp(1.6rem, 4vw, 4.2rem)', textAlign:'center', justifyContent:'center', left:'0', right:'0', top:'20px', padding:'2rem'}}>
   END OF THE MCP
   </div> */}
 
-  <StaticImage className="character evil"
+  {/* <StaticImage className="character evil"
 style={{height:'1200px', width:'', position:'relative', top:'0', display:'grid', placeContent:'center', zindex:'2'}}
-alt="Todd Lambert Web development for photographers" src="../img/mcp.png" />
+alt="Todd Lambert Web development for photographers" src="../img/mcp.png" /> */}
+
+{/* <Link state={{modal: true}} to="/mcp/"> */}
+<MCP className="character evil" style={{display:'grid', placeContent:'center', height:'100vh', width:'100vw', position:'absolute', right:'', top:'0', bottom:'0', border:'0px solid blue'  }} />
+
+<McpEffects style={{display:'grid', placeContent:'center', minHeight:'600px', width:'', position:'absolute', right:'', top:'0', bottom:'', border:'0px solid blue'  }} />
+{/* </Link> */}
 
 
 
