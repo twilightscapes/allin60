@@ -4210,18 +4210,24 @@ height:100vh;
            }
 
 
-           .tronchick::after{
-                  content:' FUCK ME FUCK ME ';
-                  position:absolute;
-                  z-index: 3;
-                  display: block;
-                  width: 100%;
-                  height:400px;
-                  top:0;
-                  background-color: #ff0000;
-                  opacity:1;
-                  border:2px solid red ;
+           .character{
+             position:relative;
            }
+
+
+           .character::after{
+            content: " 60 ";
+            text-align:center;
+            position:relative;
+            display: block;
+            top:-65px;
+            right:0px;
+            color: var(--primary-color);
+            font-family: roboto;
+            filter: drop-shadow(3px 4px 10px rgb(0, 238, 255));
+            text-shadow: 0px 1px 1px 0 black;
+          }
+
            .tronchick{position:'relative'}
 
            .character:hover{

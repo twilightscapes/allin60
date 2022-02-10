@@ -339,6 +339,25 @@ Please Wait
 
 <div id="homestart" className="" style={{position:'relative', width:'100vw', height:'100vh', top:'', background:'none', filter:'none', boxShadow:'none',}}>
 
+
+ 
+
+  
+
+          {/* <div className="tronText TRON" style={{position:'relative', display:'grid', placeContent:'center', fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', textAlign:'center', borderRadius:'32px', border:'2px solid #fff', filter:'drop-shadow(2px 2px 2px #000)', height:'100vh', width:'100vw',zIndex:'' }}> */}
+            
+            {/* <div style={{border:'1px solid', position:'relative', zIndex:'6', display:'grid', placeContent:'center', height:'100vh'}}>
+            <AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} /> Enter the GRID
+            </div> */}
+        {/* </div> */}
+
+        <div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'100vh',}}>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'3vw', padding:'35px 50px', }}><Link to="/#gridintro" style={{color:'#37f8f8'}}>Enter the GRID </Link></button>
+          </div>
+       
+
+
+
 {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-2'}}>
 <div className="video-background">
     <div className="video-foreground">
@@ -380,8 +399,8 @@ Please Wait
 
 
 
-<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', zIndex:'2', position:'', top:'', marginTop:'', width:'100%', padding:'0 30%', opacity:'.7'}}>
-        <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
+<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', zIndex:'2', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'.6'}}>
+        <div className="TRON" style={{fontWeight:'normal', zIndex:''}}>TRON</div>
              {/* <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
 
         <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
@@ -442,7 +461,7 @@ Please Wait
     </div>
     
     
-    <div id="characters " className="" style={{position:'absolute', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
+    <div id="characters " className="" style={{position:'absolute', zIndex:'2', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
     
     {/* <div className="frontdrop" style={{background:'rgba(2, 83, 83, 0.219)', backdropFilter:'blur(0px)', filter:'saturate(40%) contrast(200%)'}}></div> */}
     
@@ -575,7 +594,11 @@ Please Wait
 </div>
 </div>
 
-<LightCycle className="character" style={{height:'65vh', position:'relative', right:'', bottom:'', zIndex:'1' }} />
+<div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'100vh', position:'absolute', right:'20vw'}}>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'3vw', padding:'35px 50px', }}><Link to="/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
+          </div>
+
+<LightCycle className="character" style={{height:'100vh', position:'relative', right:'', bottom:'', zIndex:'1' }} />
 
 </div>
 
@@ -712,11 +735,14 @@ Please Wait
   
   <br />
 
-  <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'60%', textAlign:'', width:'50%',}}>
+  {/* <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'60%', textAlign:'', width:'50%',}}>
   <Link className="" style={{cursor:'pointer', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
 
     Proceed to games.</Link>
-    </p>
+    </p> */}
+
+    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#games" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
+
 
 
   </div>
@@ -861,9 +887,11 @@ Please Wait
 
 <div id="games" className="" style={{position:'relative', width:'', height:'100%', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
 
+<div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'10vw', bottom:'10vh'}}>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#proceed" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
+          </div>
 
-
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="vidbox" style={{position:'absolute', height:'100%', width:'100vw', top:'0', zIndex:'-1'}}>
 <div className="video-background">
     <div className="video-foreground">
 
@@ -871,7 +899,7 @@ Please Wait
               className='youtubehide'
               url="https://www.youtube.com/embed/YyoKXfBQgXw"
               width="100%"
-              height="100%"
+              height="100vh"
               config={{
                 youtube: {
                   playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }

@@ -29,12 +29,15 @@ export default function CluePage() {
 
 
  
-<section className="outer section section--gradient">
+<section className="outer1 section2 section--gradient" style={{display:'flex', flexDirection:'row',}}>
+
+
+
       <div className="container" style={{padding: '2rem 10%'}}>
 
       <div className="mobile"><GoBack /></div>
       
-      <CluGuy className="character evil" style={{maxHeight:'30vh',  margin:'0 0 0 0',}} />
+
 
 <h1>CLU</h1>
 <ul>
@@ -46,7 +49,7 @@ export default function CluePage() {
 <blockquote>
 Clu was originally a search program created by Kevin Flynn to explore inside the ENCOM mainframe for proof he created ENCOM's most-popular games. Clu was found and destroyed by the Master Control Program. Flynn created another program named CLU after returning from the Grid with a more specific task in mind.
       </blockquote>
-      
+      <CluGuy className="character evil" style={{maxHeight:'',  margin:'0 0 0 0',}} />
       
       <GoBack />
           </div>
