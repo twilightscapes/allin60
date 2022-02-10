@@ -29,8 +29,8 @@ export default function KevinPage() {
 
 
  
-<section className="outer section section--gradient">
-      <div className="container" style={{padding: '2rem 10%'}}>
+<section className="outer3 section3 section--gradient">
+      {/* <div className="container" style={{padding: '2rem 10%'}}> */}
 
       <div className="mobile"><GoBack /></div>
       
@@ -49,7 +49,7 @@ A brilliant game designer, Kevin Flynn left ENCOM after being fired by Ed Dillin
       
       
       <GoBack />
-          </div>
+          {/* </div> */}
 
 
           
