@@ -226,21 +226,51 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/#gridintro">
-              The Grid
+              Enter The Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
       
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#games">
+              <Link className="navbar-item txtshadow" to="/#proceed">
               Proceed to Games
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#discgrid">
+              Onto the Disc Grid
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#lightcycles">
+              LightCycle Grid
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+
+
+      <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/#endofline">
-              End of the Line
+              End of Line Club
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#returnsource">
+              Return to the Source
+              {/* <span>Buy Todd's Photos</span> */}
+              </Link>
+      </li>
+
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/#endofgrid">
+              End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>

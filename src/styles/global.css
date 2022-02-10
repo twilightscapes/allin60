@@ -1054,6 +1054,11 @@ color:#fff !important;
   line-height:100% !important;
 }
 
+.TronType{
+  font-family:TronType;
+  line-height:100% !important;
+}
+
 
 .sirens{
   background: linear-gradient(-45deg, #bc57eb, #FA02B7, #ccc, #37f8f8);
@@ -4126,6 +4131,7 @@ height:100vh;
 
            .RArrow span::before{
              content:"scroll  \232a";
+             background:rgba(3, 212, 212, 0.2);
            }
 
            .RArrow{
@@ -4140,6 +4146,18 @@ height:100vh;
              font-size:18px;
            }
 
+
+           .nextbutt{
+             height:100vh;
+           }
+           @media (max-width: 48rem) {
+            .nextbutt{
+              height:50vh;
+            }
+           }
+
+
+           
 /* HORIZONTAL CONTROLS */  
            
            
