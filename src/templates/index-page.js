@@ -1,17 +1,22 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 // import Img from 'gatsby-image'
-//  import { GatsbyImage } from 'gatsby-plugin-image'
+ import { GatsbyImage } from 'gatsby-plugin-image'
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-// import GalleryMenu from "../components/galleryMenu"
+import GalleryMenu from "../components/galleryMenu"
 import { StaticImage } from "gatsby-plugin-image"
-// import ShareSocial from '../../components/share' 
+import ShareSocial from '../components/share' 
+import { RiArrowRightSLine } from "react-icons/ri"
 import { RiSendPlane2Line } from "react-icons/ri"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { ImPlay } from "react-icons/im"
 import { Helmet } from "react-helmet"
+import { getSrc } from "gatsby-plugin-image"
+import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+
+import BlogListHome from "../components/blog-list-home"
 // import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
 // import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
 import LightCycle from "../../static/assets/light-cycle.svg"
@@ -36,27 +41,195 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import CommentBox from "../components/commentbox"
-// import ShareSocial from '../components/share' 
 // import GoBack from "../components/goBack"
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 import ReactPlayer from 'react-player/lazy'
-import Newsignup from "./contact-page"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import Newsignup from "./contact-page"
 // import TestIT from "../components/test"
-const TestPage = ({data}) => (
+
+
+export const pageQuery = graphql`
+  query HomeQuery($id: String! ) {
+    
+
+    allFile(
+      filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/faves/"}}
+      sort: { order: ASC, fields: name }
+    ) {
+      edges {
+        node {
+          name
+          id
+          relativePath
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+          }
+        }
+      }
+    }
+
+    
+    site {
+      siteMetadata {
+        title
+        titleDefault
+        siteUrl
+        description
+        image
+        twitterUsername
+        companyname
+        showfooter
+      }
+
+      
+
+    }
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      excerpt(pruneLength: 148)
+      frontmatter {
+        date(formatString: "YYYY-MM-DD-HH-MM-SS")
+        slug
+        title
+        description
+        showFeature
+        showPosts
+        showInfo
+        youtuber
+        youtubestart
+        youtubeend
+        youtubemute
+        youtubecontrols
+        youtubeautostart
+        svgzindex
+        tagline
+        featuredImage {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+          }
+        }
+        secondaryImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+          }
+        }
+        underlayImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+          }
+        }
+        cta {
+          ctaText
+          ctaLink
+        }
+        svgImage{
+          relativePath
+        }
+      }
+    }
+
+
+ 
   
-<>
+
+    
+
+    
+
+    posts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+      limit: 6
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "YYYY-MM-DD-HH-MM-SS")
+            slug
+            title
+            nftdrop
+  
+            
+            featuredImage {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 
 
-<Helmet>
+
+const HomePage = ({ data }) => {
+  // const { postcount } = useSiteMetadata()
+  const { markdownRemark, posts } = data // data.markdownRemark holds your post data
+  const { frontmatter, html, excerpt } = markdownRemark
+  const Image = frontmatter.featuredImage
+    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+    : ""
+
+    const SecondaryImage = frontmatter.secondaryImage
+    ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
+    : ""
+  
+    const UnderlayImage = frontmatter.underlayImage
+    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
+    : ""
+
+    // const { iconimage } = useSiteMetadata()
+
+
+    const { siteUrl } = useSiteMetadata()
+
+    const YouTubeStart = frontmatter.youtubestart
+    const YouTubeEnd = frontmatter.youtubeend
+    const YouTubeMute = frontmatter.youtubemute
+    const YouTubeControls = frontmatter.youtubecontrols
+    const YouTubeAutostart = frontmatter.youtubeautostart
+
+    const ShowFeature = frontmatter.showFeature
+    const ShowInfo = frontmatter.showInfo
+    const ShowPosts = frontmatter.showPosts
+
+  
+
+  
+  return (
+
+    <Layout>
+    <Helmet>
   <body className="homepage" />
 </Helmet>
-<Seo
-      title={`TRON in 60 Seconds - Movies in 60 Seconds`}
-      description={`TRON in 60 Seconds - Enter The Grid`}
-      image={'https://twilightscapes.com/promo-about-todd.jpg'}
-    />
-    <Layout />
+{/* <Seo
+          title={`VidSock - Video Multimedia NFT Platform`}
+          description={`Create, display and market your NFTs with VidSock`}
+          image={'https://vidsock.com/default-og-image.jpg'}
+        /> */}
+       <Seo
+        title={frontmatter.title}
+        description={
+          frontmatter.description ? frontmatter.description : excerpt
+        }
+  //       image={photoUrl}
+  //  photoUrl
+
+   image={ siteUrl + getSrc(frontmatter.featuredImage) }
+
+      />
+      
+      
+
 
 
 {/* VIDEO URLS */}
@@ -110,72 +283,7 @@ const TestPage = ({data}) => (
 {/* 5jlOX5z7yVo */}
 {/* S5S6s5dZXNM  default */}
 
-{/* <div style={{display:'grid', placeContent:'center', display:'', position:'absolute', top:'0'}}>
-<ReactPlayer
-          className='playerpp'
-          url="https://www.youtube.com/embed/S5S6s5dZXNM"
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
-          width=""
-          height=""
-          style={{left:'0', position:'absolute', zIndex:'30', display:'grid', width:'500px', alignSelf:'center', placeContent:'center', justifyContent:'center', margin:'0 auto',border:'0px solid blue'}}
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:0, start:5,  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          playIcon={
-
-            <Link className="txtshadow" style={{cursor:'pointer', width:'', margin:'0'}} to="/#gridintro" title="Coming Soon">
-
-            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'30vw', bottom:'-89vh', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
-          
-        <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
-          
-      
-
-          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'auto', margin:'0 auto 0 auto', fontWeight:'bold', padding:'20px 50px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
-          <div className="tronText TRON" style={{fontSize:'1.5vw', fontWeight:'', padding:'0 0 0 .3rem', }}> Enter the GRID</div>
-          </div>
-          
-          </div>
-          </button></Link>}
-   
-            light="../../static/assets/default-og-image.jpg"
-          />
-</div> */}
-{/* <div style={{position:'absolute', left:'0', right:'0', top:'89vh', zIndex:'1', fontSize:'100%', textAlign:'center', display:'flex', justifyContent:'center' }}>Swipe down for Audio Controls</div> */}
-
-
-
   <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100vw', height:'100vh', overflow:'hidden', position:'relative', padding:' 0',}}>
-
-
-      
-
-  {/* <div className="vidbox" style={{position:'absolute', maxHeight:'100vh', width:'', zIndex:'-1', left:''}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/pAInLcN2su8?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=40&amp;end=&amp;playlist=pAInLcN2su8&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
-
-
-
-
-
-      
 
 
   {/* <div className="RArrow">
@@ -198,138 +306,6 @@ const TestPage = ({data}) => (
         </div>
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="mylink9" className="donation2" style={{position:'relative', display:'flex', flexDirection:'column', justifyContent:'start', border:'0px solid red', display:'none'}}>
-
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'2'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      {/* <ReactPlayer
-          className='youtubehide'
-          style={{margin:'0', zIndex:'', top:'0'}}
-          url="https://www.youtube.com/embed/LltRzgvyrps"
-          width="100vw"
-          height="100vh"
-          
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:0, end:120, loop:1  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-         
-          /> */}
-          
-    </div>
-</div>
-</div>
-
-
-<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', justifyContent:'center', alignContent:'center', fontSize:'4vw', zIndex:'2', position:'relative', marginTop:'20vh'}}>
-Initializing Connection To Grid
-<br />
-Please Wait
-</h1>
-      {/* <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'12vw', zIndex:'2', position:'relative', marginTop:'2rem'}}>
-        <div className="TRON" style={{fontWeight:'normal', position:''}}>TRON</div>
-             <div className="TRON" style={{fposition:'relative',fontWeight:'bold', fontSize:'70%', padding:'0', margin:'6% 0 0 -24%', textAlign:'center'}}>in</div>
-
-        <div className="tronText" style={{position:'relative', fontWeight:'bold', fontSize:'100%', margin:'-24% -40% 0 0', textAlign:'center'}}>60</div>
-      
-      <div className="TRON" style={{position:'relative', fontSize:'40%', textAlign:'right', margin:'-3% 10% 0 0',}}>seconds</div>
-      </h1> */}
-
-      {/* <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', zIndex:'-1', left:'', top:'0'}}>
-<div className="video-background">
-    <div className="video-foreground">
-      
-      <iframe title="Video about Tron in 60 seconds" className="" width="100%" height="350" src="https://www.youtube.com/embed/pNOJ7wZqDWA?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;start=20&amp;playlist=pNOJ7wZqDWA&amp;enablejsapi=1" frameBorder="0" allowFullScreen></iframe>
-      
-    </div>
-</div>
-</div> */}
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1665,90 +1641,10 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
         
 
-<Layout />
-</>
-
-
-)
-
-const options = {
-  settings: {
-    autoplaySpeed: 4000,
-    boxShadow: '0px 0px 20px #000',
-    disableKeyboardControls: false,
-    disablePanzoom: false,
-    disableWheelControls: true,
-    hideControlsAfter: false,
-    lightboxTransitionSpeed: 0.3,
-    lightboxTransitionTimingFunction: 'linear',
-    overlayColor: 'rgba(0, 0, 0, 0.8)',
-    slideAnimationType: 'slide',
-    slideSpringValues: [300, 50],
-    slideTransitionSpeed: 0.6,
-    slideTransitionTimingFunction: 'linear',
-    usingPreact: false
-  },
-  buttons: {
-    backgroundColor: '#FA02B7',
-    iconColor: 'rgba(255, 255, 255, 0.8)',
-    iconPadding: '10px',
-    showAutoplayButton: false,
-    showCloseButton: true,
-    showDownloadButton: false,
-    showFullscreenButton: false,
-    showNextButton: false,
-    showPrevButton: false,
-    showThumbnailsButton: false,
-    size: '40px'
-  },
-  caption: {
-captionAlignment: 'start',
-captionColor: '#FFFFFF',
-captionContainerPadding: '20px 12% 30px 12%',
-captionFontFamily: 'inherit',
-captionFontSize: 'inherit',
-captionFontStyle: 'inherit',
-captionFontWeight: 'inherit',
-captionTextTransform: 'inherit',
-showCaption: false
-  },
-  thumbnails: {
-    showThumbnails: false,
-    thumbnailsAlignment: 'center',
-    thumbnailsContainerBackgroundColor: '#111',
-    thumbnailsContainerPadding: '0',
-    thumbnailsGap: '0 2px',
-    thumbnailsIconColor: '#ffffff',
-    thumbnailsOpacity: 0.4,
-    thumbnailsPosition: 'bottom',
-    thumbnailsSize: ['100px', '80px']
-  },
-  progressBar: {
-    backgroundColor: '#000',
-    fillColor: '#333',
-    height: '3px',
-    showProgressBar: true
-  },
-};
-
-export default TestPage
-
-export const testQuery = graphql`
-query testPhotos2 {
-  allFile(
-    filter: {relativeDirectory: {eq: "route66"}, relativePath: {}}
-    sort: {order: ASC, fields: name}
-  ) {
-    edges {
-      node {
-        name
-        id
-        relativePath
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-        }
-      }
-    }
-  }
+    </Layout>
+  )
 }
-`
+
+export default HomePage
+  
+
