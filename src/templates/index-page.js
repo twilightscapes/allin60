@@ -954,7 +954,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 </div>
 
 <div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'10vw', bottom:'10vh'}}>
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#quorra" style={{color:'#37f8f8'}}>Escape the Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#lightcycles2" style={{color:'#37f8f8'}}>Escape the Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
           </div>
 
 </div>
@@ -1002,6 +1002,11 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 </div>
 </div>
 
+<div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'10vw', bottom:'10vh'}}>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#quorra" style={{color:'#37f8f8'}}>Meet Quorra <span style={{fontSize:'150%'}}>|</span></Link></button>
+          </div>
+
+      
 </div>
 
 
