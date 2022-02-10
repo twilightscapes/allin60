@@ -28,9 +28,9 @@ import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import GridLines from "../../static/assets/off-the-grid.mp4"
 import QuoraStrike from "../../static/assets/quora-strike.svg"
 import LoveSignal from "../../static/assets/love-signal.svg"
+import Castor from "../../static/assets/castor.svg"
+
 import InstallDiscount from "../components/install-discount"
-
-
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
@@ -878,19 +878,19 @@ Please Wait
               loop
               playing
               playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
 
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-          light="../../static/assets/default-og-image.jpg"
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//           light="../../static/assets/default-og-image.jpg"
               />
     </div>
 </div>
@@ -984,19 +984,19 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
               loop
               playing
               playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-    <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../../static/assets/default-og-image.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
 
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-        light="../../static/assets/default-og-image.jpg"
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//         light="../../static/assets/default-og-image.jpg"
               />
     </div>
 </div>
@@ -1084,11 +1084,79 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
 <div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'10vw', bottom:'10vh'}}>
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#samfly" style={{color:'#37f8f8'}}>Sam Flynn <span style={{fontSize:'150%'}}>*</span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#endofline" style={{color:'#37f8f8'}}>End of Line Club <span style={{fontSize:'150%'}}>*</span></Link></button>
           </div>
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="endofline" className="" style={{position:'relative', width:'', height:'100%', top:'', overflow:'hidden', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'column',  justifyContent:'start'}}>
+      
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', top:'0', zIndex:'-1'}}>
+<div className="video-background">
+    <div className="video-foreground">
+
+<ReactPlayer
+              className='youtubehide'
+              url="https://www.youtube.com/embed/SA8bdV8CJNQ"
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:115, loop:1  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+//               playIcon={
+//                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'grid', placeContent:'center', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+//     <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <StaticImage className="homepage-bg" src="../../static/assets/.jpg" width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
+
+//             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+//       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//               </div>
+//               </button>}
+//                 light="../../static/assets/default-og-image.jpg"
+              />
+
+          
+    </div>
+</div>
+</div>
+      {/* <div className="frontdrop"></div> */}
+<Castor className="character" style={{maxHeight:'70vh', maxWidth:'100%', position:'absolute', left:'-18%', bottom:'0',  }} />
+
+
+<div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', right:'20vw', bottom:'10vh'}}>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'35px 50px', }}><Link to="/#samfly" style={{color:'#37f8f8'}}>Son of Flynn <span style={{fontSize:'150%'}}>*</span></Link></button>
+          </div>
+
+
+</div>
+
+
+
+
 
 
 
