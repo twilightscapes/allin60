@@ -4470,3 +4470,12 @@ height:100vh;
    top:50vh;
  }
 }
+
+/* @media (max-width: 48rem) {
+  .video-background {
+    position: relative;
+      padding-bottom: 56.25%; 
+      width: 300%; 
+      left: -100%;
+  }
+} */

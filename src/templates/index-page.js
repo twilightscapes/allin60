@@ -284,7 +284,7 @@ const HomePage = ({ data }) => {
 
 
 
-{/* <HomeHolder /> */}
+<HomeHolder />
 
 
   
