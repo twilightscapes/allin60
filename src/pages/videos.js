@@ -228,13 +228,13 @@ const VideosPage = ({data}) => (
 <h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
 
 
-<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.2rem, 2.2vw, 3rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
-<div style={{display:'grid', placeContent:'center', position:'absolute', zIndex:'1', right:'', bottom:'', width:'100%', margin:'50px 0 0 0',}}>
+<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1rem, 2.2vw, 3rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
+<div style={{display:'grid', placeContent:'', position:'absolute', zIndex:'1', right:'', bottom:'', width:'', margin:'50px 0 0 10vw',}}>
          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
          </div>
 </div>
 
-<LightCycle className="character TronType" style={{maxWidth:'90%', position:'relative', right:'0', bottom:'0', zIndex:'0' }} />
+<LightCycle className="character TronType" style={{maxWidth:'100%', position:'relative', right:'0', bottom:'5vh', zIndex:'0' }} />
 
     </div>
 
