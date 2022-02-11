@@ -31,11 +31,11 @@ const CustomBox = styled.div`
 }
 `
 
-const Panel2 = () => (
+const Panel4 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
-<div id="proceed" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflowX:'hidden'}}>
+<div id="discgrid" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -48,12 +48,12 @@ const Panel2 = () => (
 
 <ReactPlayer
          className='youtubehide front'
-         url="https://www.youtube.com/embed/Y7EZBP9j7h0"
+         url="https://www.youtube.com/embed/YyoKXfBQgXw"
          width="100%"
          height="100%"
          config={{
            youtube: {
-            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:60, loop:1  }
+            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:54, end:81, loop:1  }
            },
          }}
          loop
@@ -79,56 +79,34 @@ const Panel2 = () => (
 
 {/* Panel Content */}
 
-    <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', paddingTop:'1rem'}}>
-
-
-    <Link state={{modal: true}} to="/quorra/">
-<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', left:'30vw', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
-</Link>
-
-
-
-<div className="" style={{display:'', position:'relative', zindex:'3',   width:'60vw', height:'100%', padding:'4vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'5vw', lineHeight:'100%',textShadow:'0 2px 7px #000',}}>
-  
-  <p>You will receive an identity disk.</p>
-  
-  <p>Everything you do or learn</p>
-  
-  <p>will be imprinted on this disk.</p>
-  <br />
-  <p>If you lose your disk or fail to</p>
-  
-  <p>follow commands, you will be</p>
-  
-  <p>subject to immediate de-resolution.</p>
-  <br />
-  <p>Mirroring complete. Disk Activated.</p>
-  
-  <br />
-
-  {/* <p className="TRON txtshadow tronText actionJackson" style={{fontSize:'60%', textAlign:'', width:'50%',}}>
-  <Link className="" style={{cursor:'pointer', margin:'0 auto', padding:'2rem 0', textDecoration:'none', textShadow:'3px 3px 6px rgb(0, 162, 184)'}} to="/#games" title="Proceed to Games Grid">
-
-    Proceed to games.</Link>
-    </p> */}
-
-  </div>
 
 
 
 
+<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-
-
-  
-
-
-  <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'5%',}}>
-    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link to="/#discgrid" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
-</div>
-
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#match2" style={{color:'#37f8f8'}}>Match Two <span style={{fontSize:'150%'}}>@</span></Link></button>
 
 </div>
+
+
+
+    {/* <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#discgrid" style={{color:'#37f8f8'}}>Match 2</Link></button> */}
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
 
 
 </div>
@@ -155,4 +133,4 @@ const Panel2 = () => (
 
 </CustomBox>
 )
-export default Panel2
+export default Panel4

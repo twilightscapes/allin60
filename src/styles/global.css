@@ -4147,14 +4147,7 @@ height:100vh;
            }
 
 
-           .nextbutt{
-             height:100vh;
-           }
-           @media (max-width: 48rem) {
-            .nextbutt{
-              height:50vh;
-            }
-           }
+
 
 
            
@@ -4453,6 +4446,7 @@ height:100vh;
 
 
 .react-player__preview{
+  background-color:#111 !important;
   background-size:contain !important;
   z-index:40 !important;
   position:absolute !important;
@@ -4460,4 +4454,21 @@ height:100vh;
   top:0 !important;
 }
 
+.frontbutt{
+  height:100vh;
+}
+@media (max-width: 48rem) {
+ .frontbutt{
+   height:50vh;
+ }
+}
 
+
+.nextbutt{
+  top:85vh;
+}
+@media (max-width: 48rem) {
+ .nextbutt{
+   top:50vh;
+ }
+}

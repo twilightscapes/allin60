@@ -88,7 +88,7 @@ const Panel1 = () => (
 
 
 <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'.6'}}>
-        <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON2</div>
+        <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON</div>
       </h1>
 
 
@@ -131,7 +131,7 @@ const Panel1 = () => (
     </Link>
     </div>
     
-    <div className="nextbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'auto', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
+    <div className="frontbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'auto', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
            <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'200px',fontSize:'3vw', padding:'5% 10%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
            </div>
 

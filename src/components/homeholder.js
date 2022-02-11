@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Panel1 from "./panel1"
 import Panel2 from "./panel2"
 import Panel3 from "./panel3"
+import Panel4 from "./panel4"
+import Panel5 from "./panel5"
 
 const CustomBox = styled.div`
 
@@ -23,7 +25,8 @@ const HomeHolder = () => (
 <Panel1 />
 <Panel2 />
 <Panel3 />
-
+<Panel4 />
+<Panel5 />
 
 </div>
 </div>
