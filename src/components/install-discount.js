@@ -81,7 +81,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
           
       
 
-          <div className="popped actionJackson" style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'40px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}>
+          <div className="popped " style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'40px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}>
             <AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
           <div className="tronText" style={{fontSize:'1.5vw', fontWeight:'', padding:'0', }}>Play Music From Movie</div>
           </div>
@@ -93,7 +93,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
           
         }
    
-            light="../../assets/default-og-image.jpg"
+            light="assets/default-og-image.jpg"
           />
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}
