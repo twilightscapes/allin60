@@ -254,7 +254,7 @@ display: none !important;
   
   position: relative;
     padding-bottom: 56.25%; /* 16:9 */  
-    padding-top: 25px;
+    /* padding-top: 25px; */
     width: 300%; /* enlarge beyond browser width */
     left: -100%; /* center */
     
@@ -4430,10 +4430,10 @@ height:100vh;
     z-index: 0;  */
     position: relative;
       padding-bottom: 56.25%; 
-      padding-top: 25px; 
+      /* padding-top: 25px;  */
       width: 400%; 
       left: -200%; 
-      
+      margin-top:-25vh; 
   }
 
 
@@ -4448,5 +4448,7 @@ height:100vh;
 .youtubehide iframe{
   z-index:-1 !important;
   position:relative !important;
-  top:0;
+  /* top:-25px; */
 }
+
+
