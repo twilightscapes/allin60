@@ -39,15 +39,13 @@ const VideosPage = () => (
 <div className="RArrow">
          {/* <span></span> */}
         </div>
+
+
+
       <div className="horizontal-scroll panels" style={{}}>
       <div className="" style={{height:'1px'}}></div>
 
-
-
-
-
-
-
+{/* GRID INTRO */}
   <div id="gridintro" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'hidden'}}>
 
     {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
@@ -81,7 +79,7 @@ const VideosPage = () => (
 //              </button>
              
 //             }
-//                light="../../static/assets/default-og-image.jpg"
+//                light="../../assets/default-og-image.jpg"
              />
    </div>
 </div>

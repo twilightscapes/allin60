@@ -93,7 +93,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
           
         }
    
-            light="../../static/assets/default-og-image.jpg"
+            light="../../assets/default-og-image.jpg"
           />
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}

@@ -29,6 +29,11 @@ const CustomBox = styled.div`
 .frontbg iframe{
   opacity:.4;
 }
+
+
+
+
+
 `
 
 const Panel2 = () => (
@@ -60,7 +65,7 @@ const Panel2 = () => (
          playing
          playsinline
              playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'#222', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
 <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
@@ -70,7 +75,7 @@ const Panel2 = () => (
              </button>
          
             }
-               light="https://twilightscapes.com/assets/default-og-image.jpg"
+               light="assets/default-og-image.jpg"
          />
 </div>
 </div>

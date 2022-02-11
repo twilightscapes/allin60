@@ -4452,3 +4452,12 @@ height:100vh;
 }
 
 
+.react-player__preview{
+  background-size:contain !important;
+  z-index:40 !important;
+  position:absolute !important;
+  height:100vh !important;
+  top:0 !important;
+}
+
+

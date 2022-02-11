@@ -22,6 +22,7 @@ const HomeHolder = () => (
 
 <Panel1 />
 <Panel2 />
+<Panel3 />
 
 
 </div>
