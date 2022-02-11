@@ -14,6 +14,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import Newsignup from "../../components/newssign"
 import ReactPlayer from 'react-player/lazy'
 import LightCycle from "../../static/assets/light-cycle.svg"
+import { ImPlay } from "react-icons/im"
 
 const CustomBox = styled.div`
 
@@ -91,7 +92,7 @@ const CustomBox = styled.div`
       padding-top: 25px; 
       width: 300%; 
       left: -200%;
-      margin-top:-20vh; 
+      margin-top:-25vh; 
       
   }
 
@@ -103,6 +104,12 @@ const CustomBox = styled.div`
   height:100vh;
 }
 
+
+.youtubehide iframe{
+  z-index:-1 !important;
+  position:relative !important;
+  top:-26px;
+}
 
 
 `
@@ -147,24 +154,27 @@ const VideosPage = ({data}) => (
       <div style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'hidden'}}>
 
 
-
-      <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', }}>
-<h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
+      
 
 
-<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.3rem, 2.5vw, 3.6rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
 
-</div>
 
-<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:'-1'}}>
+
+
+
+
+    {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
+
+
+<div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:''}}>
 <div className="video-background">
    <div className="video-foreground">
 
 <ReactPlayer
              className='youtubehide'
              url="https://www.youtube.com/embed/nJ38P5elTkg"
-             width="100vw"
-             height="100vh"
+             width="100%"
+             height="100%"
              config={{
                youtube: {
                  playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:120, loop:1  }
@@ -173,28 +183,59 @@ const VideosPage = ({data}) => (
              loop
              playing
              playsinline
-     //         playIcon={
-     //           <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-   
-     //       <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-     //         <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-     // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-     //         </div>
-     //         </button>}
-     //           light="../../static/assets/default-og-image.jpg"
+             playIcon={
+               <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'15', top:'0', border:'0px solid red', width:'', height:'', background:'#111', color:'#fff', fontSize:'18px', }}>
+
+
+
+
+
+
+
+           <div className="" style={{ textAlign:'center', border:'1px solid red', background:'red', width:'100vw', height:'110vh', top:'-10%'}}>
+             <div style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', margin:'200px 0 0 0'}}>Click To Play</div>
+     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+             </div>
+
+
+
+    
+
+
+             </button>
+             
+            
+            
+            
+            
+            
+            }
+               light="../../static/assets/default-og-image.jpg"
 
              />
+
+
+
+    
    </div>
 </div>
 </div>
 
-<div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'100%', position:'absolute', right:'20vw', bottom:'0'}}>
-         <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'3vw', padding:'35px 50px', }}><Link to="/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
+
+
+
+<div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', }}>
+<h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'2rem', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
+
+
+<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1.2rem, 2.2vw, 3rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
+<div style={{display:'grid', placeContent:'center', position:'absolute', zIndex:'1', right:'', bottom:'', width:'100%', margin:'50px 0 0 0',}}>
+         <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
          </div>
+</div>
 
-<LightCycle className="character TronType" style={{maxWidth:'90%', position:'relative', right:'0', bottom:'1vh', zIndex:'1' }} />
+<LightCycle className="character TronType" style={{maxWidth:'90%', position:'relative', right:'0', bottom:'0', zIndex:'0' }} />
 
-    <div style={{position:'absolute', right:'20vh', bottom:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div>
     </div>
 
 
@@ -202,7 +243,8 @@ const VideosPage = ({data}) => (
 
 
 
-
+{/*  */}
+{/*  */}
 
     <div style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'hidden'}}>
 
