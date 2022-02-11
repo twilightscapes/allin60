@@ -328,7 +328,7 @@ const HomePage = ({ data }) => {
         {/* </div> */}
 
         <div className="nextbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'',}}>
-          <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'3vw', padding:'5%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div classname="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
+          <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'25', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'3vw', padding:'5%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
           </div>
        
 
@@ -452,15 +452,15 @@ const HomePage = ({ data }) => {
     
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
-    padding:'0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+     padding:'', display:'flex', justifyContent:'center', border:'0px solid red',}}>
              <Link state={{modal: true}} to="/sam-flynn/">
-    <SamFlynn className="character" style={{height:'100vh', width:'100%', margin:'0 0 0 0',}} /></Link>
+    <SamFlynn className="character" style={{height:'100vh', width:'90%', margin:'0 0 0 0',}} /></Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/quorra/">
-      <QuoraStand className="character" style={{height:'100%', width:'90%', margin:'0 0 0 10%', right:'', zIndex:'5'}} /></Link>
+      <QuoraStand className="character" style={{height:'100%', width:'85%', margin:'0 0 0 10%', right:'', zIndex:'5'}} /></Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
@@ -471,7 +471,7 @@ const HomePage = ({ data }) => {
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     display:'flex', flexDiection:'column', justifyContent:'center',
-    padding:'5%', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    padding:'5% 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
       <Link state={{modal: true}} to="/tron/">
     <TronGuy className="character" style={{height:'100%', width:'85%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /></Link>
     </div>
@@ -1120,7 +1120,7 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 </div>
 </div>
       {/* <div className="frontdrop"></div> */}
-<Castor className="character" style={{maxHeight:'70vh', maxWidth:'100%', position:'absolute', left:'-18%', bottom:'0',  }} />
+<Castor className="character evil" style={{maxHeight:'70vh', maxWidth:'100%', position:'absolute', left:'-18%', bottom:'0',  }} />
 
 
 <div style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', right:'20vw', bottom:'10vh'}}>
@@ -1129,10 +1129,6 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 
 </div>
-
-
-
-
 
 
 
@@ -1528,7 +1524,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
     <div className="video-foreground">
 
 
-<ReactPlayer
+{/* <ReactPlayer
               className='youtubehide'
               url="https://www.youtube.com/embed/yttvb9ByOtY"
               width="100%"
@@ -1554,7 +1550,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 //               </div>
 //               </button>}
 //                 light="../../static/assets/default-og-image.jpg"
-              />
+              /> */}
 
 
     </div>

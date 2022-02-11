@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'TRON';
-  src: local('TRON'), url('./TRON.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: "TRON";
-  src:local('TRON'), url("./TRON.woff") format('woff');
-}
