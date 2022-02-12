@@ -31,11 +31,11 @@ const CustomBox = styled.div`
 }
 `
 
-const Panel5 = () => (
+const Panel7 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
-<div id="match2" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflowX:'hidden'}}>
+<div id="lightcycles2" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -47,13 +47,13 @@ const Panel5 = () => (
 {/* nJ38P5elTkg */}
 
 <ReactPlayer
-         className='youtubehide'
-         url="https://www.youtube.com/embed/YyoKXfBQgXw"
+         className='youtubehide front'
+         url="https://www.youtube.com/embed/3TeUWwsG9kI"
          width="100%"
          height="100%"
          config={{
            youtube: {
-            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }
+            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:2, end:120, loop:1  }
            },
          }}
          loop
@@ -83,24 +83,28 @@ const Panel5 = () => (
 
 
 
-<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'relative', left:'5%',}}>
+<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'3% 5%', }}><Link to="/#lightcycles" style={{color:'#37f8f8'}}>LightCycle Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#quorra" style={{color:'#37f8f8'}}>Meet Quorra <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 
 
 
+    {/* <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#discgrid" style={{color:'#37f8f8'}}>Match 2</Link></button> */}
 
-<Link state={{modal: true}} to="/about-twilightscapes/">
-<StaticImage className="character evil"
-style={{maxHeight:'', maxWidth:'', height:'80vh', width:'70%', position:'absolute', left:'44vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }}
-alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
-</Link>
 
-{/* <Link state={{modal: true}} to="/quorra/">
-<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', left:'30vw', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
-</Link> */}
+
+
+
+
+  
+
+  
+
+
+
+
 
 
 
@@ -129,4 +133,4 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 </CustomBox>
 )
-export default Panel5
+export default Panel7

@@ -95,7 +95,7 @@ const Panel1 = () => (
  
 
 
- <div id="characters " className="" style={{position:'', zIndex:'0', width:'', height:'', top:'0', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
+ <div id="characters " className="characters" style={{position:'absolute', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
     
 
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
@@ -113,7 +113,7 @@ const Panel1 = () => (
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center',}}>
 <Link state={{modal: true}} to="/kevin-flynn/" title="Kevin Flynn" aria-label="Kevin Flynn">
-    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -10%'}} /></Link>
+    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -16%'}} /></Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
@@ -131,8 +131,8 @@ const Panel1 = () => (
     </Link>
     </div>
     
-    <div className="frontbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'auto', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
-           <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'200px',fontSize:'3vw', padding:'3% 8%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
+    <div className="frontbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'300px', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
+           <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'200px',fontSize:'3vw', padding:'2% 2%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
            </div>
 
     </div> 

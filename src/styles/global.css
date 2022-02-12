@@ -4463,12 +4463,31 @@ height:100vh;
 
 
 .nextbutt{
-  top:85vh;
+  top:80vh;
 }
 @media (max-width: 48rem) {
  .nextbutt{
-   top:50vh;
+   top:40vh;
  }
+}
+
+
+.nextbutt::before{
+  content: " next ";
+  text-align:left;
+  position:relative;
+  display: block;
+  top:-5%;
+  left:inherit;
+  color: var(--primary-color);
+  filter: drop-shadow(3px 4px 10px rgb(0, 238, 255));
+  text-shadow: 0px 1px 1px 0 black;
+}
+
+@media (max-width: 48rem) {
+.characters{
+  top:-20% !important;
+}
 }
 
 /* @media (max-width: 48rem) {

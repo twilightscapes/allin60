@@ -10,19 +10,21 @@ import { StaticImage } from "gatsby-plugin-image"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
-import LightCycle from "../../static/assets/light-cycle.svg"
+
+
+// import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
-// import Castor from "../../static/assets/castor.svg"
+import Castor from "../../static/assets/castor.svg"
 // import SamFly from "../../static/assets/sam-fly.svg"
-import SamFlynn from "../../static/assets/sam-flynn.svg"
-import CluGuy from "../../static/assets/clu.svg"
-import TronGuy from "../../static/assets/tron.svg"
+// import SamFlynn from "../../static/assets/sam-flynn.svg"
+// import CluGuy from "../../static/assets/clu.svg"
+// import TronGuy from "../../static/assets/tron.svg"
 // import MCP from "../../static/assets/mcp.svg"
 // import McpEffects from "../../static/assets/mcp-effects.svg"
-import QuoraStand from "../../static/assets/quora-ass.svg"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
-import TronChick from "../../static/assets/tron-chick1.svg"
+// import QuoraStand from "../../static/assets/quora-ass.svg"
+// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import TronChick from "../../static/assets/tron-chick1.svg"
 
 
 const CustomBox = styled.div`
@@ -31,11 +33,11 @@ const CustomBox = styled.div`
 }
 `
 
-const Panel5 = () => (
+const Panel9 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
-<div id="match2" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflowX:'hidden'}}>
+<div id="endofline" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -47,13 +49,13 @@ const Panel5 = () => (
 {/* nJ38P5elTkg */}
 
 <ReactPlayer
-         className='youtubehide'
-         url="https://www.youtube.com/embed/YyoKXfBQgXw"
+         className='youtubehide front'
+         url="https://www.youtube.com/embed/SA8bdV8CJNQ"
          width="100%"
          height="100%"
          config={{
            youtube: {
-            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:204, end:221, loop:1  }
+            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:20, end:115, loop:1  }
            },
          }}
          loop
@@ -81,26 +83,30 @@ const Panel5 = () => (
 
 
 
+<Castor className="character" style={{maxHeight:'70vh', maxWidth:'100%', position:'absolute', left:'-18%', bottom:'0',  }} />
 
+<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'relative', left:'5%',}}>
-
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'3% 5%', }}><Link to="/#lightcycles" style={{color:'#37f8f8'}}>LightCycle Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#samfly" style={{color:'#37f8f8'}}>Son of Flynn  <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 
 
 
+    {/* <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#discgrid" style={{color:'#37f8f8'}}>Match 2</Link></button> */}
 
-<Link state={{modal: true}} to="/about-twilightscapes/">
-<StaticImage className="character evil"
-style={{maxHeight:'', maxWidth:'', height:'80vh', width:'70%', position:'absolute', left:'44vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }}
-alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
-</Link>
 
-{/* <Link state={{modal: true}} to="/quorra/">
-<TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', left:'30vw', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
-</Link> */}
+
+
+
+
+  
+
+  
+
+
+
+
 
 
 
@@ -129,4 +135,4 @@ alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.pn
 
 </CustomBox>
 )
-export default Panel5
+export default Panel9
