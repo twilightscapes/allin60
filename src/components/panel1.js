@@ -95,7 +95,7 @@ const Panel1 = () => (
  
 
 
- <div id="characters " className="characters" style={{position:'absolute', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
+ <div id="characters " className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
     
 
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 

@@ -43,13 +43,13 @@ const Panel9 = () => (
 
 {/* Panel Video */}
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:''}}>
-<div className="video-background">
+<div className="video-background FULL">
 <div className="video-foreground">
 {/* c_V1iD6F1kk */}
 {/* nJ38P5elTkg */}
 
 <ReactPlayer
-         className='youtubehide front'
+         className='youtubehide'
          url="https://www.youtube.com/embed/SA8bdV8CJNQ"
          width="100%"
          height="100%"
@@ -72,7 +72,7 @@ const Panel9 = () => (
              </button>
          
             }
-               light="assets/default-og-image.jpg"
+               light="assets/grid-loader.svg"
          />
 </div>
 </div>
@@ -87,7 +87,7 @@ const Panel9 = () => (
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#samfly" style={{color:'#37f8f8'}}>Son of Flynn  <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#samfly" style={{color:'#37f8f8'}}>Son of Flynn <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

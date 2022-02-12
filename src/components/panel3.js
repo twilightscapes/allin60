@@ -47,7 +47,7 @@ const Panel2 = () => (
 {/* nJ38P5elTkg */}
 
 <ReactPlayer
-         className='youtubehide front'
+         className='youtubehide'
          url="https://www.youtube.com/embed/Y7EZBP9j7h0"
          width="100%"
          height="100%"

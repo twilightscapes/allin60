@@ -47,7 +47,7 @@ const Panel8 = () => (
 {/* nJ38P5elTkg */}
 
 <ReactPlayer
-         className='youtubehide front'
+         className='youtubehide'
          url="https://www.youtube.com/embed/CvyuuTc8F2o"
          width="100%"
          height="100%"
@@ -70,7 +70,7 @@ const Panel8 = () => (
              </button>
          
             }
-               light="assets/default-og-image.jpg"
+               light="assets/grid-loader.svg"
          />
 </div>
 </div>

@@ -41,7 +41,7 @@ const Panel5 = () => (
 
 {/* Panel Video */}
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:''}}>
-<div className="video-background">
+<div className="video-background FULL">
 <div className="video-foreground">
 {/* c_V1iD6F1kk */}
 {/* nJ38P5elTkg */}
