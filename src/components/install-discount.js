@@ -51,7 +51,7 @@ const InstallDiscount = () => (
 left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0', zIndex:'5'}}>
 
 
-<ReactPlayer
+{/* <ReactPlayer
           className='playerpp'
           url="https://www.youtube.com/embed/S5S6s5dZXNM"
           // url={[
@@ -73,7 +73,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
           playsinline
           playIcon={
 
-            // <Link className="txtshadow" style={{cursor:'pointer', width:'', margin:'0'}} to="/#gridintro" title="Coming Soon">
+
 
             <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
           
@@ -89,12 +89,12 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
           </div>
           </button>
           
-          // </Link>
+
           
         }
    
             light="assets/default-og-image.jpg"
-          />
+          /> */}
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}
 

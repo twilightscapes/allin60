@@ -60,17 +60,17 @@ const Panel1 = () => (
          playing
          playsinline
              playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
-<div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
+{/* <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
      <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
-</div>    
+</div>     */}
 
              </button>
          
             }
-               light="assets/default-og-image.jpg"
+               light="assets/grid-loader.svg"
          />
 </div>
 </div>

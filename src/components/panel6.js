@@ -70,7 +70,7 @@ const Panel6 = () => (
              </button>
          
             }
-               light="assets/default-og-image.jpg"
+               light="assets/grid-loader.svg"
          />
 </div>
 </div>
