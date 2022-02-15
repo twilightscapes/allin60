@@ -1,7 +1,7 @@
 ---
 slug: /
 tagline: "Fight for the User!"
-featuredImage: /assets/tronin60.png
+featuredImage: /assets/tronin60.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
