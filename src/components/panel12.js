@@ -91,9 +91,9 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ke
 </Link>
 
 
-<StaticImage className="character evil"
+{/* <StaticImage className="character evil"
 style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0', bottom:'0',transform:'scaleX(-1)'}}
-alt="Todd Lambert Web development for photographers" src="../img/clu2.png" />
+alt="Todd Lambert Web development for photographers" src="../img/clu2.png" /> */}
 
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'45%', top:''}}>

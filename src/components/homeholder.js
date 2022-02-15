@@ -40,9 +40,9 @@ const HomeHolder = () => (
 <Panel8 />
 <Panel9 />
 <Panel10 />
-<Panel11 />
+{/* <Panel11 />
 <Panel12 />
-<Panel13 />
+<Panel13 /> */}
 </div>
 </div>
 </CustomBox>
