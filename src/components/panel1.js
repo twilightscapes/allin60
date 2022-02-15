@@ -10,18 +10,18 @@ import { StaticImage } from "gatsby-plugin-image"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
-import LightCycle from "../../static/assets/light-cycle.svg"
+// import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
 // import SamFly from "../../static/assets/sam-fly.svg"
-import SamFlynn from "../../static/assets/sam-flynn.svg"
-import CluGuy from "../../static/assets/clu.svg"
-import TronGuy from "../../static/assets/tron.svg"
+// import SamFlynn from "../../static/assets/sam-flynn.png"
+// import CluGuy from "../../static/assets/clu.png"
+// import TronGuy from "../../static/assets/tron.png"
 // import MCP from "../../static/assets/mcp.svg"
 // import McpEffects from "../../static/assets/mcp-effects.svg"
-import QuoraStand from "../../static/assets/quora-ass.svg"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import QuoraStand from "../../static/assets/quora-ass.png"
+// import KevinFlynn from "../../static/assets/kevin-flynn.png"
 // import TronChick from "../../static/assets/tron-chick1.svg"
 
 
@@ -95,52 +95,74 @@ const Panel1 = () => (
  
 
 
- <div id="characters " className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
+ <div id="characters" className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around', padding:'10vh 0 0 0', animation:'fade'}}>
     
 
-    <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
-     padding:'', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    <div id="" className="" style={{position:'relative', display:'flex', justifyContent:'center', border:'0px solid red',}}>
              <Link state={{modal: true}} to="/sam-flynn/" title="Sam Flynn"  aria-label="Sam Flynn">
-    <SamFlynn className="character" style={{height:'100vh', width:'90%', margin:'0 0 0 0',}} /></Link>
+    {/* <SamFlynn className="character" style={{height:'100vh', width:'90%', margin:'0 0 0 0',}} /> */}
+    <StaticImage className="character"
+style={{height:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/sam-flynn.png" />
+    </Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/quorra/" title="Quorra" aria-label="Quorra">
-      <QuoraStand className="character" style={{height:'100%', width:'85%', margin:'0 0 0 10%', right:'', zIndex:''}} /></Link>
+      {/* <QuoraStand className="character" style={{height:'100%', width:'85%', margin:'0 0 0 10%', right:'', zIndex:''}} /> */}
+      <StaticImage className="character"
+style={{height:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/quora-ass.png" />
+      </Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center',}}>
 <Link state={{modal: true}} to="/kevin-flynn/" title="Kevin Flynn" aria-label="Kevin Flynn">
-    <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -16%'}} /></Link>
+    {/* <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -16%'}} /> */}
+    <StaticImage className="character"
+style={{height:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
+    </Link>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     display:'flex', flexDiection:'column', justifyContent:'center',
-    padding:'5% 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    padding:'0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
       <Link state={{modal: true}} to="/tron/" title="Tron" aria-label="Tron">
-    <TronGuy className="character" style={{height:'100%', width:'100%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /></Link>
+    {/* <TronGuy className="character" style={{height:'100%', width:'100%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /> */}
+    <StaticImage className="character"
+style={{height:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/tron.png" />
+    </Link>
     </div>
     
     <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
     // background:'rgba(6, 70, 90, 0.6)', 
     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/clu/" title="Clu" aria-label="Clu">
-    <CluGuy className="character evil" style={{height:'100%', width:'100%', margin:'0 0 0 -20%',}} />
+    {/* <CluGuy className="character evil" style={{height:'100%', width:'100%', margin:'0 0 0 -20%',}} /> */}
+    <StaticImage className="character"
+style={{height:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
     </Link>
     </div>
     
-    <div className="frontbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'300px', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
-           <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'',fontSize:'3vw', padding:'', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span><br /><span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
-           </div>
+
+    {/* <div className="frontbutt" style={{ zIndex:'2', display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'300px', marginTop:'45vh', position:'absolute', border:'1px solid red',}}>
+        <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'',fontSize:'3vw', padding:'', background:'rgba(3, 212, 212, 0.1)', zIndex:'4' }}>
+             <Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span><br /><span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link>
+        </button>
+    </div> */}
+
 
     </div> 
     
 
        
     
-   
+
 
 
 
