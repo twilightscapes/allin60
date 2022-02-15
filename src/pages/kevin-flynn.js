@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import GoBack from "../components/goBack"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 
 
 
@@ -56,7 +56,10 @@ export default function KevinPage() {
       
       </div>
       
-      <KevinFlynn className="character" style={{maxHeight:'90vh',  padding:'',}} />
+      {/* <KevinFlynn className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
+      <StaticImage className="character"
+ style={{maxHeight:'90vh',  padding:'',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </div>
 
 

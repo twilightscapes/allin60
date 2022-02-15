@@ -22,7 +22,7 @@ import LoveSignal from "../../static/assets/love-signal.svg"
 // import MCP from "../../static/assets/mcp.svg"
 // import McpEffects from "../../static/assets/mcp-effects.svg"
 // import QuoraStand from "../../static/assets/quora-ass.svg"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import TronChick from "../../static/assets/tron-chick1.svg"
 
 
@@ -84,7 +84,10 @@ const Panel12 = () => (
 <LoveSignal className="character" style={{maxHeight:'100vh', maxWidth:'100%', position:'absolute', right:'', bottom:'',  }} />
   
 <Link state={{modal: true}} to="kevin-flynn/">
-<KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/>
+{/* <KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/> */}
+<StaticImage className="character"
+style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </Link>
 
 

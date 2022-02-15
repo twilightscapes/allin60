@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import GoBack from "../components/goBack"
-import CluGuy from "../../static/assets/clu.svg"
+// import CluGuy from "../../static/assets/clu.svg"
 
 
 
@@ -56,7 +56,11 @@ export default function CluePage() {
       
       </div>
       
-      <CluGuy className="character evil" style={{maxHeight:'90vh',  padding:'',}} />
+      {/* <CluGuy className="character evil" style={{maxHeight:'90vh',  padding:'',}} /> */}
+      <StaticImage className="character"
+style={{maxHeight:'80vh',  padding:'',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
+      
 </div>
 
       

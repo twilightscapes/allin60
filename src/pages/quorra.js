@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import GoBack from "../components/goBack"
-import QuoraAss from "../../static/assets/quora-ass.svg"
+// import QuoraAss from "../../static/assets/quora-ass.svg"
 
 
 
@@ -61,7 +61,11 @@ export default function QuorraPage() {
       
       </div>
       
-      <QuoraAss className="character" style={{maxHeight:'90vh',  padding:'',}} />
+      {/* <QuoraAss className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
+      <StaticImage className="character"
+ style={{maxHeight:'90vh',  padding:'',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/quora-ass.png" />
+
 </div>
 
 

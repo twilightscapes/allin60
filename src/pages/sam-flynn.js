@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import GoBack from "../components/goBack"
-import SamFlynn from "../../static/assets/sam-flynn.svg"
+// import SamFlynn from "../../static/assets/sam-flynn.svg"
 
 
 
@@ -59,7 +59,10 @@ export default function SamPage() {
       
       </div>
       
-      <SamFlynn className="character" style={{maxHeight:'90vh',  padding:'',}} />
+
+      <StaticImage className="character"
+style={{maxHeight:'80vh', width:'', margin:'0 0 0 0',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/sam-flynn.png" />
 </div>
 
 

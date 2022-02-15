@@ -99,11 +99,17 @@ change the world, together.</p>
 
 
 <Link state={{modal: true}} to="kevin-flynn/">
-<KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/>
+{/* <KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/> */}
+<StaticImage className="character"
+ style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </Link>
 
 <Link state={{modal: true}} to="/clu/" >
-<CluGuy className="character evil" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/>
+{/* <CluGuy className="character evil" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/> */}
+<StaticImage className="character"
+style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
 </Link>
 
 

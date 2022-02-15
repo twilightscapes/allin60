@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import GoBack from "../components/goBack"
-import TronGuy from "../../static/assets/tron.svg"
+// import TronGuy from "../../static/assets/tron.svg"
 
 
 
@@ -59,7 +59,10 @@ export default function TronPage() {
       
       </div>
       
-      <TronGuy className="character" style={{maxHeight:'90vh',  padding:'',}} />
+      {/* <TronGuy className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
+      <StaticImage className="character"
+ style={{maxHeight:'90vh',  padding:'',}}
+alt="Todd Lambert Web development for photographers" src="../../static/assets/tron.png" />
 </div>
       
       

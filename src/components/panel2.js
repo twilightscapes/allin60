@@ -15,13 +15,13 @@ import LightCycle from "../../static/assets/light-cycle.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
 // import SamFly from "../../static/assets/sam-fly.svg"
-import SamFlynn from "../../static/assets/sam-flynn.svg"
-import CluGuy from "../../static/assets/clu.svg"
-import TronGuy from "../../static/assets/tron.svg"
+// import SamFlynn from "../../static/assets/sam-flynn.svg"
+// import CluGuy from "../../static/assets/clu.svg"
+// import TronGuy from "../../static/assets/tron.svg"
 // import MCP from "../../static/assets/mcp.svg"
 // import McpEffects from "../../static/assets/mcp-effects.svg"
-import QuoraStand from "../../static/assets/quora-ass.svg"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import QuoraStand from "../../static/assets/quora-ass.svg"
+// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import TronChick from "../../static/assets/tron-chick1.svg"
 
 
@@ -65,7 +65,7 @@ const Panel2 = () => (
          playing
          playsinline
              playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'10vh', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
 <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
