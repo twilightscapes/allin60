@@ -38,18 +38,28 @@ export default function CluePage() {
       <div className="mobile"><GoBack /></div>
       
 
-
-<h1>CLU</h1>
-<ul>
-<li>Actor: Jeff Bridges</li>
-<li>User: Kevin Flynn</li>
-<li>Allies: Jarvis, Rinzler, Black Guard, Sentries</li>
-<li>Enemies: Programs defying system rules</li>
+<div className="masonry" style={{gap:'2rem',}}>
+      <div>
+<h1 className="tronText" style={{fontSize:'clamp(2rem, 3vw, 3rem)'}}>CLU</h1>
+<ul style={{fontSize:'clamp(1rem, 1.5vw, 2rem)', listStyle:'none', background:'rgba(0, 0, 0, .4)', padding:'1rem', borderRadius:'12px'}}>
+<li><strong>Actor:</strong> Jeff Bridges</li>
+<li><strong>User:</strong> Kevin Flynn</li>
+<li><strong>Allies:</strong> Jarvis, Rinzler, Black Guard, Sentries</li>
+<li><strong>Enemies:</strong> Programs defying system rules</li>
 </ul>
-<blockquote>
-Clu was originally a search program created by Kevin Flynn to explore inside the ENCOM mainframe for proof he created ENCOM's most-popular games. Clu was found and destroyed by the Master Control Program. Flynn created another program named CLU after returning from the Grid with a more specific task in mind.
-      </blockquote>
-      <CluGuy className="character evil" style={{maxHeight:'',  margin:'0 0 0 0',}} />
+<div>
+
+
+<p style={{fontSize:'clamp(1rem, 1.5vw, 2rem)', marginTop:'2rem', background:'rgba(0, 0, 0, .4)', padding:'1rem', borderRadius:'12px'}}>Clu was originally a search program created by Kevin Flynn to explore inside the ENCOM mainframe for proof he created ENCOM's most-popular games. Clu was found and destroyed by the Master Control Program. Flynn created another program named CLU after returning from the Grid with a more specific task in mind.
+</p>
+      </div>
+      
+      </div>
+      
+      <CluGuy className="character evil" style={{maxHeight:'90vh',  padding:'',}} />
+</div>
+
+      
       
       <GoBack />
           </div>

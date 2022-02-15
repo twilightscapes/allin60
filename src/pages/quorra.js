@@ -34,19 +34,40 @@ export default function QuorraPage() {
 
       <div className="mobile"><GoBack /></div>
       
-      <QuoraAss className="character" style={{maxHeight:'30vh',  margin:'0 0 0 0',}} />
 
-<h1>Quorra</h1>
-<ul>
-<li>Actor: Olivia Wilde</li>
-{/* <li>User: Alan Bradley</li> */}
-<li>Allies: Kevin Flynn, Sam Flynn, Castor</li>
-<li>Clu, Jarvis, Black Guard, Sentries</li>
-</ul>
-<blockquote>
-A program, adept warrior, and confidante of Kevin Flynn's in the TRON System.
-      </blockquote>
+
+
       
+
+
+
+
+
+      <div className="masonry" style={{gap:'2rem',}}>
+      <div>
+<h1 className="tronText" style={{fontSize:'clamp(2rem, 3vw, 3rem)'}}>Quora</h1>
+<ul style={{fontSize:'clamp(1rem, 1.5vw, 2rem)', listStyle:'none', background:'rgba(0, 0, 0, .4)', padding:'1rem', borderRadius:'12px'}}>
+<li><strong>Actor:</strong> Olivia Wilde</li>
+{/* <li><strong>User:</strong> Kevin Flynn</li> */}
+<li><strong>Allies:</strong> Kevin Flynn, Sam Flynn, Castor</li>
+<li><strong>Enemies:</strong> Clu, Jarvis, Black Guard, Sentries</li>
+</ul>
+<div>
+
+
+<p style={{fontSize:'clamp(1rem, 1.5vw, 2rem)', marginTop:'2rem', background:'rgba(0, 0, 0, .4)', padding:'1rem', borderRadius:'12px'}}>Quorra is the confidante and apprentice of Kevin Flynn. Flynn has shared his knowledge of the real world with her, and as such, she longs to experience what lies outside the realm of possibility in her own world. She is the last known ISO alive and is referred to by Kevin Flynn as "The Miracle".
+</p>
+      </div>
+      
+      </div>
+      
+      <QuoraAss className="character" style={{maxHeight:'90vh',  padding:'',}} />
+</div>
+
+
+
+
+
       
       <GoBack />
           </div>
