@@ -34,7 +34,7 @@ export default function SamPage() {
 
       <div className="mobile"><GoBack /></div>
       
-      <SamFlynn className="character" style={{maxHeight:'30vh',  margin:'0 0 0 0',}} />
+
 
 
       

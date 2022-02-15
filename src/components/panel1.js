@@ -132,7 +132,7 @@ const Panel1 = () => (
     </div>
     
     <div className="frontbutt" style={{display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'300px', marginTop:'45vh', position:'absolute', border:'0px solid red'}}>
-           <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'200px',fontSize:'3vw', padding:'2% 2%', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span> <span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
+           <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'',fontSize:'3vw', padding:'', background:'rgba(3, 212, 212, 0.1)' }}><Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span><br /><span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link></button>
            </div>
 
     </div> 
