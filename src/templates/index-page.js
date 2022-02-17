@@ -362,19 +362,19 @@ const HomePage = ({ data }) => {
 
 
 <Panel1 id="" />
-{/* <Panel2 id="" />
+<Panel2 id="" />
 <Panel3 id="" />
 <Panel4 id="" />
 <Panel5 id="" />
-<Panel6 id="" />
+{/* <Panel6 id="" />
 <Panel7 id="" />
 <Panel8 id="" />
 <Panel9 id="" />
 <Panel10 id="" />
 <Panel11 id="" />
 <Panel12 id="" />
-<Panel13 id="" /> */}
-  
+<Panel13 id="" />
+   */}
 
         
 </div>
