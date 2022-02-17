@@ -360,21 +360,24 @@ const HomePage = ({ data }) => {
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>
 
-<div id="homestart">
-<Panel1 /></div>
+<div id="homestart"><Panel1 /></div>
 
+<div id="gridintro"><Panel2 /></div>
 
-<div id="gridintro">
-<Panel2 /></div>
-<div id="proceed">
-<Panel3 /></div>
-<div id="discgrid"><Panel4 id="" /></div>
-<div id="lightcycles"><Panel5 id="" /></div>
-{/* <Panel6 id="" />
-<Panel7 id="" />
-<Panel8 id="" />
-<Panel9 id="" />
-<Panel10 id="" />
+<div id="proceed"><Panel3 /></div>
+
+<div id="discgrid"><Panel4 /></div>
+
+<div id="match2"><Panel5 /></div>
+
+<div id="lightcycles"><Panel6 /></div>
+
+<div id="lightcycles2"><Panel7 /></div>
+
+<div id="quorra"><Panel8 /></div>
+
+<div id="endofline"><Panel9 /></div>
+{/* <Panel10 id="" />
 <Panel11 id="" />
 <Panel12 id="" />
 <Panel13 id="" />
