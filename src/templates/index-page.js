@@ -170,13 +170,14 @@ export const pageQuery = graphql`
     }
   }
 `
-import Panel1 from '../components/panel1'
+// import Panel1 from '../components/panel1'
 
 
   // const Panel2 = loadable(() => import('../components/panel2'), {
 //   fallback: <div>Loading...</div>,
 // })
 
+const Panel1 = loadable(() => import('../components/panel1'))
 const Panel2 = loadable(() => import('../components/panel2'))
 const Panel3 = loadable(() => import('../components/panel3'))
 const Panel4 = loadable(() => import('../components/panel4'))

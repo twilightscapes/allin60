@@ -3,7 +3,7 @@ import React from 'react'
 import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image"

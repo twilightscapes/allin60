@@ -1242,11 +1242,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/roboto@^4.5.0":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.3.tgz#c729ac22c35ae1c224cde10042ce7ab356bc4dda"
-  integrity sha512-NUvBTj332dFRdiVkLlavXbDGoD2zyyeGYmMyrXOnctg/3e4pq95+rJgNfUP+k4v8UBk2L1aomGw9dDjbRdAmTg==
-
 "@gatsby-contrib/gatsby-plugin-elasticlunr-search@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@gatsby-contrib/gatsby-plugin-elasticlunr-search/-/gatsby-plugin-elasticlunr-search-3.0.2.tgz#f60462f5f6283af170a22b28e2f159dd936f6a7b"
@@ -2319,11 +2314,6 @@
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.2.tgz#32fe0ce708ea0f4512776bd313409f1459976dda"
   integrity sha512-qLOvfmlG2vCVw5fo/oz8WAZYlpe5a5OurgTj3diIxJCdjRHpapC+vQCz3er9LV79Vcat+DifBjeAhOAdmndtDQ==
-
-"@tweenjs/tween.js@^18.1.2":
-  version "18.6.4"
-  resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-18.6.4.tgz#40a3d0a93647124872dec8e0fd1bd5926695b6ca"
-  integrity sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==
 
 "@types/cacheable-request@^6.0.1":
   version "6.0.2"
@@ -3704,11 +3694,6 @@ body-scroll-lock@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-3.1.5.tgz#c1392d9217ed2c3e237fee1e910f6cdd80b7aaec"
   integrity sha512-Yi1Xaml0EvNA0OYWxXiYNqY24AfWkbA6w5vxE7GWxtKfzIbZM+Qw+aSmkgsbWzbHiy/RCSkUZBplVxTA+E4jJg==
-
-body-scroll-lock@^4.0.0-beta.0:
-  version "4.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-4.0.0-beta.0.tgz#4f78789d10e6388115c0460cd6d7d4dd2bbc4f7e"
-  integrity sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==
 
 boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
@@ -6395,11 +6380,6 @@ gatsby-graphiql-explorer@^2.7.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-image-background-slider@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-image-background-slider/-/gatsby-image-background-slider-0.0.4.tgz#001869cb1c3382e91bd754dfd8aea92d19cabfcb"
-  integrity sha512-g09T4vrKUirl1eOVCnUpWGYXvlYChpjW6Wu7FQfP4jPCk5Jg/ROYXMUtai1ieXbiQ75BaRbWLcVsSkTxeqBYjw==
-
 gatsby-image@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.11.0.tgz#9070ffd1e656b801052acfa9e470c34427c099e0"
@@ -6440,13 +6420,6 @@ gatsby-page-utils@^2.7.0:
     glob "^7.2.0"
     lodash "^4.17.21"
     micromatch "^4.0.4"
-
-gatsby-plugin-anchor-links@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-anchor-links/-/gatsby-plugin-anchor-links-1.2.1.tgz#c82ff8fdeda4b3f2ca036cec469f7c42da3b2897"
-  integrity sha512-BIhhljCxIUVluMltlCq5sKvVN9PfwqoUNaTjyPZUhtEu5JhEiK89HPNustSkjSLhnQmcYveS36TpjWK/rUnvhg==
-  dependencies:
-    scroll-to-element "^2.0.3"
 
 gatsby-plugin-google-analytics@^4.5.0:
   version "4.7.0"
@@ -6593,14 +6566,6 @@ gatsby-plugin-sass@^5.5.0:
     "@babel/runtime" "^7.15.4"
     resolve-url-loader "^3.1.4"
     sass-loader "^10.1.1"
-
-gatsby-plugin-scroll-reveal@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-scroll-reveal/-/gatsby-plugin-scroll-reveal-0.0.7.tgz#5f0d1bcf65bf3c7b3d9d6b69dc4a8896129747ee"
-  integrity sha512-G9slNyz7WNVMwBeGXnQ/FhJc61Q9THkvUIAlft4Uws4QJKn0OdvsDqUAUQkTGKU8hkHhaMAKiugL/8gRYuAZZA==
-  dependencies:
-    intersection-observer "^0.7.0"
-    sal.js "^0.6.2"
 
 gatsby-plugin-sharp-exif@^1.0.4:
   version "1.0.4"
@@ -8068,11 +8033,6 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-intersection-observer@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
-  integrity sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
-
 invariant@^2.0.0, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
@@ -9146,11 +9106,6 @@ lodash.templatesettings@^4.0.0:
   integrity sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   dependencies:
     lodash._reinterpolate "^3.0.0"
-
-lodash.throttle@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
-  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 lodash.truncate@^4.4.2:
   version "4.4.2"
@@ -11482,7 +11437,7 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -11490,15 +11445,6 @@ prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4,
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
-
-prop-types@~15.7.2:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
 
 proper-lockfile@^4.1.2:
   version "4.1.2"
@@ -11631,7 +11577,7 @@ raf-schd@^4.0.2:
   resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-4.0.3.tgz#5d6c34ef46f8b2a0e880a8fcdb743efc5bfdbc1a"
   integrity sha512-tQkJl2GRWh83ui2DiPTJz9wEiMN20syf+5oKfB03yYP7ioZcJwsIK8FjrtLwH1m7C7e+Tt2yYBlrOpdT+dyeIQ==
 
-raf@^3.1.0, raf@^3.4.0:
+raf@^3.1.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -11689,14 +11635,6 @@ rc@^1.2.7, rc@^1.2.8:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
-
-react-animate-on-scroll@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/react-animate-on-scroll/-/react-animate-on-scroll-2.1.5.tgz#c35ff5b19452b23270c7a42329b8dc391f273020"
-  integrity sha1-w1/1sZRSsjJwx6QjKbjcOR8nMCA=
-  dependencies:
-    lodash.throttle "^4.1.1"
-    prop-types "^15.5.9"
 
 react-aria-menubutton@^7.0.0:
   version "7.0.3"
@@ -11939,7 +11877,7 @@ react-input-autosize@^3.0.0:
   dependencies:
     prop-types "^15.5.8"
 
-react-is@16.13.1, react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
+react-is@16.13.1, react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -11991,14 +11929,6 @@ react-motion@^0.5.0:
     performance-now "^0.2.0"
     prop-types "^15.5.8"
     raf "^3.1.0"
-
-react-photo-gallery@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/react-photo-gallery/-/react-photo-gallery-8.0.0.tgz#04ff9f902a2342660e63e6817b4f010488db02b8"
-  integrity sha512-Y9458yygEB9cIZAWlBWuenlR+ghin1RopmmU3Vice8BeJl0Se7hzfxGDq8W1armB/ic/kphGg+G1jq5fOEd0sw==
-  dependencies:
-    prop-types "~15.7.2"
-    resize-observer-polyfill "^1.5.0"
 
 react-player@^2.9.0:
   version "2.9.0"
@@ -12170,14 +12100,6 @@ react-side-effect@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
-
-react-slideshow-image@^3.4.3:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/react-slideshow-image/-/react-slideshow-image-3.7.0.tgz#46c71e67074f1703f63ef60b63279716d2edeccf"
-  integrity sha512-RNV5Ak76fWiG3rkmtWeUxtQtsaCtq1L6ysFYLpjw1n/mPPaFmDQ7Jz3m1l6g7+5Sydy3ivs3Q5wK38uGYF2eSA==
-  dependencies:
-    "@tweenjs/tween.js" "^18.1.2"
-    resize-observer-polyfill "^1.5.1"
 
 react-sortable-hoc@^2.0.0:
   version "2.0.0"
@@ -12852,7 +12774,7 @@ resize-observer-polyfill@1.5.0:
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
   integrity sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
 
-resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
+resize-observer-polyfill@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
   integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
@@ -13082,11 +13004,6 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sal.js@^0.6.2:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/sal.js/-/sal.js-0.6.6.tgz#96bd32e9904ef0706f32d08254c28cad6ec890fb"
-  integrity sha512-XuhEEHRnzWMKGTC3ndZ0pCXPA5xU2rrPhFbb82EIq7M3ctjkJIg/AxnnQwPvn7IZ+I2Ku6kaqNOuA64anDwEjg==
-
 sanitize-filename@^1.6.1:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/sanitize-filename/-/sanitize-filename-1.6.3.tgz#755ebd752045931977e30b2025d340d7c9090378"
@@ -13167,13 +13084,6 @@ screenfull@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/screenfull/-/screenfull-5.2.0.tgz#6533d524d30621fc1283b9692146f3f13a93d1ba"
   integrity sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==
-
-scroll-to-element@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/scroll-to-element/-/scroll-to-element-2.0.3.tgz#99b404fc6a09fe73f3c062cd5b8a14efb6404e4d"
-  integrity sha512-5herPcm9jMfQgRwu94lH5mei+2YhipR4RQ2nAvnBxJb2tG+P7O0ctOKAaAZBXbBejnn+MImh3wrAUA5EcLnjEQ==
-  dependencies:
-    raf "^3.4.0"
 
 section-matter@^1.0.0:
   version "1.0.0"
