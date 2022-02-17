@@ -47,7 +47,7 @@ export function Layout({ children }) {
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
-      <div style={{overflow:'hidden'}}>
+      <div style={{overflow:'visible'}}>
         {modal ? (
           <>
           <div style={{position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
@@ -223,28 +223,28 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#gridintro">
+              <Link className="navbar-item txtshadow" to="/the-grid/#gridintro">
               Enter The Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
       
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#proceed">
+              <Link className="navbar-item txtshadow" to="/the-grid/#proceed">
               Proceed to Games
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#discgrid">
+              <Link className="navbar-item txtshadow" to="/disc-grid/#discgrid">
               Onto the Disc Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#lightcycles">
+              <Link className="navbar-item txtshadow" to="/lightcycle-grid/#lightcycles">
               LightCycle Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -252,14 +252,14 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#endofline">
+              <Link className="navbar-item txtshadow" to="/heros/#endofline">
               End of Line Club
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#returnsource">
+              <Link className="navbar-item txtshadow" to="/storyline/#returnsource">
               Return to the Source
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -267,7 +267,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/#endofgrid">
+              <Link className="navbar-item txtshadow" to="/storyline/#endofgrid">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>

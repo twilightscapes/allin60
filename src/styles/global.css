@@ -18,7 +18,7 @@ body {
 }
 
 body.homepage{
-  /* overflow-y: hidden !important; */
+  overflow-y: hidden !important;
 }
 
 /* body.homepage, body.bloglist {
@@ -3868,7 +3868,7 @@ height:100vh;
                           max-height: 100vw;
                           margin:0 auto 0 auto;
                           padding: 0;
-                          overflow-y: auto;
+                          overflow-y: hidden;
                           overflow-x: hidden;
                           transform: rotate(-90deg) translateY(-90vw);
                           transform-origin: right top;
@@ -3995,7 +3995,7 @@ height:100vh;
                            left:30vw;
                          
                          }
-
+/* 
            
                          .sliderholder1::before{
                            content:' \2329  swipe ';
@@ -4014,7 +4014,7 @@ height:100vh;
                            right:10px;
                            color:#fff;
                            text-shadow:2px 2px 2px #333;
-                         }
+                         } */
 
                          .horizontal-scroll-wrapper {
                           scroll-snap-type: y proximity;

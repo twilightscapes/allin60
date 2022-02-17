@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 
@@ -60,18 +60,18 @@ const Panel12 = () => (
          loop
          playing
          playsinline
-             playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+//              playIcon={
+//                <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
-<div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
-     <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
-</div>    
+// <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
+//      <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
+// </div>    
 
-             </button>
+//              </button>
          
-            }
-               light="assets/grid-loader.svg"
+//             }
+//                light="assets/grid-loader.svg"
          />
 </div>
 </div>
@@ -98,7 +98,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" /> */
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'45%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/#endofgrid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline/#endofgrid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

@@ -365,14 +365,14 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder" style={{overflow:'visible'}}>
+<div className="horizontal-holder" style={{overflow:''}}>
 <div className="RArrow">{/* <span></span> */}</div>
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>
 
 <div id="homestart"><Panel1 /></div>
 
-<div id="gridintro"><Panel2 /></div>
+{/* <div id="gridintro"><Panel2 /></div>
 
 <div id="proceed"><Panel3 /></div>
 
@@ -386,7 +386,7 @@ const HomePage = ({ data }) => {
 
 <div id="quorra"><Panel8 /></div>
 
-<div id="endofline"><Panel9 /></div>
+<div id="endofline"><Panel9 /></div> */}
 {/* <Panel10 id="" />
 <Panel11 id="" />
 <Panel12 id="" />

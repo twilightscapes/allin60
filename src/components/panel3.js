@@ -31,7 +31,7 @@ const CustomBox = styled.div`
 }
 `
 
-const Panel2 = () => (
+const Panel3 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
@@ -59,18 +59,18 @@ const Panel2 = () => (
          loop
          playing
          playsinline
-             playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+//              playIcon={
+//                <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
-<div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
-     <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
-</div>    
+// <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
+//      <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
+// </div>    
 
-             </button>
+//              </button>
          
-            }
-               light="assets/grid-loader.svg"
+//             }
+//                light="assets/grid-loader.svg"
          />
 </div>
 </div>
@@ -124,7 +124,7 @@ const Panel2 = () => (
 
 
   <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'5%',}}>
-    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link to="/#discgrid" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
+    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link to="/disc-grid/#discgrid" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
 </div>
 
 
@@ -155,4 +155,4 @@ const Panel2 = () => (
 
 </CustomBox>
 )
-export default Panel2
+export default Panel3
