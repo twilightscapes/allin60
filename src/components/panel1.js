@@ -35,7 +35,7 @@ const Panel1 = () => (
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
+<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'inherit'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -60,7 +60,7 @@ const Panel1 = () => (
          playing
          playsinline
              playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
 
 
 {/* <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
@@ -70,7 +70,7 @@ const Panel1 = () => (
              </button>
          
             }
-               light="assets/grid-loader.svg"
+               light="assets/Front-Loader.svg"
          />
 </div>
 </div>
@@ -87,7 +87,7 @@ const Panel1 = () => (
 
 
 
-<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'.6'}}>
+<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'1', zIndex:'-1'}}>
         <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON</div>
       </h1>
 
@@ -95,8 +95,9 @@ const Panel1 = () => (
  
 
 
- <div id="characters" className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', display:'flex', flexDirection:'row', justifyContent:'space-around', padding:'10vh 0 0 0', animation:'fade'}}>
+ <div id="characters" className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', padding:'10vh 0 0 0', zIndex:''}}>
     
+<div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', zIndex:'-1' }}>
 
     <div id="" className="" style={{position:'relative', display:'flex', justifyContent:'center', border:'0px solid red',}}>
              <Link state={{modal: true}} to="/sam-flynn/" title="Sam Flynn"  aria-label="Sam Flynn">
@@ -155,7 +156,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
              <Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span><br /><span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link>
         </button>
     </div> */}
-
+</div>
 
     </div> 
     

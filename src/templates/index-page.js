@@ -53,6 +53,28 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import loadable from '@loadable/component'
 import Panel1 from '../components/panel1'
 
+  // const Panel1 = loadable(() => import('../components/panel1'))
+  const Panel2 = loadable(() => import('../components/panel2'), {
+    fallback: <div>Loading...</div>,
+  })
+  const Panel3 = loadable(() => import('../components/panel3'), {
+    fallback: <div>Loading...</div>,
+  })
+  const Panel4 = loadable(() => import('../components/panel4'), {
+    fallback: <div>Loading...</div>,
+  })
+  const Panel5 = loadable(() => import('../components/panel5'))
+  const Panel6 = loadable(() => import('../components/panel6'))
+  const Panel7 = loadable(() => import('../components/panel7'))
+  const Panel8 = loadable(() => import('../components/panel8'))
+  const Panel9 = loadable(() => import('../components/panel9'))
+  const Panel10 = loadable(() => import('../components/panel10'))
+  const Panel11 = loadable(() => import('../components/panel11'))
+  const Panel12 = loadable(() => import('../components/panel12'))
+  const Panel13 = loadable(() => import('../components/panel13'))
+
+  
+
 export const pageQuery = graphql`
   query HomeQuery($id: String! ) {
     
@@ -172,19 +194,7 @@ export const pageQuery = graphql`
   }
 `
 
-  // const Panel1 = loadable(() => import('../components/panel1'))
-  const Panel2 = loadable(() => import('../components/panel2'))
-  const Panel3 = loadable(() => import('../components/panel3'))
-  const Panel4 = loadable(() => import('../components/panel4'))
-  const Panel5 = loadable(() => import('../components/panel5'))
-  const Panel6 = loadable(() => import('../components/panel6'))
-  const Panel7 = loadable(() => import('../components/panel7'))
-  const Panel8 = loadable(() => import('../components/panel8'))
-  const Panel9 = loadable(() => import('../components/panel9'))
-  const Panel10 = loadable(() => import('../components/panel10'))
-  const Panel11 = loadable(() => import('../components/panel11'))
-  const Panel12 = loadable(() => import('../components/panel12'))
-  const Panel13 = loadable(() => import('../components/panel13'))
+
 
   // const Panel2 = loadable(() => import('../components/panel2'), {
 //   fallback: <div>Loading...</div>,
@@ -355,7 +365,7 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder">
+<div className="horizontal-holder" style={{overflow:'visible'}}>
 <div className="RArrow">{/* <span></span> */}</div>
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>

@@ -3976,12 +3976,12 @@ height:100vh;
                         .horizontal-scroll-wrapper::after{
                            content:'\276E \276E  scroll';
                            position:relative;
-                           z-index: 1;
+                           z-index: 3;
                            display: inline-block;
                            margin:auto;
                            padding:10px 10px;
                            background:rgba(0, 0, 0, .7);
-                           opacity:.7;
+                           opacity:.9;
                            display:flex;
                            flex-direction:column;
                            justify-content:center;
@@ -4000,11 +4000,11 @@ height:100vh;
                          .sliderholder1::before{
                            content:' \2329  swipe ';
                            position:absolute;
-                           z-index: 1;
+                           z-index: 3;
                            display: inline-block;
                            margin:auto;
                            padding:10px 10px;
-                           background:rgba(0, 0, 0, .7);
+                           background:rgba(0, 0, 0, .9);
                            opacity:1;
                            display:flex;
                            flex-direction:column;
@@ -4452,7 +4452,7 @@ height:100vh;
 
 
 .react-player__preview{
-  background-color:#111 !important;
+  background-color:transparent !important;
   background-size:50% !important;
   z-index:40 !important;
   position:relative !important;
@@ -4460,7 +4460,9 @@ height:100vh;
 
 .frontbg iframe{
   /* filter:brightness(0.3)contrast(4.4)hue-rotate(117deg)saturate(9.9);  */
-  filter:brightness(0.9) hue-rotate(17deg);
+  /* filter:brightness(0.9) hue-rotate(17deg); */
+  filter:brightness(1.2)contrast(2.4)hue-rotate(0deg)saturate(1.6); 
+  opacity: .4 ;
 }
 
 
@@ -4481,6 +4483,22 @@ height:100vh;
     width: 300%; 
     left: -100%;
 }
+
+
+.frontbg .video-background {
+  position: relative;
+    /* padding-bottom: 56.25%;  */
+    width: 100% !important; 
+    left: inherit !important;
+}
+
+.frontbg .video-background.FULL .react-player__preview{
+  background-size:100% !important;
+  background-position: 50% 0 !important;
+  background-color:transparent !important;
+}
+
+
 @media (max-width: 48rem) {
   .video-background.FULL {
     position: relative;
