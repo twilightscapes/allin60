@@ -82,7 +82,7 @@ const Panel2 = () => (
     <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', paddingTop:'1rem'}}>
 
 
-    <Link state={{modal: true}} to="/quorra/">
+    <Link title="Quorra" state={{modal: true}} to="/quorra/">
 <TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', left:'30vw', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
 </Link>
 

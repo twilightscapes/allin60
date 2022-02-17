@@ -1265,7 +1265,7 @@ height:100%;
               .sliderholder::before:focus-within{
                 border:40px red !important;
               } */
-
+/* 
               .horizontal-scroll-wrapper::before{
                 content:' \2329  swipe ';
                 position:absolute;
@@ -1285,7 +1285,7 @@ height:100%;
                 font-size:clamp(2rem, 3.5vw, 3.8rem);
                 text-shadow:2px 2px 2px #333;
               
-              }
+              } */
 
               .horizontal-scroll::before{
                 content:' \2329  swipe ';
@@ -1300,7 +1300,7 @@ height:100%;
                 flex-direction:column;
                 justify-content:center;
                 border-radius:12px;
-                bottom:60px; right:0;
+                bottom:50px; right:30px;
                 color:#fff;
                 transform: rotate(90deg);
                 font-size:clamp(2rem, 3.5vw, 3.8rem);

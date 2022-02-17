@@ -1,6 +1,7 @@
 ---
 slug: /
 tagline: "Fight for the User!"
+description: "TRON Legacy recapped in ONLY 60 seconds"
 featuredImage: /assets/tronin60.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
