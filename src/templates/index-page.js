@@ -15,7 +15,7 @@ import { Seo } from "../components/seo"
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-
+import BlogListHome from "../components/blog-list-home"
 // import BlogListHome from "../components/blog-list-home"
 // import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
 // import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
@@ -371,6 +371,10 @@ const HomePage = ({ data }) => {
 <div className="" style={{height:'1px'}}></div>
 
 <div id="homestart"><Panel1 /></div>
+
+
+<BlogListHome data={posts} />
+
 
 {/* <div id="gridintro"><Panel2 /></div>
 
