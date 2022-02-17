@@ -361,7 +361,7 @@ const HomePage = ({ data }) => {
 <div className="" style={{height:'1px'}}></div>
 
 
-<Panel1 id="" />
+{/* <Panel1 id="" />
 <Panel2 id="" />
 <Panel3 id="" />
 <Panel4 id="" />
@@ -373,7 +373,7 @@ const HomePage = ({ data }) => {
 <Panel10 id="" />
 <Panel11 id="" />
 <Panel12 id="" />
-<Panel13 id="" />
+<Panel13 id="" /> */}
   
 
         
