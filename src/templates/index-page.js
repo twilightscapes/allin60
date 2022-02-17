@@ -172,17 +172,6 @@ export const pageQuery = graphql`
   }
 `
 
-
-
-  // const Panel2 = loadable(() => import('../components/panel2'), {
-//   fallback: <div>Loading...</div>,
-// })
-
-
-
-const HomePage = ({ data }) => {
-
-
   // const Panel1 = loadable(() => import('../components/panel1'))
   const Panel2 = loadable(() => import('../components/panel2'))
   const Panel3 = loadable(() => import('../components/panel3'))
@@ -196,6 +185,17 @@ const HomePage = ({ data }) => {
   const Panel11 = loadable(() => import('../components/panel11'))
   const Panel12 = loadable(() => import('../components/panel12'))
   const Panel13 = loadable(() => import('../components/panel13'))
+
+  // const Panel2 = loadable(() => import('../components/panel2'), {
+//   fallback: <div>Loading...</div>,
+// })
+
+
+
+const HomePage = ({ data }) => {
+
+
+
 
 
   // const { postcount } = useSiteMetadata()
@@ -361,8 +361,8 @@ const HomePage = ({ data }) => {
 <div className="" style={{height:'1px'}}></div>
 
 
-<Panel1 id="homestart" />
-<Panel2 id="gridintro" />
+<Panel1 id="" />
+<Panel2 id="" />
 <Panel3 id="" />
 <Panel4 id="" />
 <Panel5 id="" />
