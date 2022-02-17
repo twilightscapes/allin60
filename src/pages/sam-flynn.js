@@ -61,7 +61,7 @@ export default function SamPage() {
       
 
       <StaticImage className="character"
-style={{maxHeight:'80vh', width:'', margin:'0 0 0 0',}}
+style={{maxHeight:'70vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/sam-flynn.png" />
 </div>
 

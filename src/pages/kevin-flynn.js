@@ -58,7 +58,7 @@ export default function KevinPage() {
       
       {/* <KevinFlynn className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
       <StaticImage className="character"
- style={{maxHeight:'90vh',  padding:'',}}
+ style={{maxHeight:'70vh',  padding:'',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </div>
 

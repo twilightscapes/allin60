@@ -63,7 +63,7 @@ export default function QuorraPage() {
       
       {/* <QuoraAss className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
       <StaticImage className="character"
- style={{maxHeight:'90vh',  padding:'',}}
+ style={{maxHeight:'70vh',  padding:'',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/quora-ass.png" />
 
 </div>
