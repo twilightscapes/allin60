@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/transparent.png
+featuredImage: /assets/twilight-promo-transcendence.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
@@ -35,8 +35,7 @@ May peace always be with you.
 
 
 
-<h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
-<nft-card style="border:none;border-radius:12px" contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183188429643972609"> </nft-card>
+
 
 
  
