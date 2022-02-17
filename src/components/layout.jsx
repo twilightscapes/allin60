@@ -161,7 +161,7 @@ export function Layout({ children }) {
  </li> */}
 
  <li className="carto" style={{border:'none', margin:'0 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
+<Link title="Return To Home" to="/" aria-label="Return To Home"> 
 <div className="TronType tronText" style={{fontSize:'150%', margin:'1rem 0 0 0'}}>TRON</div><div className="defont" style={{fontSize:'200%', fontWeight:'bold'}}>in 60</div><div className="TRON tronText" style={{fontSize:'100%', margin:'0 0 3rem 0'}}>Seconds</div>
 {/* <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div> */}
 {/* 
@@ -223,7 +223,7 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/#gridintro">
+              <Link className="navbar-item txtshadow" to="/the-grid/">
               Enter The Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>

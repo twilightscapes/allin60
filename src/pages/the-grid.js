@@ -46,12 +46,12 @@ export default function TheGrid() {
 
 
 
-<div className="horizontal-holder" style={{overflow:''}}>
+<div className="horizontal-holder" style={{overflow:'visible'}}>
 <div className="RArrow">{/* <span></span> */}</div>
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>
 
-<div id="gridintro"><Panel2 /></div>
+<div id=""><Panel2 /></div>
 
 <div id="proceed"><Panel3 /></div>
 {/* 
