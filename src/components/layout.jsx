@@ -251,12 +251,11 @@ Contact Me<span>Ordering Questions?</span>
       </li>
 
 
-      <li className="carto" style={{textAlign:'center'}}>
+      {/* <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/heros/#endofline">
               End of Line Club
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
-      </li>
+      </li> */}
 
       <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/storyline/#returnsource">

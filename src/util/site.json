@@ -1,13 +1,13 @@
 {
   "meta": {
     "iconimage": "/assets/tw-logo-white.svg",
-    "favicon32x32": "/icons/icon-192x192.png",
+    "favicon32x32": "/icons/icon-512x512.png",
     "favicon16x16": "/icons/icon-192x192.png",
     "companyname": "TRON in 60 Seconds",
     "siteUrl": "https://tronin60.netlify.app",
     "twitterUsername": "toddlambert",
     "titleDefault": "TRON in 60 Seconds",
-    "icon192": "/assets/icons/icon-192x192.png",
+    "icon192": "/icons/icon-192x192.png",
     "titleTemplate": "%s",
     "title": "TRON in 60 seconds",
     "image": "/assets/default-og-image.jpg",

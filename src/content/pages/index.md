@@ -8,7 +8,7 @@ underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
-title: TRON Legacy in 60 Seconds
+title: TRON in 60 Seconds
 svgImage: /assets/null.svg
 showPosts: true
 cta:

@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/twilight-promo-transcendence.jpg
+featuredImage: /assets/night211.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"

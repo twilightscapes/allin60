@@ -4492,6 +4492,8 @@ height:100vh;
     left: inherit !important;
 }
 
+.frontbg .video-background iframe{position:fixed !important;}
+
 .frontbg .video-background.FULL .react-player__preview{
   background-size:100% !important;
   background-position: 50% 0 !important;
