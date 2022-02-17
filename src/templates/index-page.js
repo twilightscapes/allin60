@@ -361,8 +361,8 @@ const HomePage = ({ data }) => {
 <div className="" style={{height:'1px'}}></div>
 
 
-{/* <Panel1 id="" />
-<Panel2 id="" />
+<Panel1 id="" />
+{/* <Panel2 id="" />
 <Panel3 id="" />
 <Panel4 id="" />
 <Panel5 id="" />
