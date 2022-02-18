@@ -35,6 +35,8 @@ import BlogListHome from "../components/blog-list-home"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
 
+import GridLoader from "../../static/assets/FrontLoader.svg"
+
 // import InstallDiscount from "../components/install-discount"
 // import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
@@ -351,12 +353,18 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder intro" style={{overflow:''}}>
+<div className="horizontal-holder" style={{position:'relative'}}>
 <div className="RArrow">{/* <span></span> */}</div>
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>
 
+
+<GridLoader />
+
+
 <div id="homestart"><Panel1 /></div>
+
+
 
 
 <BlogListHome data={posts} />
