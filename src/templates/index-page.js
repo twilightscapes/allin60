@@ -359,7 +359,7 @@ const HomePage = ({ data }) => {
 <div className="" style={{height:'1px'}}></div>
 
 
-<GridLoader />
+{/* <GridLoader /> */}
 
 
 <div id="homestart"><Panel1 /></div>
