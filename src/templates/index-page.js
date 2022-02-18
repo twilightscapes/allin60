@@ -351,7 +351,7 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder" style={{overflow:''}}>
+<div className="horizontal-holder intro" style={{overflow:''}}>
 <div className="RArrow">{/* <span></span> */}</div>
 <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div>

@@ -234,7 +234,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://tronin60seconds.netlify.app',
-        sitemap: 'hhttps://tronin60seconds.netlify.app/sitemap.xml',
+        sitemap: 'https://tronin60seconds.netlify.app/sitemap.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {

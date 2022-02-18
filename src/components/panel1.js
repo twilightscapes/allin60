@@ -35,7 +35,7 @@ const Panel1 = () => (
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'visible'}}>
+<div className="intro" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'visible'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -67,9 +67,7 @@ const Panel1 = () => (
                <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'block', placeContent:'center', padding:'0' }}>
 
 
-{/* <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
-     <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
-</div>     */}
+
 
              </button>
          
