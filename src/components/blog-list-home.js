@@ -18,7 +18,7 @@ export default function BlogListHome(props) {
 const PostMaker = ({ data }) => (
 
     
-<div style={{overflow:'', height:''}}>
+<div style={{overflow:'', maxHeight:'', maxWidth:''}}>
 
         
 

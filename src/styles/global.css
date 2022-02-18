@@ -4363,7 +4363,7 @@ height:100vh;
 .horizontal-scroll  img{
   cursor:zoom-in !important; 
   object-fit: contain !important;
-  max-height: 100vh ;
+  max-height:  90vh;
  }
 
 

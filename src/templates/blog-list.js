@@ -144,9 +144,9 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
+          title={"TRON Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Twilightscapes Archive page " + currentPage + " of " + numPages
+            "TRON Archive page " + currentPage + " of " + numPages
           }
         />
         

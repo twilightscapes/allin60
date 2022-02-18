@@ -516,7 +516,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -669,7 +669,7 @@ const { iconimage } = useSiteMetadata()
           <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto', color:''}}>
             <h1>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} />
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </section>
         </header>
 
