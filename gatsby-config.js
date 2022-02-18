@@ -231,6 +231,22 @@ module.exports = {
     
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://tronin60seconds.netlify.app',
+        sitemap: 'hhttps://tronin60seconds.netlify.app/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', allow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `TRON in 60 Seconds`,
