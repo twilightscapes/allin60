@@ -16,20 +16,9 @@ export default function BlogListHome(props) {
 }
 
 const PostMaker = ({ data }) => (
-<div>
 
-
-
-
-
-{/* <h2 style={{fontSize:'200%', marginBottom:'1rem'}}>
-      Latest <strong>Experiences</strong>{" "}
-      <span className="icon -right">
-        <RiArrowDownLine />
-      </span>
-    </h2> */}
     
-<div>
+<div style={{overflow:'', height:''}}>
 
         
 
@@ -42,19 +31,5 @@ const PostMaker = ({ data }) => (
 
     
 
-  {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
-  <Link
-      className="button"
-      to="/experiences/"
-      title="See More Galleries"
-      style={{color:'#fff'}}
-    >
-      See More Experiences?
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
-</div> */}
 
-</div>
 )

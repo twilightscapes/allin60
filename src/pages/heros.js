@@ -1,33 +1,25 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { StaticImage } from "gatsby-plugin-image"
-import GoBack from "../components/goBack"
+// import { StaticImage } from "gatsby-plugin-image"
+// import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
 
 import loadable from '@loadable/component'
-import Panel1 from '../components/panel1'
+import Panel8 from '../components/panel8'
 
 
-const Panel2 = loadable(() => import('../components/panel2'), {
+const Panel9 = loadable(() => import('../components/panel9'), {
       fallback: <div>Loading...</div>,
     })
-    const Panel3 = loadable(() => import('../components/panel3'), {
+    const Panel10 = loadable(() => import('../components/panel10'), {
       fallback: <div>Loading...</div>,
     })
-    const Panel4 = loadable(() => import('../components/panel4'), {
-      fallback: <div>Loading...</div>,
-    })
-    const Panel5 = loadable(() => import('../components/panel5'))
-    const Panel6 = loadable(() => import('../components/panel6'))
-    const Panel7 = loadable(() => import('../components/panel7'))
-    const Panel8 = loadable(() => import('../components/panel8'))
-    const Panel9 = loadable(() => import('../components/panel9'))
-    const Panel10 = loadable(() => import('../components/panel10'))
-    const Panel11 = loadable(() => import('../components/panel11'))
-    const Panel12 = loadable(() => import('../components/panel12'))
-    const Panel13 = loadable(() => import('../components/panel13'))
+
+
+
+
 
 
 

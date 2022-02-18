@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { StaticImage } from "gatsby-plugin-image"
-import GoBack from "../components/goBack"
+// import { StaticImage } from "gatsby-plugin-image"
+// import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
@@ -79,8 +79,8 @@ export default function StoryLine() {
 
 
 <Panel11 id="conflict" />
-<Panel12 id="storyline" />
-<Panel13 id="endofgrid" />
+<Panel12 id="" />
+<Panel13 id="" />
   
   </div>
 </div>

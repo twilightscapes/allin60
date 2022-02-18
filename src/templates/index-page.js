@@ -50,7 +50,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import HomeHolder from "../components/homeholder"
 
 
-import loadable from '@loadable/component'
+// import loadable from '@loadable/component'
 import Panel1 from '../components/panel1'
 
   // const Panel1 = loadable(() => import('../components/panel1'))
@@ -79,21 +79,7 @@ export const pageQuery = graphql`
   query HomeQuery($id: String! ) {
     
 
-    allFile(
-      filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "/img/faves/"}}
-      sort: { order: ASC, fields: name }
-    ) {
-      edges {
-        node {
-          name
-          id
-          relativePath
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
-        }
-      }
-    }
+
 
     
     site {
@@ -210,33 +196,33 @@ const HomePage = ({ data }) => {
 
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+  const { frontmatter, excerpt } = markdownRemark
+  // const Image = frontmatter.featuredImage
+  //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+  //   : ""
 
-    const SecondaryImage = frontmatter.secondaryImage
-    ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
-    : ""
+    // const SecondaryImage = frontmatter.secondaryImage
+    // ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
+    // : ""
   
-    const UnderlayImage = frontmatter.underlayImage
-    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    : ""
+    // const UnderlayImage = frontmatter.underlayImage
+    // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
+    // : ""
 
     // const { iconimage } = useSiteMetadata()
 
 
     const { siteUrl } = useSiteMetadata()
 
-    const YouTubeStart = frontmatter.youtubestart
-    const YouTubeEnd = frontmatter.youtubeend
-    const YouTubeMute = frontmatter.youtubemute
-    const YouTubeControls = frontmatter.youtubecontrols
-    const YouTubeAutostart = frontmatter.youtubeautostart
+    // const YouTubeStart = frontmatter.youtubestart
+    // const YouTubeEnd = frontmatter.youtubeend
+    // const YouTubeMute = frontmatter.youtubemute
+    // const YouTubeControls = frontmatter.youtubecontrols
+    // const YouTubeAutostart = frontmatter.youtubeautostart
 
-    const ShowFeature = frontmatter.showFeature
-    const ShowInfo = frontmatter.showInfo
-    const ShowPosts = frontmatter.showPosts
+    // const ShowFeature = frontmatter.showFeature
+    // const ShowInfo = frontmatter.showInfo
+    // const ShowPosts = frontmatter.showPosts
 
     
 
@@ -376,26 +362,6 @@ const HomePage = ({ data }) => {
 <BlogListHome data={posts} />
 
 
-{/* <div id="gridintro"><Panel2 /></div>
-
-<div id="proceed"><Panel3 /></div>
-
-<div id="discgrid"><Panel4 /></div>
-
-<div id="match2"><Panel5 /></div>
-
-<div id="lightcycles"><Panel6 /></div>
-
-<div id="lightcycles2"><Panel7 /></div>
-
-<div id="quorra"><Panel8 /></div>
-
-<div id="endofline"><Panel9 /></div> */}
-{/* <Panel10 id="" />
-<Panel11 id="" />
-<Panel12 id="" />
-<Panel13 id="" />
-   */}
 
         
 </div>

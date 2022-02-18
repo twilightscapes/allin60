@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 // import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
@@ -93,7 +93,7 @@ const Panel2 = () => (
 
   
 
-<button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/the-grid/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
+<button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/the-grid#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
 </div>
 
 

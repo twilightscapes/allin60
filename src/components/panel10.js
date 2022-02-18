@@ -6,12 +6,12 @@ import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import { StaticImage } from "gatsby-plugin-image"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
-import LightCycle from "../../static/assets/light-cycle.svg"
-import QuoraStrike from "../../static/assets/quora-strike.svg"
+// import { ImPlay } from "react-icons/im"
+// import LightCycle from "../../static/assets/light-cycle.svg"
+// import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
 import SamFly from "../../static/assets/sam-fly.svg"
@@ -35,7 +35,7 @@ const Panel10 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
-<div id="samfly" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
+<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -87,7 +87,7 @@ const Panel10 = () => (
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline/#conflict" style={{color:'#37f8f8'}}>Ultimate Conflict <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline/" style={{color:'#37f8f8'}}>Ultimate Conflict <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import { StaticImage } from "gatsby-plugin-image"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
@@ -19,7 +19,7 @@ import { ImPlay } from "react-icons/im"
 // import SamFlynn from "../../static/assets/sam-flynn.svg"
 // import CluGuy from "../../static/assets/clu.svg"
 // import TronGuy from "../../static/assets/tron.svg"
-import MCP from "../../static/assets/mcp.svg"
+import McP from "../../static/assets/mcp.svg"
 import McpEffects from "../../static/assets/mcp-effects.svg"
 // import QuoraStand from "../../static/assets/quora-ass.svg"
 // import KevinFlynn from "../../static/assets/kevin-flynn.svg"
@@ -82,7 +82,7 @@ const Panel13 = () => (
 
 
 
-<MCP className="character evil" style={{display:'grid', placeContent:'center', width:'100%', height:'100%', position:'absolute', right:'0', top:'0', bottom:'0', border:'0px solid blue'  }} />
+<McP className="character evil" style={{display:'grid', placeContent:'center', width:'100%', height:'100%', position:'absolute', right:'0', top:'0', bottom:'0', border:'0px solid blue'  }} />
 
 <McpEffects style={{display:'grid', placeContent:'center', minHeight:'600px', width:'100vw', height:'105vh', position:'absolute', right:'0', top:'-5vh', bottom:'', border:'0px solid blue'  }} />
 

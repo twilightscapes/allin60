@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
 import Countdown from 'react-countdown'
 
@@ -11,7 +11,7 @@ const PostCard = ({ data }) => (
 
   
 
-<section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
+<section className="child" style={{position:'relative', height:'', overflow:''}}>
 
   <article
     className="post-card"

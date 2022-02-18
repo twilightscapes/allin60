@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 // import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
@@ -26,16 +26,16 @@ import TronChick from "../../static/assets/tron-chick1.svg"
 
 
 const CustomBox = styled.div`
-.frontbg iframe{
-  opacity:.4;
-}
+// .frontbg iframe{
+//   opacity:.6;
+// }
 `
 
 const Panel3 = () => (
 <CustomBox style={{}}>
 
 {/*  */}
-<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflowX:''}}>
+<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'visible'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
@@ -88,7 +88,7 @@ const Panel3 = () => (
 
 
 
-<div className="" style={{display:'', position:'relative', zindex:'3',   width:'60vw', height:'100%', padding:'4vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'5vw', lineHeight:'100%',textShadow:'0 2px 7px #000',}}>
+<div className="" style={{display:'', position:'relative', zindex:'3',   width:'60vw', height:'100%', padding:'4vh 1rem 1rem 1rem', fontSize:'clamp(.7rem, 3vw, 3.2rem)', left:'3vw', lineHeight:'100%',textShadow:'0 2px 7px #000',background:'rgba(0,0,0,0.50)', borderRadius:'12px' }}>
   
   <p>You will receive an identity disk.</p>
   
@@ -124,7 +124,7 @@ const Panel3 = () => (
 
 
   <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'absolute', left:'5%',}}>
-    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link to="/disc-grid/#discgrid" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
+    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link to="/disc-grid/" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
 </div>
 
 

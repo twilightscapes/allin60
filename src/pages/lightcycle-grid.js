@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import { StaticImage } from "gatsby-plugin-image"
-import GoBack from "../components/goBack"
+// import { StaticImage } from "gatsby-plugin-image"
+// import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 

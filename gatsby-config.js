@@ -194,7 +194,7 @@ module.exports = {
         modulePath: ``, // default: undefined
         enableIdentityWidget: true,
         publicPath: `admin`,
-        htmlTitle: `Twilightscapes CMS`,
+        htmlTitle: `TRON in 60 CMS`,
         htmlFavicon: `static/siteimages/manifest-icon-192.png`,
         includeRobots: false,
         logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
@@ -233,10 +233,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Twilightscapes Night Photography `,
-        short_name: `Twilightscapes`,
+        name: `TRON in 60 Seconds`,
+        short_name: `TRON in 60`,
         start_url: `/?user_mode=app`,
-        description: `Unique Night Photography of remote and abandoned`,
+        description: `Tron Legacy in ONLY 60 seconds`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,

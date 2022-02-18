@@ -7,9 +7,9 @@ import { Link } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
@@ -26,9 +26,9 @@ import { ImPlay } from "react-icons/im"
 
 
 const CustomBox = styled.div`
-.frontbg iframe{
-  opacity:.4;
-}
+// .frontbg iframe{
+//   opacity:.4;
+// }
 `
 
 const Panel5 = () => (
@@ -85,7 +85,7 @@ const Panel5 = () => (
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'relative', left:'5%',}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'3% 5%', }}><Link to="/lightcycle-grid/#lightcycles" style={{color:'#37f8f8'}}>LightCycle Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'3% 5%', }}><Link to="/lightcycle-grid" style={{color:'#37f8f8'}}>LightCycle Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
 
 </div>
 

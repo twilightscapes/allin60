@@ -7,9 +7,9 @@ import { Link } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
@@ -17,12 +17,12 @@ import { ImPlay } from "react-icons/im"
 // import Castor from "../../static/assets/castor.svg"
 // import SamFly from "../../static/assets/sam-fly.svg"
 // import SamFlynn from "../../static/assets/sam-flynn.svg"
-import CluGuy from "../../static/assets/clu.svg"
+// import CluGuy from "../../static/assets/clu.svg"
 // import TronGuy from "../../static/assets/tron.svg"
 // import MCP from "../../static/assets/mcp.svg"
 // import McpEffects from "../../static/assets/mcp-effects.svg"
 // import QuoraStand from "../../static/assets/quora-ass.svg"
-import KevinFlynn from "../../static/assets/kevin-flynn.svg"
+// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
 // import TronChick from "../../static/assets/tron-chick1.svg"
 
 
@@ -116,7 +116,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'40%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline/#returnsource" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline#returnsource" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

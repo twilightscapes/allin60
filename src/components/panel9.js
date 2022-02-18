@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+// import { StaticImage } from "gatsby-plugin-image"
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 
 
 // import LightCycle from "../../static/assets/light-cycle.svg"
@@ -87,7 +87,7 @@ const Panel9 = () => (
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/heros/#samfly" title="Sam Flynn" style={{color:'#37f8f8'}}>Son of Flynn <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/heros#samfly" title="Sam Flynn" style={{color:'#37f8f8'}}>Son of Flynn <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

@@ -11,7 +11,7 @@ const ComBox = ()=>{
       textColor: "#222",  // default black
        subtextColor: "#222",  // default grey
    })
-  },[])
+  })
 
   return(
 

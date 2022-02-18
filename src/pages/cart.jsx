@@ -4,7 +4,7 @@ import { Layout } from "../components/layout"
 import { StoreContext } from "../context/store-context"
 import { LineItem } from "../components/line-item"
 import { formatPrice } from "../utils/format-price"
-import { FaHandPointDown } from "react-icons/fa"
+// import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Helmet } from "react-helmet"
@@ -78,7 +78,7 @@ export default function CartPage() {
                   <th className={imageHeader}>Image</th>
                   <th className={productHeader}>Your New Twilightscape:</th>
                   <th className={collapseColumn}>Price</th>
-                  <th></th>
+                  {/* <th></th> */}
                   <th className={[totals, collapseColumn].join(" ")}>Total</th>
                 </tr>
               </thead>

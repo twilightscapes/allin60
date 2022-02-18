@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
 import { getSrc } from "gatsby-plugin-image"
-import { FaHandPointDown } from "react-icons/fa"
+// import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"

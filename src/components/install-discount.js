@@ -1,14 +1,14 @@
 import React from 'react'
 // import { navigate } from 'gatsby-link'
-import { FiShare } from 'react-icons/fi';
-import { IoShareOutline } from 'react-icons/io5';
-import { FaRegPlusSquare } from 'react-icons/fa';
+// import { FiShare } from 'react-icons/fi';
+// import { IoShareOutline } from 'react-icons/io5';
+// import { FaRegPlusSquare } from 'react-icons/fa';
 // import ScrollAnimation from 'react-animate-on-scroll'
-import CookieConsent from "react-cookie-consent"
-import { StaticImage } from "gatsby-plugin-image"
-import ReactPlayer from 'react-player/lazy'
-import { Link } from "gatsby"
-import { AiOutlineAudioMuted } from "react-icons/ai"
+// import CookieConsent from "react-cookie-consent"
+// import { StaticImage } from "gatsby-plugin-image"
+// import ReactPlayer from 'react-player/lazy'
+// import { Link } from "gatsby"
+// import { AiOutlineAudioMuted } from "react-icons/ai"
 // import Greeter from "./GreetMe"
 import styled from "styled-components";
 
@@ -48,7 +48,7 @@ const InstallDiscount = () => (
 
 
 <div id="installer" className="popper1" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0', zIndex:'5'}}>
+left:'-90vw', alignItems:'center', background:'transparent', padding:'0', zIndex:'5'}}>
 
 
 {/* <ReactPlayer

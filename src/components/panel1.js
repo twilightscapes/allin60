@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 // import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
@@ -35,9 +35,13 @@ const Panel1 = () => (
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:''}}>
+<div id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'visible'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
+
+
+
+
 
 {/* Panel Video */}
 <div className="vidbox" style={{position:'absolute', height:'100vh', width:'100vw', bottom:'0', zIndex:''}}>
@@ -60,7 +64,7 @@ const Panel1 = () => (
          playing
          playsinline
              playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'block', placeContent:'center', padding:'0' }}>
 
 
 {/* <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
@@ -77,16 +81,12 @@ const Panel1 = () => (
 </div>
 {/* Panel Video */}
 
+
+
+
+
+
 {/* Panel Content */}
-
-
-
-
-
-
-
-
-
 <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'1', zIndex:'-1'}}>
         <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON</div>
       </h1>
@@ -95,7 +95,7 @@ const Panel1 = () => (
  
 
 
- <div id="characters" className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', padding:'10vh 0 0 0', zIndex:''}}>
+ <div id="characters" className="characters" style={{position:'relative', zIndex:'0', width:'', height:'', top:'', background:'none', filter:'none', boxShadow:'none', padding:'10vh 0 0 0',}}>
     
 <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', zIndex:'-1' }}>
 
@@ -130,7 +130,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ke
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     display:'flex', flexDiection:'column', justifyContent:'center',
-    padding:'0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
+    padding:'0', border:'0px solid red',}}>
       <Link state={{modal: true}} to="/tron/" title="Tron" aria-label="Tron">
     {/* <TronGuy className="character" style={{height:'100%', width:'100%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /> */}
     <StaticImage className="character"
@@ -150,45 +150,20 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
     </Link>
     </div>
     
-
-    {/* <div className="frontbutt" style={{ zIndex:'2', display:'flex', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'300px', marginTop:'45vh', position:'absolute', border:'1px solid red',}}>
-        <button className="actionJackson tronText" style={{display:'flex', justifyContent:'center', filter:'drop-shadow(2px 2px 2px #000)', height:'auto', borderRadius:'',fontSize:'3vw', padding:'', background:'rgba(3, 212, 212, 0.1)', zIndex:'4' }}>
-             <Link to="/#gridintro" style={{color:'#37f8f8', textDecoration:'none',filter:'drop-shadow(2px 2px 2px #fff)',}}><span style={{fontFamily:'TRON',}}>in</span><br /><span style={{fontSize:'140%'}}>60</span> <span style={{fontFamily:'TRON',}}>seconds</span> <br /><div className="" style={{fontSize:'80%', fontFamily:'inherit',  textDecoration:'underline', color:'#fff'}}>Enter The Grid</div></Link>
-        </button>
-    </div> */}
 </div>
 
     </div> 
     
 
        
-    
 
-
-
-
-
-    {/* <div style={{fontSize:'clamp(.7rem, 2.5vw, 2.6rem)', lineHeight:'140%', paddingTop:'1rem' }}>
-
-<h2 className="tronText TRON" style={{fontSize:'clamp(14px, 3.5vw, 4.6rem)', lineHeight:'150%', margin:'0 0 2rem 0', textAlign:'center'}}>The Grid  <span className="neonText" style={{fontSize:'80%'}}>A digital frontier</span>.</h2>
-
-<div className="tronText" style={{lineHeight:'200%',fontSize:'clamp(1rem, 2.2vw, 3rem)', padding:'0 8%'}}>I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.</div>
-<div style={{display:'grid', placeContent:'', position:'absolute', zIndex:'1', right:'', bottom:'', width:'', margin:'50px 0 0 10vw',}}>
-
-  
-
-<button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'3% 5%', width:'150%' }}><Link to="/#proceed" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
-</div>
-
-
-<LightCycle className="character TronType" style={{maxWidth:'100%', position:'relative', right:'0', bottom:'8%', zIndex:'0' }} />
-
-</div>
- */}
 
 </div>
 
 {/* Panel Content */}
+
+
+
 
 
 {/*  */}

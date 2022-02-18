@@ -1,29 +1,29 @@
 import * as React from "react"
 // import { SkipNavContent, SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
-import { Footer } from "./footer"
+// import { Footer } from "./footer"
 import { Seo } from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
-import { AiOutlineClose } from "react-icons/ai"
+// import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-import { StoreContext } from "../context/store-context"
-import { Toast } from "./toast"
+// import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+// import { StoreContext } from "../context/store-context"
+// import { Toast } from "./toast"
 // import Bug from "../../static/assets/TSidebarHover.svg"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
-import { ImArrowRight } from "react-icons/im"
-import { CartButton } from "./cart-button"
+// import { ImArrowRight } from "react-icons/im"
+// import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
 // import { Link } from "gatsby-plugin-anchor-links"
 import "../assets/scss/style.scss"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
 import Install from './install-discount'
 // 
@@ -31,13 +31,13 @@ import Install from './install-discount'
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
-  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
+  // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
-  const items = checkout ? checkout.lineItems : []
+  // const items = checkout ? checkout.lineItems : []
 
-  const quantity = items.reduce((total, item) => {
-    return total + item.quantity
-  }, 0)
+  // const quantity = items.reduce((total, item) => {
+  //   return total + item.quantity
+  // }, 0)
 
   return (
     <div style={{display:''}}> 
@@ -47,7 +47,7 @@ export function Layout({ children }) {
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
-      <div style={{overflow:'visible'}}>
+      <div style={{overflow:''}}>
         {modal ? (
           <>
           <div style={{position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
@@ -229,22 +229,21 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li>
       
-<li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/#proceed">
+{/* <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/the-grid#proceed">
               Proceed to Games
+              </Link>
+      </li> */}
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link className="navbar-item txtshadow" to="/disc-grid">
+              LightDisc Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/disc-grid/#discgrid">
-              Onto the Disc Grid
-              {/* <span>Buy Todd's Photos</span> */}
-              </Link>
-      </li>
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/lightcycle-grid/#lightcycles">
+              <Link className="navbar-item txtshadow" to="/lightcycle-grid">
               LightCycle Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -258,7 +257,7 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/storyline/#returnsource">
+              <Link className="navbar-item txtshadow" to="/storyline">
               Return to the Source
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -266,7 +265,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/storyline/#endofgrid">
+              <Link className="navbar-item txtshadow" to="/storyline#endofgrid">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -343,7 +342,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <Toast show={loading || didJustAddToCart} >
+      {/* <Toast show={loading || didJustAddToCart} >
         {!didJustAddToCart ? (
           "Updating…"
         ) : (
@@ -352,7 +351,7 @@ Contact Me<span>Ordering Questions?</span>
             <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
           </>
         )}
-      </Toast>
+      </Toast> */}
  
 
 
