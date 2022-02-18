@@ -8,16 +8,16 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 // import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-// import { StoreContext } from "../context/store-context"
-// import { Toast } from "./toast"
+import { StoreContext } from "../context/store-context"
+import { Toast } from "./toast"
 // import Bug from "../../static/assets/TSidebarHover.svg"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
 // import { ImArrowRight } from "react-icons/im"
-// import { CartButton } from "./cart-button"
+import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-// import Theme from "../components/theme"
+import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -31,13 +31,13 @@ import Install from './install-discount'
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
-  // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
+  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
-  // const items = checkout ? checkout.lineItems : []
+  const items = checkout ? checkout.lineItems : []
 
-  // const quantity = items.reduce((total, item) => {
-  //   return total + item.quantity
-  // }, 0)
+  const quantity = items.reduce((total, item) => {
+    return total + item.quantity
+  }, 0)
 
   return (
     <div style={{display:''}}> 
@@ -310,17 +310,17 @@ Contact Me<span>Ordering Questions?</span>
 
       
 
-      {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0',  }}> */}
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0',  }}>
   
-      {/* <Theme  style={{padding:'0'}} /> */}
+      <Theme  style={{padding:'0'}} />
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link> */}
    
-  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
+  <div className="carto"><CartButton quantity={quantity} /></div>
 
 
-        {/* </li> */}
+        </li>
 
     
 
