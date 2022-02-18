@@ -63,16 +63,16 @@ const Panel1 = () => (
          loop
          playing
          playsinline
-             playIcon={
-               <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'block', placeContent:'center', padding:'0' }}>
+            //  playIcon={
+            //    <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', display:'block', placeContent:'center', padding:'0' }}>
 
 
 
 
-             </button>
+            //  </button>
          
-            }
-               light="assets/Front-Loader.svg"
+            // }
+            //    light="assets/Front-Loader.svg"
          />
 </div>
 </div>
