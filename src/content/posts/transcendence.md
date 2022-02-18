@@ -23,7 +23,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/night211.jpg
-svgImage: /assets/null.svg
+svgImage: /assets/transcendence.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem: ""

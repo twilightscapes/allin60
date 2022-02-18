@@ -84,7 +84,7 @@ const Panel13 = () => (
 
 <McP className="character evil" style={{display:'grid', placeContent:'center', width:'100%', height:'100%', position:'absolute', right:'0', top:'0', bottom:'0', border:'0px solid blue'  }} />
 
-<McpEffects style={{display:'grid', placeContent:'center', minHeight:'600px', width:'100vw', height:'105vh', position:'absolute', right:'0', top:'-5vh', bottom:'', border:'0px solid blue'  }} />
+<McpEffects className="evil" style={{display:'grid', placeContent:'center', minHeight:'600px', width:'100vw', height:'105vh', position:'absolute', right:'0', top:'-5vh', bottom:'', border:'0px solid blue'  }} />
 
 
 

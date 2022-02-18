@@ -29,7 +29,7 @@ export default function CluePage() {
 
 
  
-<section className="outer1 section2 section--gradient" style={{display:'flex', flexDirection:'row',}}>
+<section className="outer1 section2 section--gradient" style={{}}>
 
 
 
@@ -38,7 +38,7 @@ export default function CluePage() {
       <div className="mobile"><GoBack /></div>
       
 
-<div className="masonry" style={{gap:'2rem',}}>
+<div className="masonry" style={{gap:'2rem', justifyContent:'start'}}>
       <div>
 <h1 className="tronText" style={{fontSize:'clamp(2rem, 3vw, 3rem)'}}>CLU</h1>
 <ul style={{fontSize:'clamp(1rem, 1.5vw, 2rem)', listStyle:'none', background:'rgba(0, 0, 0, .4)', padding:'1rem', borderRadius:'12px'}}>
@@ -57,8 +57,8 @@ export default function CluePage() {
       </div>
       
       {/* <CluGuy className="character evil" style={{maxHeight:'90vh',  padding:'',}} /> */}
-      <StaticImage className="character"
-style={{maxHeight:'70vh',  padding:'',}}
+      <StaticImage className="character evil"
+style={{maxHeight:'',  padding:'',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
       
 </div>

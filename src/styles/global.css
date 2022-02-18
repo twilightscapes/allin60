@@ -4530,3 +4530,72 @@ height:100vh;
 
 
 
+.masonry {
+  margin: 0 auto;
+  max-width: 90%;
+  column-gap: 1.5em;
+}
+
+.masonry * {
+  margin: 0 0 1.5em;
+  border-radius:12px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+
+.flexbutt {display:flex; }
+
+.flexcheek {width:50%; position:sticky; top:0;}
+
+.introspace{padding-top:60vh;}
+
+.mobile{display: none; border:0px solid #ad04a5 !important;}
+@media (max-width: 48rem) {
+  .flexbutt{flex-direction: column !important;}
+.flexcheek{width:100% !important; position:inherit; top:inherit;}
+.mobile{display: block;}
+.dd ul{min-height:inherit !important;}
+/* .flexcheek h1, .mobilefix{ margin-top:2rem !important;} */
+.introspace{padding-top:40vh;}
+	}
+
+
+  /* @media (min-width: 640px) {
+  .masonry {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .masonry {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */

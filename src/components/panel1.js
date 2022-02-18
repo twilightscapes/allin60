@@ -142,7 +142,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
     <Link state={{modal: true}} to="/clu/" title="Clu" aria-label="Clu">
     {/* <CluGuy className="character evil" style={{height:'100%', width:'100%', margin:'0 0 0 -20%',}} /> */}
-    <StaticImage className="character"
+    <StaticImage className="character evil"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
     </Link>

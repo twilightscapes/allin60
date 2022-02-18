@@ -29,14 +29,13 @@ export default function SamPage() {
 
 
  
-<section className="outer section section--gradient">
+<section className="outer1 section2 section--gradient">
+
+
+
       <div className="container" style={{padding: '2rem 10%'}}>
 
       <div className="mobile"><GoBack /></div>
-      
-
-
-
       
 
 
@@ -61,7 +60,7 @@ export default function SamPage() {
       
 
       <StaticImage className="character"
-style={{maxHeight:'70vh', width:'', margin:'0 0 0 0',}}
+style={{maxHeight:'', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/sam-flynn.png" />
 </div>
 

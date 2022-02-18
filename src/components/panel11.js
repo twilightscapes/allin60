@@ -107,7 +107,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ke
 
 <Link state={{modal: true}} to="/clu/" >
 {/* <CluGuy className="character evil" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/> */}
-<StaticImage className="character"
+<StaticImage className="character evil"
 style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
 </Link>

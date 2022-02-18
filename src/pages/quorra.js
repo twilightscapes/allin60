@@ -29,18 +29,13 @@ export default function QuorraPage() {
 
 
  
-<section className="outer section section--gradient">
+<section className="outer1 section2 section--gradient">
+
+
+
       <div className="container" style={{padding: '2rem 10%'}}>
 
       <div className="mobile"><GoBack /></div>
-      
-
-
-
-      
-
-
-
 
 
       <div className="masonry" style={{gap:'2rem',}}>
@@ -63,7 +58,7 @@ export default function QuorraPage() {
       
       {/* <QuoraAss className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
       <StaticImage className="character"
- style={{maxHeight:'70vh',  padding:'',}}
+ style={{maxHeight:'',  padding:'',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/quora-ass.png" />
 
 </div>

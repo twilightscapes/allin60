@@ -29,8 +29,11 @@ export default function KevinPage() {
 
 
  
-<section className="outer3 section3 section--gradient">
-      {/* <div className="container" style={{padding: '2rem 10%'}}> */}
+<section className="outer1 section2 section--gradient">
+
+
+
+      <div className="container" style={{padding: '2rem 10%'}}>
 
       <div className="mobile"><GoBack /></div>
       
@@ -58,12 +61,12 @@ export default function KevinPage() {
       
       {/* <KevinFlynn className="character" style={{maxHeight:'90vh',  padding:'',}} /> */}
       <StaticImage className="character"
- style={{maxHeight:'70vh',  padding:'',}}
+ style={{maxHeight:'',  padding:'',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </div>
 
 
-
+</div>
 
 
       
