@@ -8,7 +8,7 @@ underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
-title: TRON in 60 Seconds | All In 60 Seconds - allin60.com
+title: All In 60 Seconds - allin60.com
 svgImage: /assets/null.svg
 showPosts: true
 cta:
