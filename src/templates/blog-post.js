@@ -13,7 +13,7 @@ import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { Footer } from "../components/footer"
-import { SRLWrapper } from "simple-react-lightbox"
+// import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -32,65 +32,65 @@ const CustomBox = styled.div`
 }
 `
 
-const options = {
-  settings: {
-    autoplaySpeed: 3000,
-    // boxShadow: '0px 0px 20px #fff',
-    disableKeyboardControls: false,
-    disablePanzoom: false,
-    disableWheelControls: false,
-    hideControlsAfter: false,
-    lightboxTransitionSpeed: 0.3,
-    lightboxTransitionTimingFunction: 'linear',
-    // overlayColor: 'rgba(185, 7, 230, 0.5)',
-    slideAnimationType: 'slide',
-    slideSpringValues: [300, 50],
-    slideTransitionSpeed: 0.6,
-    slideTransitionTimingFunction: 'linear',
-    usingPreact: false
-  },
-  buttons: {
-    backgroundColor: 'rgba(30,30,36,0.8)',
-    iconColor: 'rgba(255, 255, 255, 0.8)',
-    iconPadding: '10px',
-    showAutoplayButton: true,
-    showCloseButton: true,
-    showDownloadButton: true,
-    showFullscreenButton: true,
-    showNextButton: true,
-    showPrevButton: true,
-    showThumbnailsButton: true,
-    size: '40px'
-  },
-  caption: {
-captionAlignment: 'start',
-captionColor: '#FFFFFF',
-captionContainerPadding: '20px 12% 30px 12%',
-captionFontFamily: 'inherit',
-captionFontSize: 'inherit',
-captionFontStyle: 'inherit',
-captionFontWeight: 'inherit',
-captionTextTransform: 'inherit',
-showCaption: true
-  },
-  thumbnails: {
-    showThumbnails: true,
-    thumbnailsAlignment: 'center',
-    thumbnailsContainerBackgroundColor: 'transparent',
-    thumbnailsContainerPadding: '0',
-    thumbnailsGap: '0 1px',
-    thumbnailsIconColor: '#ffffff',
-    thumbnailsOpacity: 0.4,
-    thumbnailsPosition: 'bottom',
-    thumbnailsSize: ['100px', '80px']
-  },
-  progressBar: {
-    backgroundColor: '#f2f2f2',
-    fillColor: '#000000',
-    height: '3px',
-    showProgressBar: true
-  },
-};
+// const options = {
+//   settings: {
+//     autoplaySpeed: 3000,
+//     // boxShadow: '0px 0px 20px #fff',
+//     disableKeyboardControls: false,
+//     disablePanzoom: false,
+//     disableWheelControls: false,
+//     hideControlsAfter: false,
+//     lightboxTransitionSpeed: 0.3,
+//     lightboxTransitionTimingFunction: 'linear',
+//     // overlayColor: 'rgba(185, 7, 230, 0.5)',
+//     slideAnimationType: 'slide',
+//     slideSpringValues: [300, 50],
+//     slideTransitionSpeed: 0.6,
+//     slideTransitionTimingFunction: 'linear',
+//     usingPreact: false
+//   },
+//   buttons: {
+//     backgroundColor: 'rgba(30,30,36,0.8)',
+//     iconColor: 'rgba(255, 255, 255, 0.8)',
+//     iconPadding: '10px',
+//     showAutoplayButton: true,
+//     showCloseButton: true,
+//     showDownloadButton: true,
+//     showFullscreenButton: true,
+//     showNextButton: true,
+//     showPrevButton: true,
+//     showThumbnailsButton: true,
+//     size: '40px'
+//   },
+//   caption: {
+// captionAlignment: 'start',
+// captionColor: '#FFFFFF',
+// captionContainerPadding: '20px 12% 30px 12%',
+// captionFontFamily: 'inherit',
+// captionFontSize: 'inherit',
+// captionFontStyle: 'inherit',
+// captionFontWeight: 'inherit',
+// captionTextTransform: 'inherit',
+// showCaption: true
+//   },
+//   thumbnails: {
+//     showThumbnails: true,
+//     thumbnailsAlignment: 'center',
+//     thumbnailsContainerBackgroundColor: 'transparent',
+//     thumbnailsContainerPadding: '0',
+//     thumbnailsGap: '0 1px',
+//     thumbnailsIconColor: '#ffffff',
+//     thumbnailsOpacity: 0.4,
+//     thumbnailsPosition: 'bottom',
+//     thumbnailsSize: ['100px', '80px']
+//   },
+//   progressBar: {
+//     backgroundColor: '#f2f2f2',
+//     fillColor: '#000000',
+//     height: '3px',
+//     showProgressBar: true
+//   },
+// };
 
 const Pagination = props => (
   <div className="pagination -post">
@@ -676,8 +676,8 @@ const { iconimage } = useSiteMetadata()
 
 
 
-
-      <span className="mobile"><GoBack /></span>
+<br />
+      <GoBack />
  <br />
 
 
@@ -696,13 +696,13 @@ const { iconimage } = useSiteMetadata()
             ""
           )}
 
-
-<SRLWrapper options={options} className="">
+{/* 
+<SRLWrapper options={options} className=""> */}
       <div
         className="blog-post-content" style={{ padding:'0 ', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
-      </SRLWrapper>  
+      {/* </SRLWrapper>   */}
      
      <br /><br />
  

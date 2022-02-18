@@ -98,7 +98,7 @@ alt="Todd Lambert Web development for photographers" src="../img/clu2.png" /> */
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'45%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/storyline#endofgrid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/endofgrid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div>
 

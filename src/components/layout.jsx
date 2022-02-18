@@ -265,7 +265,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/storyline#endofgrid">
+              <Link className="navbar-item txtshadow" to="/endofgrid">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
