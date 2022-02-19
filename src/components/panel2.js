@@ -100,16 +100,15 @@ const Panel2 = () => (
 
 <LightCycle className="character TronType" style={{maxWidth:'100%', position:'relative', right:'0', bottom:'8%', zIndex:'' }} />
 
-<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', height:'', position:'absolute', left:'5%',}}>
-    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'clamp(14px, 3vw, 4rem)', padding:'5% 0', width:'130%' }}><Link state={{modal: true}} to="/the-grid/proceed-to-games/" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
+</div>
+
+
+<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', height:'', position:'absolute', left:'5%', top:''}}>
+
+    <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link state={{modal: true}} to="/the-grid/proceed-to-games/" style={{color:'#37f8f8'}}>I GOT IN</Link></button>
 
     <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 </div>
-
-
-
-</div>
-
 
 </div>
 

@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Layout } from "../../components/layout"
+import { Seo } from "../../components/seo"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
@@ -40,20 +41,24 @@ export default function ProceedGames() {
 
     
     <Layout className="thanks-page">
+      <Seo
+          title={`Welcome to the GRID`}
+          description={`I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.`}
+          image={'https://allin60.com/tronin60.jpg'}
+        />
 
-{/* <Seo title={`Content License Agreement Here`} /> */}
-{/* <Seo image="/default-og-image.jpg"/> */}
 
 
 
-<div className="horizontal-holder" style={{overflow:''}}>
+
+{/* <div className="horizontal-holder" style={{overflow:''}}> */}
 {/* <div className="RArrow"><span></span></div> */}
 {/* <div className="horizontal-scroll panels" style={{}}>
 <div className="" style={{height:'1px'}}></div> */}
-
-<div id="">
+{/* 
+<div id=""> */}
       <Panel3 />
-      </div>
+      {/* </div> */}
 
 {/* <div id="proceed"><Panel3 /></div> */}
 {/* 
@@ -79,7 +84,7 @@ export default function ProceedGames() {
 <Panel13 id="" /> */}
   
   {/* </div> */}
-</div>
+{/* </div> */}
       
    
 

@@ -1,12 +1,13 @@
 import * as React from "react"
 import { Layout } from "../../components/layout"
+import { Seo } from "../../components/seo"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
 
-import loadable from '@loadable/component'
+// import loadable from '@loadable/component'
 import Panel6 from '../../components/panel6'
 
 
@@ -23,7 +24,7 @@ import Panel6 from '../../components/panel6'
 
     // const Panel6 = loadable(() => import('../components/panel6'))
 
-    const Panel7 = loadable(() => import('../../components/panel7'))
+    // const Panel7 = loadable(() => import('../../components/panel7'))
     // const Panel8 = loadable(() => import('../components/panel8'))
     // const Panel9 = loadable(() => import('../components/panel9'))
     // const Panel10 = loadable(() => import('../components/panel10'))
@@ -42,9 +43,11 @@ export default function LightcycleGrid() {
 
     
     <Layout className="thanks-page">
-
-{/* <Seo title={`Content License Agreement Here`} /> */}
-{/* <Seo image="/default-og-image.jpg"/> */}
+<Seo
+          title={`Welcome to the GRID`}
+          description={`I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.`}
+          image={'https://allin60.com/tronin60.jpg'}
+        />
 
 
 {/* 

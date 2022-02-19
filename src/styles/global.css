@@ -4422,7 +4422,7 @@ height:100vh;
 
 
 .nextbutt::before{
-  content: " next ";
+  content: " next up \276F ";
   text-align:left;
   position:relative;
   display: block;

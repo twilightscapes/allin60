@@ -243,21 +243,21 @@ Contact Me<span>Ordering Questions?</span>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/lightcycle-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/lightcycle-grid">
               LightCycle Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
 
-      {/* <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/heros/#endofline">
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-line-club">
               End of Line Club
               </Link>
-      </li> */}
+      </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/return-to-the-source">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/return-to-the-source">
               Return to the Source
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -265,7 +265,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/end-of-the-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-the-grid">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
