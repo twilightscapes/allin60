@@ -1,13 +1,13 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
+import { Layout } from "../../components/layout"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
 
-import loadable from '@loadable/component'
-import Panel6 from '../components/panel6'
+// import loadable from '@loadable/component'
+import Panel9 from '../../components/panel9'
 
 
 // const Panel2 = loadable(() => import('../components/panel2'), {
@@ -16,14 +16,12 @@ import Panel6 from '../components/panel6'
 //     const Panel3 = loadable(() => import('../components/panel3'), {
 //       fallback: <div>Loading...</div>,
 //     })
-//     const Panel4 = loadable(() => import('../components/panel4'), {
-//       fallback: <div>Loading...</div>,
-//     })
-//     const Panel5 = loadable(() => import('../components/panel5'))
-
+    // const Panel5 = loadable(() => import('../components/panel5'), {
+    //   fallback: <div>Loading...</div>,
+    // })
+    // const Panel5 = loadable(() => import('../components/panel5'))
     // const Panel6 = loadable(() => import('../components/panel6'))
-
-    const Panel7 = loadable(() => import('../components/panel7'))
+    // const Panel7 = loadable(() => import('../components/panel7'))
     // const Panel8 = loadable(() => import('../components/panel8'))
     // const Panel9 = loadable(() => import('../components/panel9'))
     // const Panel10 = loadable(() => import('../components/panel10'))
@@ -36,7 +34,7 @@ import Panel6 from '../components/panel6'
 
 
 
-export default function LightcycleGrid() {
+export default function EndLine() {
    return (
 
 
@@ -48,38 +46,8 @@ export default function LightcycleGrid() {
 
 
 
-<div className="horizontal-holder" style={{overflow:''}}>
-<div className="RArrow">{/* <span></span> */}</div>
-<div className="horizontal-scroll panels" style={{}}>
-<div className="" style={{height:'1px'}}></div>
+<Panel9 />
 
-{/* <div id="gridintro"><Panel2 /></div>
-
-<div id="proceed"><Panel3 /></div> */}
-
-{/* <div id="discgrid"><Panel4 /></div>
-
-<div id="match2"><Panel5 /></div> */}
-
-<div id="lightcycles"><Panel6 /></div>
-
-<div id="lightcycles2"><Panel7 /></div>
-
-{/* <div id="quorra"><Panel8 /></div>
-
-<div id="endofline"><Panel9 /></div>
-
-
-<div id="samfly"><Panel10 /></div> */}
-{/* 
-<div id="samfly"><Panel10 /></div>
-
-<Panel11 id="" />
-<Panel12 id="" />
-<Panel13 id="" /> */}
-  
-  </div>
-</div>
       
    
 

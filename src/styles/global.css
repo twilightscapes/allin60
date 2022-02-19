@@ -1041,10 +1041,36 @@ color:#fff !important;
   }
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back, .ReactModalPortal .clickplays * {
-display: none !important;
 
+
+
+
+
+
+
+
+
+
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .clickplays * {
+display: none !important;
 }
+
+.nextbutt .back{display:none; font-size: 1rem;}
+
+.ReactModalPortal .nextbutt .back{
+  display: block !important;
+}
+
+.back:hover {
+  background: darken;
+}
+
+body.homepage .ReactModalPortal .nextbutt {display: none !important;}
+
+
+
+.nextbutt .backbutton {display: flex; align-self: center; justify-content: center; margin-top:10px; text-align:center;}
+
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
 
@@ -2669,34 +2695,10 @@ transform: scale(1);
 
 
 
-  /* .back {
-    --padding: 15px;
-    --margin: 20px;
-    display: inline-flex;
-    align-items: center;
-    padding: var(--padding) calc(var(--padding) * 2);
-    border-radius: 12px;
-    border:1px solid #555 !important;
-    text-decoration: none;
-    appearance: none;
-    border: none;
-    font-size: 16px;
-    line-height: 1;
-background:#000;
-  } */
-  .back.-outline {
-      color: var(--primary-color);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
-      background: #fff;
-    }
 
 
-    .back:hover {
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-        /* background: #f2f2f2; */
-        color:var(--primary);
-      }
-.back{border:1px solid #555 !important;}
+
+
 
 
 .iconmenu{

@@ -2,7 +2,7 @@
 import * as React from "react"
 import styled from "styled-components"
 
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
@@ -86,7 +86,7 @@ const Panel12 = () => (
 <Link state={{modal: true}} to="kevin-flynn/">
 {/* <KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}/> */}
 <StaticImage className="character"
-style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}
+style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'', position:'absolute', left:'20vw', bottom:'-6vh', display:'flex', alignSelf:'center', placeContent:'center', border:'0px solid red',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </Link>
 
@@ -96,9 +96,10 @@ style={{maxHeight:'100vh', width:'50%', zIndex:'2', position:'absolute', left:'0
 alt="Todd Lambert Web development for photographers" src="../img/clu2.png" /> */}
 
 
-<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'45%', top:''}}>
+<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'', position:'absolute', left:'45%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/endofgrid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link state={{modal: true}} to="/the-grid/end-of-the-grid" style={{color:'#37f8f8'}}>End of the Grid  <span style={{fontSize:'150%'}}></span></Link></button>
+          <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 
 </div>
 

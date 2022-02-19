@@ -51,11 +51,11 @@ export function Layout({ children }) {
         {modal ? (
           <>
           <div style={{position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
-          <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'red', cursor:'pointer'}}>
+          <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'', cursor:'pointer'}}>
             {/* <AiOutlineClose /> */}
             <span className="TRON">[</span>
             
-            <span className="" style={{fontSize:'70%', textAlign:'center'}}>close</span>
+            <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span>
           </Link>
           </div>
           </>
@@ -223,7 +223,7 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid/">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid">
               Enter The Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -236,14 +236,14 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/disc-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/disc-grid">
               LightDisc Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/lightcycle-grid">
+              <Link className="navbar-item txtshadow" to="/the-grid/lightcycle-grid">
               LightCycle Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -257,7 +257,7 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/storyline">
+              <Link className="navbar-item txtshadow" to="/the-grid/return-to-the-source">
               Return to the Source
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -265,7 +265,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/endofgrid">
+              <Link className="navbar-item txtshadow" to="/the-grid/end-of-the-grid">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>

@@ -2,7 +2,7 @@
 import * as React from "react"
 import styled from "styled-components"
 
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
@@ -84,14 +84,14 @@ const Panel13 = () => (
 
 <McP className="character evil" style={{display:'grid', placeContent:'center', width:'100%', height:'100%', position:'absolute', right:'0', top:'0', bottom:'0', border:'0px solid blue'  }} />
 
-<McpEffects className="evil" style={{display:'grid', placeContent:'center', minHeight:'600px', width:'100vw', height:'105vh', position:'absolute', right:'0', top:'-5vh', bottom:'', border:'0px solid blue'  }} />
+{/* <McpEffects className="evil" style={{display:'grid', placeContent:'center', minHeight:'600px', width:'100vw', height:'105vh', position:'absolute', right:'0', top:'-5vh', bottom:'', border:'0px solid blue'  }} /> */}
 
 
 
 <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
           <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link to="/art/" style={{color:'#37f8f8'}}>Support This Site <span style={{fontSize:'150%'}}></span></Link></button>
-
+          <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 </div>
 
 

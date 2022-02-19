@@ -217,10 +217,10 @@ function ShowSuggestion() {
 <IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
   
   
-  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
+  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This is interactive!</span> 
 <br />
 
-The artist recommends these alternatives:
+We recommend these alternatives:
 <br /><br />
 Click to Copy:<br />
 <CopyToClipboard text={Suggestion1}>
@@ -237,7 +237,7 @@ Click to Copy:<br />
 </CopyToClipboard><br />
 
 <br />
-Add your favorites in the comments below!
+Add your own in the comments below!
 
 </div>
 

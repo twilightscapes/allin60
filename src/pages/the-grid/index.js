@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
+import { Layout } from "../../components/layout"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
@@ -7,15 +7,15 @@ import { Layout } from "../components/layout"
 
 
 // import loadable from '@loadable/component'
-import Panel13 from '../components/panel13'
+import Panel2 from '../../components/panel2'
 
 
 // const Panel2 = loadable(() => import('../components/panel2'), {
 //       fallback: <div>Loading...</div>,
 //     })
-    // const Panel3 = loadable(() => import('../components/panel3'), {
-    //   fallback: <div>Loading...</div>,
-    // })
+//     const Panel3 = loadable(() => import('../components/panel3'), {
+//       fallback: <div>Loading...</div>,
+//     })
 //     const Panel4 = loadable(() => import('../components/panel4'), {
 //       fallback: <div>Loading...</div>,
 //     })
@@ -34,7 +34,7 @@ import Panel13 from '../components/panel13'
 
 
 
-export default function EndGrid() {
+export default function TheGrid() {
    return (
 
 
@@ -46,38 +46,9 @@ export default function EndGrid() {
 
 
 
-<div className="horizontal-holder" style={{overflow:''}}>
-<div className="RArrow">{/* <span></span> */}</div>
-<div className="horizontal-scroll panels" style={{}}>
-<div className="" style={{height:'1px'}}></div>
 
-<div id=""><Panel13 /></div>
+      <Panel2 />
 
-{/* <div id="proceed"><Panel3 /></div> */}
-{/* 
-<div id="discgrid"><Panel4 /></div>
-
-<div id="match2"><Panel5 /></div>
-
-<div id="lightcycles"><Panel6 /></div>
-
-<div id="lightcycles2"><Panel7 /></div>
-
-<div id="quorra"><Panel8 /></div>
-
-<div id="endofline"><Panel9 /></div>
-
-
-<div id="samfly"><Panel10 /></div> */}
-{/* 
-<div id="samfly"><Panel10 /></div>
-
-<Panel11 id="" />
-<Panel12 id="" />
-<Panel13 id="" /> */}
-  
-  </div>
-</div>
       
    
 

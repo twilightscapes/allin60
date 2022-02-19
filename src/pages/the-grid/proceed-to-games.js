@@ -1,13 +1,13 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
+import { Layout } from "../../components/layout"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
 
-import loadable from '@loadable/component'
-import Panel11 from '../components/panel11'
+// import loadable from '@loadable/component'
+import Panel3 from '../../components/panel3'
 
 
 // const Panel2 = loadable(() => import('../components/panel2'), {
@@ -25,22 +25,16 @@ import Panel11 from '../components/panel11'
 //     const Panel8 = loadable(() => import('../components/panel8'))
 //     const Panel9 = loadable(() => import('../components/panel9'))
 //     const Panel10 = loadable(() => import('../components/panel10'))
-    // const Panel11 = loadable(() => import('../components/panel11'), {
-    //   fallback: <div>Loading...</div>,
-    // })
-    const Panel12 = loadable(() => import('../components/panel12'), {
-      fallback: <div>Loading...</div>,
-    })
-    // const Panel13 = loadable(() => import('../components/panel13'), {
-    //   fallback: <div>Loading...</div>,
-    // })
+//     const Panel11 = loadable(() => import('../components/panel11'))
+//     const Panel12 = loadable(() => import('../components/panel12'))
+//     const Panel13 = loadable(() => import('../components/panel13'))
 
 
 
 
 
 
-export default function StoryLine() {
+export default function ProceedGames() {
    return (
 
 
@@ -53,36 +47,38 @@ export default function StoryLine() {
 
 
 <div className="horizontal-holder" style={{overflow:''}}>
-<div className="RArrow">{/* <span></span> */}</div>
-<div className="horizontal-scroll panels" style={{}}>
-<div className="" style={{height:'1px'}}></div>
+{/* <div className="RArrow"><span></span></div> */}
+{/* <div className="horizontal-scroll panels" style={{}}>
+<div className="" style={{height:'1px'}}></div> */}
 
-{/* <div id="gridintro"><Panel2 /></div>
+<div id="">
+      <Panel3 />
+      </div>
 
-<div id="proceed"><Panel3 /></div> */}
+{/* <div id="proceed"><Panel3 /></div> */}
+{/* 
+<div id="discgrid"><Panel4 /></div>
 
-{/* <div id="discgrid"><Panel4 /></div>
+<div id="match2"><Panel5 /></div>
 
-<div id="match2"><Panel5 /></div> */}
+<div id="lightcycles"><Panel6 /></div>
 
-{/* <div id="lightcycles"><Panel6 /></div>
+<div id="lightcycles2"><Panel7 /></div>
 
-<div id="lightcycles2"><Panel7 /></div> */}
-
-{/* <div id="quorra"><Panel8 /></div>
+<div id="quorra"><Panel8 /></div>
 
 <div id="endofline"><Panel9 /></div>
 
 
 <div id="samfly"><Panel10 /></div> */}
+{/* 
+<div id="samfly"><Panel10 /></div>
 
-
-
-<Panel11 id="conflict" />
+<Panel11 id="" />
 <Panel12 id="" />
-{/* <Panel13 id="" /> */}
+<Panel13 id="" /> */}
   
-  </div>
+  {/* </div> */}
 </div>
       
    

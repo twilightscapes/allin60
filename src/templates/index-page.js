@@ -36,6 +36,7 @@ import BlogListHome from "../components/blog-list-home"
 // import Castor from "../../static/assets/castor.svg"
 
 import GridLoader from "../../static/assets/FrontLoader.svg"
+import TheGrid from "../../static/assets/The-Grid-Intro.svg"
 
 // import InstallDiscount from "../components/install-discount"
 // import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -366,8 +367,8 @@ const HomePage = ({ data }) => {
 
 
 
-
-{/* <BlogListHome data={posts} /> */}
+<TheGrid />
+<BlogListHome data={posts} />
 
 
 

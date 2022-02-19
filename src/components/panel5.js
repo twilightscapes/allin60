@@ -2,7 +2,7 @@
 import * as React from "react"
 import styled from "styled-components"
 
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
@@ -82,21 +82,27 @@ const Panel5 = () => (
 
 
 
+<div style={{maxHeight:'', maxWidth:'', height:'60vh', width:'', position:'absolute', right:'-10vw', bottom:'0', paddingTop:'0vh', zIndex:'0', border:'0px solid blue' }}>
+<Link state={{modal: true}} to="/about-twilightscapes/">
+<StaticImage className="character evil"
+alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
+</Link>
+</div>
 
-<div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'center', color:'#ccc', height:'', position:'relative', left:'5%',}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', height:'', borderRadius:'200px',fontSize:'2vw', padding:'3% 5%', }}><Link to="/lightcycle-grid" style={{color:'#37f8f8'}}>LightCycle Grid <span style={{fontSize:'150%'}}>|</span></Link></button>
+
+          <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', height:'', position:'absolute', left:'5%', top:''}}>
+
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link state={{modal: true}} to="/the-grid/lightcycle-grid" style={{color:'#37f8f8'}}>LightCycle Grid  <span style={{fontSize:'150%'}}>@</span></Link></button>
+
+          <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 
 </div>
 
 
 
 
-<Link state={{modal: true}} to="/about-twilightscapes/">
-<StaticImage className="character evil"
-style={{maxHeight:'', maxWidth:'', height:'80vh', width:'70%', position:'absolute', left:'44vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }}
-alt="Todd Lambert Web development for photographers" src="../img/tron-fights2.png" />
-</Link>
+
 
 {/* <Link state={{modal: true}} to="/quorra/">
 <TronChick className="tronchick character" style={{maxHeight:'', maxWidth:'', height:'100vh', width:'100%', position:'absolute', left:'30vw', top:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />

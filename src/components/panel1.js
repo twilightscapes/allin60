@@ -98,7 +98,7 @@ const Panel1 = () => (
 <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', zIndex:'-1' }}>
 
     <div id="" className="" style={{position:'relative', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-             <Link state={{modal: true}} to="/sam-flynn/" title="Sam Flynn"  aria-label="Sam Flynn">
+             <Link state={{modal: true}} to="/the-grid/son-of-flynn/" title="Sam Flynn"  aria-label="Sam Flynn">
     {/* <SamFlynn className="character" style={{height:'100vh', width:'90%', margin:'0 0 0 0',}} /> */}
     <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
@@ -108,7 +108,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sa
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/quorra/" title="Quorra" aria-label="Quorra">
+    <Link state={{modal: true}} to="/the-grid/meet-quorra" title="Quorra" aria-label="Quorra">
       {/* <QuoraStand className="character" style={{height:'100%', width:'85%', margin:'0 0 0 10%', right:'', zIndex:''}} /> */}
       <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}

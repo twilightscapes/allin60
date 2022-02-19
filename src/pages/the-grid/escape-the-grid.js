@@ -1,13 +1,13 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
+import { Layout } from "../../components/layout"
 // import { StaticImage } from "gatsby-plugin-image"
 // import GoBack from "../components/goBack"
 // import CluGuy from "../../static/assets/clu.svg"
 
 
 
-import loadable from '@loadable/component'
-import Panel4 from '../components/panel4'
+// import loadable from '@loadable/component'
+import Panel7 from '../../components/panel7'
 
 
 // const Panel2 = loadable(() => import('../components/panel2'), {
@@ -16,9 +16,9 @@ import Panel4 from '../components/panel4'
 //     const Panel3 = loadable(() => import('../components/panel3'), {
 //       fallback: <div>Loading...</div>,
 //     })
-    const Panel5 = loadable(() => import('../components/panel5'), {
-      fallback: <div>Loading...</div>,
-    })
+    // const Panel5 = loadable(() => import('../components/panel5'), {
+    //   fallback: <div>Loading...</div>,
+    // })
     // const Panel5 = loadable(() => import('../components/panel5'))
     // const Panel6 = loadable(() => import('../components/panel6'))
     // const Panel7 = loadable(() => import('../components/panel7'))
@@ -34,7 +34,7 @@ import Panel4 from '../components/panel4'
 
 
 
-export default function DiscGrid() {
+export default function EscapeGrid() {
    return (
 
 
@@ -46,38 +46,8 @@ export default function DiscGrid() {
 
 
 
-<div className="horizontal-holder" style={{overflow:''}}>
-<div className="RArrow">{/* <span></span> */}</div>
-<div className="horizontal-scroll panels" style={{}}>
-<div className="" style={{height:'1px'}}></div>
+<Panel7 />
 
-{/* <div id="gridintro"><Panel2 /></div>
-
-<div id="proceed"><Panel3 /></div> */}
-
-<div id="discgrid"><Panel4 /></div>
-
-<div id="match2"><Panel5 /></div>
-
-{/* <div id="lightcycles"><Panel6 /></div>
-
-<div id="lightcycles2"><Panel7 /></div>
-
-<div id="quorra"><Panel8 /></div>
-
-<div id="endofline"><Panel9 /></div>
-
-
-<div id="samfly"><Panel10 /></div> */}
-{/* 
-<div id="samfly"><Panel10 /></div>
-
-<Panel11 id="" />
-<Panel12 id="" />
-<Panel13 id="" /> */}
-  
-  </div>
-</div>
       
    
 
