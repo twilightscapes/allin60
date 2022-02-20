@@ -6,9 +6,9 @@ import React from 'react'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import CookieConsent from "react-cookie-consent"
 // import { StaticImage } from "gatsby-plugin-image"
-// import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/lazy'
 // import { Link } from "gatsby"
-// import { AiOutlineAudioMuted } from "react-icons/ai"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 // import Greeter from "./GreetMe"
 import styled from "styled-components";
 
@@ -69,31 +69,31 @@ left:'-90vw', alignItems:'center', background:'transparent', padding:'0', zIndex
             },
           }}
           loop
-          playing
+          // playing
           playsinline
-          playIcon={
+        //   playIcon={
 
 
 
-            <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
+        //     <button aria-label="Click To Play" className="clickplays" style={{position:'', zIndex:'0', display:'flex', minWidth:'', bottom:'', border:'0px  solid red', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', padding:'3% 10%', borderRadius:'12px' , }}>
           
-        <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
+        // <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'', marginBottom:''}}>
           
       
 
-          <div className="popped " style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'40px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}>
-            <AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
-          <div className="tronText" style={{fontSize:'1.5vw', fontWeight:'', padding:'0', }}>Play Music From Movie</div>
-          </div>
+        //   <div className="popped " style={{pozition:'relative', display:'flex', alignSelf:'center', justifyContent:'center', width:'100%', margin:'0 auto 0 auto', fontWeight:'bold', padding:'40px', fontSize:'3vw', color:'#fff', borderRadius:'200px', border:'0px solid #fff', filter:'drop-shadow(2px 2px 2px #000)'}}>
+        //     <AiOutlineAudioMuted style={{margin:'5px 1rem 0 auto', fontSize:'40px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+        //   <div className="tronText" style={{fontSize:'1.5vw', fontWeight:'', padding:'0', }}>Play Music From Movie</div>
+        //   </div>
           
-          </div>
-          </button>
+        //   </div>
+        //   </button>
           
 
           
-        }
+        // }
    
-            light="assets/default-og-image.jpg"
+        //     light="assets/default-og-image.jpg"
           /> */}
 
 {/* <div id="installer" className="installer popper" style={{display:'flex', position:'fixed', top:'60px'}} > */}
