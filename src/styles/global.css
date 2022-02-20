@@ -1316,7 +1316,7 @@ height:100%;
               .horizontal-scroll::before{
                 content:' \2329  swipe ';
                 position:absolute;
-                z-index: 0;
+                z-index:2;
                 display: inline-block;
                 margin:auto;
                 padding:10px 10px;

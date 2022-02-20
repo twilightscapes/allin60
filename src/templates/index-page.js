@@ -16,6 +16,7 @@ import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import BlogListHome from "../components/blog-list-home"
+import Newsignup from "../components/newssign"
 // import BlogListHome from "../components/blog-list-home"
 // import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
 // import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
@@ -37,7 +38,7 @@ import BlogListHome from "../components/blog-list-home"
 
 import GridLoader from "../../static/assets/FrontLoader.svg"
 import TheGrid from "../../static/assets/The-Grid-Intro.svg"
-
+import BackgroundImage from 'gatsby-background-image'
 // import InstallDiscount from "../components/install-discount"
 // import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
@@ -77,13 +78,25 @@ import Panel1 from '../components/panel1'
   // const Panel13 = loadable(() => import('../components/panel13'))
 
   
+  // const BackgroundSection = ({ className }) => {
+  //   const data = useStaticQuery(
+  //     graphql`
+  //       query {
+  //         desktop: file(relativePath: { eq: "curtains.jpg" }) {
+  //           childImageSharp {
+  //             fluid(quality: 90, maxWidth: 1920) {
+  //               ...GatsbyImageSharpFluid_withWebp
+  //             }
+  //           }
+  //         }
+  //       }
+  //     `
+  //   )
+
 
 export const pageQuery = graphql`
   query HomeQuery($id: String! ) {
     
-
-
-
     
     site {
       siteMetadata {
@@ -96,6 +109,8 @@ export const pageQuery = graphql`
         companyname
         showfooter
       }
+
+
 
       
 
@@ -147,8 +162,15 @@ export const pageQuery = graphql`
     }
 
 
- 
-  
+
+      desktop: file(relativePath: { eq: "curtains.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
 
     
 
@@ -214,7 +236,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-
+    const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
     // const YouTubeStart = frontmatter.youtubestart
@@ -356,7 +378,17 @@ const HomePage = ({ data }) => {
 
 <div className="horizontal-holder" style={{position:'relative'}}>
 <div className="RArrow">{/* <span></span> */}</div>
-<div className="horizontal-scroll panels" style={{}}>
+
+<BackgroundImage
+      Tag="section"
+      className=""
+      fluid={imageData}
+      backgroundColor={`#ff0000`}
+     >
+<div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg'}}>
+
+
+
 <div className="" style={{height:'1px'}}></div>
 
 
@@ -372,17 +404,24 @@ const HomePage = ({ data }) => {
 <StaticImage className=""
 alt="Todd Lambert Web development for photographers" src="../../static/assets/tronin60.jpg" />
 </a>
-<div class="post-content"><div class="" style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', backdropFilter:'blur(10px)', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'1px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div><h2 class="title"><a href="/tronin60">Tron in 60 Seconds</a></h2><p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>3 weeks ago</time></p></div>
+<div class="post-content"><div class="" style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', backdropFilter:'blur(10px)', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'1px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div><h2 class="title"><a href="/tronin60">VIEW Tron in 60 Seconds NOW!</a></h2><p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>2 hours ago</time></p></div>
 
 </article>
 
 {/* <TheGrid /> */}
 <BlogListHome data={posts} />
 
-
+<div className="donation" style={{}}>
+{/* <Link to="/contact"> */}
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+  <Newsignup />
+  </div>
+{/* </Link> */}
+</div>
 
         
 </div>
+</BackgroundImage>
 </div>
 
     </Layout>
