@@ -385,7 +385,7 @@ const HomePage = ({ data }) => {
       fluid={imageData}
       backgroundColor={`#111`}
      >
-<div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg'}}>
+<div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg', scrollSnapType: 'none'}}>
 
 
 
