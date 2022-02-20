@@ -82,7 +82,7 @@ const Panel3 = () => (
 
 
 <Link title="Sirens" state={{modal: true}} to="/the-grid/sirens/">
-<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'', height:'', width:'', position:'absolute', right:'-30vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
+<TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'', height:'', width:'', position:'absolute', right:'-3vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
 </Link>
 
 

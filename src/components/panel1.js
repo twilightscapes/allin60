@@ -85,7 +85,7 @@ const Panel1 = () => (
 
 
 {/* Panel Content */}
-<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'1', zIndex:'-1'}}>
+<h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'1', zIndex:''}}>
         <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON</div>
       </h1>
 
