@@ -53,7 +53,7 @@ const Panel3 = () => (
          height="100%"
          config={{
            youtube: {
-            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:40, end:140, loop:1  }
+            playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:44, end:140, loop:1  }
            },
          }}
          loop

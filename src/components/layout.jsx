@@ -14,7 +14,7 @@ import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
-// import { ImArrowRight } from "react-icons/im"
+import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
@@ -223,7 +223,7 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/">
               Enter the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -236,14 +236,14 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/disc-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/disc-grid/">
               LightDisc Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/lightcycle-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/lightcycle-grid/">
               LightCycle Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -251,13 +251,13 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-line-club">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-line-club/">
               End of Line Club
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/return-to-the-source">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/return-to-the-source/">
               Return to the Source
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -265,7 +265,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-the-grid">
+              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-the-grid/">
               End of the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -273,7 +273,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/art">
+              <Link className="navbar-item txtshadow" to="/about/">
               About This Site
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
@@ -342,7 +342,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      {/* <Toast show={loading || didJustAddToCart} >
+      <Toast show={loading || didJustAddToCart} >
         {!didJustAddToCart ? (
           "Updating…"
         ) : (
@@ -351,7 +351,7 @@ Contact Me<span>Ordering Questions?</span>
             <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
           </>
         )}
-      </Toast> */}
+      </Toast>
  
 
 

@@ -20,21 +20,23 @@ export function ProductListing({ products }) {
     <div className="horizontal-scroll-wrapper squares" style={{ width:'', padding:'0'}}>
 
 
-    <div className="introspacer" style={{height:'50vh'}}></div>
+    <div className="introspacer" style={{height:'1vh'}}></div>
 
 <div className="intropanel">
 
-<div className="tronText1" style={{display:'', flexDirection:'', padding:'1rem 3%', margin:'20% 10% 0 50vw', borderRadius:'12px', height:'', textAlign:'center',  background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222',  fontSize:'clamp(1rem, 2.2vw, 3rem)'}}>
-Thank you for visiting. If you enjoyed this, you can support the artist that brought it to you by viewing/buying one of his photos. </div>
+<div className="tronText1" style={{display:'', flexDirection:'', padding:'1rem 3%', margin:'25% 10% 0 50vw', borderRadius:'12px', height:'', textAlign:'center',  background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222',  fontSize:'clamp(1rem, 2vw, 3rem)'}}>
+Thank you for visiting. If you enjoyed this, please support the artist by viewing/buying one of his photos or DONATE HERE. </div>
 
 
 
 </div>
 
 
-<div>
+{/* <div>
 
-</div>
+</div> */}
+
+
 
 
       {products.map((p, index) => (
