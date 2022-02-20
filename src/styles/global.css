@@ -3906,7 +3906,7 @@ height:100vh;
                            transform: rotate(-90deg) translateY(-100vw) !important;
                            
                            }
-                           .horizontal-scroll-wrapper img{max-height:45vh !important;}
+                           .horizontal-scroll-wrapper img{max-height:95vh !important;}
                            .squares > * {
                              max-height: 100vh !important; 
                            }
@@ -4375,10 +4375,10 @@ height:100vh;
   margin: 0 0 100% 0;
   }
 
-   .horizontal-scroll  img, .horizontal-holder{
+   /* .horizontal-scroll  img, .horizontal-holder{
     max-width: 300px !important;
     display:none !important;
-  }
+  } */
 
   .horizontal-scroll{
     width: calc(100% + 1px);
