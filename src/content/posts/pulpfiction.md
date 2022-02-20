@@ -2,7 +2,7 @@
 template: blog-post
 title: Pulp Fiction in 60 Seconds
 slug: /pulpfiction
-date: 2022-01-24 01:43
+date: 2022-02-17 01:43
 description: Pulp Fiction in 60 seconds
 youtuber: ""
 youtuber2: ""

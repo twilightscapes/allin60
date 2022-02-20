@@ -2,7 +2,7 @@
 slug: /
 tagline: "Everything Cool In 60 Seconds"
 description: "Everything cool in ONLY 60 seconds"
-featuredImage: /assets/pulpfiction.jpg
+featuredImage: /assets/allin60seconds.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
