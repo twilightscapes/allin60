@@ -64,19 +64,22 @@ const Panel2 = () => (
          loop
          playing
          playsinline
-//              playIcon={
-//                <button aria-label="Click To Play" className="clickplay1" style={{position:'relative', zIndex:'5', bottom:'0', right:'', left:'', border:'0px solid red', width:'50%', height:'100vh', background:'', color:'#fff', fontSize:'18px', display:'grid', placeContent:'center', padding:'0' }}>
+          // playIcon={
 
+          //     <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', height:'100vh', position:'absolute', left:'5vw', top:'30vh', zIndex:'59'}}>
 
-// <div style={{textAlign:'center', position:'', top:'0', zIndex:'40'}}>
-//      <ImPlay style={{padding:'0 0 0 0', display:'flex', justifyContent:'center', fontSize:'60px', border:'0px solid blue',}} />
-// </div>    
+          //     <button aria-label="Click To Play" className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}>
+                
+          //       <Link state={{modal: true}} to="/the-grid/proceed-to-games/" style={{color:'#37f8f8'}}>I GOT IN</Link>
+                
+          //       </button>
+              
+          //     </div>
+              
 
-//              </button>
-         
-//             }
-//                light="assets/grid-loader.svg"
-         />
+          //   }
+          //      light="../assets/grid-loader.svg"
+/>
 </div>
 </div>
 </div>
