@@ -1,12 +1,12 @@
 ---
 slug: /
-tagline: "Fight for the User!"
-description: "TRON Legacy recapped in ONLY 60 seconds"
-featuredImage: /assets/tronin60.jpg
+tagline: "Everything Cool In 60 Seconds"
+description: "Everything cool in ONLY 60 seconds"
+featuredImage: /assets/pulpfiction.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
-youtuber: "iHxmNzMfDj4"
+youtuber: ""
 youtubeautostart: "1"
 title: All In 60 Seconds - allin60.com
 svgImage: /assets/null.svg

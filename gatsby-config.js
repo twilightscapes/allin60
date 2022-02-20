@@ -45,15 +45,15 @@ module.exports = {
 
   
 
-  {
-    resolve: "gatsby-plugin-web-font-loader",
-    options: {
-      custom: {
-        families: ['TRON'],
-        urls: ['/assets/fonts/fonts.css'],
-      },
-    },
-  },
+  // {
+  //   resolve: "gatsby-plugin-web-font-loader",
+  //   options: {
+  //     custom: {
+  //       families: ['TRON'],
+  //       urls: ['/assets/fonts/fonts.css'],
+  //     },
+  //   },
+  // },
 
   // {
   //   resolve: "gatsby-plugin-anchor-links",
@@ -194,7 +194,7 @@ module.exports = {
         modulePath: ``, // default: undefined
         enableIdentityWidget: true,
         publicPath: `admin`,
-        htmlTitle: `TRON in 60 CMS`,
+        htmlTitle: `All in 60 CMS`,
         htmlFavicon: `static/siteimages/manifest-icon-192.png`,
         includeRobots: false,
         logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
@@ -249,10 +249,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `TRON in 60 Seconds`,
-        short_name: `TRON in 60`,
+        name: `All in 60 Seconds`,
+        short_name: `All in 60`,
         start_url: `/?user_mode=app`,
-        description: `Tron Legacy in ONLY 60 seconds`,
+        description: `All in ONLY 60 seconds`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,

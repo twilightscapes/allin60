@@ -50,7 +50,7 @@ export function Layout({ children }) {
       <div style={{overflow:''}}>
         {modal ? (
           <>
-          <div style={{display:'none', position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
+          <div style={{display:'', position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'', cursor:'pointer'}}>
             {/* <AiOutlineClose /> */}
             <span className="TRON">[</span>
@@ -91,33 +91,17 @@ export function Layout({ children }) {
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
 
-      <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'12px', fontSize:'clamp(3rem, 4.5vw, 4.8rem)'}}>
+      <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle" style={{display:'none'}}>
+{/* <div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'12px', fontSize:'clamp(3rem, 4.5vw, 4.8rem)'}}>
 [
-</div>
-
-{/* <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage className="" src="../../static/assets/TSidebarHover.svg" alt="Logo" style={{borderRadius:''}} /></div> */}
-  </label>
-
-  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle"> */}
-
-  {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
-  <IoMdFingerPrint style={{fontSize:'50px', }}/>
- <span><br />TAP CORNER<br /> FOR MENU<br />
-</span>
-    </div> */}
+</div> */}
 
 
-
-
-{/* <IoMdFingerPrint style={{fontSize:'60px', margin:'0 20px 0 0' }}/> */}
-{/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'.4', margin:'100px 0 0 0', width:'100%' }}/> */}
-{/* <div style={{textAlign:'center'}}>MENU</div> */}
-    {/* <div className="spinner diagonal part-1"></div>
+<div style={{textAlign:'center'}}>MENU</div>
+    <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div> */}
-  {/* </label> */}
+    <div className="spinner diagonal part-2"></div>
+  </label>
 
 
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
@@ -162,7 +146,7 @@ export function Layout({ children }) {
 
  <li className="carto" style={{border:'none', margin:'0 0',textAlign:'center'}}>
 <Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
-<div className="TronType tronText" style={{fontSize:'300%', margin:'1rem 0 0 0'}}>TRON</div><div className="defont" style={{fontSize:'200%', fontWeight:'bold'}}>in 60</div><div className="TRON tronText" style={{fontSize:'100%', margin:'0 0 3rem 0'}}>Seconds</div>
+<div className="TronType tronText" style={{fontSize:'300%', margin:'1rem 0 0 0'}}>ALL</div><div className="defont" style={{fontSize:'200%', fontWeight:'bold'}}>in 60</div><div className="TRON tronText" style={{fontSize:'100%', margin:'0 0 3rem 0'}}>Seconds</div>
 {/* <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div> */}
 {/* 
   <span>More Coming Soon</span> */}
@@ -222,30 +206,27 @@ Contact Me<span>Ordering Questions?</span>
               The Vault <span>Full Photo archives</span>
               </Link>
       </li> */}
-<li className="carto" style={{textAlign:'center'}}>
+{/* <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/" style={{color:'#02e9fa'}}>
               Enter the Grid
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
       
-{/* <li className="carto" style={{textAlign:'center'}}>
+<li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/the-grid#proceed">
               Proceed to Games
               </Link>
-      </li> */}
+      </li>
 
       <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/disc-grid/">
               LightDisc Grid
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/lightcycle-grid/">
               LightCycle Grid
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
@@ -259,7 +240,6 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/return-to-the-source/">
               Return to the Source
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
 
@@ -267,15 +247,13 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-the-grid/">
               End of the Grid
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
-      </li>
+      </li> */}
 
 
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/about/">
               About This Site
-              {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li> 
 

@@ -11,7 +11,7 @@ const PostCard = ({ data }) => (
 
   
 
-<section className="child" style={{position:'relative', height:'', overflow:''}}>
+
 
   <article
     className="post-card"
@@ -117,7 +117,7 @@ date={Date.now() + 20000} className="countdown"> */}
 
 
   </article>
-  </section>
+
 )
 
 export default PostCard
