@@ -81,7 +81,7 @@ const Panel11 = () => (
 {/* Panel Content */}
 
 
-<div className="" style={{position:'', padding:'50px 0 0 0', width:'', zIndex:'0', fontSize:'clamp(.7rem, 2.5vw, 4.2rem)', top:'0'}}>
+<div className="" style={{position:'', padding:'50px 0 0 0', width:'', zIndex:'0', fontSize:'clamp(.7rem, 2.5vw, 4.2rem)', top:'0', textAlign:'center'}}>
   
 <blockquote className="tronText" style={{lineHeight:'250%', position:'', margin:'0 auto 0 auto', maxWidth:'800px',}}>
 <p>You promised that we would
@@ -144,7 +144,9 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
 
     <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', position:'absolute', left:'5%', top:''}}>
 
-<button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link state={{modal: true}} to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
+<button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}>
+  
+  <Link state={{modal: true}} to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
 <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 
 </div>

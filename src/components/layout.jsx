@@ -224,7 +224,7 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 <li className="carto" style={{textAlign:'center'}}>
               <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid">
-              Enter The Grid
+              Enter the Grid
               {/* <span>Buy Todd's Photos</span> */}
               </Link>
       </li>
@@ -310,7 +310,7 @@ Contact Me<span>Ordering Questions?</span>
 
       
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'0 0',  }}>
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0.50)' }}>
   
       <Theme  style={{padding:'0'}} />
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
