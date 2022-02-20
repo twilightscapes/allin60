@@ -495,7 +495,7 @@ const { iconimage } = useSiteMetadata()
     <Layout className="page">
 <CustomBox style={{}}>
 <Helmet>
-  <body className="blogpost" />
+  <body className="blogpost" style={{background:'#111'}} />
   <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
 </Helmet>
 

@@ -299,7 +299,7 @@ const HomePage = ({ data }) => {
 
     <Layout>
     <Helmet>
-  <body className="homepage" />
+  <body className="homepage" style={{background:'#111'}} />
 </Helmet>
 {/* <Seo
           title={`VidSock - Video Multimedia NFT Platform`}
@@ -383,7 +383,7 @@ const HomePage = ({ data }) => {
       Tag="section"
       className=""
       fluid={imageData}
-      backgroundColor={`#ff0000`}
+      backgroundColor={`#111`}
      >
 <div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg'}}>
 
