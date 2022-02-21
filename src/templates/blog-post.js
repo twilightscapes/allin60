@@ -339,25 +339,25 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               loop
               playing
               playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    //           playIcon={
+    //             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
+    //         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    //           <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
 
-              <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    //           <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 
 
-      {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'300px', height:'150px', maxWidth:'300px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
-    </div>
-          <br />
-              <div className="button" style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
-      {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
-              </div>
-              </button>}
-                light="../assets/transparent.png"
+
+    // </div>
+    //       <br />
+    //           <div className="button" style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
+      
+    //           </div>
+    //           </button>}
+    //             light="../assets/transparent.png"
               />
 </div>
 
@@ -478,15 +478,18 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
   const { siteUrl } = useSiteMetadata()
 
+
+// 
 const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
   { NftRedeem ? (
-      ""
-      // <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
+      // ""
+      <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
       ) : (
         ""
       )}
-  {/* <nft-card style={{}} contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183187330132344833"> </nft-card> */}
+<blockquote>Ohh Year!</blockquote>
   </div>
+// 
 
 const { iconimage } = useSiteMetadata()
 
@@ -496,7 +499,7 @@ const { iconimage } = useSiteMetadata()
 <CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" style={{background:'#111'}} />
-  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+  {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
       <Seo
@@ -510,13 +513,19 @@ const { iconimage } = useSiteMetadata()
         article={true}
       />
 
+{/* <Seo
+          title={`Welcome to the GRID`}
+          description={`I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.`}
+          image={'https://allin60.com/tronin60.jpg'}
+        /> */}
+
 
   
 {/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -689,12 +698,12 @@ const { iconimage } = useSiteMetadata()
 
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
-{IsNft ? (
+{/* {IsNft ? (
             <strong style={{padding:'2rem 1rem'}}>Artist's Notes:</strong>
        
           ) : (
             ""
-          )}
+          )} */}
 
 {/* 
 <SRLWrapper options={options} className=""> */}
@@ -721,10 +730,12 @@ const { iconimage } = useSiteMetadata()
 
 
 {NftLink ? (
- <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
+//  <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
 
- <iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src={NftLink} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
- </div>
+//  <iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src={NftLink} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
+//  </div>
+
+<strong>This is an NFT</strong>
        
           ) : (
             ""
@@ -741,8 +752,10 @@ const { iconimage } = useSiteMetadata()
        { NftDrop ? (
 
          
-            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown daysInHours date={NftDrop} >
+            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', textShadow:'1px 1px 0px #000', flexDirection:'column' }}>
+              <Countdown date={Date.now() + 10000}>
+  {/* <Countdown date={NftDrop} > */}
+  {/* <Countdown daysInHours date={NftDrop} > */}
 <Completionist />
   </Countdown>
 
@@ -817,7 +830,7 @@ const { iconimage } = useSiteMetadata()
 
 {/* <Countdown
     // date={Date.now() + 10000}
-    date='2022-10-03T04:02:03'
+    date='2022-02-21T04:02:03'
     intervalDelay={0}
     precision={3}
     renderer={props => <div>{props.total}</div>}

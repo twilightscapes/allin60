@@ -1004,13 +1004,13 @@ color:#fff !important;
 .tronText {
   color: #fff;
   text-shadow: 0 20px 7px #000,
-  0 8px 20px rgb(8, 163, 202),
+  0 8px 20px rgb(202, 69, 8),
   0px 12px 10px rgb(167, 139, 162),
-  0  2px #02e9fa,
-  0 5px 2px #02e9fa,
-  0 0 2px rgb(7, 160, 231),
-  0 0 2px #02abfa,
-  0 0 1px #37f8f8;
+  0  2px #fa4802,
+  0 5px 2px #fa5102,
+  0 0 2px rgb(231, 33, 7),
+  0 0 2px #fa2702,
+  0 0 1px #f88437;
   }
 
 .TRON{
@@ -1463,8 +1463,8 @@ height:100%;
                 overflow-x: hidden;
                 transform: rotate(-90deg) translateY(-100vw);
                 transform-origin: right top;
-                /* transition: transform .2s; */
-                /* scroll-padding: 10% 1%; */
+                transition: transform .2s;
+                scroll-padding: 10% 1%;
                 /* scroll-snap-type: y proximity ; */
               }
               .horizontal-scroll-wrapper > * {
@@ -1483,20 +1483,51 @@ height:100%;
               }
               .squares > * {
                 /* max-width: 400px; */
-                height: 100vh;
+                height: 90vh;
                 margin: 0 0 50% 0;
                 padding: 0 0 !important;
                 /* filter: drop-shadow(0px 0px 5px rgba(44, 44, 44, 0.8)); */
               }
+
+
               
+              /* undetermined SNAP */
+              @media (hover: none) {
+                .horizontal-scroll-wrapper, .horizontal-scroll {
+                  scroll-snap-type:y mandatory;
+                  }
+              }
+              /* No Mouse SNAP */
+              @media (hover: hover) {
+                .horizontal-scroll-wrapper, .horizontal-scroll {
+                  scroll-snap-type:y mandatory;
+                  }
+              }
+
+/* MOBILE SNAP */
   @media (pointer: coarse) {
-  .horizontal-scroll-wrapper {
+  .horizontal-scroll-wrapper, .horizontal-scroll {
   scroll-snap-type: y mandatory !important;
+                    }
+                    .RArrow span::before{
+                      content:"\2329  swipe" !important;
+                      }
+ }
+
+ /* Safari Desktop NO SNAP */
+  @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
+    .horizontal-scroll-wrapper, .horizontal-scroll {
+      scroll-snap-type:none !important;
+      }
   }
-  .RArrow span::before{
-  content:"\2329  swipe" !important;
-  }
-}
+
+  /* iOS ONLY browsers */
+@supports(font:-apple-system-body) and (-webkit-touch-callout:default){}
+
+
+
+
+
 .RArrow span::before{
   content:"scroll  \232a";
 }
@@ -1511,9 +1542,6 @@ height:100%;
 .RArrow span{
   font-size:18px;
 }
-
-
-
 
 
 .spares {
@@ -2366,7 +2394,7 @@ blockquote:after {
 
 .countdown{border:0px solid pink; position:relative}
 .countdown span:before{
-  content: " ENDS IN: ";
+  content: "  ";
   font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
@@ -3722,7 +3750,7 @@ opacity:.8;
 
 
 
-      @media (hover: none) {
+      /* @media (hover: none) {
         .container2 {
           overflow-y: scroll;
           scroll-snap-type: y proximity;
@@ -3731,10 +3759,9 @@ opacity:.8;
         .container2 section {
           scroll-snap-align: start;
           overflow:hidden;
-          /* height:70vh; */
           background:tranparent !important;
         }
-      }
+      } */
 
 
       
@@ -4365,7 +4392,7 @@ height:100vh;
 .horizontal-scroll  img{
   cursor:zoom-in !important; 
   object-fit: contain !important;
-  max-height: 90vh;
+  max-height: 85vh;
  }
 
 

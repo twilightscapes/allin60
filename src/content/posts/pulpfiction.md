@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Pulp Fiction in 60 Seconds
+title: Pulp Fiction  
 slug: /pulpfiction
 date: 2022-02-17 01:43
 description: Pulp Fiction in 60 seconds
@@ -17,18 +17,20 @@ audiostart: "33"
 audioend: "5000"
 youtubecontrols: "0"
 youtubeautostart: "1"
-isnftforsale: ""
+isnftforsale: "1"
 svgzindex: "0"
 comments: ""
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/pulpfiction.jpg
 svgImage: /assets/null.svg
-nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
-nftredeem: ""
+nftlink: "https://google.com"
+nftdrop: "2022-02-20T13:29:20"
+nftredeem: "BOOM"
 ---
-Coming Soon!
+<h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
+        <div class="TRON">Coming Soon!</div>
+      </h2>
 
 
 

@@ -5,7 +5,38 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
 import Countdown from 'react-countdown'
 
-const Completionist = () => ""
+// const Completionist = () => ""
+
+const Completionist = () => <span>All In 60 Seconds</span>
+const renderer = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a complete state
+    return <a href="https://tron.allin60.com/"><Completionist /></a>;
+  } else {
+    // Render a countdown
+    return (
+       <span>
+        All In {seconds} Seconds
+      </span> 
+    )
+  }
+}
+
+const ViewIt = () => <span>All In 60 Seconds - VIEW NOW!</span>
+const renderer1 = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a complete state
+    return <ViewIt />;
+  } else {
+    // Render a countdown
+    return (
+       <span>
+        All In {seconds} Seconds
+      </span> 
+    )
+  }
+}
+
 
 const PostCard = ({ data }) => (
 
@@ -80,13 +111,15 @@ const PostCard = ({ data }) => (
             
 <div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'66px', width:'100vw', margin:'0 auto'}}>
 
-<div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', backdropFilter:'blur(10px)', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px',border:'1px solid #111', textShadow:'1px 2px 0px #000'}}>
-<Countdown date={data.frontmatter.nftdrop}>
+<div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'0px solid #111', textShadow:'1px 2px 0px #000'}}>
+{/* <Countdown date={data.frontmatter.nftdrop}> */}
 {/* <Countdown
-date={Date.now() + 20000} className="countdown"> */}
+date={Date.now() + 60000} className="countdown">
 
 <Completionist />
-</Countdown>
+</Countdown> */}
+
+{/* <Countdown date={Date.now() + 60000} renderer={renderer} /> */}
 </div>
 
 </div>
@@ -105,8 +138,17 @@ date={Date.now() + 20000} className="countdown"> */}
   <Link 
     to={data.frontmatter.slug}
   >
-    {data.frontmatter.title}
-    
+    {data.frontmatter.title} - <Countdown date={Date.now() + 60000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0} /> 
+    {/* <Countdown
+date={Date.now() + 60000} className="countdown">
+  date={Date.now() + 10000}
+    intervalDelay={0}
+    precision={3}
+    zeroPadTime={0}
+    renderer={props => ({ hours, minutes, seconds })}
+<Completionist />
+</Countdown> */}
+
   </Link>
 </h2>
 

@@ -1,17 +1,17 @@
 ---
 template: blog-post
-title: Shawshank Redemption in 60 Seconds
+title: Shawshank Redemption
 slug: /shawshank
-date: 2022-02-15 01:43
+date: 2022-02-19 01:43
 description: Shawshank Redemption
-youtuber: ""
+youtuber: "tHQEimbxdRE"
 youtuber2: ""
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
 youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
-youtubestart: "1"
-youtubeend: ""
+youtubestart: "12"
+youtubeend: "45"
 youtubemute: "1"
 audiostart: "33"
 audioend: "5000"
@@ -21,14 +21,21 @@ isnftforsale: ""
 svgzindex: "0"
 comments: ""
 shareable: "1"
-underlayImage: /assets/transparent.png
+underlayImage: /assets/shawshank-items.png
 featuredImage: /assets/shawshank.jpg
-svgImage: /assets/null.svg
+svgImage: /assets/ShawshankLoader.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem: ""
 ---
-Coming Soon!
+
+
+<h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
+        <div class="TRON">Coming Soon!</div>
+      </h2>
+
+
+
 
 
 
