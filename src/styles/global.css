@@ -1360,7 +1360,7 @@ height:100%;
     
 
 
-             .horizontal-scroll-wrapper::after{
+             .horizontal-scroll-wrapper::after, .horizontal-scroll::after{
                 content:'\276E \276E  scroll';
                 position:relative;
                 z-index: 1;
