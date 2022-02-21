@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { } from "react"
 // import { SkipNavContent, SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
@@ -10,7 +10,8 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
-// import Bug from "../../static/assets/TSidebarHover.svg"
+import Bug from "../../static/assets/logo.svg"
+import SiteLogo from "../../static/assets/logo.svg"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
@@ -26,11 +27,16 @@ import "../assets/scss/style.scss"
 // import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
 import Install from './install-discount'
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 
+
+
 export function Layout({ children }) {
+
+  const { iconimage } = useSiteMetadata()
   const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
   const items = checkout ? checkout.lineItems : []
@@ -91,16 +97,21 @@ export function Layout({ children }) {
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
 
-      <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle" style={{display:'none'}}>
-{/* <div className="TRON" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'12px', fontSize:'clamp(3rem, 4.5vw, 4.8rem)'}}>
-[
-</div> */}
-
-
+      {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle" style={{display:''}}>
 <div style={{textAlign:'center'}}>MENU</div>
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>
+  </label> */}
+
+
+<label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
+{/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
+
+<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%' }}/> 
+{/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
+</div>
   </label>
 
 
@@ -138,20 +149,39 @@ export function Layout({ children }) {
 
 
 
+    <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
+
+{/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
+
+
+{/* <Link to="/">
+<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
+</Link> */}
+
+<SiteLogo />
+{/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
+{/* <Link to="/">
+<LogoText style={{width:'100%', height:''}} />
+</Link> */}
+ </li>
+
+
+
+
  {/* <li className="carta" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
 <Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
 <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
 </Link>
  </li> */}
 
- <li className="carto" style={{border:'none', margin:'0 0',textAlign:'center'}}>
+ {/* <li className="carto" style={{border:'none', margin:'0 0',textAlign:'center'}}>
 <Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
 <div className="TronType tronText" style={{fontSize:'300%', margin:'1rem 0 0 0'}}>ALL</div><div className="defont" style={{fontSize:'200%', fontWeight:'bold'}}>in 60</div><div className="TRON tronText" style={{fontSize:'100%', margin:'0 0 3rem 0'}}>Seconds</div>
-{/* <div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div> */}
-{/* 
-  <span>More Coming Soon</span> */}
 </Link>
- </li>
+ </li> */}
+
+
 
 
 

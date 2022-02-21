@@ -56,7 +56,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .fire{  box-shadow:  0 4px 22px var(--primary-color) !important;}
 
 .bug{
-max-width:80px !important;
+max-width:100px !important;
 height: auto !important;
 opacity:.2;
 }
@@ -497,7 +497,7 @@ transition: var(--transition);  */
 
 display: flex;
 flex-direction: row;
-color: #37f8f8;
+color: #E3272D;
 /* background-color: var(--primary-color); */
 /* background: linear-gradient(180deg, rgb(233, 171, 219) 1%, var(--primary-color) 99%); */
 align-self: center;
@@ -513,7 +513,7 @@ transition: var(--transition);
 font-size: 140%;
 text-decoration: none;
 text-shadow: 0px 0px 0px #333 !important;
-box-shadow:  0 0px 14px #37f8f8;
+box-shadow:  0 0px 14px #E3272D;
 /* filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
 /* outline-width: 1px;
 outline-style: dotted;
@@ -2120,9 +2120,9 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(100%);
 }
 
-input[type=checkbox] ~ .sidebarIconToggle > .bug{
+/* input[type=checkbox] ~ .sidebarIconToggle > .bug{
   filter: drop-shadow(0 0px 4px rgba(0, 0, 0, 1));
-}
+} */
 
 input[type=checkbox]:checked ~ .sidebarIconToggle {
 display:none !important;
@@ -2150,13 +2150,14 @@ input[type=checkbox] {
   flex-direction: column;
 justify-self:flex-start;
 border:0px solid white;
-filter: drop-shadow(1px 1px 10px var(--primary));
+/* filter: drop-shadow(1px 1px 10px var(--primary)); */
   text-shadow:1px 1px 0px #000;
+  padding:1rem;
 }
 
 .sidebarIconToggle:hover{
   color: var(--primary);
-  filter: drop-shadow(0px 0px 10px var(--primary-color));
+  /* filter: drop-shadow(0px 0px 10px var(--primary-color)); */
   text-shadow:1px 1px 0px #000;
 }
 
