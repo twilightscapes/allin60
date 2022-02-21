@@ -351,7 +351,7 @@ const HomePage = ({ data }) => {
 <div className="donation2" style={{display:'grid',
   placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative'}}>
 
-  <h1 className="tronText" style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What can you do<br /> In 60 Seconds?</h1>
+  <h1 className="tronText" style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What Can You Do<br /> In 60 Seconds?</h1>
 </div>
 
 
@@ -382,9 +382,9 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 
 
 
-<div className="donation" style={{ width:'100vw', height:'100vh'}}>
+<div className="donation2" style={{ width:'100vw', height:'100vh'}}>
 {/* <Link to="/contact"> */}
-<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'15% 20%',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
   <Newsignup />
   </div>
 {/* </Link> */}

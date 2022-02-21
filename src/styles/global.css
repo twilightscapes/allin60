@@ -960,7 +960,9 @@ border:1px solid red !important;
 
  a.donotsell{color:inherit !important;}
 
- a:hover{color:var(--primary-color) !important;}
+ /* a:hover{color:var(--primary-color) !important;} */
+
+  a:hover{color:#fff !important;}
 
 .post-card{color:#ccc !important;}
 .post-card a{text-decoration: none;}
@@ -2062,11 +2064,14 @@ overflow: hidden}  */
   flex-direction: column;
   justify-content: space-between;
   background-color:#111;
-  background: linear-gradient(180deg, #333 1%, #111 80%);
-  border-left:1px solid rgba(255, 255, 255, 0.10);
+  /* background: linear-gradient(180deg, #003134 1%, #023a3d 80%); */
+  background-color:rgba(32, 140, 146, 0.493);
+  /* background:radial-gradient(circle, rgba(67,94,106,1) 17%, rgba(115,239,255,1) 58%, rgba(73,95,110,1) 97%); */
+  background:radial-gradient(circle, rgba(36,99,110,1) 17%, rgba(13,97,108,1) 58%, rgba(14,57,59,1) 97%);
+  border-left:1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px 0 0 12px !important;
   min-width: 220px;
-  
+  background-size: 140% 200%;
 
 }
 

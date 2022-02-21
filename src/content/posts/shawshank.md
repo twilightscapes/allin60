@@ -30,6 +30,8 @@ nftredeem: ""
 ---
 
 
+
+
 <h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
         <div class="">Coming Soon!</div>
       </h2>
