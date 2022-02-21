@@ -9,7 +9,7 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
-
+import { Footer } from "../components/footer"
 
 import PostCard from "../components/post-card"
 import { Seo } from "../components/seo"
@@ -160,7 +160,7 @@ class BlogIndex extends React.Component {
 
 {/* <Gall1 /> */}
 
-<br />
+
 {/* <div style={{ maxHeight:'30%'}}>
 <Slide {...properties} style={{zIndex:'-1'}}>
 <article
@@ -410,18 +410,20 @@ class BlogIndex extends React.Component {
     </div> */}
 
 
-<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}>
+{/* <div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}> */}
 
 
-<h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Archive</h1>
+<div className="horizontal-holder" style={{position:'relative'}}>
+
+{/* <h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Archive</h1> */}
 {/* VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs. */}
 
 {/* onFocus={disableBodyScroll()} */}
-<Pagination {...props} />
+{/* <Pagination {...props} /> */}
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
 
 
- <section style={{height:'auto'}}>
+ <div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg', scrollSnapType: '', maxHeight:'', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
 
 
  <article style={{textAlign:'center',}}><Link className="post-card button " to="/#posts" style={{textDecoration:'none', color:'inherit',}}><RiArrowLeftLine style={{fontSize:'20px'}} />  View Newest</Link></article>
@@ -433,18 +435,18 @@ class BlogIndex extends React.Component {
     </article></Link> */}
 
 
-    </section>
-
+    
+{/* 
  <section style={{height:'auto'}}>
-  <article className="" style={{height:'auto'}}>
+  <article className="" style={{height:'auto'}}> */}
 
  {posts}
 
-</article>
-</section>
+{/* </article>
+</section> */}
 
         <Pagination {...props} />
-
+</div>
 
         
 
@@ -457,6 +459,7 @@ class BlogIndex extends React.Component {
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation> */}
  <br /><br />
+ <Footer />
       </Layout>
     )
   }

@@ -195,11 +195,7 @@ export function Layout({ children }) {
 
 
 
- {/* <li className="carto">
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>I love hearing from you!</span>
-</Link>
-</li> */}
+
 
 
 
@@ -281,7 +277,19 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-<li className="carto" style={{textAlign:'center'}}>
+<li className="carto">
+      <Link className="navbar-item txtshadow" to="/posts/">
+         View More Posts
+        </Link>
+</li>
+
+ <li className="carto">
+ <Link className="navbar-item txtshadow" to="/contact/">
+Suggest Your Own
+</Link>
+</li>
+
+<li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/about/">
               About This Site
               </Link>

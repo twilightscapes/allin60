@@ -5,6 +5,7 @@ import { RiSendPlane2Line } from "react-icons/ri"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import { Helmet } from "react-helmet"
+import { Footer } from "../components/footer"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -44,15 +45,15 @@ const Contact = ({ data }) => {
 
 
       <div className="wrapper fluff">
-        <br /><br />
-        <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
+      <br />
+        <h1 style={{fontSize:'7vw', padding:'3%, 8%', textAlign:'center'}}>{frontmatter.title}</h1>
         <div
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         </div>
 
-        <div className="wrapper">
+        <div className="wrapper" style={{padding:'0 3%'}}>
         <form
           className="contact-form"
           action="/thanks"
@@ -97,6 +98,7 @@ const Contact = ({ data }) => {
         </form>
       </div>
       <br />
+      <Footer />
     </Layout>
   )
 }

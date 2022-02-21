@@ -12,7 +12,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-// import { Footer } from "../components/footer"
+import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
@@ -903,7 +903,7 @@ const { iconimage } = useSiteMetadata()
    <br />
    <br />
    </CustomBox>
-   {/* <Footer /> */}
+   <Footer />
     </Layout>
 
 
