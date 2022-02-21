@@ -2064,10 +2064,13 @@ overflow: hidden}  */
   flex-direction: column;
   justify-content: space-between;
   background-color:#111;
-  /* background: linear-gradient(180deg, #003134 1%, #023a3d 80%); */
+
   background-color:rgba(32, 140, 146, 0.493);
   /* background:radial-gradient(circle, rgba(67,94,106,1) 17%, rgba(115,239,255,1) 58%, rgba(73,95,110,1) 97%); */
-  background:radial-gradient(circle, rgba(36,99,110,1) 17%, rgba(13,97,108,1) 58%, rgba(14,57,59,1) 97%);
+  /* background:radial-gradient(circle, rgba(36,99,110,1) 17%, rgba(13,97,108,1) 58%, rgba(14,57,59,1) 97%); */
+
+    background: linear-gradient(130deg, #183333 20%, #4d857e 100%);
+
   border-left:1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px 0 0 12px !important;
   min-width: 220px;
@@ -2144,7 +2147,7 @@ input[type=checkbox] {
   box-sizing: border-box;
   cursor: pointer;
   position: fixed;
-  z-index: 4;
+  z-index: 104;
   bottom: 5vh;
   right: 6%;
   /* height: 100px;
@@ -4122,6 +4125,22 @@ height:100vh;
 
 
                 
+                .react-audio::before{
+                  content:' ';
+                  position:absolute;
+                  z-index: 1;
+                  display: block;
+                  width: 100%;
+                  height:100%;
+                  background-color: #111;
+                  opacity:1;
+                }
+               .react-audio:hover::before{
+                animation: move 3s forwards; 
+               }
+
+
+
 
              @media (pointer: coarse) {
              .horizontal-scroll-wrapper {

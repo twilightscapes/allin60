@@ -291,7 +291,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               playing
               playsinline
               playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', bottom:'0', border:'2px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
               
@@ -421,7 +421,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     return (
 
 <ReactPlayer
-          className='react-player67'
+          className='react-audio'
           url={iframeUrl3}
           // url={[
           //   iframeUrl,
@@ -431,7 +431,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           // ]}
           width="100%"
           height=""
-          style={{marginTop:'80px', position:'relative'}}
+          style={{marginTop:'0', position:'relative'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
@@ -443,7 +443,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-70px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'relative', top:'0', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
@@ -525,7 +525,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -657,7 +657,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {Suggestion1 ? (
-            <ShowSuggestion />
+            <ShowSuggestion style={{position:'absolute', top:'50vh', zIndex:'60',}} />
        
           ) : (
             ""
@@ -708,7 +708,7 @@ const { iconimage } = useSiteMetadata()
 {/* 
 <SRLWrapper options={options} className=""> */}
       <div
-        className="blog-post-content" style={{ padding:'0 ', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content" style={{ padding:'0 ', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
       {/* </SRLWrapper>   */}
@@ -874,7 +874,7 @@ const { iconimage } = useSiteMetadata()
 
 {Suggestion1 ? (
             <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-            Find a good one? Post your link Below and then Share it Above. 
+            {/* Find a good one? Post your link Below and then Share it Above.  */}
       
            </div>
        

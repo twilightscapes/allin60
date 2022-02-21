@@ -351,7 +351,7 @@ const HomePage = ({ data }) => {
 <div className="donation2" style={{display:'grid',
   placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative'}}>
 
-  <h1 className="tronText" style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What Can You Do<br /> In 60 Seconds?</h1>
+  <h1 className="tronText" style={{fontSize:'9vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What Can You Do<br /> In 60 Seconds?</h1>
 </div>
 
 
