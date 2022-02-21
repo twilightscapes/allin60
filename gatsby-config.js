@@ -45,15 +45,15 @@ module.exports = {
 
   
 
-  // {
-  //   resolve: "gatsby-plugin-web-font-loader",
-  //   options: {
-  //     custom: {
-  //       families: ['TRON'],
-  //       urls: ['/assets/fonts/fonts.css'],
-  //     },
-  //   },
-  // },
+  {
+    resolve: "gatsby-plugin-web-font-loader",
+    options: {
+      custom: {
+        families: ['compacta'],
+        urls: ['/assets/fonts/fonts.css'],
+      },
+    },
+  },
 
   // {
   //   resolve: "gatsby-plugin-anchor-links",

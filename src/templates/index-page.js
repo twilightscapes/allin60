@@ -348,29 +348,31 @@ const HomePage = ({ data }) => {
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
-<div className="donation actionJackson" style={{display:'grid',
-  placeContent:'center', backgroundImage: 'url(../../static/assets/kevin-flynn.svg)', width:'100vw', height:'100vh', justifyContent:'center', position:'relative'}}>
+<div className="donation2" style={{display:'grid',
+  placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative'}}>
 
   <h1 className="tronText" style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What can you do<br /> In 60 Seconds?</h1>
 </div>
 
 
-<article className="post-card" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative', background:'rgba(0, 0, 0, 0.2)'}}>
+<article className="" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative',}}>
 
 
 <a href="https://tron.allin60.com/">
 <StaticImage className=""
 alt="Todd Lambert Web development for photographers" src="../../static/assets/tronin60.jpg" />
 </a>
-<div class="post-content"><div class="" style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', backdropFilter:'blur(10px)', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'1px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div><h2 class="title">
+<div class="post-content"><div style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'0px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div>
 
-
+<h2 class="title">
   <a href="https://tron.allin60.com/">
     <Countdown date={Date.now() + 10000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0}></Countdown>
     </a>
+</h2>
 
-    </h2><p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>2 hours ago</time></p></div>
+    <p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>2 hours ago</time></p>
 
+    </div>
 </article>
 
 {/* <TheGrid /> */}

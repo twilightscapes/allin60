@@ -35,7 +35,7 @@ body {
 
     } */
 
-body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; /* font-style: italic; */}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: compacta,Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-size: clamp(2.5rem, 5vw, 5rem);  font-style: italic;}
 
 
 
@@ -4263,7 +4263,7 @@ height:100vh;
           top:-65px;
           right:0px;
           color: var(--primary-color);
-          font-family: roboto;
+          font-family: inherit;
           filter: drop-shadow(3px 4px 10px rgb(0, 238, 255));
           text-shadow: 0px 1px 1px 0 black;
         }
@@ -4276,7 +4276,7 @@ height:100vh;
           top:160px;
           right:20px;
           color: var(--primary-color);
-          font-family: TRON;
+          font-family: inherit;
           filter: drop-shadow(3px 4px 10px rgb(0, 238, 255));
           text-shadow: 0px 1px 1px 0 black;
           font-size:1.4rem;
