@@ -387,7 +387,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 
 <div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', background:''}}>
    <Link to="/posts/2/" title="View Archives">
-    <div style={{ background:'rgba(0,0,0,0.70)', width:'80vw', position:'relative', top:'', margin:'0 auto', padding:'0 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+    <div style={{ background:'rgba(0,0,0,0.70)', width:'80vw', position:'relative', top:'', margin:'0 auto', padding:'0 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
     <h1 className="txtFlyIn">All In 60 Seconds - View More</h1>
     
     </div>

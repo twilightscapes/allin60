@@ -1,17 +1,17 @@
 :root {
   /* tokens */
   /* font-family */
-  --font-body: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  --font-body: "", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   /* palette */
   --black-fade-5: rgba(0, 0, 0, 0.05);
   --black-fade-40: rgba(0, 0, 0, 0.4);
-  --grey-90: #000;
+  --grey-90: #111;
   --grey-50: #333;
   --green-80: #02f2fa;
   --green-50-rgb: 55, 182, 53;
-  --white: #ffffff;
+  --white: ##ccc;
 
   /* radii */
   --radius-sm: 4px;
