@@ -1006,13 +1006,14 @@ color:#fff !important;
 .tronText {
   color: #fff;
   text-shadow: 0 20px 7px #000,
-  0 8px 20px rgb(202, 69, 8),
+  0 8px 20px rgb(202, 15, 8),
   0px 12px 10px rgb(167, 139, 162),
-  0  2px #fa4802,
-  0 5px 2px #fa5102,
-  0 0 2px rgb(231, 33, 7),
-  0 0 2px #fa2702,
-  0 0 1px #f88437;
+  0  2px rgb(227, 39, 45),
+  0 5px 2px rgb(227, 39, 45),
+  0 0 2px rgb(227, 39, 45),
+  0 0 2px rgb(227, 39, 45),
+  0 0 1px rgb(227, 39, 45);
+  font-size:clamp(2rem, 3.5vw, 3.8rem);
   }
 
 .TRON{

@@ -676,7 +676,7 @@ const { iconimage } = useSiteMetadata()
 <article className="blog-post">
         <header>
           <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto', color:''}}>
-            <h1>{frontmatter.title}</h1>
+            <h1 className="tronText" style={{fontSize:'7vw'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </section>
