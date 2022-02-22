@@ -5,7 +5,7 @@ slug: /shawshank
 date: 2022-02-19 01:43
 description: Shawshank Redemption
 youtuber: "tHQEimbxdRE"
-youtuber2: "qzuM2XTnpSA"
+youtuber2: "lYGald0tFro"
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
@@ -13,7 +13,7 @@ youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
 youtubestart: "32"
 youtubeend: "45"
 youtubemute: "1"
-audiostart: "171"
+audiostart: "0"
 audioend: ""
 youtubecontrols: "0"
 youtubeautostart: "1"
@@ -49,3 +49,4 @@ nftredeem: ""
  
 
 <!-- lYGald0tFro SOUNDTRACK 45> -->
+<!-- qzuM2XTnpSA OPERA 32-45 -->

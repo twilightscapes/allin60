@@ -278,7 +278,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-      <Link className="navbar-item txtshadow" to="/posts/">
+      <Link className="navbar-item txtshadow" to="/posts/2/">
          View More Posts
         </Link>
 </li>

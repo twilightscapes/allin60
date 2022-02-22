@@ -35,7 +35,7 @@ import Newsignup from "../components/newssign"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
-
+import App from "../pages/App"
 import GridLoader from "../../static/assets/FrontLoader.svg"
 import TheGrid from "../../static/assets/The-Grid-Intro.svg"
 import BackgroundImage from 'gatsby-background-image'
@@ -327,20 +327,17 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder" style={{position:'relative'}}>
+<div className="horizontal-holder" style={{position:'relative',}}>
 <div className="RArrow">{/* <span></span> */}</div>
 
-<BackgroundImage
-      Tag="section"
-      className=""
-      fluid={imageData}
-      backgroundColor={`#111`}
-     >
-<div className="horizontal-scroll panels" style={{backgroundImage:'../../static/assets/tronin60.jpg', scrollSnapType: '', maxHeight:'', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
+
+<div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
 
 
 
 <div className="" style={{height:'1px'}}></div>
+
+
 
 
 {/* <GridLoader /> */}
@@ -348,12 +345,21 @@ const HomePage = ({ data }) => {
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
+<BackgroundImage
+      Tag="section"
+      className=""
+      fluid={imageData}
+      backgroundColor={`#111`}
+     >
+
+
+
 <div className="donation2" style={{display:'grid',
-  placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative'}}>
+  placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
 
-  <h1 className="tronText" style={{fontSize:'9vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}>What Can You Do<br /> In 60 Seconds?</h1>
+  <h1 className="tronText " style={{fontSize:'9vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw'}}><div className="lineOne">What Can You Do</div> <div className="lineTwo">In 60 Seconds?</div></h1>
 </div>
-
+</BackgroundImage>
 
 <article className="" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative',}}>
 
@@ -379,7 +385,15 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 <BlogListHome data={posts} />
 
 
+<div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', background:''}}>
+   
+    <div style={{ background:'rgba(0,0,0,0.70)', width:'80vw', position:'relative', top:'', margin:'0 auto', padding:'0 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+    <h1 className="txtFlyIn">All In 60 Seconds - View More</h1>
+    
+View More
+    </div>
 
+</div>
 
 
 <div className="donation2" style={{ width:'100vw', height:'100vh'}}>
@@ -392,7 +406,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 
         
 </div>
-</BackgroundImage>
+
 </div>
 
     </Layout>
