@@ -3077,7 +3077,7 @@ border:0px solid yellow;
         animation: poof .5s forwards;
         animation-delay: 1.5s;
         overflow: hidden;
-
+        color:#ccc;
             animation-delay: 1.5s;
             content: " loading... ";
         }
