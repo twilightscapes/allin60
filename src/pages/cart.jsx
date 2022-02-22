@@ -49,16 +49,17 @@ export default function CartPage() {
       <div className={wrap} style={{minHeight:'100vh' }}>
         {emptyCart ? (
           <div className={emptyStateContainer} style={{paddingTop:'5rem'}}>
-            <h1 className={emptyStateHeading}>Your cart is empty</h1>
+            <h1 className="tronText">Your cart is empty</h1>
+            <br />
             <p>
-              Looks like you haven’t found anything yet. We understand that
-              sometimes it’s hard to choose — maybe this helps:
+              Looks like you haven’t found anything yet. <br /><br />We understand that
+              sometimes it’s hard to choose.
             </p>
             {/* <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
               View trending Twilightscapes
             </Link> */}
 
-            <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'10vh auto 0 auto'}}>Pre-order questions?</h3>
+            {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'10vh auto 0 auto'}}>Pre-order questions?</h3> */}
 
 {/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />

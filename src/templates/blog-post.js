@@ -525,7 +525,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 

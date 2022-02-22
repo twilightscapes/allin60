@@ -5,7 +5,7 @@ import React, { } from "react"
 import { Seo } from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
-// import { AiOutlineClose } from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
@@ -58,10 +58,10 @@ export function Layout({ children }) {
           <>
           <div style={{display:'', position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'5',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'', cursor:'pointer'}}>
-            {/* <AiOutlineClose /> */}
-            <span className="TRON">[</span>
+            <AiOutlineClose />
+            {/* <span className="TRON">[</span> */}
             
-            <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span>
+            {/* <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span> */}
           </Link>
           </div>
           </>
