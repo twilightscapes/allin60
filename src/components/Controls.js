@@ -26,11 +26,12 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    height: "",
+    height: "100%",
     // background: "rgba(0,0,0,0.6)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
+    zIndex:'0'
   },
 
   button: {
@@ -48,9 +49,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   bottomIcons: {
-    color: "#999",
+
+    color: "#ccc",
+    background:'#E3272D',
+    marginRight:'2rem',
     "&:hover": {
       color: "#fff",
+      background:'#ff0000',
     },
   },
 
@@ -121,7 +126,7 @@ const Controls = forwardRef(
       onToggleFullScreen,
       volume,
       onVolumeChange,
-      // onBookmark,
+      onBookmark,
     },
     ref
   ) => {
@@ -144,7 +149,7 @@ const Controls = forwardRef(
           container
           direction="column"
           justify="space-between"
-          style={{ flexGrow: 1 }}
+          style={{ flexGrow:'1', zIndex:'', position:'' }}
         >
           <Grid
             container
@@ -156,7 +161,7 @@ const Controls = forwardRef(
           >
             <Grid item>
               <Typography variant="h5" style={{ color: "#fff" }}>
-                All In 60 Seconds
+                AllIn60.com
               </Typography>
             </Grid>
             <Grid item>
@@ -170,8 +175,8 @@ const Controls = forwardRef(
               </Button> */}
             </Grid>
           </Grid>
-          {/* <Grid container direction="row" alignItems="center" justify="center">
-            <IconButton
+          {/* <Grid container direction="row" alignItems="center" justify="center"> */}
+            {/* <IconButton
               onClick={onRewind}
               className={classes.controlIcons}
               aria-label="rewind"
@@ -198,8 +203,8 @@ const Controls = forwardRef(
               aria-label="forward"
             >
               <FastForwardIcon fontSize="inherit" />
-            </IconButton>
-          </Grid> */}
+            </IconButton> */}
+          {/* </Grid> */}
           {/* bottom controls */}
           <Grid
             container
@@ -208,8 +213,8 @@ const Controls = forwardRef(
             alignItems="center"
             style={{ padding: 16 }}
           >
-            {/* <Grid item xs={12}>
-              <PrettoSlider
+            <Grid item xs={12}>
+              {/* <PrettoSlider
                 min={0}
                 max={100}
                 ValueLabelComponent={(props) => (
@@ -221,12 +226,16 @@ const Controls = forwardRef(
                 onMouseDown={onSeekMouseDown}
                 onChangeCommitted={onSeekMouseUp}
                 onDuration={onDuration}
-              />
-            </Grid> */}
+              /> */}
+            </Grid>
 
             <Grid item>
-              <Grid container alignItems="center">
-                {/* <IconButton
+              <Grid container alignItems="center"
+              style={{position:'absolute',
+                bottom:'0',
+                left:'10vw',
+                zIndex:'50',}}>
+                <IconButton
                   onClick={onPlayPause}
                   className={classes.bottomIcons}
                 >
@@ -235,7 +244,7 @@ const Controls = forwardRef(
                   ) : (
                     <PlayArrowIcon fontSize="large" />
                   )}
-                </IconButton> */}
+                </IconButton>
 
                 <IconButton
                   // onClick={() => setState({ ...state, muted: !state.muted })}
@@ -260,8 +269,8 @@ const Controls = forwardRef(
                   className={classes.volumeSlider}
                   onMouseDown={onSeekMouseDown}
                   onChangeCommitted={onVolumeSeekDown}
-                /> */}
-                {/* <Button
+                />
+                <Button
                   variant="text"
                   onClick={
                     onChangeDispayFormat
@@ -289,9 +298,9 @@ const Controls = forwardRef(
                 variant="text"
               >
                 <Typography>{playbackRate}X</Typography>
-              </Button> */}
+              </Button>
 
-              {/* <Popover
+              <Popover
                 container={ref.current}
                 open={open}
                 id={id}
@@ -305,8 +314,8 @@ const Controls = forwardRef(
                   vertical: "bottom",
                   horizontal: "left",
                 }}
-              > */}
-                {/* <Grid container direction="column-reverse">
+              >
+                <Grid container direction="column-reverse">
                   {[0.5, 1, 1.5, 2].map((rate) => (
                     <Button
                       key={rate}
@@ -321,9 +330,9 @@ const Controls = forwardRef(
                       </Typography>
                     </Button>
                   ))}
-                </Grid> */}
-              {/* </Popover> */}
-              {/* <IconButton
+                </Grid>
+              </Popover>
+              <IconButton
                 onClick={onToggleFullScreen}
                 className={classes.bottomIcons}
               >

@@ -18,18 +18,20 @@ import VolumeMute from "@material-ui/icons/VolumeOff";
 import FullScreen from "@material-ui/icons/Fullscreen";
 import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
-import Controls from "../../src/components/Controls";
+import Controls from "../components/Controls";
 
 const useStyles = makeStyles((theme) => ({
   playerWrapper: {
     width: "100%",
-
-    position: "relative",
-    // "&:hover": {
-    //   "& $controlsWrapper": {
-    //     visibility: "visible",
-    //   },
-    // },
+    height:'100vh',
+    position: "absolute",
+    top:'0',
+    border:'0px solid yellow',
+    "&:hover": {
+      "& $controlsWrapper": {
+        visibility: "visible",
+      },
+    },
   },
 
   controlsWrapper: {
@@ -39,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    // background: "rgba(0,0,0,0.4)",
+    background: "rgba(0,0,0,0.4)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -169,7 +171,7 @@ function App() {
     duration: 0,
     playbackRate: 1.0,
     volume: 1,
-    loop: true,
+    loop: false,
     seeking: false,
   });
 
@@ -329,19 +331,19 @@ function App() {
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
           ref={playerContainerRef}
-          // className={classes.playerWrapper}
+          className={classes.playerWrapper}
+          style={{zIndex:'',}}
         >
-
           <ReactPlayer
             ref={playerRef}
-            width="100%"
+            width="100vw"
             height="100vh"
             url="https://youtu.be/lZzai6at_xA"
             pip={pip}
             playing={playing}
             controls={false}
             light={light}
-            loop={loop}
+            loop={true}
             playbackRate={playbackRate}
             volume={volume}
             muted={muted}
@@ -353,7 +355,15 @@ function App() {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, autoplay:1, controls:0, mute:1, start:13, end:60, loop:1  }
+                playerVars: {
+                  showinfo:0,
+                  autoplay:1,
+                  controls:0,
+                  mute:1, 
+                  start:13,
+                  end:51,
+                  // loop:1,  
+                }
                },
             }}
           />
@@ -405,8 +415,8 @@ function App() {
               </Paper>
             </Grid>
           ))}
-        </Grid> */}
-        <canvas ref={canvasRef} />
+        </Grid>
+        <canvas ref={canvasRef} /> */}
       {/* </Container> */}
     </>
   );

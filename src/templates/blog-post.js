@@ -1,5 +1,14 @@
 /** @jsx jsx */
 // import React from "react"
+
+import React, { useState, useRef, useEffect } from "react";
+import ReactPlayer from 'react-player/lazy'
+import Controls from "../components/Controls";
+import screenful from "screenfull";
+import Slider from "@material-ui/core/Slider";
+import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -15,7 +24,7 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -31,6 +40,141 @@ const CustomBox = styled.div`
   .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
 }
 `
+
+
+const useStyles = makeStyles((theme) => ({
+  playerWrapper: {
+    width: "100%",
+    height:'100%',
+    position: "absolute",
+    top:'0',
+    border:'0px solid yellow',
+    "&:hover": {
+      "& $controlsWrapper": {
+        visibility: "visible",
+      },
+    },
+  },
+
+  controlsWrapper: {
+    visibility: "hidden",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: "rgba(0,0,0,0.4)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
+  topControls: {
+    display: "flex",
+    justifyContent: "flex-end",
+    padding: theme.spacing(2),
+  },
+  middleControls: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  bottomWrapper: {
+    display: "flex",
+    flexDirection: "column",
+
+    // background: "rgba(0,0,0,0.6)",
+    // height: 60,
+    padding: theme.spacing(2),
+  },
+
+  bottomControls: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    // height:40,
+  },
+
+  button: {
+    margin: theme.spacing(1),
+  },
+  controlIcons: {
+    color: "#777",
+
+    fontSize: 50,
+    transform: "scale(0.9)",
+    "&:hover": {
+      color: "#fff",
+      transform: "scale(1)",
+    },
+  },
+
+  bottomIcons: {
+    color: "#999",
+    "&:hover": {
+      color: "#fff",
+    },
+  },
+
+  volumeSlider: {
+    width: 100,
+  },
+}));
+
+const PrettoSlider = withStyles({
+  root: {
+    height: 8,
+  },
+  thumb: {
+    height: 24,
+    width: 24,
+    backgroundColor: "#fff",
+    border: "2px solid currentColor",
+    marginTop: -8,
+    marginLeft: -12,
+    "&:focus, &:hover, &$active": {
+      boxShadow: "inherit",
+    },
+  },
+  active: {},
+  valueLabel: {
+    left: "calc(-50% + 4px)",
+  },
+  track: {
+    height: 8,
+    borderRadius: 4,
+  },
+  rail: {
+    height: 8,
+    borderRadius: 4,
+  },
+})(Slider);
+
+function ValueLabelComponent(props) {
+  const { children, open, value } = props;
+
+  return (
+    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+      {children}
+    </Tooltip>
+  );
+}
+
+const format = (seconds) => {
+  if (isNaN(seconds)) {
+    return `00:00`;
+  }
+  const date = new Date(seconds * 1000);
+  const hh = date.getUTCHours();
+  const mm = date.getUTCMinutes();
+  const ss = date.getUTCSeconds().toString().padStart(2, "0");
+  if (hh) {
+    return `${hh}:${mm.toString().padStart(2, "0")}:${ss}`;
+  }
+  return `${mm}:${ss}`;
+};
+
+let count = 0;
+
 
 // const options = {
 //   settings: {
@@ -176,7 +320,7 @@ function AddSvg(){
 
 
   return (
-    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -272,7 +416,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     return (
       <div>
               <ReactPlayer
-              className='react-player66'
+              className='react-player'
               url={iframeUrl}
               // url={[
               //   iframeUrl,
@@ -296,7 +440,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
               
     
-              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
       <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
@@ -319,47 +463,125 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
     return (
 
- <div>
-              <ReactPlayer
-              className='react-player66'
-              url={iframeUrl}
-              // url={[
-              //   iframeUrl,
-              //   Suggestion1,
-              //   Suggestion2,
-              //   Suggestion3
-              // ]}
-              width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
-                },
-              }}
-              loop
-              playing
-              playsinline
-    //           playIcon={
-    //             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+
+<>
+      
+
+
+      
+
+
+<div
+          onMouseMove={handleMouseMove}
+          onMouseLeave={hanldeMouseLeave}
+          ref={playerContainerRef}
+          className={classes.playerWrapper}
+          style={{position:'absolute', zIndex:'1', width:'100vw', height:'100%', display:'block'}}
+        >
+<Controls
+            ref={controlsRef}
+            onSeek={handleSeekChange}
+            onSeekMouseDown={handleSeekMouseDown}
+            onSeekMouseUp={handleSeekMouseUp}
+            onDuration={handleDuration}
+            onRewind={handleRewind}
+            onPlayPause={handlePlayPause}
+            onFastForward={handleFastForward}
+            playing={playing}
+            played={played}
+            elapsedTime={elapsedTime}
+            totalDuration={totalDuration}
+            onMute={hanldeMute}
+            muted={muted}
+            onVolumeChange={handleVolumeChange}
+            onVolumeSeekDown={handleVolumeSeekDown}
+            onChangeDispayFormat={handleDisplayFormat}
+            playbackRate={playbackRate}
+            onPlaybackRateChange={handlePlaybackRate}
+            onToggleFullScreen={toggleFullScreen}
+            volume={volume}
+            onBookmark={addBookmark}
+          />
+
+          </div>
+
+
+
+        <ReactPlayer
+          className='react-player whoopass'
+          url={iframeUrl}
+          width='100%'
+          height='100%'
+          playing={playing}
+          muted={muted}
+          loop={true}
+          config={{
+          youtube: {
+            playerVars: {
+              showinfo:0,
+              // autoplay:YouTubeAutostart,
+              controls:0,
+              // mute:1, 
+              start:YouTubeStart,
+              end:YouTubeEnd,
+              loop:1,  
+              rel:0,
+            }
+           },
+          }}
+        />
+
+        
+        
+        
+
+
+</>
+
+
+
+
+//  <div>
+//               <ReactPlayer
+//               className='react-player66'
+//               url={iframeUrl}
+//               // url={[
+//               //   iframeUrl,
+//               //   Suggestion1,
+//               //   Suggestion2,
+//               //   Suggestion3
+//               // ]}
+//               width="100%"
+//               height="100%"
+//               config={{
+//                 youtube: {
+//                   playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+//                 },
+//               }}
+//               loop
+//               playing
+//               playsinline
+//     //           playIcon={
+//     //             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
     
-    //         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
+//     //         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-    //           <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+//     //           <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
 
-    //           <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+//     //           <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 
 
 
-    // </div>
-    //       <br />
-    //           <div className="button" style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
+//     // </div>
+//     //       <br />
+//     //           <div className="button" style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
       
-    //           </div>
-    //           </button>}
-    //             light="../assets/transparent.png"
-              />
-</div>
+//     //           </div>
+//     //           </button>}
+//     //             light="../assets/transparent.png"
+//               />
+// </div>
 
     )
   }
@@ -375,11 +597,11 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 <div>
 <ReactPlayer
-          className='react-player66'
+          className='react-player'
           url={iframeUrl2}
           width="100%"
           height="100%"
-          style={{zIndex:'0'}}
+          style={{zIndex:''}}
           playing
           playsinline
           config={{
@@ -388,7 +610,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             },
           }}
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
               
       
       
@@ -441,9 +663,9 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'relative', top:'-50px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'relative', top:'-50px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
@@ -493,6 +715,175 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 const { iconimage } = useSiteMetadata()
 
+
+
+
+const classes = useStyles();
+  const [showControls, setShowControls] = useState(false);
+  // const [count, setCount] = useState(0);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
+  const [bookmarks, setBookmarks] = useState([]);
+  const [state, setState] = useState({
+    pip: false,
+    playing: true,
+    controls: false,
+    light: false,
+
+    muted: true,
+    played: 0,
+    duration: 0,
+    playbackRate: 1.0,
+    volume: 1,
+    loop: false,
+    seeking: false,
+  });
+
+  const playerRef = useRef(null);
+  const playerContainerRef = useRef(null);
+  const controlsRef = useRef(null);
+  const canvasRef = useRef(null);
+  const {
+    playing,
+    controls,
+    light,
+
+    muted,
+    loop,
+    playbackRate,
+    pip,
+    played,
+    seeking,
+    volume,
+  } = state;
+
+  const handlePlayPause = () => {
+    setState({ ...state, playing: !state.playing });
+  };
+
+  const handleRewind = () => {
+    playerRef.current.seekTo(playerRef.current.getCurrentTime() - 10);
+  };
+
+  const handleFastForward = () => {
+    playerRef.current.seekTo(playerRef.current.getCurrentTime() + 10);
+  };
+
+  const handleProgress = (changeState) => {
+    if (count > 3) {
+      controlsRef.current.style.visibility = "hidden";
+      count = 0;
+    }
+    if (controlsRef.current.style.visibility == "visible") {
+      count += 1;
+    }
+    if (!state.seeking) {
+      setState({ ...state, ...changeState });
+    }
+  };
+
+  const handleSeekChange = (e, newValue) => {
+    console.log({ newValue });
+    setState({ ...state, played: parseFloat(newValue / 100) });
+  };
+
+  const handleSeekMouseDown = (e) => {
+    setState({ ...state, seeking: true });
+  };
+
+  const handleSeekMouseUp = (e, newValue) => {
+    console.log({ value: e.target });
+    setState({ ...state, seeking: false });
+    // console.log(sliderRef.current.value)
+    playerRef.current.seekTo(newValue / 100, "fraction");
+  };
+
+  const handleDuration = (duration) => {
+    setState({ ...state, duration });
+  };
+
+  const handleVolumeSeekDown = (e, newValue) => {
+    setState({ ...state, seeking: false, volume: parseFloat(newValue / 100) });
+  };
+  const handleVolumeChange = (e, newValue) => {
+    // console.log(newValue);
+    setState({
+      ...state,
+      volume: parseFloat(newValue / 100),
+      muted: newValue === 0 ? true : false,
+    });
+  };
+
+  const toggleFullScreen = () => {
+    screenful.toggle(playerContainerRef.current);
+  };
+
+  const handleMouseMove = () => {
+    console.log("mousemove");
+    controlsRef.current.style.visibility = "visible";
+    count = 0;
+  };
+
+  const hanldeMouseLeave = () => {
+    controlsRef.current.style.visibility = "hidden";
+    count = 0;
+  };
+
+  const handleDisplayFormat = () => {
+    setTimeDisplayFormat(
+      timeDisplayFormat == "normal" ? "remaining" : "normal"
+    );
+  };
+
+  const handlePlaybackRate = (rate) => {
+    setState({ ...state, playbackRate: rate });
+  };
+
+  const hanldeMute = () => {
+    setState({ ...state, muted: !state.muted });
+  };
+
+  const addBookmark = () => {
+    const canvas = canvasRef.current;
+    canvas.width = 160;
+    canvas.height = 90;
+    const ctx = canvas.getContext("2d");
+
+    ctx.drawImage(
+      playerRef.current.getInternalPlayer(),
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+    const dataUri = canvas.toDataURL();
+    canvas.width = 0;
+    canvas.height = 0;
+    const bookmarksCopy = [...bookmarks];
+    bookmarksCopy.push({
+      time: playerRef.current.getCurrentTime(),
+      display: format(playerRef.current.getCurrentTime()),
+      image: dataUri,
+    });
+    setBookmarks(bookmarksCopy);
+  };
+
+  const currentTime =
+    playerRef && playerRef.current
+      ? playerRef.current.getCurrentTime()
+      : "00:00";
+
+  const duration =
+    playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
+  const elapsedTime =
+    timeDisplayFormat == "normal"
+      ? format(currentTime)
+      : `-${format(duration - currentTime)}`;
+
+  const totalDuration = format(duration);
+
+  
+
   return (
     
     <Layout className="page">
@@ -525,7 +916,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'0', height:'100%', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'', height:'90vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -533,9 +924,9 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'-2', }}>
 
-<div style={{margin:'0 auto', width:'100%', overflow:''}}>
+
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -554,7 +945,7 @@ const { iconimage } = useSiteMetadata()
             // <StaticImage src="../../assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-          </div>
+    
 
        
 </div>
@@ -606,12 +997,13 @@ const { iconimage } = useSiteMetadata()
             ""
        
           ) : (
+            
             <Iframer />
           )}
 
 
 {Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', zIndex:'0',}}>
+            <div style={{position:'absolute', top:'0', zIndex:'',}}>
             <YouTubed />
             </div>
        
@@ -627,7 +1019,7 @@ const { iconimage } = useSiteMetadata()
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'0',
+              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -636,8 +1028,9 @@ const { iconimage } = useSiteMetadata()
           )}
 
 {Svg ? (
+  <div style={{position:'absolute', bottom:'0', zIndex:'', maxHeight:'100%',}}>
             <AddSvg />
-       
+       </div>
           ) : (
             ""
           )}
@@ -657,7 +1050,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {Suggestion1 ? (
-            <ShowSuggestion style={{position:'absolute', top:'50vh', zIndex:'60',}} />
+            <ShowSuggestion style={{position:'absolute', top:'40px', zIndex:'10',}} />
        
           ) : (
             ""

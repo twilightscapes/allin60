@@ -13,13 +13,12 @@ youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
-youtubecontrols: "0"
+youtubecontrols: ""
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
 shareable: "1"
-underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
 nftlink: ""

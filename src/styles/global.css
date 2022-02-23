@@ -1080,6 +1080,20 @@ body.homepage .ReactModalPortal .nextbutt {display: none !important;}
 
 /* .ReactModalPortal {margin:0 19% !important; width:80% !important; z-index: 2;} */
 
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
 .ReactModal__Overlay{background-color:transparent !important;   background: rgba(6, 70, 90, 0.87);
   backdrop-filter: blur(22px);}
 
@@ -4193,9 +4207,9 @@ height:100vh;
                   background-color:  var(--theme-ui-colors-background);
                   opacity:1;
                 }
-               .react-audio:hover::before{
+               /* .react-audio:hover::before{
                 animation: move 3s forwards; 
-               }
+               } */
 
 
 

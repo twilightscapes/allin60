@@ -51,7 +51,9 @@ export function Layout({ children }) {
       <Seo />
       {/* <SkipNavLink /> */}
 
-      <ModalRoutingContext.Consumer>
+
+      
+      <ModalRoutingContext.Consumer closeTimeoutMS={2000} >
     {({ modal, closeTo }) => (
       <div style={{overflow:''}}>
         {modal ? (

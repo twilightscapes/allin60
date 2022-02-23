@@ -26,13 +26,13 @@ featuredImage: /assets/pulpfiction.jpg
 svgImage: /assets/Pulp-Loader.svg
 nftlink: ""
 nftdrop: ""
-nftredeem: "BOOM"
+nftredeem: ""
 ---
 <h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
         <div class="">Coming Soon!</div>
       </h2>
 
-
+<!-- WSLMN6g_Od4 AUDIO -->
 
 
 <!-- nftdrop: "2022-02-20T13:29:20" -->
