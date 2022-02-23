@@ -320,7 +320,7 @@ function AddSvg(){
 
 
   return (
-    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'fixed', top:'0', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -508,7 +508,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
         <ReactPlayer
-          className='react-player whoopass'
+          className='react-player youtubehide'
           url={iframeUrl}
           width='100%'
           height='100%'
@@ -597,7 +597,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 <div>
 <ReactPlayer
-          className='react-player'
+          className='react-player '
           url={iframeUrl2}
           width="100%"
           height="100%"
@@ -916,15 +916,18 @@ const classes = useStyles();
 
 
 
-<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'', height:'90vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'', height:'', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+
+
+
+<div className="vidbox" style={{position:'absolute', height:'', width:'100vw', top:'0', zIndex:''}}>
+<div className="video-background">
+<div className="video-foreground">
 
 
 
 
-
-
-
-<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'-2', }}>
+<div style={{ overflow:'', position:'absolute', top:'0', zIndex:'-2', }}>
 
 
 {Image ? (
@@ -1036,6 +1039,9 @@ const classes = useStyles();
           )}
 
 
+</div>
+</div>
+</div>
 
       </div>
 

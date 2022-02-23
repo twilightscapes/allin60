@@ -74,13 +74,13 @@ opacity:.2;
   content: "  ";
   display:block;
   width:100%;
-  height:300px !important;
-  overflow: hidden !important;
+  /* height:300px !important;
+  overflow: hidden !important; */
   border:0px solid yellow;
-  position:absolute;
-  top:200px;
-  background:#222;
-  z-index:11;
+  /* position:absolute;
+  top:200px; */
+  background:#111;
+  /* z-index:11; */
 }
 
 .player-wrapper::before:hover{
@@ -282,8 +282,8 @@ display: none !important;
 } */
 
 .vidbox {
-  overflow: hidden;
-  position: relative; width: 100%; height: 100vh;
+  /* overflow: hidden;
+  position: relative; width: 100%; height: 100vh; */
 }
 .youtube {
   height: 100%;
@@ -4622,8 +4622,8 @@ height:100vh;
 .video-background {
   position: relative;
     padding-bottom: 56.25%; 
-    width: 300%; 
-    left: -100%;
+    /* width: 300%; 
+    left: -100%; */
 }
 
 
