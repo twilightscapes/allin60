@@ -234,8 +234,8 @@ const Controls = forwardRef(
               style={{position:'absolute',
                 bottom:'0',
                 left:'10vw',
-                zIndex:'50',}}>
-                <IconButton
+                zIndex:'2',}}>
+                {/* <IconButton
                   onClick={onPlayPause}
                   className={classes.bottomIcons}
                 >
@@ -244,21 +244,9 @@ const Controls = forwardRef(
                   ) : (
                     <PlayArrowIcon fontSize="large" />
                   )}
-                </IconButton>
+                </IconButton> */}
 
-                <IconButton
-                  // onClick={() => setState({ ...state, muted: !state.muted })}
-                  onClick={onMute}
-                  className={`${classes.bottomIcons} ${classes.volumeButton}`}
-                >
-                  {muted ? (
-                    <VolumeMute fontSize="large" />
-                  ) : volume > 0.5 ? (
-                    <VolumeUp fontSize="large" />
-                  ) : (
-                    <VolumeDown fontSize="large" />
-                  )}
-                </IconButton>
+               
 
                 {/* <Slider
                   min={0}
@@ -290,7 +278,26 @@ const Controls = forwardRef(
               </Grid>
             </Grid>
 
-            <Grid item>
+            <Grid item style={{position:'fixed',
+                bottom:'35vh',
+                right:'6%',
+                zIndex:'2',}}>
+
+            <IconButton
+                  // onClick={() => setState({ ...state, muted: !state.muted })}
+                  onClick={onMute}
+                  className={`${classes.bottomIcons} ${classes.volumeButton}`}
+                >
+                  {muted ? (
+                    <VolumeMute fontSize="large" />
+                  ) : volume > 0.5 ? (
+                    <VolumeUp fontSize="large" />
+                  ) : (
+                    <VolumeDown fontSize="large" />
+                  )}
+                </IconButton>
+
+
               {/* <Button
                 onClick={handleClick}
                 aria-describedby={id}
