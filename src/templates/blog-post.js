@@ -608,7 +608,7 @@ const classes = useStyles();
           )} */}
     
 
-{/* {UnderlayImage ? (
+{UnderlayImage ? (
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
@@ -619,15 +619,15 @@ const classes = useStyles();
             
           ) : (
             ""
-          )} */}
+          )}
 
 
 
 
 
-  <div style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}}>
-            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'', top:'', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', width:'100%', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
-       </div>
+
+            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100%', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
+    
 
     
 
