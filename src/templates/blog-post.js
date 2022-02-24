@@ -45,7 +45,7 @@ const CustomBox = styled.div`
   overflow: hidden;
   padding-bottom: 56.25%;
   aspect-ratio: 16 / 9;
-  z-index:1;
+  z-index:0;
   max-width:100%;
 }
 .wrap-element iframe {
@@ -597,7 +597,7 @@ const classes = useStyles();
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div className="wrap-element">
 
-{/* {Image ? (
+{Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -607,7 +607,7 @@ const classes = useStyles();
 
           ) : (
           ""
-          )} */}
+          )}
     
 
 {UnderlayImage ? (
@@ -692,16 +692,16 @@ const classes = useStyles();
             loop
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'65', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'65', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:'30%'}}>
   
           <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             
   
-            <div style={{position:'relative', maxWidth:'100%', margin:' 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src={iconimage} width="200px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-  </div>
+            {/* <div style={{position:'relative', maxWidth:'100%', margin:' 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src={iconimage} width="200px" height="150px" alt="VidSock" style={{ width:'80%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  </div> */}
         
-            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'3vw'}}>Click To Play</span>
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
             </div>
             </button>}
