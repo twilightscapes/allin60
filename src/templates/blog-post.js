@@ -47,6 +47,7 @@ const CustomBox = styled.div`
   aspect-ratio: 16 / 9;
   z-index:0;
   max-width:100%;
+  max-height:75vh !important;
 }
 .wrap-element iframe {
   position: absolute;
@@ -68,8 +69,8 @@ const CustomBox = styled.div`
   }
 }
 
-@media (min-width: 58em) {
-
+@media (min-width: 1100px) {
+.pagination{display:; position:relative; top:-170px; z-index:2;}
 }
 
 
@@ -572,7 +573,7 @@ const classes = useStyles();
     <Layout className="page">
 <CustomBox style={{}}>
 <Helmet>
-  <body className="blogpost" style={{background:'#111'}} />
+  <body className="blogpost" style={{background:''}} />
   {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
@@ -763,6 +764,9 @@ const classes = useStyles();
           )} */}
 
 
+<div style={{padding:'0 5vw', color:'inherit !important'}}>
+      {(previous || next) && <Pagination {...props} />}
+      </div>
 
 
 <article className="blog-post">
