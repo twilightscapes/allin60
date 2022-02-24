@@ -12,13 +12,13 @@ body {
   color:#eee;
   background:#111;
   overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  /* overflow-y: hidden !important; */
   width:100vw;
   scroll-behavior: smooth;
 }
 
 
-body.blogpost{
+body.blogpost, body.homepage{
   overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
@@ -2795,7 +2795,8 @@ transform: scale(1);
 
   a[aria-current] {
     cursor: default !important; 
-    color:#0a9fb9 !important;
+    color:rgb(227, 39, 45) !important;
+  
     box-shadow: none;
     filter: none !important;
     pointer-events: none !important;

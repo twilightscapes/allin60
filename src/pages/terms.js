@@ -1,13 +1,15 @@
 
 import { Layout } from "../components/layout"
 
-import React, { useState, useRef, useEffect } from "react";
-import ReactPlayer from 'react-player/lazy'
-import Controls from "../components/Controls";
-import screenful from "screenfull";
-import Slider from "@material-ui/core/Slider";
-import Tooltip from "@material-ui/core/Tooltip";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import React from "react";
+
+// import React, { useState, useRef, useEffect } from "react";
+// import ReactPlayer from 'react-player/lazy'
+// import Controls from "../components/Controls";
+// import screenful from "screenfull";
+// import Slider from "@material-ui/core/Slider";
+// import Tooltip from "@material-ui/core/Tooltip";
+// import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 
 
@@ -21,138 +23,138 @@ import GoBack from "../components/goBack"
 
 
 
-const useStyles = makeStyles((theme) => ({
-  playerWrapper: {
-    width: "100%",
-    height:'',
-    position: "",
-    top:'0',
-    border:'0px solid yellow',
-    "&:hover": {
-      "& $controlsWrapper": {
-        visibility: "visible",
-      },
-    },
-  },
+// const useStyles = makeStyles((theme) => ({
+//   playerWrapper: {
+//     width: "100%",
+//     height:'',
+//     position: "",
+//     top:'0',
+//     border:'0px solid yellow',
+//     "&:hover": {
+//       "& $controlsWrapper": {
+//         visibility: "visible",
+//       },
+//     },
+//   },
 
-  controlsWrapper: {
-    visibility: "hidden",
-    position: "",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    background: "rgba(0,0,0,0.4)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  },
-  topControls: {
-    display: "flex",
-    justifyContent: "flex-end",
-    padding: theme.spacing(2),
-  },
-  middleControls: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  bottomWrapper: {
-    display: "flex",
-    flexDirection: "column",
+//   controlsWrapper: {
+//     visibility: "hidden",
+//     position: "",
+//     top: 0,
+//     left: 0,
+//     right: 0,
+//     bottom: 0,
+//     background: "rgba(0,0,0,0.4)",
+//     display: "flex",
+//     flexDirection: "column",
+//     justifyContent: "space-between",
+//   },
+//   topControls: {
+//     display: "flex",
+//     justifyContent: "flex-end",
+//     padding: theme.spacing(2),
+//   },
+//   middleControls: {
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//   },
+//   bottomWrapper: {
+//     display: "flex",
+//     flexDirection: "column",
 
-    // background: "rgba(0,0,0,0.6)",
-    // height: 60,
-    padding: theme.spacing(2),
-  },
+//     // background: "rgba(0,0,0,0.6)",
+//     // height: 60,
+//     padding: theme.spacing(2),
+//   },
 
-  bottomControls: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    // height:40,
-  },
+//   bottomControls: {
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "space-between",
+//     // height:40,
+//   },
 
-  button: {
-    margin: theme.spacing(1),
-  },
-  controlIcons: {
-    color: "#777",
+//   button: {
+//     margin: theme.spacing(1),
+//   },
+//   controlIcons: {
+//     color: "#777",
 
-    fontSize: 50,
-    transform: "scale(0.9)",
-    "&:hover": {
-      color: "#fff",
-      transform: "scale(1)",
-    },
-  },
+//     fontSize: 50,
+//     transform: "scale(0.9)",
+//     "&:hover": {
+//       color: "#fff",
+//       transform: "scale(1)",
+//     },
+//   },
 
-  bottomIcons: {
-    color: "#999",
-    "&:hover": {
-      color: "#fff",
-    },
-  },
+//   bottomIcons: {
+//     color: "#999",
+//     "&:hover": {
+//       color: "#fff",
+//     },
+//   },
 
-  volumeSlider: {
-    width: 100,
-  },
-}));
+//   volumeSlider: {
+//     width: 100,
+//   },
+// }));
 
-const PrettoSlider = withStyles({
-  root: {
-    height: 8,
-  },
-  thumb: {
-    height: 24,
-    width: 24,
-    backgroundColor: "#fff",
-    border: "2px solid currentColor",
-    marginTop: -8,
-    marginLeft: -12,
-    "&:focus, &:hover, &$active": {
-      boxShadow: "inherit",
-    },
-  },
-  active: {},
-  valueLabel: {
-    left: "calc(-50% + 4px)",
-  },
-  track: {
-    height: 8,
-    borderRadius: 4,
-  },
-  rail: {
-    height: 8,
-    borderRadius: 4,
-  },
-})(Slider);
+// const PrettoSlider = withStyles({
+//   root: {
+//     height: 8,
+//   },
+//   thumb: {
+//     height: 24,
+//     width: 24,
+//     backgroundColor: "#fff",
+//     border: "2px solid currentColor",
+//     marginTop: -8,
+//     marginLeft: -12,
+//     "&:focus, &:hover, &$active": {
+//       boxShadow: "inherit",
+//     },
+//   },
+//   active: {},
+//   valueLabel: {
+//     left: "calc(-50% + 4px)",
+//   },
+//   track: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+//   rail: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+// })(Slider);
 
-function ValueLabelComponent(props) {
-  const { children, open, value } = props;
+// function ValueLabelComponent(props) {
+//   const { children, open, value } = props;
 
-  return (
-    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-      {children}
-    </Tooltip>
-  );
-}
+//   return (
+//     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+//       {children}
+//     </Tooltip>
+//   );
+// }
 
-const format = (seconds) => {
-  if (isNaN(seconds)) {
-    return `00:00`;
-  }
-  const date = new Date(seconds * 1000);
-  const hh = date.getUTCHours();
-  const mm = date.getUTCMinutes();
-  const ss = date.getUTCSeconds().toString().padStart(2, "0");
-  if (hh) {
-    return `${hh}:${mm.toString().padStart(2, "0")}:${ss}`;
-  }
-  return `${mm}:${ss}`;
-};
+// const format = (seconds) => {
+//   if (isNaN(seconds)) {
+//     return `00:00`;
+//   }
+//   const date = new Date(seconds * 1000);
+//   const hh = date.getUTCHours();
+//   const mm = date.getUTCMinutes();
+//   const ss = date.getUTCSeconds().toString().padStart(2, "0");
+//   if (hh) {
+//     return `${hh}:${mm.toString().padStart(2, "0")}:${ss}`;
+//   }
+//   return `${mm}:${ss}`;
+// };
 
-let count = 0;
+// let count = 0;
 
 
 
@@ -167,169 +169,169 @@ let count = 0;
 
 
 function Terms() {
-  const classes = useStyles();
-  const [showControls, setShowControls] = useState(false);
-  // const [count, setCount] = useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
-  const [bookmarks, setBookmarks] = useState([]);
-  const [state, setState] = useState({
-    pip: false,
-    playing: true,
-    controls: false,
-    light: false,
+  // const classes = useStyles();
+  // const [showControls, setShowControls] = useState(false);
+  // // const [count, setCount] = useState(0);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
+  // const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
+  // const [bookmarks, setBookmarks] = useState([]);
+  // const [state, setState] = useState({
+  //   pip: false,
+  //   playing: true,
+  //   controls: false,
+  //   light: false,
 
-    muted: true,
-    played: 0,
-    duration: 0,
-    playbackRate: 1.0,
-    volume: 1,
-    loop: false,
-    seeking: false,
-  });
+  //   muted: true,
+  //   played: 0,
+  //   duration: 0,
+  //   playbackRate: 1.0,
+  //   volume: 1,
+  //   loop: false,
+  //   seeking: false,
+  // });
 
-  const playerRef = useRef(null);
-  const playerContainerRef = useRef(null);
-  const controlsRef = useRef(null);
-  const canvasRef = useRef(null);
-  const {
-    playing,
-    controls,
-    light,
+  // const playerRef = useRef(null);
+  // const playerContainerRef = useRef(null);
+  // const controlsRef = useRef(null);
+  // const canvasRef = useRef(null);
+  // const {
+  //   playing,
+  //   controls,
+  //   light,
 
-    muted,
-    loop,
-    playbackRate,
-    pip,
-    played,
-    seeking,
-    volume,
-  } = state;
+  //   muted,
+  //   loop,
+  //   playbackRate,
+  //   pip,
+  //   played,
+  //   seeking,
+  //   volume,
+  // } = state;
 
-  const handlePlayPause = () => {
-    setState({ ...state, playing: !state.playing });
-  };
+  // const handlePlayPause = () => {
+  //   setState({ ...state, playing: !state.playing });
+  // };
 
-  const handleRewind = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() - 10);
-  };
+  // const handleRewind = () => {
+  //   playerRef.current.seekTo(playerRef.current.getCurrentTime() - 10);
+  // };
 
-  const handleFastForward = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() + 10);
-  };
+  // const handleFastForward = () => {
+  //   playerRef.current.seekTo(playerRef.current.getCurrentTime() + 10);
+  // };
 
-  const handleProgress = (changeState) => {
-    if (count > 3) {
-      controlsRef.current.style.visibility = "hidden";
-      count = 0;
-    }
-    if (controlsRef.current.style.visibility == "visible") {
-      count += 1;
-    }
-    if (!state.seeking) {
-      setState({ ...state, ...changeState });
-    }
-  };
+  // const handleProgress = (changeState) => {
+  //   if (count > 3) {
+  //     controlsRef.current.style.visibility = "hidden";
+  //     count = 0;
+  //   }
+  //   if (controlsRef.current.style.visibility == "visible") {
+  //     count += 1;
+  //   }
+  //   if (!state.seeking) {
+  //     setState({ ...state, ...changeState });
+  //   }
+  // };
 
-  const handleSeekChange = (e, newValue) => {
-    console.log({ newValue });
-    setState({ ...state, played: parseFloat(newValue / 100) });
-  };
+  // const handleSeekChange = (e, newValue) => {
+  //   console.log({ newValue });
+  //   setState({ ...state, played: parseFloat(newValue / 100) });
+  // };
 
-  const handleSeekMouseDown = (e) => {
-    setState({ ...state, seeking: true });
-  };
+  // const handleSeekMouseDown = (e) => {
+  //   setState({ ...state, seeking: true });
+  // };
 
-  const handleSeekMouseUp = (e, newValue) => {
-    console.log({ value: e.target });
-    setState({ ...state, seeking: false });
-    // console.log(sliderRef.current.value)
-    playerRef.current.seekTo(newValue / 100, "fraction");
-  };
+  // const handleSeekMouseUp = (e, newValue) => {
+  //   console.log({ value: e.target });
+  //   setState({ ...state, seeking: false });
+  //   // console.log(sliderRef.current.value)
+  //   playerRef.current.seekTo(newValue / 100, "fraction");
+  // };
 
-  const handleDuration = (duration) => {
-    setState({ ...state, duration });
-  };
+  // const handleDuration = (duration) => {
+  //   setState({ ...state, duration });
+  // };
 
-  const handleVolumeSeekDown = (e, newValue) => {
-    setState({ ...state, seeking: false, volume: parseFloat(newValue / 100) });
-  };
-  const handleVolumeChange = (e, newValue) => {
-    // console.log(newValue);
-    setState({
-      ...state,
-      volume: parseFloat(newValue / 100),
-      muted: newValue === 0 ? true : false,
-    });
-  };
+  // const handleVolumeSeekDown = (e, newValue) => {
+  //   setState({ ...state, seeking: false, volume: parseFloat(newValue / 100) });
+  // };
+  // const handleVolumeChange = (e, newValue) => {
+  //   // console.log(newValue);
+  //   setState({
+  //     ...state,
+  //     volume: parseFloat(newValue / 100),
+  //     muted: newValue === 0 ? true : false,
+  //   });
+  // };
 
-  const toggleFullScreen = () => {
-    screenful.toggle(playerContainerRef.current);
-  };
+  // const toggleFullScreen = () => {
+  //   screenful.toggle(playerContainerRef.current);
+  // };
 
-  const handleMouseMove = () => {
-    console.log("mousemove");
-    controlsRef.current.style.visibility = "visible";
-    count = 0;
-  };
+  // const handleMouseMove = () => {
+  //   console.log("mousemove");
+  //   controlsRef.current.style.visibility = "visible";
+  //   count = 0;
+  // };
 
-  const hanldeMouseLeave = () => {
-    controlsRef.current.style.visibility = "hidden";
-    count = 0;
-  };
+  // const hanldeMouseLeave = () => {
+  //   controlsRef.current.style.visibility = "hidden";
+  //   count = 0;
+  // };
 
-  const handleDisplayFormat = () => {
-    setTimeDisplayFormat(
-      timeDisplayFormat == "normal" ? "remaining" : "normal"
-    );
-  };
+  // const handleDisplayFormat = () => {
+  //   setTimeDisplayFormat(
+  //     timeDisplayFormat == "normal" ? "remaining" : "normal"
+  //   );
+  // };
 
-  const handlePlaybackRate = (rate) => {
-    setState({ ...state, playbackRate: rate });
-  };
+  // const handlePlaybackRate = (rate) => {
+  //   setState({ ...state, playbackRate: rate });
+  // };
 
-  const hanldeMute = () => {
-    setState({ ...state, muted: !state.muted });
-  };
+  // const hanldeMute = () => {
+  //   setState({ ...state, muted: !state.muted });
+  // };
 
-  const addBookmark = () => {
-    const canvas = canvasRef.current;
-    canvas.width = 160;
-    canvas.height = 90;
-    const ctx = canvas.getContext("2d");
+  // const addBookmark = () => {
+  //   const canvas = canvasRef.current;
+  //   canvas.width = 160;
+  //   canvas.height = 90;
+  //   const ctx = canvas.getContext("2d");
 
-    ctx.drawImage(
-      playerRef.current.getInternalPlayer(),
-      0,
-      0,
-      canvas.width,
-      canvas.height
-    );
-    const dataUri = canvas.toDataURL();
-    canvas.width = 0;
-    canvas.height = 0;
-    const bookmarksCopy = [...bookmarks];
-    bookmarksCopy.push({
-      time: playerRef.current.getCurrentTime(),
-      display: format(playerRef.current.getCurrentTime()),
-      image: dataUri,
-    });
-    setBookmarks(bookmarksCopy);
-  };
+  //   ctx.drawImage(
+  //     playerRef.current.getInternalPlayer(),
+  //     0,
+  //     0,
+  //     canvas.width,
+  //     canvas.height
+  //   );
+  //   const dataUri = canvas.toDataURL();
+  //   canvas.width = 0;
+  //   canvas.height = 0;
+  //   const bookmarksCopy = [...bookmarks];
+  //   bookmarksCopy.push({
+  //     time: playerRef.current.getCurrentTime(),
+  //     display: format(playerRef.current.getCurrentTime()),
+  //     image: dataUri,
+  //   });
+  //   setBookmarks(bookmarksCopy);
+  // };
 
-  const currentTime =
-    playerRef && playerRef.current
-      ? playerRef.current.getCurrentTime()
-      : "00:00";
+  // const currentTime =
+  //   playerRef && playerRef.current
+  //     ? playerRef.current.getCurrentTime()
+  //     : "00:00";
 
-  const duration =
-    playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
-  const elapsedTime =
-    timeDisplayFormat == "normal"
-      ? format(currentTime)
-      : `-${format(duration - currentTime)}`;
+  // const duration =
+  //   playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
+  // const elapsedTime =
+  //   timeDisplayFormat == "normal"
+  //     ? format(currentTime)
+  //     : `-${format(duration - currentTime)}`;
 
-  const totalDuration = format(duration);
+  // const totalDuration = format(duration);
 
 
 
@@ -343,7 +345,7 @@ function Terms() {
 {/* <Seo title={`Terms of Use`} /> */}
 
     
-<div className='player-wrapperjj intro' style={{position:'relative', top:'0', zIndex:'0', height:'', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+{/* <div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'0', height:'', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 
 
@@ -355,7 +357,7 @@ function Terms() {
   
 
 
-<ReactPlayer
+{/* <ReactPlayer
           className='whoopass'
           url='https://youtu.be/lZzai6at_xA'
           width='100%'
@@ -416,7 +418,7 @@ function Terms() {
 
 
         
-      </div>
+      </div> */}
 
 
      {/* </div> */}
@@ -424,7 +426,7 @@ function Terms() {
 
     
 
-</div>
+{/* </div> */}
 
 
 <section className="outer section section--gradient" >

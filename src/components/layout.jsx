@@ -53,7 +53,7 @@ export function Layout({ children }) {
 
 
       
-      <ModalRoutingContext.Consumer closeTimeoutMS={2000} >
+      <ModalRoutingContext.Consumer closeTimeoutMS={300} >
     {({ modal, closeTo }) => (
       <div style={{overflow:''}}>
         {modal ? (
@@ -279,17 +279,24 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
+<li className="carto" style={{textAlign:''}}>
+              <Link className="navbar-item txtshadow" to="/projects/">
+              View By Project
+              </Link>
+      </li> 
+
+
 <li className="carto">
-      <Link className="navbar-item txtshadow" to="/posts/2/">
-         View More Posts
+      <Link className="navbar-item txtshadow" to="/posts/">
+         View All Minutes
         </Link>
 </li>
 
- <li className="carto">
+ {/* <li className="carto">
  <Link className="navbar-item txtshadow" to="/contact/">
 Suggest Your Own
 </Link>
-</li>
+</li> */}
 
 <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/about/">
@@ -330,12 +337,12 @@ Suggest Your Own
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
   
-      <Theme  style={{padding:'0'}} />
+      {/* <Theme  style={{padding:'0'}} /> */}
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link> */}
    
-  <div className="carto"><CartButton quantity={quantity} /></div>
+   <CartButton quantity={quantity} />
 
 
         </li>

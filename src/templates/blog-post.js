@@ -747,7 +747,7 @@ const classes = useStyles();
             loop
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'65', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:'30%'}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'3', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:'30%'}}>
   
           <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             

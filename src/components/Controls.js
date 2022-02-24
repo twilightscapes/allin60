@@ -17,6 +17,7 @@ import VolumeDown from "@material-ui/icons/VolumeDown";
 import VolumeMute from "@material-ui/icons/VolumeOff";
 import FullScreen from "@material-ui/icons/Fullscreen";
 import Popover from "@material-ui/core/Popover";
+import { Link } from "gatsby"
 
 const useStyles = makeStyles((theme) => ({
   controlsWrapper: {
@@ -159,8 +160,9 @@ const Controls = forwardRef(
             style={{ padding: 16 }}
           >
             <Grid item>
-              <Typography className="tronText" variant="h5" style={{ color: "#fff",  }}>
-                allin60.com
+              <Typography className="tronText" variant="h5" style={{ color: "#fff", fontSize:'18px', padding:'10px', position:'relative', zIndex:'5'  }}>
+                <Link to="/" title="Return to Home">
+                allin60.com</Link>
               </Typography>
             </Grid>
             <Grid item>
