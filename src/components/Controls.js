@@ -20,18 +20,18 @@ import Popover from "@material-ui/core/Popover";
 
 const useStyles = makeStyles((theme) => ({
   controlsWrapper: {
-    visibility: "hidden",
+    visibility: "visible !important" ,
     position: "absolute",
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    height: "100%",
+    height: "",
     // background: "rgba(0,0,0,0.6)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    zIndex:'0'
+    zIndex:'1',
   },
 
   button: {
@@ -49,13 +49,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   bottomIcons: {
-
-    color: "#ccc",
-    background:'#E3272D',
-    marginRight:'2rem',
+    color: "#999",
+    background:'#000',
     "&:hover": {
       color: "#fff",
-      background:'#ff0000',
+      background:'#000',
     },
   },
 
@@ -67,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
 const PrettoSlider = withStyles({
   root: {
     height: 8,
+    
   },
   thumb: {
     height: 24,
@@ -149,7 +148,7 @@ const Controls = forwardRef(
           container
           direction="column"
           justify="space-between"
-          style={{ flexGrow:'1', zIndex:'', position:'' }}
+          style={{ flexGrow: 1 }}
         >
           <Grid
             container
@@ -161,7 +160,7 @@ const Controls = forwardRef(
           >
             <Grid item>
               <Typography variant="h5" style={{ color: "#fff" }}>
-                AllIn60.com
+                Allin60.com
               </Typography>
             </Grid>
             <Grid item>
@@ -175,7 +174,7 @@ const Controls = forwardRef(
               </Button> */}
             </Grid>
           </Grid>
-          {/* <Grid container direction="row" alignItems="center" justify="center"> */}
+          <Grid container direction="row" alignItems="center" justify="center">
             {/* <IconButton
               onClick={onRewind}
               className={classes.controlIcons}
@@ -204,14 +203,14 @@ const Controls = forwardRef(
             >
               <FastForwardIcon fontSize="inherit" />
             </IconButton> */}
-          {/* </Grid> */}
+          </Grid>
           {/* bottom controls */}
           <Grid
             container
             direction="row"
             justify="space-between"
             alignItems="center"
-            style={{ padding: 16 }}
+            style={{ padding:'16px', }}
           >
             <Grid item xs={12}>
               {/* <PrettoSlider
@@ -230,12 +229,8 @@ const Controls = forwardRef(
             </Grid>
 
             <Grid item>
-              <Grid container alignItems="center"
-              style={{position:'absolute',
-                bottom:'0',
-                left:'10vw',
-                zIndex:'2',}}>
-                {/* <IconButton
+              <Grid container alignItems="center">
+                <IconButton
                   onClick={onPlayPause}
                   className={classes.bottomIcons}
                 >
@@ -244,11 +239,24 @@ const Controls = forwardRef(
                   ) : (
                     <PlayArrowIcon fontSize="large" />
                   )}
-                </IconButton> */}
+                </IconButton>
 
-               
+                <IconButton
+                  // onClick={() => setState({ ...state, muted: !state.muted })}
+                  onClick={onMute}
+                  className={`${classes.bottomIcons} ${classes.volumeButton}`}
+                >
+                  {muted ? (
+                    <VolumeMute fontSize="large" />
+                  ) : volume > 0.5 ? (
+                    <VolumeUp fontSize="large" />
+                  ) : (
+                    <VolumeDown fontSize="large" />
+                  )}
+                </IconButton>
 
-                {/* <Slider
+                <Slider
+                style={{marginLeft:'1rem'}}
                   min={0}
                   max={100}
                   value={muted ? 0 : volume * 100}
@@ -274,30 +282,62 @@ const Controls = forwardRef(
                   >
                     {elapsedTime}/{totalDuration}
                   </Typography>
-                </Button> */}
+                </Button>
+
+
+                <Button
+                onClick={handleClick}
+                aria-describedby={id}
+                className={classes.bottomIcons}
+                variant="text"
+              >
+                <Typography>{playbackRate}X</Typography>
+              </Button>
+
+              <Popover
+                container={ref.current}
+                open={open}
+                id={id}
+                onClose={handleClose}
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                transformOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+              >
+                <Grid container direction="column-reverse">
+                  {[0.5, 1, 1.5, 2].map((rate) => (
+                    <Button
+                      key={rate}
+                      //   onClick={() => setState({ ...state, playbackRate: rate })}
+                      onClick={() => onPlaybackRateChange(rate)}
+                      variant="text"
+                    >
+                      <Typography
+                        color={rate === playbackRate ? "secondary" : "inherit"}
+                      >
+                        {rate}X
+                      </Typography>
+                    </Button>
+                  ))}
+                </Grid>
+              </Popover>
+              <IconButton
+                onClick={onToggleFullScreen}
+                className={classes.bottomIcons}
+              >
+                <FullScreen fontSize="large" />
+              </IconButton>
+
+
               </Grid>
             </Grid>
 
-            <Grid item style={{position:'fixed',
-                bottom:'35vh',
-                right:'6%',
-                zIndex:'2',}}>
-
-            <IconButton
-                  // onClick={() => setState({ ...state, muted: !state.muted })}
-                  onClick={onMute}
-                  className={`${classes.bottomIcons} ${classes.volumeButton}`}
-                >
-                  {muted ? (
-                    <VolumeMute fontSize="large" />
-                  ) : volume > 0.5 ? (
-                    <VolumeUp fontSize="large" />
-                  ) : (
-                    <VolumeDown fontSize="large" />
-                  )}
-                </IconButton>
-
-
+            <Grid item>
               {/* <Button
                 onClick={handleClick}
                 aria-describedby={id}

@@ -1,32 +1,72 @@
 import React, { useState, useRef, useEffect } from "react";
-import { findDOMNode } from "react-dom";
-
+// import { findDOMNode } from "react-dom";
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import Typography from "@material-ui/core/Typography";
+// import Container from "@material-ui/core/Container";
 import ReactPlayer from "react-player";
+import { StaticImage } from "gatsby-plugin-image"
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-
+import { ImPlay } from "react-icons/im"
 import Slider from "@material-ui/core/Slider";
 import Tooltip from "@material-ui/core/Tooltip";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import VolumeUp from "@material-ui/icons/VolumeUp";
-import VolumeDown from "@material-ui/icons/VolumeDown";
-import VolumeMute from "@material-ui/icons/VolumeOff";
-import FullScreen from "@material-ui/icons/Fullscreen";
-import Popover from "@material-ui/core/Popover";
+// import Grid from "@material-ui/core/Grid";
+// import Paper from "@material-ui/core/Paper";
+// import VolumeUp from "@material-ui/icons/VolumeUp";
+// import VolumeDown from "@material-ui/icons/VolumeDown";
+// import VolumeMute from "@material-ui/icons/VolumeOff";
+// import FullScreen from "@material-ui/icons/Fullscreen";
+// import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
 import Controls from "../components/Controls";
+import PulpFiction from "../../static/assets/Pulp-Loader.svg"
+import styled from "styled-components"
+const CustomBox = styled.div`
+
+.MuiSlider-root {
+  color:#ff00000 !important;
+}
+
+.wrap-element {
+  position: relative;
+  overflow: ;
+  padding-bottom: 56.25%;
+  height:100vh;
+
+}
+.wrap-element iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%; 
+  left: -100%; 
+  border: 0;
+}
+
+
+@media (max-width: 48em) {
+  .wrap-element {
+    padding-bottom: 0;
+    height:300px;
+    overflow:visible;
+    border:0px solid red;
+  }
+}
+
+@media (min-width: 58em) {
+
+}
+
+
+`
+
 
 const useStyles = makeStyles((theme) => ({
   playerWrapper: {
     width: "100%",
-    height:'100vh',
-    position: "absolute",
-    top:'0',
-    border:'0px solid yellow',
+    // height: "90vh",
+    // position: "relative",
     "&:hover": {
       "& $controlsWrapper": {
         visibility: "visible",
@@ -35,13 +75,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   controlsWrapper: {
-    visibility: "hidden",
+    visibility: "visible",
     position: "absolute",
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    background: "rgba(0,0,0,0.4)",
+    // background: "rgba(0,0,0,0.9)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -60,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
 
-    // background: "rgba(0,0,0,0.6)",
+    background: "rgba(0,0,0,0.99)",
     // height: 60,
     padding: theme.spacing(2),
   },
@@ -153,9 +193,30 @@ const format = (seconds) => {
 
 let count = 0;
 
-function App() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function VideoPage() {
   const classes = useStyles();
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
   // const [count, setCount] = useState(0);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
@@ -163,15 +224,15 @@ function App() {
   const [state, setState] = useState({
     pip: false,
     playing: true,
-    controls: false,
-    light: false,
+    controls: true,
+    light: true,
 
-    muted: true,
+    muted: false,
     played: 0,
     duration: 0,
     playbackRate: 1.0,
     volume: 1,
-    loop: false,
+    loop: true,
     seeking: false,
   });
 
@@ -318,32 +379,48 @@ function App() {
 
   const totalDuration = format(duration);
 
+
+
+
+
+
+  const { iconimage } = useSiteMetadata()
+
   return (
-    <>
-      {/* <AppBar position="fixed"> */}
-        {/* <Toolbar>
+
+    <CustomBox>
+
+
+
+
+
+
+
+
+      {/* <AppBar position="fixed">
+        <Toolbar>
           <Typography>React Video Player</Typography>
-        </Toolbar> */}
-      {/* </AppBar> */}
-      {/* <Toolbar /> */}
-      {/* <Container maxWidth="md"> */}
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
+      <Container maxWidth="md"> */}
+      <div className="wrap-element">
         <div
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
           ref={playerContainerRef}
           className={classes.playerWrapper}
-          style={{zIndex:'',}}
         >
           <ReactPlayer
             ref={playerRef}
-            width="100vw"
-            height="100vh"
+            width="100%"
+            height="100%"
             url="https://youtu.be/lZzai6at_xA"
             pip={pip}
             playing={playing}
-            controls={false}
-            light={light}
-            loop={true}
+            controls={true}
+            // light={light}
+            loop={loop}
             playbackRate={playbackRate}
             volume={volume}
             muted={muted}
@@ -355,18 +432,37 @@ function App() {
                 },
               },
               youtube: {
-                playerVars: {
-                  showinfo:0,
-                  autoplay:1,
-                  controls:0,
-                  mute:1, 
-                  start:13,
-                  end:51,
-                  // loop:1,  
-                }
-               },
+                playerVars: { showinfo:0, controls:0, start:13, end:53, mute:0 }
+              },
             }}
+
+            loop
+          playsinline
+            playIcon={
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'65', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+  
+          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+            
+  
+            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  </div>
+        
+            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+            </div>
+            </button>}
+              light="../../assets/allin60seconds.png"
           />
+
+
+
+<PulpFiction style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}} />
+
+<div style={{position:'absolute', bottom:'0', zIndex:'1', width:'100%', height:'100%', border:'0px solid yellow', padding:'0', margin:'0'}}>
+<StaticImage className=""
+alt="Todd Lambert Web development for photographers" src="../../static/assets/shawshank-stuff.png" style={{height:'100vh'}}  />
+</div>
 
           <Controls
             ref={controlsRef}
@@ -393,8 +489,8 @@ function App() {
             onBookmark={addBookmark}
           />
         </div>
-
-        {/* <Grid container style={{ marginTop: 20 }} spacing={3}>
+        </div>
+        {/* <Grid container style={{ marginTop:'20px', padding:'0 5%' }} spacing={3}>
           {bookmarks.map((bookmark, index) => (
             <Grid key={index} item>
               <Paper
@@ -418,8 +514,8 @@ function App() {
         </Grid>
         <canvas ref={canvasRef} /> */}
       {/* </Container> */}
-    </>
+      </CustomBox>
   );
 }
 
-export default App;
+export default VideoPage;

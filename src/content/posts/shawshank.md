@@ -12,7 +12,7 @@ youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
 youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
 youtubestart: "32"
 youtubeend: "45"
-youtubemute: "1"
+youtubemute: "0"
 audiostart: "0"
 audioend: ""
 youtubecontrols: "0"
@@ -23,9 +23,9 @@ comments: ""
 shareable: "1"
 underlayImage: /assets/shawshank-items.png
 featuredImage: /assets/shawshank.jpg
-svgImage: /assets/ShawshankLoader.svg
+svgImage: "/assets/ShawshankLoader.svg"
 nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
+nftdrop: ""
 nftredeem: ""
 ---
 

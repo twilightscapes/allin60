@@ -4,7 +4,7 @@ title: Pulp Fiction
 slug: /pulpfiction
 date: 2022-02-17 01:43
 description: Pulp Fiction in 60 seconds
-youtuber: "lZzai6at_xA"
+youtuber: "https://youtu.be/lZzai6at_xA"
 youtuber2: "WSLMN6g_Od4"
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
@@ -12,7 +12,7 @@ youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
 youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
 youtubestart: "13"
 youtubeend: "53"
-youtubemute: "1"
+youtubemute: "0"
 audiostart: "88"
 audioend: "5000"
 youtubecontrols: "0"

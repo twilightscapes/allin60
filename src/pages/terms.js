@@ -343,7 +343,7 @@ function Terms() {
 {/* <Seo title={`Terms of Use`} /> */}
 
     
-<div className='player-wrapper intro' style={{position:'relative', top:'0', zIndex:'0', height:'', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapperjj intro' style={{position:'relative', top:'0', zIndex:'0', height:'', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -351,17 +351,12 @@ function Terms() {
 
 
 
-<div style={{display:'grid', placeContent:'center', width:'100vw', height:'', overflow:'', position:'', top:'0', zIndex:'', }}>
+{/* <div style={{display:'', placeContent:'center', width:'100vw', height:'', overflow:'', position:'relative', top:'0', zIndex:'', }}> */}
   
-<div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={hanldeMouseLeave}
-          ref={playerContainerRef}
-          className={classes.playerWrapper}
-          style={{zIndex:'',}}
-        >
-        <ReactPlayer
-          className='react-player whoopass'
+
+
+<ReactPlayer
+          className='whoopass'
           url='https://youtu.be/lZzai6at_xA'
           width='100%'
           height='100%'
@@ -384,7 +379,14 @@ function Terms() {
           }}
         />
 
-        
+
+<div
+          onMouseMove={handleMouseMove}
+          onMouseLeave={hanldeMouseLeave}
+          ref={playerContainerRef}
+          className={classes.playerWrapper}
+          style={{zIndex:'',}}
+        >
         <Controls
             ref={controlsRef}
             onSeek={handleSeekChange}
@@ -409,8 +411,18 @@ function Terms() {
             volume={volume}
             onBookmark={addBookmark}
           />
-        </div>
+
+
+
+
+        
       </div>
+
+
+     {/* </div> */}
+
+
+    
 
 </div>
 

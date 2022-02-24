@@ -35,7 +35,7 @@ import Newsignup from "../components/newssign"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
-import App from "../pages/App"
+import VideoPage from "../pages/video"
 import GridLoader from "../../static/assets/FrontLoader.svg"
 import TheGrid from "../../static/assets/The-Grid-Intro.svg"
 import BackgroundImage from 'gatsby-background-image'
@@ -354,6 +354,7 @@ const HomePage = ({ data }) => {
 
 
 
+
 <div className="donation2" style={{display:'grid',
   placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
 
@@ -384,6 +385,10 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 {/* <TheGrid /> */}
 <BlogListHome data={posts} />
 
+
+<div style={{overflow:'hidden'}}>
+<VideoPage />
+</div>
 
 <div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', background:''}}>
    <Link to="/posts/2/" title="View Archives">
