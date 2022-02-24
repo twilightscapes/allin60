@@ -225,6 +225,7 @@ const Controls = forwardRef(
                 onMouseDown={onSeekMouseDown}
                 onChangeCommitted={onSeekMouseUp}
                 onDuration={onDuration}
+                style={{color:'#ff0000'}}
               /> */}
             </Grid>
 
@@ -256,7 +257,7 @@ const Controls = forwardRef(
                 </IconButton>
 
                 <Slider
-                style={{marginLeft:'1rem'}}
+                style={{marginLeft:'1rem', color:'#ff0000'}}
                   min={0}
                   max={100}
                   value={muted ? 0 : volume * 100}
@@ -266,7 +267,7 @@ const Controls = forwardRef(
                   onMouseDown={onSeekMouseDown}
                   onChangeCommitted={onVolumeSeekDown}
                 />
-                <Button
+                {/* <Button
                   variant="text"
                   onClick={
                     onChangeDispayFormat
@@ -278,14 +279,14 @@ const Controls = forwardRef(
                 >
                   <Typography
                     variant="body1"
-                    style={{ color: "#fff", marginLeft: 16 }}
+                    style={{ color: "#fff", marginLeft: '16px', background:'#222', padding:'0 1rem', borderRadius:'12px' }}
                   >
                     {elapsedTime}/{totalDuration}
                   </Typography>
-                </Button>
+                </Button> */}
 
 
-                <Button
+                {/* <Button
                 onClick={handleClick}
                 aria-describedby={id}
                 className={classes.bottomIcons}
@@ -331,7 +332,7 @@ const Controls = forwardRef(
                 className={classes.bottomIcons}
               >
                 <FullScreen fontSize="large" />
-              </IconButton>
+              </IconButton> */}
 
 
               </Grid>

@@ -45,7 +45,7 @@ const CustomBox = styled.div`
   overflow: ;
   padding-bottom: 56.25%;
   aspect-ratio: 16 / 9;
-
+  z-index:1;
 }
 .wrap-element iframe {
   position: absolute;
@@ -695,8 +695,8 @@ const classes = useStyles();
           <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             
   
-            <div style={{position:'relative', maxWidth:'100vw', margin:' 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src={iconimage} width="200px" height="150px" alt="VidSock" style={{ width:'60%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+            <div style={{position:'relative', maxWidth:'100%', margin:' 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src={iconimage} width="200px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
   </div>
         
             <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
