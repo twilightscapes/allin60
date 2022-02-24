@@ -386,9 +386,9 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 <BlogListHome data={posts} />
 
 
-<div style={{overflow:'hidden'}}>
+{/* <div style={{overflow:'hidden'}}>
 <VideoPage />
-</div>
+</div> */}
 
 <div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', background:''}}>
    <Link to="/posts/2/" title="View Archives">

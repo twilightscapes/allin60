@@ -70,8 +70,12 @@ const CustomBox = styled.div`
 }
 
 @media (min-width: 1100px) {
-.pagination{display:; position:relative; top:-170px; z-index:2;}
+.pagination{display:; position:relative; top:-175px; z-index:;}
 }
+
+@media (min-width: 1100px) {
+  .pagination{display:; position:relative; top:-175px; z-index:;}
+  }
 
 
 `
@@ -271,7 +275,7 @@ let count = 0;
 
 const Pagination = props => (
   <div className="pagination -post">
-    <ul>
+    <ul className="" style={{display:'flex',}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
           <Link to= {props.previous.frontmatter.slug + "/"} rel="prev">
@@ -369,7 +373,48 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 
 
 
+function Iframer2() {
+  const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
+  return (
 
+
+<ReactPlayer
+        className='react-player '
+        url={iframeUrl2}
+        width="100%"
+        height="100%"
+        style={{zIndex:''}}
+        playing
+        playsinline
+        config={{
+          youtube: {
+            playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:0  }
+          },
+        }}
+        playIcon={
+          <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            
+    
+    
+    
+      <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+    
+        <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To Play</span>
+        
+        </div>
+        </button>}
+    
+    
+    
+          light="../assets/transparent.png"
+        /> 
+
+
+
+
+  )
+}
 
 
 
@@ -588,6 +633,8 @@ const classes = useStyles();
         article={true}
       />
 
+
+
 {/* <Seo
           title={`Welcome to the GRID`}
           description={`I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.`}
@@ -596,6 +643,13 @@ const classes = useStyles();
 
 
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
+
+
+<div className="contact" style={{position:'fixed', bottom:'10px', zIndex:'1',  left:'0', right:'0', display:'flex', justifyContent:'center'}}>
+  <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me</Link>
+</div>
+
+
 <div className="wrap-element">
 
 {Image ? (
@@ -629,7 +683,7 @@ const classes = useStyles();
 
 
 
-            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100%', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
+            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
     
 
     
@@ -770,8 +824,8 @@ const classes = useStyles();
 
 
 <article className="blog-post">
-        <header>
-          <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto', color:''}}>
+        <header style={{height:'60vh', display:'grid', placeContent:'center'}}>
+          <section className="article-header" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
             <h1 className="tronText" style={{fontSize:'7vw'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
@@ -819,6 +873,19 @@ const classes = useStyles();
       </div>
 
 
+
+
+      {ShowOriginal ? (
+          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
+<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+  
+                    <Iframer2 />
+                    
+       </div></div>
+       
+          ) : (
+            ""
+          )}
 
 
 

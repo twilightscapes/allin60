@@ -159,8 +159,8 @@ const Controls = forwardRef(
             style={{ padding: 16 }}
           >
             <Grid item>
-              <Typography variant="h5" style={{ color: "#fff" }}>
-                Allin60.com
+              <Typography className="tronText" variant="h5" style={{ color: "#fff",  }}>
+                allin60.com
               </Typography>
             </Grid>
             <Grid item>
