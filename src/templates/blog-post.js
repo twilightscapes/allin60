@@ -42,10 +42,11 @@ const CustomBox = styled.div`
 
 .wrap-element {
   position: relative;
-  overflow: ;
+  overflow: hidden;
   padding-bottom: 56.25%;
   aspect-ratio: 16 / 9;
   z-index:1;
+  max-width:100%;
 }
 .wrap-element iframe {
   position: absolute;
@@ -54,6 +55,7 @@ const CustomBox = styled.div`
   width: 300%; 
   left: -100%; 
   border: 0;
+  overflow:hidden;
 }
 
 
@@ -613,7 +615,7 @@ const classes = useStyles();
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'1',
+              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             

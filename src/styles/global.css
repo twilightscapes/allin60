@@ -11,7 +11,7 @@ body {
   /* color: var(--text-color); */
   /* color:#eee; */
   /* background:#111; */
-  /* overflow-x: hidden !important; */
+  overflow-x: hidden !important;
   /* overflow-y: hidden !important; */
   width:100vw;
   scroll-behavior: smooth;
