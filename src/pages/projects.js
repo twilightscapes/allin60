@@ -72,7 +72,7 @@ export default function Projects() {
 
 
 <div>
-<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 {/* <Panel3 /> */}
 <StaticImage className=""
 alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
@@ -82,7 +82,7 @@ alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static
 
 
 <div>
-<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulpfiction/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 {/* <Panel3 /> */}
 <StaticImage className=""
 alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />

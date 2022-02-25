@@ -458,9 +458,9 @@ function VideoPage() {
 
 
 
-{/* <PulpFiction style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}} />
+{/* <PulpFiction style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}} /> */}
 
-<div style={{position:'absolute', bottom:'0', zIndex:'1', width:'100vw', height:'100%', border:'0px solid yellow', padding:'0', margin:'0'}}>
+{/* <div style={{position:'absolute', bottom:'0', zIndex:'1', width:'100%', height:'100%', border:'0px solid yellow', padding:'0', margin:'0'}}>
 <StaticImage className=""
 alt="Todd Lambert Web development for photographers" src="../../static/assets/shawshank-stuff.png" style={{height:'100vh'}}  />
 </div> */}
@@ -495,7 +495,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 
 
 <div className="contact" style={{position:'absolute', bottom:'30px', zIndex:'70',  left:'', right:'10%', display:'flex', justifyContent:'center', border:'0px solid red', width:''}}>
-  <a href="/contact/" title="View This Project" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>View This Project</a>
+  <a href="https://pulpfiction.allin60.com" title="View This Project" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>View This Project</a>
 </div>
         {/* <Grid container style={{ marginTop:'20px', padding:'0 5%' }} spacing={3}>
           {bookmarks.map((bookmark, index) => (

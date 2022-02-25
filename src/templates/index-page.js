@@ -392,11 +392,11 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 
 <div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'', paddingTop:'1vh', background:''}}>
 <Link to="/posts/2/" title="View Archives">
-  <div  className="tronText" style={{fontSize:'3vw', marginTop:'1rem', lineHeight:'130%'}}>viewing:<br />Lastest Minutes</div>
+  <div  className="tronText" style={{fontSize:'3vw', marginTop:'1rem', lineHeight:'130%'}}><span style={{fontSize:'65%'}}>viewing:</span><br />Lastest Minutes</div>
 
    
     <div  className="tronText" style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'10vh auto', padding:'10% 10%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
-    <h1 className="txtFlyIn">View All Minutes?</h1>
+    <h1 className="">View All Minutes?</h1>
     </div>
 </Link>
 

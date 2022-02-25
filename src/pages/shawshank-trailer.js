@@ -495,7 +495,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 
 
 <div className="contact" style={{position:'absolute', bottom:'30px', zIndex:'70',  left:'', right:'10%', display:'flex', justifyContent:'center', border:'0px solid red', width:''}}>
-  <a href="/contact/" title="View This Project" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>View This Project</a>
+  <Link href="/shawshank/" title="View This Project" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>View This Project</Link>
 </div>
         {/* <Grid container style={{ marginTop:'20px', padding:'0 5%' }} spacing={3}>
           {bookmarks.map((bookmark, index) => (

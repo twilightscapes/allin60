@@ -54,9 +54,9 @@ const NewsletterPage = () => (
 
 
             
-              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Get the latest updates</strong></div>
-              
-              <span className="txtshadow" style={{fontSize:'85%'}}>Find out the INSTANT that new All In 60's drop <br />(No SPAM!)</span>
+              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Get All The Latest Minutes</strong></div>
+              <br />
+              <span className="txtshadow" style={{fontSize:'95%'}}>Get notified when NEW Minutes drop </span>
 
              <div className="signbox" style={{display:'flex', gap:'10px'}}>
              
