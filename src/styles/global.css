@@ -282,10 +282,10 @@ display: none !important;
   .video-foreground { width: 300%; left: -100%; }
 } */
 
-.vidbox {
-  /* overflow: hidden;
-  position: relative; width: 100%; height: 100vh; */
-}
+/* .vidbox {
+  overflow: hidden;
+  position: relative; width: 100%; height: 100vh;
+} */
 .youtube {
   height: 100%;
   width: 177.77777778vh; /* 100 * 16 / 9 */
