@@ -35,10 +35,8 @@ import Newsignup from "../components/newssign"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
-import VideoPage from "../pages/pulp-fiction-trailer"
-import GridLoader from "../../static/assets/FrontLoader.svg"
-import TheGrid from "../../static/assets/The-Grid-Intro.svg"
-import BackgroundImage from 'gatsby-background-image'
+// import VideoPage from "../pages/pulp-fiction-trailer"
+// import BackgroundImage from 'gatsby-background-image'
 // import InstallDiscount from "../components/install-discount"
 // import { AiOutlineAudioMuted } from "react-icons/ai"
 // import TechBG from "../../static/assets/tech-bg.mp4"
@@ -55,7 +53,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 
 // import loadable from '@loadable/component'
-import Panel1 from '../components/panel1'
+// import Panel1 from '../components/panel1'
 
   // const Panel1 = loadable(() => import('../components/panel1'))
   // const Panel2 = loadable(() => import('../components/panel2'), {
@@ -166,13 +164,7 @@ export const pageQuery = graphql`
 
 
 
-      desktop: file(relativePath: { eq: "curtains.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+
 
 
     
@@ -258,7 +250,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-    const imageData = data.desktop.childImageSharp.fluid
+    // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
     // const YouTubeStart = frontmatter.youtubestart
@@ -345,12 +337,12 @@ const HomePage = ({ data }) => {
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
-<BackgroundImage
+{/* <BackgroundImage
       Tag="section"
       className=""
       fluid={imageData}
       backgroundColor={`#111`}
-     >
+     > */}
 
 
 
@@ -360,7 +352,7 @@ const HomePage = ({ data }) => {
 
   <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">What Can You Do</div> <div className="lineTwo">In 60 Seconds?</div></h1>
 </div>
-</BackgroundImage>
+{/* </BackgroundImage> */}
 
 <article className="" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative',}}>
 
