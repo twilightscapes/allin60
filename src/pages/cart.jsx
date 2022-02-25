@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import { Layout } from "../components/layout"
 import { StoreContext } from "../context/store-context"
 import { LineItem } from "../components/line-item"
@@ -55,9 +55,9 @@ export default function CartPage() {
               Looks like you haven’t found anything yet. <br /><br />We understand that
               sometimes it’s hard to choose.
             </p>
-            {/* <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
+            <Link to="/about/" className="">
               View trending Twilightscapes
-            </Link> */}
+            </Link>
 
             {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'10vh auto 0 auto'}}>Pre-order questions?</h3> */}
 

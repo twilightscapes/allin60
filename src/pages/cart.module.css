@@ -52,12 +52,12 @@
 
 .checkoutButton {
   align-items: center;
-  background: var(--primary-color);
+  background: #ff0000;
   border-radius: var(--radius-md);
   /* color: var(--text-color-inverted); */
   display: flex;
   font-size: var(--text-md);
-  font-weight: var(--semibold);
+  font-weight: bold;
   height: var(--size-input);
   justify-content: center;
   line-height: var(--solid);
@@ -66,6 +66,7 @@
   width: max-content;
   transition: var(--transition);
   color:#fff;
+  margin-bottom:3rem;
 }
 
 .checkoutButton:hover {
