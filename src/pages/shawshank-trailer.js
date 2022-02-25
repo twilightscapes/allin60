@@ -139,44 +139,44 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PrettoSlider = withStyles({
-  root: {
-    height: 8,
-  },
-  thumb: {
-    height: 24,
-    width: 24,
-    backgroundColor: "#fff",
-    border: "2px solid currentColor",
-    marginTop: -8,
-    marginLeft: -12,
-    "&:focus, &:hover, &$active": {
-      boxShadow: "inherit",
-    },
-  },
-  active: {},
-  valueLabel: {
-    left: "calc(-50% + 4px)",
-  },
-  track: {
-    height: 8,
-    borderRadius: 4,
-  },
-  rail: {
-    height: 8,
-    borderRadius: 4,
-  },
-})(Slider);
+// const PrettoSlider = withStyles({
+//   root: {
+//     height: 8,
+//   },
+//   thumb: {
+//     height: 24,
+//     width: 24,
+//     backgroundColor: "#fff",
+//     border: "2px solid currentColor",
+//     marginTop: -8,
+//     marginLeft: -12,
+//     "&:focus, &:hover, &$active": {
+//       boxShadow: "inherit",
+//     },
+//   },
+//   active: {},
+//   valueLabel: {
+//     left: "calc(-50% + 4px)",
+//   },
+//   track: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+//   rail: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+// })(Slider);
 
-function ValueLabelComponent(props) {
-  const { children, open, value } = props;
+// function ValueLabelComponent(props) {
+//   const { children, open, value } = props;
 
-  return (
-    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-      {children}
-    </Tooltip>
-  );
-}
+//   return (
+//     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+//       {children}
+//     </Tooltip>
+//   );
+// }
 
 const format = (seconds) => {
   if (isNaN(seconds)) {
@@ -218,8 +218,8 @@ let count = 0;
 function ShawshankPage() {
   const classes = useStyles();
   const [showControls, setShowControls] = useState(true);
-  // const [count, setCount] = useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [count, setCount] = useState(0);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
   const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
   const [bookmarks, setBookmarks] = useState([]);
   const [state, setState] = useState({
