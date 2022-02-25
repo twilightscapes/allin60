@@ -2,7 +2,7 @@
 import * as React from "react"
 import styled from "styled-components"
 
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"

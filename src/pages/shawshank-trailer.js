@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 // import { findDOMNode } from "react-dom";
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import {Link} from "gatsby"
@@ -21,7 +21,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 // import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
 import Controls from "../components/Controls";
-import PulpFiction from "../../static/assets/Pulp-Loader.svg"
+// import PulpFiction from "../../static/assets/Pulp-Loader.svg"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -437,7 +437,6 @@ function ShawshankPage() {
               },
             }}
 
-            loop
           playsinline
             playIcon={
               <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
@@ -526,6 +525,3 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 }
 
 export default ShawshankPage;
-
-
-// https://youtu.be/NmzuHjWmXOc

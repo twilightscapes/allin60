@@ -7,7 +7,7 @@ import {Link} from "gatsby"
 // import Typography from "@material-ui/core/Typography";
 // import Container from "@material-ui/core/Container";
 import ReactPlayer from "react-player";
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { ImPlay } from "react-icons/im"
 import Slider from "@material-ui/core/Slider";
@@ -21,7 +21,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 // import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
 import Controls from "../components/Controls";
-import PulpFiction from "../../static/assets/Pulp-Loader.svg"
+// import PulpFiction from "../../static/assets/Pulp-Loader.svg"
 import styled from "styled-components"
 const CustomBox = styled.div`
 

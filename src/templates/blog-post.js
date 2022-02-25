@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // import React from "react"
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import ReactPlayer from 'react-player/lazy'
 import Controls from "../components/Controls";
 import screenful from "screenfull";
@@ -15,24 +15,24 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-import CommentBox from "../components/commentbox"
+// import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Countdown from 'react-countdown'
-import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted } from "react-icons/ai"
+// import Countdown from 'react-countdown'
+// import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
+// import { AiOutlineAudioMuted } from "react-icons/ai"
 import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+// import {CopyToClipboard} from 'react-copy-to-clipboard'
 // import ReactPlayer from 'react-player/lazy'
 
-import YouTubed from "../pages/youtube"
+// import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import ShareSocial from '../components/share' 
+// import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 const CustomBox = styled.div`
 

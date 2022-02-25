@@ -23,7 +23,7 @@ import SiteLogo from "../../static/assets/logo.svg"
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
@@ -31,7 +31,7 @@ import Theme from "../components/theme"
 import "../assets/scss/style.scss"
 // import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
-import Install from './install-discount'
+// import Install from './install-discount'
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
@@ -140,7 +140,7 @@ export function Layout({ children }) {
 
 
 
-  <Install />
+  {/* <Install /> */}
 
 
 

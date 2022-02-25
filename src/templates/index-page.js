@@ -92,7 +92,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
   //   )
 
 
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 import Countdown from 'react-countdown'
 
 export const pageQuery = graphql`

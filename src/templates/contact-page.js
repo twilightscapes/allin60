@@ -31,7 +31,7 @@ const Contact = ({ data }) => {
   return (
 
 
-    <Layout className="contact-page" sx={contactStyles.contactPage}>
+    <Layout className="contact-page">
       <Helmet>
   <body className="contactpage" />
 </Helmet>
@@ -46,7 +46,7 @@ const Contact = ({ data }) => {
 
       <div className="wrapper fluff">
       <br />
-        <h1 style={{fontSize:'7vw', padding:'3%, 8%', textAlign:'center'}}>{frontmatter.title}</h1>
+        <h1 style={{fontSize:'4vw', padding:'3%, 8%', textAlign:'center'}}>{frontmatter.title}</h1>
         <div
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -105,19 +105,4 @@ const Contact = ({ data }) => {
 
 export default Contact
 
-const contactStyles = {
-  contactPage: {
-    input: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-    textarea: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-  },
-}
+

@@ -5,7 +5,7 @@ import { Layout } from "../components/layout"
 
 import { Link } from "gatsby"
 import { RiArrowLeftSLine } from "react-icons/ri"
-import { AiTwotoneCamera } from "react-icons/ai"
+// import { AiTwotoneCamera } from "react-icons/ai"
 
 
 
