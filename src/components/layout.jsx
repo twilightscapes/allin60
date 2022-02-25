@@ -41,7 +41,7 @@ import { navigate } from "gatsby";
 
 export function Layout({ children }) {
 
-  const { iconimage } = useSiteMetadata()
+  // const { iconimage } = useSiteMetadata()
   const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
   const items = checkout ? checkout.lineItems : []

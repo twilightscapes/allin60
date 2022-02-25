@@ -10,9 +10,9 @@
   align-self: center;
 }
 
-.cartButton:hover {
-  /* color: var(--text-color); */
-}
+/* .cartButton:hover {
+  color: var(--text-color);
+} */
 
 .badge {
   display: flex;

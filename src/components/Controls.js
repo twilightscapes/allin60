@@ -2,11 +2,11 @@ import React, { forwardRef, useState } from "react";
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import BookmarkIcon from "@material-ui/icons/Bookmark";
-import FastRewindIcon from "@material-ui/icons/FastRewind";
-import FastForwardIcon from "@material-ui/icons/FastForward";
+// import BookmarkIcon from "@material-ui/icons/Bookmark";
+// import FastRewindIcon from "@material-ui/icons/FastRewind";
+// import FastForwardIcon from "@material-ui/icons/FastForward";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import PauseIcon from "@material-ui/icons/Pause";
 import Slider from "@material-ui/core/Slider";
@@ -15,8 +15,8 @@ import Grid from "@material-ui/core/Grid";
 import VolumeUp from "@material-ui/icons/VolumeUp";
 import VolumeDown from "@material-ui/icons/VolumeDown";
 import VolumeMute from "@material-ui/icons/VolumeOff";
-import FullScreen from "@material-ui/icons/Fullscreen";
-import Popover from "@material-ui/core/Popover";
+// import FullScreen from "@material-ui/icons/Fullscreen";
+// import Popover from "@material-ui/core/Popover";
 import { Link } from "gatsby"
 
 const useStyles = makeStyles((theme) => ({
@@ -156,7 +156,6 @@ const Controls = forwardRef(
             direction="row"
             alignItems="center"
             justify="space-between"
-            style
             style={{ padding: 16 }}
           >
             <Grid item>

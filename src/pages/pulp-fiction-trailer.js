@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 // import { findDOMNode } from "react-dom";
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import {Link} from "gatsby"
+// import {Link} from "gatsby"
 // import AppBar from "@material-ui/core/AppBar";
 // import Toolbar from "@material-ui/core/Toolbar";
 // import Typography from "@material-ui/core/Typography";
@@ -436,8 +436,6 @@ function VideoPage() {
                 playerVars: { showinfo:0, controls:0, start:20, end:41, mute:0 }
               },
             }}
-
-            loop
           playsinline
             playIcon={
               <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>

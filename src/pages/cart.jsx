@@ -21,7 +21,7 @@ import {
   imageHeader,
   productHeader,
   emptyStateContainer,
-  emptyStateHeading,
+  // emptyStateHeading,
   // emptyStateLink,
   title,
 } from "./cart.module.css"

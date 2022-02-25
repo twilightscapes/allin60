@@ -337,9 +337,9 @@ const Post = ({ data, pageContext }) => {
     : ""
 
 
-    const NftLink = frontmatter.nftlink
-    const NftRedeem = frontmatter.nftredeem
-    const NftDrop = frontmatter.nftdrop
+    // const NftLink = frontmatter.nftlink
+    // const NftRedeem = frontmatter.nftredeem
+    // const NftDrop = frontmatter.nftdrop
 
 
 
@@ -354,10 +354,10 @@ const Post = ({ data, pageContext }) => {
 // }
 
 
-const IsNft = frontmatter.isnftforsale
+// const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
-const ShareThis = frontmatter.shareable
-const Comments = frontmatter.comments
+// const ShareThis = frontmatter.shareable
+// const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
@@ -365,9 +365,9 @@ const YouTubeMute = frontmatter.youtubemute
 const YouTubeControls = frontmatter.youtubecontrols
 const YouTubeAutostart = frontmatter.youtubeautostart
 
-const Suggestion1 = frontmatter.youtubersuggestion1
-const Suggestion2 = frontmatter.youtubersuggestion2
-const Suggestion3 = frontmatter.youtubersuggestion3
+// const Suggestion1 = frontmatter.youtubersuggestion1
+// const Suggestion2 = frontmatter.youtubersuggestion2
+// const Suggestion3 = frontmatter.youtubersuggestion3
 
 
 
@@ -423,9 +423,9 @@ const svgUrl = frontmatter.svgImage.publicURL
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
 
 
-  const YouTube2 = frontmatter.youtuber2
-  const AudioStart = frontmatter.audiostart
-  const AudioEnd = frontmatter.audioend
+  // const YouTube2 = frontmatter.youtuber2
+  // const AudioStart = frontmatter.audiostart
+  // const AudioEnd = frontmatter.audioend
 
   
 
@@ -441,9 +441,9 @@ const svgUrl = frontmatter.svgImage.publicURL
   const { siteUrl } = useSiteMetadata()
 
 const classes = useStyles();
-  const [showControls, setShowControls] = useState(true);
-  // const [count, setCount] = useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  // const [showControls, setShowControls] = useState(true);
+  // // const [count, setCount] = useState(0);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
   const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
   const [bookmarks, setBookmarks] = useState([]);
   const [state, setState] = useState({
@@ -467,7 +467,7 @@ const classes = useStyles();
   const canvasRef = useRef(null);
   const {
     playing,
-    controls,
+    // controls,
     light,
 
     muted,
@@ -475,7 +475,7 @@ const classes = useStyles();
     playbackRate,
     pip,
     played,
-    seeking,
+    // seeking,
     volume,
   } = state;
 
@@ -609,7 +609,7 @@ const classes = useStyles();
 
 
 
-  const { iconimage } = useSiteMetadata()
+  // const { iconimage } = useSiteMetadata()
 
   
 
@@ -743,8 +743,6 @@ const classes = useStyles();
                                   playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                                 },
             }}
-
-            loop
           playsinline
             playIcon={
               <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'3', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:'30%'}}>
@@ -760,7 +758,7 @@ const classes = useStyles();
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
             </div>
             </button>}
-              light="../../assets/allin60seconds.png"
+              // light="../../assets/allin60seconds.png"
           />
 
 

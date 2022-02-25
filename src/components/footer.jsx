@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 import Consent from "../components/Consent"
 // import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
@@ -25,12 +25,12 @@ import { FaWordpress, FaVk, FaHeart } from "react-icons/fa"
 
 
 import { Link } from "gatsby"
-import {
-  footerStyle,
-  // links,
-  blurb,
-  // logos,
-} from "./footer.module.css"
+// import {
+//   footerStyle,
+//   // links,
+//   blurb,
+//   // logos,
+// } from "./footer.module.css"
 
 
 
@@ -196,12 +196,12 @@ export function Footer() {
 
 
 
-    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
+    <footer className="" style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
 
     
-      <div className={blurb}>
+      <div className="">
 
 
       <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me - I&nbsp;<FaHeart />&nbsp;feedback!</Link>

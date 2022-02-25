@@ -22,20 +22,20 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
   }
 }
 
-const ViewIt = () => <span>All In 60 Seconds - VIEW NOW!</span>
-const renderer1 = ({ hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a complete state
-    return <ViewIt />;
-  } else {
-    // Render a countdown
-    return (
-       <span>
-        All In {seconds} Seconds
-      </span> 
-    )
-  }
-}
+// const ViewIt = () => <span>All In 60 Seconds - VIEW NOW!</span>
+// const renderer1 = ({ hours, minutes, seconds, completed }) => {
+//   if (completed) {
+//     // Render a complete state
+//     return <ViewIt />;
+//   } else {
+//     // Render a countdown
+//     return (
+//        <span>
+//         All In {seconds} Seconds
+//       </span> 
+//     )
+//   }
+// }
 
 
 const PostCard = ({ data }) => (
