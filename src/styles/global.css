@@ -1058,6 +1058,8 @@ color:#fff !important;
 
 .ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .clickplays *, .ReactModalPortal .contact {
 display: none !important;
+overflow-y: hidden !important;
+overflow-x: hidden !important;
 }
 
 .nextbutt .back{display:none; font-size: 1rem;}
@@ -1085,6 +1087,8 @@ body.homepage .ReactModalPortal .nextbutt {display: none !important;}
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 2000ms ease-in-out;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .ReactModal__Overlay--after-open{
@@ -1096,9 +1100,15 @@ body.homepage .ReactModalPortal .nextbutt {display: none !important;}
 }
 
 .ReactModal__Overlay{background-color:transparent !important;   background: rgba(6, 70, 90, 0.87);
-  backdrop-filter: blur(22px);}
+  backdrop-filter: blur(22px);
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
 
-.ReactModal__Content{padding:0 !important; background:transparent !important; margin:0 auto ; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important; overflow-y:auto !important}
+.ReactModal__Content{padding:0 !important; background:transparent !important; margin:0 auto ; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
 
 
 .ReactModal__Body--open {
@@ -2126,7 +2136,7 @@ overflow: hidden}  */
   /* text-transform: uppercase; */
   font-weight: bold;
   padding: 5px 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner li span{
@@ -2796,7 +2806,7 @@ transform: scale(1);
   a[aria-current] {
     cursor: default !important; 
     color:rgb(227, 39, 45) !important;
-  
+    pointer-events: none !important;
     box-shadow: none;
     filter: none !important;
     pointer-events: none !important;
@@ -2805,7 +2815,8 @@ transform: scale(1);
     a [aria-current]:hover{
       cursor: default !important; 
       filter: none !important;
-      box-shadow: none;
+      pointer-events: none !important;
+      box-shadow: none !important;
       }
 
 
@@ -2962,23 +2973,7 @@ border:1px solid #222;
     background: #333; 
     }
     
-    .galmenu [aria-current] {
-    cursor: default !important; 
-    color:#FA02B7 !important;
-    box-shadow: none;
-    filter: drop-shadow (0px 0px 10px rgba(155, 155, 155, 0.5)) !important;
-    filter: none !important;
-    pointer-events: none;
-    /* padding:1%; */
-    text-decoration: none;
-    }
 
-        
-    .galmenu [aria-current]:hover{
-      cursor: default !important; 
-      filter: none !important;
-      box-shadow: none;
-      }
 
       .galmenu li:first-child{border-bottom:0px solid white !important; width:auto !important; text-decoration:underline;}
     

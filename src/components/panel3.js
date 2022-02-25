@@ -81,7 +81,7 @@ const Panel3 = () => (
 
 
 
-<Link title="Sirens" state={{modal: true}} to="/the-grid/sirens/">
+<Link title="Sirens"  to="/the-grid/sirens/">
 <TronChick className="tronchick character" style={{maxHeight:'100vh', maxWidth:'', height:'', width:'', position:'absolute', right:'-3vw', bottom:'0', paddingTop:'0', zIndex:'0', border:'0px solid blue' }} />
 </Link>
 
@@ -130,7 +130,7 @@ const Panel3 = () => (
 
 <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}>
   
-  <Link state={{modal: true}} to="/the-grid/disc-grid/" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
+  <Link  to="/the-grid/disc-grid/" style={{color:'#37f8f8'}}>Proceed To Games</Link></button>
 
   <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 </div>

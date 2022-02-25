@@ -4,15 +4,15 @@ title: Shawshank Redemption
 slug: /shawshank
 date: 2022-02-19 01:43
 description: Shawshank Redemption
-youtuber: "tHQEimbxdRE"
-youtuber2: "lYGald0tFro"
+youtuber: "6hB3S9bIaco"
+youtuber2: ""
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
-youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
-youtubestart: "32"
-youtubeend: "45"
-youtubemute: "1"
+youtubersuggestion2: ""
+youtubersuggestion3: ""
+youtubestart: "20"
+youtubeend: "68"
+youtubemute: "0"
 audiostart: "0"
 audioend: ""
 youtubecontrols: "0"
@@ -21,9 +21,9 @@ isnftforsale: ""
 svgzindex: "0"
 comments: ""
 shareable: "1"
-underlayImage: /assets/shawshank-items.png
-featuredImage: /assets/shawshank.jpg
-svgImage: "/assets/ShawshankLoader.svg"
+underlayImage: /assets/shawshank-stuff.png
+featuredImage: /assets/shawshank-redemption-in-60seconds.jpg
+svgImage: /assets/ShawshankLoader.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
@@ -38,7 +38,7 @@ nftredeem: ""
 
 
 
-
+<!-- 6hB3S9bIaco -->
 
 
 

@@ -35,7 +35,7 @@ import Newsignup from "../components/newssign"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
 // import Castor from "../../static/assets/castor.svg"
-import VideoPage from "../pages/video"
+import VideoPage from "../pages/pulp-fiction-trailer"
 import GridLoader from "../../static/assets/FrontLoader.svg"
 import TheGrid from "../../static/assets/The-Grid-Intro.svg"
 import BackgroundImage from 'gatsby-background-image'
@@ -328,7 +328,7 @@ const HomePage = ({ data }) => {
 {/* <HomeHolder /> */}
 
 <div className="horizontal-holder" style={{position:'relative',}}>
-<div className="RArrow">{/* <span></span> */}</div>
+{/* <div className="RArrow"><span></span></div> */}
 
 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
@@ -390,19 +390,22 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
 <VideoPage />
 </div> */}
 
-<div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', background:''}}>
-   <Link to="/posts/2/" title="View Archives">
-    <div  className="tronText" style={{ background:'rgba(0,0,0,0.50)', width:'80vw', position:'relative', top:'', margin:'10vh auto', padding:'10% 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
-    <h1 className="txtFlyIn">All In 60 Seconds - View More</h1>
-    
+<div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'', paddingTop:'1vh', background:''}}>
+<Link to="/posts/2/" title="View Archives">
+  <div  className="tronText" style={{fontSize:'3vw', marginTop:'1rem', lineHeight:'130%'}}>viewing:<br />Lastest Minutes</div>
+
+   
+    <div  className="tronText" style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'10vh auto', padding:'10% 10%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
+    <h1 className="txtFlyIn">View All Minutes?</h1>
     </div>
 </Link>
+
 </div>
 
 
-<div className="donation2" style={{ width:'100vw', height:'100vh'}}>
+<div className="donation2" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'', paddingTop:'0', background:''}}>
 {/* <Link to="/contact"> */}
-<div style={{position:'relative', top:'', margin:'0', padding:'10% 10%',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
+<div style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'5vh auto', padding:'4% 5%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
   <Newsignup />
   </div>
 {/* </Link> */}

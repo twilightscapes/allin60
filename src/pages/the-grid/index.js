@@ -79,7 +79,7 @@ export default function TheGrid() {
 
         <button aria-label="Click To Play" className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}>
           
-          <Link state={{modal: true}} to="/the-grid/proceed-to-games/" style={{color:'#37f8f8'}}>I GOT IN</Link>
+          <Link  to="/the-grid/proceed-to-games/" style={{color:'#37f8f8'}}>I GOT IN</Link>
           
           </button>
         

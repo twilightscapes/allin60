@@ -1,9 +1,11 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
-import Panel4 from "../components/panel1"
+import Panel1 from "../components/panel1"
+import Panel2 from "../pages/shawshank-trailer"
+import Panel3 from "../pages/pulp-fiction-trailer"
 import { StaticImage } from "gatsby-plugin-image"
-
+import {Link} from "gatsby"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -58,28 +60,62 @@ export default function Projects() {
 <div className="" style={{height:'1px'}}></div>
 
 
-<Panel4 />
+<div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <a title="Shawshank Redemption by Stephen King - All In 60 Seconds" href="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+  <Panel1 />
+  {/* </a> */}
+</div>
 
 
-<article className="" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative',}}>
+
+{/* <Panel2 /> */}
 
 
-<a href="https://tron.allin60.com/">
+<div>
+<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
 <StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/tronin60.jpg" />
-</a>
-<div class="post-content"><div style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'0px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div>
+alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
+</Link>
+</div>
 
-<h2 class="title">
-  <a href="https://tron.allin60.com/">
-    Boom
-    </a>
-</h2>
 
-    <p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>2 hours ago</time></p>
 
-    </div>
-</article>
+<div>
+<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulpfiction/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
+<StaticImage className=""
+alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</Link>
+</div>
+
+
+{/* <a href="https://tron.allin60.com/">
+<StaticImage className=""
+alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
+</a> */}
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
+</Link>
+</div>
+
+
+{/* <a href="https://tron.allin60.com/">
+<StaticImage className=""
+alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</a> */}
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
+</Link>
+</div>
 
 
    

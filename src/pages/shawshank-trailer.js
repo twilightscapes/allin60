@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 // import { findDOMNode } from "react-dom";
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import {Link} from "gatsby"
 // import AppBar from "@material-ui/core/AppBar";
 // import Toolbar from "@material-ui/core/Toolbar";
 // import Typography from "@material-ui/core/Typography";
@@ -214,7 +215,7 @@ let count = 0;
 
 
 
-function VideoPage() {
+function ShawshankPage() {
   const classes = useStyles();
   const [showControls, setShowControls] = useState(true);
   // const [count, setCount] = useState(0);
@@ -404,7 +405,7 @@ function VideoPage() {
       </AppBar>
       <Toolbar />
       <Container maxWidth="md"> */}
-      <div className="wrap-element">
+      <div className="wrap-element" style={{overflow:'hidden'}}>
         <div
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
@@ -415,11 +416,11 @@ function VideoPage() {
             ref={playerRef}
             width="100%"
             height="100%"
-            url="https://youtu.be/lZzai6at_xA"
+            url="https://youtu.be/6hB3S9bIaco"
             pip={pip}
             playing={playing}
             controls={true}
-            // light={light}
+            light={light}
             loop={loop}
             playbackRate={playbackRate}
             volume={volume}
@@ -432,14 +433,14 @@ function VideoPage() {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, controls:0, start:13, end:53, mute:0 }
+                playerVars: { showinfo:0, controls:0, start:20, end:68, mute:0 }
               },
             }}
 
             loop
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'65', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
   
           <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             
@@ -452,14 +453,14 @@ function VideoPage() {
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
             </div>
             </button>}
-              light="../../assets/allin60seconds.png"
+              // light="../../assets/allin60seconds.png"
           />
 
 
 
-<PulpFiction style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}} />
+{/* <PulpFiction style={{position:'absolute', top:'0', zIndex:'1', height:'100%', border:'0px solid yellow'}} /> */}
 
-<div style={{position:'absolute', bottom:'0', zIndex:'1', width:'100%', height:'100%', border:'0px solid yellow', padding:'0', margin:'0'}}>
+<div style={{position:'absolute', bottom:'0', left:'0', zIndex:'1', width:'100vw', height:'100%', border:'0px solid yellow', padding:'0', margin:'0'}}>
 <StaticImage className=""
 alt="Todd Lambert Web development for photographers" src="../../static/assets/shawshank-stuff.png" style={{height:'100vh'}}  />
 </div>
@@ -490,6 +491,12 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
           />
         </div>
         </div>
+
+
+
+<div className="contact" style={{position:'absolute', bottom:'30px', zIndex:'70',  left:'', right:'10%', display:'flex', justifyContent:'center', border:'0px solid red', width:''}}>
+  <a href="/contact/" title="View This Project" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>View This Project</a>
+</div>
         {/* <Grid container style={{ marginTop:'20px', padding:'0 5%' }} spacing={3}>
           {bookmarks.map((bookmark, index) => (
             <Grid key={index} item>
@@ -518,4 +525,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
   );
 }
 
-export default VideoPage;
+export default ShawshankPage;
+
+
+// https://youtu.be/NmzuHjWmXOc

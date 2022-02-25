@@ -6,7 +6,12 @@ import { Seo } from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-// import { FaHandPointDown } from "react-icons/fa"
+import { AiOutlineFundProjectionScreen } from "react-icons/ai"
+import { GiBackwardTime } from "react-icons/gi"
+import { BsStopwatch } from "react-icons/bs"
+import { BiMoviePlay } from "react-icons/bi"
+
+
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
@@ -235,7 +240,7 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 {/* <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/" style={{color:'#02e9fa'}}>
+              <Link  className="navbar-item txtshadow" to="/the-grid/" style={{color:'#02e9fa'}}>
               Enter the Grid
               </Link>
       </li>
@@ -247,48 +252,62 @@ Contact Me<span>Ordering Questions?</span>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/disc-grid/">
+              <Link  className="navbar-item txtshadow" to="/the-grid/disc-grid/">
               LightDisc Grid
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/lightcycle-grid/">
+              <Link  className="navbar-item txtshadow" to="/the-grid/lightcycle-grid/">
               LightCycle Grid
               </Link>
       </li>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-line-club/">
+              <Link  className="navbar-item txtshadow" to="/the-grid/end-of-line-club/">
               End of Line Club
               </Link>
       </li>
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/return-to-the-source/">
+              <Link  className="navbar-item txtshadow" to="/the-grid/return-to-the-source/">
               Return to the Source
               </Link>
       </li>
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link state={{modal: true}} className="navbar-item txtshadow" to="/the-grid/end-of-the-grid/">
+              <Link  className="navbar-item txtshadow" to="/the-grid/end-of-the-grid/">
               End of the Grid
               </Link>
       </li> */}
 
 
+<li className="carto" style={{textAlign:'center'}}>
+      <Link className="navbar-item txtshadow" to="/">
+      <div style={{display:'flex', gap:'10px'}}>
+      <GiBackwardTime style={{fontSize:'2vw'}} />Latest Minutes
+      </div>
+        </Link>
+</li>
+
+
+
 <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/projects/">
-              View By Project
+      <div style={{display:'flex', gap:'10px'}}>
+        <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} />View By Project
+        </div>
               </Link>
       </li> 
 
 
 <li className="carto">
       <Link className="navbar-item txtshadow" to="/posts/">
-         View All Minutes
+      <div style={{display:'flex', gap:'10px'}}>
+      <BsStopwatch style={{fontSize:'2vw'}} />View All Minutes
+      </div>
         </Link>
 </li>
 
@@ -298,9 +317,11 @@ Suggest Your Own
 </Link>
 </li> */}
 
-<li className="carto" style={{textAlign:''}}>
+<li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/about/">
-              About This Site
+              <div style={{display:'flex', gap:'10px'}}>
+              <BiMoviePlay style={{fontSize:'2vw'}}  />About This Site
+              </div>
               </Link>
       </li> 
 

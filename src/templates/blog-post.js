@@ -278,7 +278,7 @@ const Pagination = props => (
     <ul className="" style={{display:'flex',}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
-          <Link to= {props.previous.frontmatter.slug + "/"} rel="prev">
+          <Link  to= {props.previous.frontmatter.slug + "/"} rel="prev">
             <p
               style={{
                 color: "inherit",
@@ -297,7 +297,7 @@ const Pagination = props => (
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
-          <Link to={props.next.frontmatter.slug + "/"} rel="next">
+          <Link  to={props.next.frontmatter.slug + "/"} rel="next">
             <p
               style={{
                 color: "inherit",
@@ -645,8 +645,8 @@ const classes = useStyles();
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 
 
-<div className="contact" style={{position:'fixed', bottom:'10px', zIndex:'1',  left:'0', right:'0', display:'flex', justifyContent:'center'}}>
-  <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me</Link>
+<div className="contact" style={{position:'fixed', bottom:'10px', zIndex:'1',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
+  <Link  to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me</Link>
 </div>
 
 

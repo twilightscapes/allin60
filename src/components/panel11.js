@@ -102,14 +102,14 @@ change the world, together.</p>
 
 
 
-<Link state={{modal: true}} to="kevin-flynn/">
+<Link  to="kevin-flynn/">
 {/* <KevinFlynn className="character" style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'1', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}/> */}
 <StaticImage className="character"
  style={{maxHeight:'80vh', width:'340px', overflow:'clip', zIndex:'', position:'absolute', right:'0', bottom:'0', border:'0px solid red',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
 </Link>
 
-<Link state={{modal: true}} to="/clu/" >
+<Link  to="/clu/" >
 {/* <CluGuy className="character evil" style={{maxHeight:'80vh', width:'300px', zIndex:'1', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}/> */}
 <StaticImage className="character evil"
 style={{maxHeight:'80vh', width:'300px', zIndex:'', position:'absolute', left:'0', bottom:'0', border:'0px solid red',}}
@@ -120,7 +120,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
 
 {/* <div className="nextbutt" style={{display:'', flexDiection:'column', justifyContent:'end', color:'#ccc', height:'', zIndex:'2', position:'absolute', left:'40%', top:''}}>
 
-          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link state={{modal: true}} to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
+          <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}><Link  to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
 
 </div> */}
 
@@ -146,7 +146,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
 
 <button className="actionJackson TRON tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'30vw', borderRadius:'200px',fontSize:'2vw', padding:'10% 5%', }}>
   
-  <Link state={{modal: true}} to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
+  <Link  to="/the-grid/return-to-the-source/" style={{color:'#37f8f8'}}>Return to the Source <span style={{fontSize:'150%'}}></span></Link></button>
 <div className="backbutton"><button className="back" onClick={() => { navigate(-1) }} style={{}}>&#10094; {" "}Go Back</button></div>
 
 </div>

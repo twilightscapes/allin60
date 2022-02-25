@@ -86,7 +86,7 @@ const Panel1 = () => (
 
 {/* Panel Content */}
 <h1 className="tronText" style={{display:'grid', placeContent:'center', textAlign:'center', fontSize:'14vw', position:'absolute', top:'0', marginTop:'', width:'100%', padding:'0 30%', opacity:'1', zIndex:''}}>
-        <div className="TRON" style={{fontWeight:'normal', fontFamily:'TronType'}}>TRON</div>
+        <div className="" style={{fontWeight:'bold', fontFamily:'Roboto'}}>TRON</div>
       </h1>
 
 
@@ -98,54 +98,54 @@ const Panel1 = () => (
 <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', zIndex:'-1' }}>
 
     <div id="" className="" style={{position:'relative', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-             <Link state={{modal: true}} to="/the-grid/son-of-flynn/" title="Sam Flynn"  aria-label="Sam Flynn">
+             <a href="https://tron.allin60.com" title="Sam Flynn"  aria-label="Sam Flynn">
     {/* <SamFlynn className="character" style={{height:'100vh', width:'90%', margin:'0 0 0 0',}} /> */}
     <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/sam-flynn.png" />
-    </Link>
+    </a>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/the-grid/meet-quorra" title="Quorra" aria-label="Quorra">
+    <a href="https://tron.allin60.com" title="Quorra" aria-label="Quorra">
       {/* <QuoraStand className="character" style={{height:'100%', width:'85%', margin:'0 0 0 10%', right:'', zIndex:''}} /> */}
       <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/quora-ass.png" />
-      </Link>
+      </a>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
      padding:' 0', display:'flex', justifyContent:'center',}}>
-<Link state={{modal: true}} to="/kevin-flynn/" title="Kevin Flynn" aria-label="Kevin Flynn">
+<a href="https://tron.allin60.com" title="Kevin Flynn" aria-label="Kevin Flynn">
     {/* <KevinFlynn className="character" style={{position:'relative', height:'100%', width:'130%', zIndex:'', margin:'0 0 0 -16%'}} /> */}
     <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/kevin-flynn.png" />
-    </Link>
+    </a>
     </div>
     
     <div id="" className="" style={{position:'relative', transform:'', maxWidth:'', height:'100vh',
     display:'flex', flexDiection:'column', justifyContent:'center',
     padding:'0', border:'0px solid red',}}>
-      <Link state={{modal: true}} to="/tron/" title="Tron" aria-label="Tron">
+      <a href="https://tron.allin60.com" title="Tron" aria-label="Tron">
     {/* <TronGuy className="character" style={{height:'100%', width:'100%', margin:'0 0 0 0', transform: 'scaleX(-1)'}} /> */}
     <StaticImage className="character"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/tron.png" />
-    </Link>
+    </a>
     </div>
     
     <div srl_exclude="true" id="mylink15" className="donation2" style={{position:'relative', transform:'', maxWidth:'', height:'100vh', 
     // background:'rgba(6, 70, 90, 0.6)', 
     padding:' 0', display:'flex', justifyContent:'center', border:'0px solid red',}}>
-    <Link state={{modal: true}} to="/clu/" title="Clu" aria-label="Clu">
+    <a href="https://tron.allin60.com" title="Clu" aria-label="Clu">
     {/* <CluGuy className="character evil" style={{height:'100%', width:'100%', margin:'0 0 0 -20%',}} /> */}
     <StaticImage className="character evil"
 style={{height:'80vh', width:'', margin:'0 0 0 0',}}
 alt="Todd Lambert Web development for photographers" src="../../static/assets/clu.png" />
-    </Link>
+    </a>
     </div>
     
 </div>
