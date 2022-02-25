@@ -8,10 +8,10 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Container from "@material-ui/core/Container";
 import ReactPlayer from "react-player";
 // import { StaticImage } from "gatsby-plugin-image"
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { ImPlay } from "react-icons/im"
-import Slider from "@material-ui/core/Slider";
-import Tooltip from "@material-ui/core/Tooltip";
+// import Slider from "@material-ui/core/Slider";
+// import Tooltip from "@material-ui/core/Tooltip";
 // import Grid from "@material-ui/core/Grid";
 // import Paper from "@material-ui/core/Paper";
 // import VolumeUp from "@material-ui/icons/VolumeUp";
@@ -139,44 +139,44 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PrettoSlider = withStyles({
-  root: {
-    height: 8,
-  },
-  thumb: {
-    height: 24,
-    width: 24,
-    backgroundColor: "#fff",
-    border: "2px solid currentColor",
-    marginTop: -8,
-    marginLeft: -12,
-    "&:focus, &:hover, &$active": {
-      boxShadow: "inherit",
-    },
-  },
-  active: {},
-  valueLabel: {
-    left: "calc(-50% + 4px)",
-  },
-  track: {
-    height: 8,
-    borderRadius: 4,
-  },
-  rail: {
-    height: 8,
-    borderRadius: 4,
-  },
-})(Slider);
+// const PrettoSlider = withStyles({
+//   root: {
+//     height: 8,
+//   },
+//   thumb: {
+//     height: 24,
+//     width: 24,
+//     backgroundColor: "#fff",
+//     border: "2px solid currentColor",
+//     marginTop: -8,
+//     marginLeft: -12,
+//     "&:focus, &:hover, &$active": {
+//       boxShadow: "inherit",
+//     },
+//   },
+//   active: {},
+//   valueLabel: {
+//     left: "calc(-50% + 4px)",
+//   },
+//   track: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+//   rail: {
+//     height: 8,
+//     borderRadius: 4,
+//   },
+// })(Slider);
 
-function ValueLabelComponent(props) {
-  const { children, open, value } = props;
+// function ValueLabelComponent(props) {
+//   const { children, open, value } = props;
 
-  return (
-    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-      {children}
-    </Tooltip>
-  );
-}
+//   return (
+//     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+//       {children}
+//     </Tooltip>
+//   );
+// }
 
 const format = (seconds) => {
   if (isNaN(seconds)) {
@@ -217,9 +217,9 @@ let count = 0;
 
 function VideoPage() {
   const classes = useStyles();
-  const [showControls, setShowControls] = useState(true);
+  // const [ setShowControls] = useState(true);
   // const [count, setCount] = useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
   const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
   const [bookmarks, setBookmarks] = useState([]);
   const [state, setState] = useState({
@@ -243,7 +243,7 @@ function VideoPage() {
   const canvasRef = useRef(null);
   const {
     playing,
-    controls,
+    // controls,
     light,
 
     muted,
@@ -251,7 +251,7 @@ function VideoPage() {
     playbackRate,
     pip,
     played,
-    seeking,
+    // seeking,
     volume,
   } = state;
 
@@ -272,7 +272,7 @@ function VideoPage() {
       controlsRef.current.style.visibility = "hidden";
       count = 0;
     }
-    if (controlsRef.current.style.visibility == "visible") {
+    if (controlsRef.current.style.visibility === "visible") {
       count += 1;
     }
     if (!state.seeking) {
@@ -329,7 +329,7 @@ function VideoPage() {
 
   const handleDisplayFormat = () => {
     setTimeDisplayFormat(
-      timeDisplayFormat == "normal" ? "remaining" : "normal"
+      timeDisplayFormat === "normal" ? "remaining" : "normal"
     );
   };
 
@@ -374,7 +374,7 @@ function VideoPage() {
   const duration =
     playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
   const elapsedTime =
-    timeDisplayFormat == "normal"
+    timeDisplayFormat === "normal"
       ? format(currentTime)
       : `-${format(duration - currentTime)}`;
 
@@ -407,6 +407,7 @@ function VideoPage() {
       <Container maxWidth="md"> */}
       <div className="wrap-element" style={{overflow:'hidden'}}>
         <div
+          role="main" aria-label="Video Controls"
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
           ref={playerContainerRef}

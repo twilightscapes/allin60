@@ -1,99 +1,24 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-// import Img from 'gatsby-image'
-//  import { GatsbyImage } from 'gatsby-plugin-image'
+
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
-// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-// import GalleryMenu from "../components/galleryMenu"
+
 import { StaticImage } from "gatsby-plugin-image"
-// import ShareSocial from '../components/share' 
-// import { RiArrowRightSLine } from "react-icons/ri"
-// import { RiSendPlane2Line } from "react-icons/ri"
-// import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-// import { ImPlay } from "react-icons/im"
+
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
-// import TwilightLogo from "../../static/assets/TSidebarHover.svg"
-import BlogListHome from "../components/blog-list-home"
+
 import Newsignup from "../components/newssign"
-// import BlogListHome from "../components/blog-list-home"
-// import LightCycleBattle from "../../static/assets/light-cycle-battle.svg"
-// import LightCycleRear from "../../static/assets/light-cycle-rear.svg"
-// import LightCycle from "../../static/assets/light-cycle.svg"
-// import TronChick from "../../static/assets/tron-chick1.svg"
-// import PrayingMantis from "../../static/assets/yoga-master.svg"
-// import SamFly from "../../static/assets/sam-fly.svg"
-// import SamFlynn from "../../static/assets/sam-flynn.svg"
-// import CluGuy from "../../static/assets/clu.svg"
-// import TronGuy from "../../static/assets/tron.svg"
-// import MCP from "../../static/assets/mcp.svg"
-// import McpEffects from "../../static/assets/mcp-effects.svg"
-// import QuoraStand from "../../static/assets/quora-ass.svg"
-// import KevinFlynn from "../../static/assets/kevin-flynn.svg"
-// import GridLines from "../../static/assets/off-the-grid.mp4"
-// import QuoraStrike from "../../static/assets/quora-strike.svg"
-// import LoveSignal from "../../static/assets/love-signal.svg"
-// import Castor from "../../static/assets/castor.svg"
-// import VideoPage from "../pages/pulp-fiction-trailer"
-// import BackgroundImage from 'gatsby-background-image'
-// import InstallDiscount from "../components/install-discount"
-// import { AiOutlineAudioMuted } from "react-icons/ai"
-// import TechBG from "../../static/assets/tech-bg.mp4"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
-// import { FaHandPointDown } from "react-icons/fa"
-// import CommentBox from "../components/commentbox"
-// import GoBack from "../components/goBack"
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import ReactPlayer from 'react-player/lazy'
+
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import Newsignup from "./contact-page"
-// import TestIT from "../components/test"
-// import HomeHolder from "../components/homeholder"
 
+import Panel1 from "../components/panel1"
 
-// import loadable from '@loadable/component'
-// import Panel1 from '../components/panel1'
-
-  // const Panel1 = loadable(() => import('../components/panel1'))
-  // const Panel2 = loadable(() => import('../components/panel2'), {
-  //   fallback: <div>Loading...</div>,
-  // })
-  // const Panel3 = loadable(() => import('../components/panel3'), {
-  //   fallback: <div>Loading...</div>,
-  // })
-  // const Panel4 = loadable(() => import('../components/panel4'), {
-  //   fallback: <div>Loading...</div>,
-  // })
-  // const Panel5 = loadable(() => import('../components/panel5'))
-  // const Panel6 = loadable(() => import('../components/panel6'))
-  // const Panel7 = loadable(() => import('../components/panel7'))
-  // const Panel8 = loadable(() => import('../components/panel8'))
-  // const Panel9 = loadable(() => import('../components/panel9'))
-  // const Panel10 = loadable(() => import('../components/panel10'))
-  // const Panel11 = loadable(() => import('../components/panel11'))
-  // const Panel12 = loadable(() => import('../components/panel12'))
-  // const Panel13 = loadable(() => import('../components/panel13'))
-
-  
-  // const BackgroundSection = ({ className }) => {
-  //   const data = useStaticQuery(
-  //     graphql`
-  //       query {
-  //         desktop: file(relativePath: { eq: "curtains.jpg" }) {
-  //           childImageSharp {
-  //             fluid(quality: 90, maxWidth: 1920) {
-  //               ...GatsbyImageSharpFluid_withWebp
-  //             }
-  //           }
-  //         }
-  //       }
-  //     `
-  //   )
 
 
 // import TimeAgo from 'react-timeago'
-import Countdown from 'react-countdown'
+// import Countdown from 'react-countdown'
 
 export const pageQuery = graphql`
   query HomeQuery($id: String! ) {
@@ -213,18 +138,18 @@ export const pageQuery = graphql`
 // })
 
 
-const ViewIt = () => <span>TRON - All In 60 Seconds - VIEW NOW!</span>
-const renderer = ({ hours, minutes, seconds, completed }) => {
-  if (completed) {
-    return <ViewIt />;
-  } else {
-    return (
-       <span>
-       TRON - All In {seconds} Seconds
-      </span> 
-    )
-  }
-}
+// const ViewIt = () => <span>TRON - All In 60 Seconds - VIEW NOW!</span>
+// const renderer = ({ hours, minutes, seconds, completed }) => {
+//   if (completed) {
+//     return <ViewIt />;
+//   } else {
+//     return (
+//        <span>
+//        TRON - All In {seconds} Seconds
+//       </span> 
+//     )
+//   }
+// }
 
 
 const HomePage = ({ data }) => {
@@ -354,28 +279,66 @@ const HomePage = ({ data }) => {
 </div>
 {/* </BackgroundImage> */}
 
-<article className="" style={{alignItems: 'center', justifyContent:'center', width:'100%', position:'relative',}}>
+
+<div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <a title="Shawshank Redemption by Stephen King - All In 60 Seconds" href="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+  <Panel1 />
+  {/* </a> */}
+</div>
 
 
-<a href="https://tron.allin60.com/">
+
+{/* <Panel2 /> */}
+
+
+<div>
+<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
 <StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/tronin60.jpg" />
-</a>
-<div class="post-content"><div style={{display:'flex', alignSelf:'center', position:'absolute', bottom:'66px',}}><div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px', margin:'0px auto', color:'rgb(255, 255, 255)', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'0px solid rgb(17, 17, 17)', textShadow:'rgb(0, 0, 0) 1px 2px 0px'}}></div></div>
+alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
+</Link>
+</div>
 
-<h2 class="title">
-  <a href="https://tron.allin60.com/">
-    <Countdown date={Date.now() + 10000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0}></Countdown>
-    </a>
-</h2>
 
-    <p style={{minWidth:'20vw', position:'relative', textAign:'center',}}><time>2 hours ago</time></p>
 
-    </div>
-</article>
+<div>
+<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
+<StaticImage className=""
+alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</Link>
+</div>
 
-{/* <TheGrid /> */}
-<BlogListHome data={posts} />
+
+{/* <a href="https://tron.allin60.com/">
+<StaticImage className=""
+alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
+</a> */}
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
+</Link>
+</div>
+
+
+{/* <a href="https://tron.allin60.com/">
+<StaticImage className=""
+alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</a> */}
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
+</Link>
+</div>
+
+
+{/* <BlogListHome data={posts} /> */}
 
 
 {/* <div style={{overflow:'hidden'}}>

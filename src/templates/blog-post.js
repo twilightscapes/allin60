@@ -848,7 +848,7 @@ const classes = useStyles();
 
 
       <div
-        className="blog-post-content" style={{ padding:'0 ', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
   

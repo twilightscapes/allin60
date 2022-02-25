@@ -158,51 +158,13 @@ export function Layout({ children }) {
 
     <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
     <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-
 {/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
-
-
-{/* <Link to="/">
-<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
-</Link> */}
-
 <SiteLogo />
 {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
 {/* <Link to="/">
 <LogoText style={{width:'100%', height:''}} />
 </Link> */}
  </li>
-
-
-
-
- {/* <li className="carta" style={{border:'none', margin:'1rem 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
-<div className="TRON tronlogo" style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'', color:'#fff', borderRadius:'0', fontSize:'clamp(4rem, 6vw, 5.8rem)', margin:'1rem 0 0 0'}}>[</div>
-</Link>
- </li> */}
-
- {/* <li className="carto" style={{border:'none', margin:'0 0',textAlign:'center'}}>
-<Link title="Return To Home" to="/#homestart" aria-label="Return To Home"> 
-<div className="TronType tronText" style={{fontSize:'300%', margin:'1rem 0 0 0'}}>ALL</div><div className="defont" style={{fontSize:'200%', fontWeight:'bold'}}>in 60</div><div className="TRON tronText" style={{fontSize:'100%', margin:'0 0 3rem 0'}}>Seconds</div>
-</Link>
- </li> */}
-
-
-
-
-
-
-
- 
- {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
- <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
- </li> */}
-
-
-
-
-
 
 
 
@@ -215,87 +177,13 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/photo-tools/">Twilight Tools<span>Lighting and Gear</span></Link>
-       </li> */}
 
 
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/about/">
-                About Todd Lambert<span>As seen on reality TV</span>
-              </Link>
-      </li> */}
-
-      {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/posts/">Posts<span>My rants &amp; raves</span></Link>
-       </li> */}
-
-
-      
-
-
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/vault/favorites/">
-              The Vault <span>Full Photo archives</span>
-              </Link>
-      </li> */}
-{/* <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/" style={{color:'#02e9fa'}}>
-              Enter the Grid
-              </Link>
-      </li>
-      
-<li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/the-grid#proceed">
-              Proceed to Games
-              </Link>
-      </li>
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/disc-grid/">
-              LightDisc Grid
-              </Link>
-      </li>
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/lightcycle-grid/">
-              LightCycle Grid
-              </Link>
-      </li>
-
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/end-of-line-club/">
-              End of Line Club
-              </Link>
-      </li>
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/return-to-the-source/">
-              Return to the Source
-              </Link>
-      </li>
-
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link  className="navbar-item txtshadow" to="/the-grid/end-of-the-grid/">
-              End of the Grid
-              </Link>
-      </li> */}
-
-
-<li className="carto" style={{textAlign:'center'}}>
-      <Link className="navbar-item txtshadow" to="/">
-      <div style={{display:'flex', gap:'10px'}}>
-      <GiBackwardTime style={{fontSize:'2vw'}} />Latest Minutes
-      </div>
-        </Link>
-</li>
 
 
 
 <li className="carto" style={{textAlign:''}}>
-              <Link className="navbar-item txtshadow" to="/projects/">
+              <Link className="navbar-item txtshadow" to="/">
       <div style={{display:'flex', gap:'10px'}}>
         <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} />View By Project
         </div>
@@ -303,19 +191,22 @@ Contact Me<span>Ordering Questions?</span>
       </li> 
 
 
-<li className="carto">
+{/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/posts/">
       <div style={{display:'flex', gap:'10px'}}>
       <BsStopwatch style={{fontSize:'2vw'}} />View All Minutes
       </div>
         </Link>
+</li> */}
+
+<li className="carto" style={{textAlign:'center'}}>
+      <Link className="navbar-item txtshadow" to="/posts/">
+      <div style={{display:'flex', gap:'10px'}}>
+      <GiBackwardTime style={{fontSize:'2vw'}} />Latest Minutes
+      </div>
+        </Link>
 </li>
 
- {/* <li className="carto">
- <Link className="navbar-item txtshadow" to="/contact/">
-Suggest Your Own
-</Link>
-</li> */}
 
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/about/">
@@ -325,19 +216,7 @@ Suggest Your Own
               </Link>
       </li> 
 
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/nft/">
-                NFT Collectibles <span>Limited Editions</span>
-              </Link>
-      </li> */}
 
-      
-{/* <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/experiences/">
-              <span style={{color:'var(--primary-color)',}}>(All New)</span>3D Experiences
-                 Multimedia 3D Blog
-              </Link>
-      </li> */}
 
 
 

@@ -16,21 +16,27 @@ export default function BlogListHome(props) {
   return <PostMaker data={posts} />
 }
 
+
 const PostMaker = ({ data }) => (
 
-    
 
-<div>
-        
+  <div className="horizontal-holder" style={{position:'relative'}}>
 
 
 
-{data}
 
- 
+ <div className="horizontal-scroll panels" style={{ scrollSnapType: '', maxHeight:'',}}>
+
+
+<div></div>
+
+  {data}
 
 </div>
-    
+
+</div>
+
+
 
 
 )

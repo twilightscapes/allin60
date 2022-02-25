@@ -6,7 +6,7 @@ date: 2022-02-17 01:43
 description: Pulp Fiction in 60 seconds
 youtuber: "tGpTpVyI_OQ"
 youtuber2: ""
-youtubeshoworiginal: "true"
+youtubeshoworiginal: ""
 youtubersuggestion1: ""
 youtubersuggestion2: ""
 youtubersuggestion3: ""
@@ -28,15 +28,10 @@ nftlink: ""
 nftdrop: ""
 nftredeem: ""
 ---
+
 <h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
         <div class="">Coming Soon!</div>
       </h2>
 
-<!-- WSLMN6g_Od4 AUDIO -->
-
-
-<!-- nftdrop: "2022-02-20T13:29:20" -->
-
-<!-- WSLMN6g_Od4  DANCING 90 182 -->
 
 
