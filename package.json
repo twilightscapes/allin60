@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
-    "@material-ui/core": "^4.10.2",
-    "@material-ui/icons": "^4.9.1",
     "@mdx-js/runtime": "^1.6.22",
     "@theme-ui/color": "^0.13.1",
     "commentbox.io": "^2.1.0",
@@ -31,7 +29,6 @@
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sass": "^5.5.0",
     "gatsby-plugin-sharp": "^4.5.1",
-    "gatsby-plugin-sharp-exif": "^1.0.4",
     "gatsby-plugin-sitemap": "^5.5.0",
     "gatsby-plugin-styled-components": "^5.5.0",
     "gatsby-plugin-theme-ui": "^0.6.0",

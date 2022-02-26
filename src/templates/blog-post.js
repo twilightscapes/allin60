@@ -2,12 +2,9 @@
 // import React from "react"
 
 import React, { useState, useRef } from "react";
-import ReactPlayer from 'react-player/lazy'
+
 import Controls from "../components/Controls";
-import screenful from "screenfull";
-import Slider from "@material-ui/core/Slider";
-import Tooltip from "@material-ui/core/Tooltip";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+
 
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
@@ -24,7 +21,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 // import {CopyToClipboard} from 'react-copy-to-clipboard'
-// import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/lazy'
 
 // import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
@@ -79,200 +76,6 @@ const CustomBox = styled.div`
 
 
 `
-
-
-const useStyles = makeStyles((theme) => ({
-  playerWrapper: {
-    width: "100%",
-    // height: "90vh",
-    // position: "relative",
-    "&:hover": {
-      "& $controlsWrapper": {
-        visibility: "visible",
-      },
-    },
-  },
-
-  controlsWrapper: {
-    visibility: "visible",
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    // background: "rgba(0,0,0,0.9)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  },
-  topControls: {
-    display: "flex",
-    justifyContent: "flex-end",
-    padding: theme.spacing(2),
-  },
-  middleControls: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  bottomWrapper: {
-    display: "flex",
-    flexDirection: "column",
-
-    background: "rgba(0,0,0,0.99)",
-    // height: 60,
-    padding: theme.spacing(2),
-  },
-
-  bottomControls: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    // height:40,
-  },
-
-  button: {
-    margin: theme.spacing(1),
-  },
-  controlIcons: {
-    color: "#777",
-
-    fontSize: 50,
-    transform: "scale(0.9)",
-    "&:hover": {
-      color: "#fff",
-      transform: "scale(1)",
-    },
-  },
-
-  bottomIcons: {
-    color: "#999",
-    "&:hover": {
-      color: "#fff",
-    },
-  },
-
-  volumeSlider: {
-    width: 100,
-  },
-}));
-
-const PrettoSlider = withStyles({
-  root: {
-    height: 8,
-  },
-  thumb: {
-    height: 24,
-    width: 24,
-    backgroundColor: "#fff",
-    border: "2px solid currentColor",
-    marginTop: -8,
-    marginLeft: -12,
-    "&:focus, &:hover, &$active": {
-      boxShadow: "inherit",
-    },
-  },
-  active: {},
-  valueLabel: {
-    left: "calc(-50% + 4px)",
-  },
-  track: {
-    height: 8,
-    borderRadius: 4,
-  },
-  rail: {
-    height: 8,
-    borderRadius: 4,
-  },
-})(Slider);
-
-function ValueLabelComponent(props) {
-  const { children, open, value } = props;
-
-  return (
-    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-      {children}
-    </Tooltip>
-  );
-}
-
-const format = (seconds) => {
-  if (isNaN(seconds)) {
-    return `00:00`;
-  }
-  const date = new Date(seconds * 1000);
-  const hh = date.getUTCHours();
-  const mm = date.getUTCMinutes();
-  const ss = date.getUTCSeconds().toString().padStart(2, "0");
-  if (hh) {
-    return `${hh}:${mm.toString().padStart(2, "0")}:${ss}`;
-  }
-  return `${mm}:${ss}`;
-};
-
-let count = 0;
-
-
-// const options = {
-//   settings: {
-//     autoplaySpeed: 3000,
-//     // boxShadow: '0px 0px 20px #fff',
-//     disableKeyboardControls: false,
-//     disablePanzoom: false,
-//     disableWheelControls: false,
-//     hideControlsAfter: false,
-//     lightboxTransitionSpeed: 0.3,
-//     lightboxTransitionTimingFunction: 'linear',
-//     // overlayColor: 'rgba(185, 7, 230, 0.5)',
-//     slideAnimationType: 'slide',
-//     slideSpringValues: [300, 50],
-//     slideTransitionSpeed: 0.6,
-//     slideTransitionTimingFunction: 'linear',
-//     usingPreact: false
-//   },
-//   buttons: {
-//     backgroundColor: 'rgba(30,30,36,0.8)',
-//     iconColor: 'rgba(255, 255, 255, 0.8)',
-//     iconPadding: '10px',
-//     showAutoplayButton: true,
-//     showCloseButton: true,
-//     showDownloadButton: true,
-//     showFullscreenButton: true,
-//     showNextButton: true,
-//     showPrevButton: true,
-//     showThumbnailsButton: true,
-//     size: '40px'
-//   },
-//   caption: {
-// captionAlignment: 'start',
-// captionColor: '#FFFFFF',
-// captionContainerPadding: '20px 12% 30px 12%',
-// captionFontFamily: 'inherit',
-// captionFontSize: 'inherit',
-// captionFontStyle: 'inherit',
-// captionFontWeight: 'inherit',
-// captionTextTransform: 'inherit',
-// showCaption: true
-//   },
-//   thumbnails: {
-//     showThumbnails: true,
-//     thumbnailsAlignment: 'center',
-//     thumbnailsContainerBackgroundColor: 'transparent',
-//     thumbnailsContainerPadding: '0',
-//     thumbnailsGap: '0 1px',
-//     thumbnailsIconColor: '#ffffff',
-//     thumbnailsOpacity: 0.4,
-//     thumbnailsPosition: 'bottom',
-//     thumbnailsSize: ['100px', '80px']
-//   },
-//   progressBar: {
-//     backgroundColor: '#f2f2f2',
-//     fillColor: '#000000',
-//     height: '3px',
-//     showProgressBar: true
-//   },
-// };
-
 const Pagination = props => (
   <div className="pagination -post">
     <ul className="" style={{display:'flex',}}>
@@ -439,43 +242,30 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
   const { siteUrl } = useSiteMetadata()
+  const { iconimage } = useSiteMetadata()
 
-const classes = useStyles();
-  // const [showControls, setShowControls] = useState(true);
-  // // const [count, setCount] = useState(0);
-  // const [anchorEl, setAnchorEl] = React.useState(null);
-  const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
-  const [bookmarks, setBookmarks] = useState([]);
+
   const [state, setState] = useState({
-    pip: false,
     playing: true,
     controls: true,
     light: true,
-
     muted: false,
-    played: 0,
-    duration: 0,
-    playbackRate: 1.0,
-    volume: 1,
     loop: true,
-    seeking: false,
   });
 
-  const playerRef = useRef(null);
-  const playerContainerRef = useRef(null);
+  // const playerRef = useRef(null);
   const controlsRef = useRef(null);
-  const canvasRef = useRef(null);
+
   const {
     playing,
-    // controls,
+    controls,
     light,
-
     muted,
     loop,
     playbackRate,
     pip,
     played,
-    // seeking,
+    seeking,
     volume,
   } = state;
 
@@ -483,133 +273,9 @@ const classes = useStyles();
     setState({ ...state, playing: !state.playing });
   };
 
-  const handleRewind = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() - 10);
-  };
-
-  const handleFastForward = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() + 10);
-  };
-
-  const handleProgress = (changeState) => {
-    if (count > 3) {
-      controlsRef.current.style.visibility = "hidden";
-      count = 0;
-    }
-    if (controlsRef.current.style.visibility == "visible") {
-      count += 1;
-    }
-    if (!state.seeking) {
-      setState({ ...state, ...changeState });
-    }
-  };
-
-  const handleSeekChange = (e, newValue) => {
-    console.log({ newValue });
-    setState({ ...state, played: parseFloat(newValue / 100) });
-  };
-
-  const handleSeekMouseDown = (e) => {
-    setState({ ...state, seeking: true });
-  };
-
-  const handleSeekMouseUp = (e, newValue) => {
-    console.log({ value: e.target });
-    setState({ ...state, seeking: false });
-    // console.log(sliderRef.current.value)
-    playerRef.current.seekTo(newValue / 100, "fraction");
-  };
-
-  const handleDuration = (duration) => {
-    setState({ ...state, duration });
-  };
-
-  const handleVolumeSeekDown = (e, newValue) => {
-    setState({ ...state, seeking: false, volume: parseFloat(newValue / 100) });
-  };
-  const handleVolumeChange = (e, newValue) => {
-    // console.log(newValue);
-    setState({
-      ...state,
-      volume: parseFloat(newValue / 100),
-      muted: newValue === 0 ? true : false,
-    });
-  };
-
-  const toggleFullScreen = () => {
-    screenful.toggle(playerContainerRef.current);
-  };
-
-  const handleMouseMove = () => {
-    console.log("mousemove");
-    controlsRef.current.style.visibility = "visible";
-    count = 0;
-  };
-
-  const hanldeMouseLeave = () => {
-    controlsRef.current.style.visibility = "hidden";
-    count = 0;
-  };
-
-  const handleDisplayFormat = () => {
-    setTimeDisplayFormat(
-      timeDisplayFormat == "normal" ? "remaining" : "normal"
-    );
-  };
-
-  const handlePlaybackRate = (rate) => {
-    setState({ ...state, playbackRate: rate });
-  };
-
   const hanldeMute = () => {
     setState({ ...state, muted: !state.muted });
   };
-
-  const addBookmark = () => {
-    const canvas = canvasRef.current;
-    canvas.width = 160;
-    canvas.height = 90;
-    const ctx = canvas.getContext("2d");
-
-    ctx.drawImage(
-      playerRef.current.getInternalPlayer(),
-      0,
-      0,
-      canvas.width,
-      canvas.height
-    );
-    const dataUri = canvas.toDataURL();
-    canvas.width = 0;
-    canvas.height = 0;
-    const bookmarksCopy = [...bookmarks];
-    bookmarksCopy.push({
-      time: playerRef.current.getCurrentTime(),
-      display: format(playerRef.current.getCurrentTime()),
-      image: dataUri,
-    });
-    setBookmarks(bookmarksCopy);
-  };
-
-  const currentTime =
-    playerRef && playerRef.current
-      ? playerRef.current.getCurrentTime()
-      : "00:00";
-
-  const duration =
-    playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
-  const elapsedTime =
-    timeDisplayFormat == "normal"
-      ? format(currentTime)
-      : `-${format(duration - currentTime)}`;
-
-  const totalDuration = format(duration);
-
-
-
-
-
-
-  // const { iconimage } = useSiteMetadata()
 
   
 
@@ -712,27 +378,23 @@ const classes = useStyles();
 
 
 
-<div
+{/* <div
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
           ref={playerContainerRef}
           className={classes.playerWrapper}
-        >
+        > */}
           <ReactPlayer
-            ref={playerRef}
+            // ref={playerRef}
             width="100%"
             height="100%"
             url={iframeUrl}
             // url="https://youtu.be/lZzai6at_xA"
-            pip={pip}
             playing={playing}
             controls={true}
-            light={light}
+            light={false}
             loop={loop}
-            playbackRate={playbackRate}
-            volume={volume}
             muted={muted}
-            onProgress={handleProgress}
             config={{
               file: {
                 attributes: {
@@ -740,58 +402,43 @@ const classes = useStyles();
                 },
               },
               youtube: {
-                                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
-                                },
+                playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+              },
             }}
+
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'3', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:'30%'}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
   
           <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             
   
-            {/* <div style={{position:'relative', maxWidth:'100%', margin:' 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src={iconimage} width="200px" height="150px" alt="VidSock" style={{ width:'80%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-  </div> */}
+            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  </div>
         
-            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'3vw'}}>Click To Play</span>
+            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
             </div>
             </button>}
-              // light="../../assets/allin60seconds.png"
+         
           />
 
 
 
-          <Controls
+<Controls
             ref={controlsRef}
-            onSeek={handleSeekChange}
-            onSeekMouseDown={handleSeekMouseDown}
-            onSeekMouseUp={handleSeekMouseUp}
-            onDuration={handleDuration}
-            onRewind={handleRewind}
             onPlayPause={handlePlayPause}
-            onFastForward={handleFastForward}
             playing={playing}
             played={played}
-            elapsedTime={elapsedTime}
-            totalDuration={totalDuration}
             onMute={hanldeMute}
             muted={muted}
-            onVolumeChange={handleVolumeChange}
-            onVolumeSeekDown={handleVolumeSeekDown}
-            onChangeDispayFormat={handleDisplayFormat}
-            playbackRate={playbackRate}
-            onPlaybackRateChange={handlePlaybackRate}
-            onToggleFullScreen={toggleFullScreen}
-            volume={volume}
-            onBookmark={addBookmark}
           />
         </div>
 
 
 
-      </div>
+      {/* </div> */}
 
 
 
