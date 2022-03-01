@@ -21,7 +21,21 @@ const Controls = forwardRef(
 
 
     return (
-      <div ref={ref} className="" style={{width:'100vw', height:'', border:'1px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}>
+
+<>
+      {playing ? (
+        <>
+    
+        </>
+      ) : (
+  <>
+  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center' }}>allin60.com</div>
+  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center' }}></div>
+  </>
+      )}
+
+
+      <div ref={ref} className="" style={{width:'100vw', height:'', border:'0px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}>
        
                 <div
                   onClick={onPlayPause}
@@ -38,11 +52,21 @@ const Controls = forwardRef(
                 >
                   {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
                   {playing ? (
+                    <>
                     <MdPause style={{fontSize:'100px', position:'absolute'}} />
+                    </>
                   ) : (
-                    <MdPlayArrow style={{fontSize:'100px', position:'absolute'}}  />
+              <>
+              <MdPlayArrow style={{fontSize:'100px', position:'absolute'}}  />
+              </>
                   )}
                 </div>
+
+
+
+      
+
+
 
 
                 <div
@@ -70,6 +94,8 @@ const Controls = forwardRef(
                 </div>
 
       </div>
+      
+      </>
     );
   }
 );

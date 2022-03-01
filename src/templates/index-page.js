@@ -284,12 +284,13 @@ const HomePage = ({ data }) => {
 {/* <div className="RArrow"><span></span></div> */}
 
 
-<div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'45vh', position:'absolute', top:'0', zIndex:''}}>
 
 <ReactPlayer
             // ref={playerRef}
             width="100%"
             height="100%"
+   
             // url={iframeUrl}
             url="https://youtu.be/BAwoqiMgDk4"
             playing={playing}
@@ -304,7 +305,7 @@ const HomePage = ({ data }) => {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, autoplay:1, controls:0, start:0, end:2000, mute:1  }
+                playerVars: { showinfo:0, autoplay:1, controls:0, start:10, end:2000, mute:1  }
               },
             }}
 
