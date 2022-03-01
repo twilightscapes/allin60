@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { graphql } from "gatsby"
 import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
 import { ImPlay } from "react-icons/im"
 // import { StaticImage } from "gatsby-plugin-image"
-
+import Controls from "../components/Controls";
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 import BlogListHome from "../components/blog-list-home"
@@ -206,42 +206,40 @@ const HomePage = ({ data }) => {
     
 
 
-    const [state] = useState({
+    const [state, setState] = useState({
       playing: true,
-      controls: true,
-      light: true,
-      muted: false,
+      controls: false,
+      light: false,
+      muted: true,
       loop: true,
     });
-    
     // const playerRef = useRef(null);
-    // const controlsRef = useRef(null);
+    const controlsRef = useRef(null);
     
     const {
       playing,
-      // controls,
-      // light,
+      controls,
+      light,
       muted,
       loop,
-      // playbackRate,
-      // pip,
-      // played,
-      // seeking,
-      // volume,
+      playbackRate,
+      pip,
+      played,
+      seeking,
+      volume,
     } = state;
     
-    // const handlePlayPause = () => {
-    //   setState({ ...state, playing: !state.playing });
-    // };
+    const handlePlayPause = () => {
+      setState({ ...state, playing: !state.playing });
+    };
     
-    // const hanldeMute = () => {
-    //   setState({ ...state, muted: !state.muted });
-    // };
+    const hanldeMute = () => {
+      setState({ ...state, muted: !state.muted });
+    };
     
     const { iconimage } = useSiteMetadata()
 
  
-
   
   return (
 
@@ -276,16 +274,7 @@ const HomePage = ({ data }) => {
 {/* uCf3Q43fC_4 cool train */}
 
 
-{/* Gg-RA_O16F4  CONTENDER - blue vert lines*/}
-{/* c_V1iD6F1kk  CONTENDER - cool animated interface*/}
-{/* naD-VHWSoZM  CONTENDER - spiral interface crash*/}
-{/* J-FkR8L2X5E */}
-{/* /Im7slkFMtI8  CONTENDER - COOL blue power lines*/}
-{/* oMXdaALcpew  CONTENDER - circuit board*/}
-{/* JzRUbdqa_hU CONTENDER - circuit board 2*/}
-{/* Zvsfrz2jD7w  CONTENDER - circuit board 3*/}
-{/* 5jlOX5z7yVo */}
-{/* S5S6s5dZXNM  default */}
+
 
 
 
@@ -298,13 +287,14 @@ const HomePage = ({ data }) => {
 <div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
 
 <ReactPlayer
-         className='frontbg2 '
-         url="https://youtu.be/LltRzgvyrps"
-         width="100%"
-         height="100vh"
-         playing={playing}
-            controls={false}
-            light={false}
+            // ref={playerRef}
+            width="100%"
+            height="100%"
+            // url={iframeUrl}
+            url="https://youtu.be/BAwoqiMgDk4"
+            playing={playing}
+            controls={controls}
+            light={light}
             loop={loop}
             muted={muted}
             config={{
@@ -314,7 +304,7 @@ const HomePage = ({ data }) => {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, controls:0, start:0, end:2000, mute:1 }
+                playerVars: { showinfo:0, autoplay:1, controls:0, start:0, end:2000, mute:1  }
               },
             }}
 
@@ -333,10 +323,28 @@ const HomePage = ({ data }) => {
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
             </div>
             </button>}
-         
-          /></div>
 
 
+          />
+          
+
+          
+          
+          
+          </div>
+
+
+
+          <Controls
+            ref={controlsRef}
+            onPlayPause={handlePlayPause}
+            playing={playing}
+            played={played}
+            onMute={hanldeMute}
+            muted={muted}
+          />
+
+          
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
 
 

@@ -21,7 +21,7 @@ const Controls = forwardRef(
 
 
     return (
-      <div ref={ref} className="" style={{width:'100vw', height:'100vh', border:'0px solid red', display:'grid', placeContent:'center',zIndex:'105', top:'0', position:'absolute'}}>
+      <div ref={ref} className="" style={{width:'100vw', height:'', border:'1px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}>
        
                 <div
                   onClick={onPlayPause}
