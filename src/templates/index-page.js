@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 
 import Newsignup from "../components/newssign"
-
+import BackgroundImage from 'gatsby-background-image'
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import Panel1 from "../components/panel1"
@@ -88,7 +88,13 @@ export const pageQuery = graphql`
     }
 
 
-
+    desktop: file(relativePath: { eq: "curtains.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
 
 
 
@@ -175,7 +181,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-    // const imageData = data.desktop.childImageSharp.fluid
+    const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
     // const YouTubeStart = frontmatter.youtubestart
@@ -262,12 +268,12 @@ const HomePage = ({ data }) => {
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
-{/* <BackgroundImage
+<BackgroundImage
       Tag="section"
       className=""
       fluid={imageData}
       backgroundColor={`#111`}
-     > */}
+     >
 
 
 
@@ -277,7 +283,7 @@ const HomePage = ({ data }) => {
 
   <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">What Can You Do</div> <div className="lineTwo">In 60 Seconds?</div></h1>
 </div>
-{/* </BackgroundImage> */}
+</BackgroundImage>
 
 
 <div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>

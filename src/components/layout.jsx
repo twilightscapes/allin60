@@ -28,7 +28,7 @@ import { CartButton } from "./cart-button"
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
 // import { Link } from "gatsby-plugin-anchor-links"
-import "../assets/scss/style.scss"
+
 // import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
 // import Install from './install-discount'

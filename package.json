@@ -15,6 +15,7 @@
     "commentbox.io": "^2.1.0",
     "debounce": "^1.2.1",
     "gatsby": "^4.5",
+    "gatsby-background-image": "^1.6.0",
     "gatsby-cli": "^4.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-gtag": "^4.4.0",
