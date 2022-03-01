@@ -1,19 +1,20 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-
+import React, { useState } from "react";
+import { graphql } from "gatsby"
+import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
-
-import { StaticImage } from "gatsby-plugin-image"
+import { ImPlay } from "react-icons/im"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
-
+import BlogListHome from "../components/blog-list-home"
 import Newsignup from "../components/newssign"
-import BackgroundImage from 'gatsby-background-image'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import FrontLoader from "../../static/assets/grid-loader.svg"
 
-import Panel1 from "../components/panel1"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+import BackgroundImage from 'gatsby-background-image'
+// import Panel1 from "../pages/panel1"
 
 
 
@@ -21,7 +22,7 @@ import Panel1 from "../components/panel1"
 // import Countdown from 'react-countdown'
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String! ) {
+  query HomeQueryHomeQuery($id: String! ) {
     
     
     site {
@@ -37,6 +38,9 @@ export const pageQuery = graphql`
       }
 
 
+
+
+      
 
       
 
@@ -88,6 +92,11 @@ export const pageQuery = graphql`
     }
 
 
+
+
+
+  
+
     desktop: file(relativePath: { eq: "curtains.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
@@ -95,7 +104,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
 
 
     
@@ -161,11 +169,12 @@ export const pageQuery = graphql`
 const HomePage = ({ data }) => {
 
 
+ 
 
-
+ const imageData = data.desktop.childImageSharp.fluid
 
   // const { postcount } = useSiteMetadata()
-  const { markdownRemark, posts } = data // data.markdownRemark holds your post data
+  const { markdownRemark, posts } = data 
   const { frontmatter, excerpt } = markdownRemark
   // const Image = frontmatter.featuredImage
   //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -181,7 +190,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-    const imageData = data.desktop.childImageSharp.fluid
+    // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
     // const YouTubeStart = frontmatter.youtubestart
@@ -197,7 +206,39 @@ const HomePage = ({ data }) => {
     
 
 
-
+    const [state] = useState({
+      playing: true,
+      controls: true,
+      light: true,
+      muted: false,
+      loop: true,
+    });
+    
+    // const playerRef = useRef(null);
+    // const controlsRef = useRef(null);
+    
+    const {
+      playing,
+      // controls,
+      // light,
+      muted,
+      loop,
+      // playbackRate,
+      // pip,
+      // played,
+      // seeking,
+      // volume,
+    } = state;
+    
+    // const handlePlayPause = () => {
+    //   setState({ ...state, playing: !state.playing });
+    // };
+    
+    // const hanldeMute = () => {
+    //   setState({ ...state, muted: !state.muted });
+    // };
+    
+    const { iconimage } = useSiteMetadata()
 
  
 
@@ -250,15 +291,57 @@ const HomePage = ({ data }) => {
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder" style={{position:'relative',}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', }}>
 {/* <div className="RArrow"><span></span></div> */}
+
+
+<div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
+
+<ReactPlayer
+         className='frontbg2 '
+         url="https://youtu.be/LltRzgvyrps"
+         width="100%"
+         height="100vh"
+         playing={playing}
+            controls={false}
+            light={false}
+            loop={loop}
+            muted={muted}
+            config={{
+              file: {
+                attributes: {
+                  crossorigin: "anonymous",
+                },
+              },
+              youtube: {
+                playerVars: { showinfo:0, controls:0, start:0, end:2000, mute:1 }
+              },
+            }}
+
+          playsinline
+            playIcon={
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+  
+          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+            
+  
+            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  </div>
+        
+            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+            </div>
+            </button>}
+         
+          /></div>
 
 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
 
 
 
-<div className="" style={{height:'1px'}}></div>
+<div className="" style={{height:'100%'}}></div>
 
 
 
@@ -286,34 +369,35 @@ const HomePage = ({ data }) => {
 </BackgroundImage>
 
 
-<div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
-{/* <a title="Shawshank Redemption by Stephen King - All In 60 Seconds" href="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+
+{/* <div className="custom-cursor fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+
   <Panel1 />
-  {/* </a> */}
-</div>
+
+</div> */}
 
 
 
 {/* <Panel2 /> */}
 
 
-<div>
+{/* <div>
 <Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
-{/* <Panel3 /> */}
+<Panel3 />
 <StaticImage className=""
 alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
 </Link>
-</div>
+</div> */}
 
 
 
-<div>
+{/* <div>
 <Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
-{/* <Panel3 /> */}
+<Panel3 />
 <StaticImage className=""
 alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
 </Link>
-</div>
+</div> */}
 
 
 {/* <a href="https://tron.allin60.com/">
@@ -322,12 +406,12 @@ alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static
 </a> */}
 
 
-<div>
+{/* <div>
 <Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 <StaticImage className=""
 alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
 </Link>
-</div>
+</div> */}
 
 
 {/* <a href="https://tron.allin60.com/">
@@ -336,46 +420,67 @@ alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/as
 </a> */}
 
 
-<div>
+{/* <div>
 <Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 <StaticImage className=""
 alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
 </Link>
-</div>
+</div> */}
 
 
-{/* <BlogListHome data={posts} /> */}
+<BlogListHome data={posts} />
 
 
 {/* <div style={{overflow:'hidden'}}>
 <VideoPage />
 </div> */}
 
-<div className="pagination" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'', paddingTop:'1vh', background:''}}>
-<Link to="/posts/2/" title="View Archives">
+{/* <div className="pagination tronpanel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100vh', paddingTop:'1vh', background:''}}>
+<Link to="/minutes/2/" title="View Archives">
   <div  className="tronText" style={{fontSize:'3vw', marginTop:'1rem', lineHeight:'130%'}}><span style={{fontSize:'65%'}}>viewing:</span><br />Lastest Minutes</div>
 
    
-    <div  className="tronText" style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'10vh auto', padding:'10% 10%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
+    <div  className="tronText " style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'10vh auto', padding:'10% 10%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
     <h1 className="">View All Minutes?</h1>
     </div>
 </Link>
 
-</div>
+</div> */}
 
 
-<div className="donation2" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'', paddingTop:'0', background:''}}>
-{/* <Link to="/contact"> */}
+<div className="allin60panel actionJackson custom-cursor" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100vh', paddingTop:'0', background:''}}>
 <div style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'5vh auto', padding:'4% 5%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
   <Newsignup />
   </div>
-{/* </Link> */}
+</div>
+
+
+
+
+<div className="allin60panel actionJackson frontdrop" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100vh', paddingTop:'0', background:''}}>
+
+  spacer
 </div>
 
         
 </div>
 
 </div>
+
+
+<div>
+
+<h1>Tron is an American film in the <strong>science fiction genre</strong>. It is a media franchise created by Steven Lisberger, which began with <strong>the original 1982 film: TRON</strong>. The original film portrays Jeff Bridges as Kevin Flynn, a computer programmer/hacker and video game developer who is accidentally transported into a digital virtual reality known as <em>"The Grid"</em>.  Once on the Grid, he interacts with programs, many that he wrote,  in his amazing quest to escape the Grid and return to his young son, Sam.</h1>
+
+<h2>Produced and released by Walt Disney Pictures, Tron became a cult film and was acclaimed for its groundbreaking visual effects and extensive use of early computer-generated imagery. It was followed by the 2010 sequel film Tron: Legacy, which takes place 28 years after the events of the first film and depicts the attempts of Flynn's son Sam in retrieving his lost father from within the Grid, now ruled by a corrupt program.</h2>
+
+<h3>The film series has spawned various tie-ins, including video games, a comic book miniseries, music recording albums, theme park attractions, and an animated television series that aired on Disney XD in June 2012. A third feature film is in development.</h3>
+
+
+</div>
+
+
+
 
     </Layout>
   )

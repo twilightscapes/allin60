@@ -196,12 +196,12 @@ export function Footer() {
 
 
 
-    <footer className="" style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
+      <footer className="" style={{display:'flex', flexDirection:'column', padding:'1rem 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
 
     
-      <div className="">
+      <div className="" style={{textAlign:'center'}}>
 
 
       <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me - I&nbsp;<FaHeart />&nbsp;feedback!</Link>

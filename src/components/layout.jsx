@@ -6,10 +6,10 @@ import { Seo } from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-import { AiOutlineFundProjectionScreen } from "react-icons/ai"
-import { GiBackwardTime } from "react-icons/gi"
-import { BsStopwatch } from "react-icons/bs"
-import { BiMoviePlay } from "react-icons/bi"
+// import { AiOutlineFundProjectionScreen } from "react-icons/ai"
+// import { GiBackwardTime } from "react-icons/gi"
+// import { BsStopwatch } from "react-icons/bs"
+// import { BiMoviePlay } from "react-icons/bi"
 
 
 // import TwilightLogo from "../../static/assets/TSidebarHover.svg"
@@ -32,7 +32,7 @@ import { CartButton } from "./cart-button"
 // import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
 // import Install from './install-discount'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
@@ -185,24 +185,27 @@ Contact Me<span>Ordering Questions?</span>
 <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/">
       <div style={{display:'flex', gap:'10px'}}>
-        <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} />View By Project
+        {/* <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} /> */}
+        View By Project
         </div>
               </Link>
       </li> 
 
 
-{/* <li className="carto">
+<li className="carto">
       <Link className="navbar-item txtshadow" to="/posts/">
       <div style={{display:'flex', gap:'10px'}}>
-      <BsStopwatch style={{fontSize:'2vw'}} />View All Minutes
+      {/* <BsStopwatch style={{fontSize:'2vw'}} /> */}
+      View All Minutes
       </div>
         </Link>
-</li> */}
+</li>
 
 <li className="carto" style={{textAlign:'center'}}>
       <Link className="navbar-item txtshadow" to="/posts/">
       <div style={{display:'flex', gap:'10px'}}>
-      <GiBackwardTime style={{fontSize:'2vw'}} />Latest Minutes
+      {/* <GiBackwardTime style={{fontSize:'2vw'}} /> */}
+      Latest Minutes
       </div>
         </Link>
 </li>
@@ -211,7 +214,8 @@ Contact Me<span>Ordering Questions?</span>
 <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/about/">
               <div style={{display:'flex', gap:'10px'}}>
-              <BiMoviePlay style={{fontSize:'2vw'}}  />About This Site
+              {/* <BiMoviePlay style={{fontSize:'2vw'}}  /> */}
+              About This Site
               </div>
               </Link>
       </li> 
