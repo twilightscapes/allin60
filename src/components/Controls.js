@@ -34,8 +34,8 @@ const Controls = forwardRef(
   </>
       )}
 
-
-      <div ref={ref} className="" style={{width:'100vw', height:'', border:'0px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}>
+{/* 
+      <div ref={ref} className="" style={{width:'100vw', height:'', border:'0px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}> */}
        
                 <div
                   onClick={onPlayPause}
@@ -43,21 +43,28 @@ const Controls = forwardRef(
                   style={{
                     position:'absolute',
                     zIndex:'105',
-                    border:'2px solid yellow',
+                    left:'4vw',
+                    bottom:'5vh',
+                    border:'2px solid ',
                     display:'grid',
                     placeContent:'center',
-                    width:'100px',
-                    height:'100px',
+                    width:'60px',
+                    height:'60px',
+                    borderRadius:'50px',
+                    padding:'10px',
+                    opacity: '.8',
+                    filter:'drop-shadow(0px 0px 10px #fff)',
+                    textShadow:'2px 2px 10px var(--primary-color)',
                 }}
                 >
                   {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
                   {playing ? (
                     <>
-                    <MdPause style={{fontSize:'100px', position:'absolute'}} />
+                    <MdPause style={{fontSize:'56px', position:'absolute'}} />
                     </>
                   ) : (
               <>
-              <MdPlayArrow style={{fontSize:'100px', position:'absolute'}}  />
+              <MdPlayArrow style={{fontSize:'56px', position:'absolute'}}  />
               </>
                   )}
                 </div>
@@ -76,24 +83,30 @@ const Controls = forwardRef(
                   style={{
                     position:'absolute',
                     zIndex:'105',
-                    right:'0',
-                    border:'2px solid yellow',
+                    right:'4vw',
+                    bottom:'5vh',
+                    border:'2px solid ',
                     display:'grid',
                     placeContent:'center',
-                    width:'100px',
-                    height:'100px',
+                    width:'60px',
+                    height:'60px',
+                    borderRadius:'50px',
+                    padding:'10px',
+                    opacity: '.8',
+                    filter:'drop-shadow(0px 0px 10px #fff)',
+                    textShadow:'2px 2px 10px var(--primary-color)',
                 }}
                 >
                   {muted ? (
-                    <MdVolumeOff fontSize="large" style={{fontSize:'100px', position:'absolute'}}  />
+                    <MdVolumeOff fontSize="large" style={{fontSize:'56px', position:'absolute'}}  />
                   ) : volume > 0.5 ? (
-                    <MdVolumeUp fontSize="large" style={{fontSize:'100px', position:'absolute'}}  />
+                    <MdVolumeUp fontSize="large" style={{fontSize:'56px', position:'absolute'}}  />
                   ) : (
-                    <MdVolumeDown fontSize="large" style={{fontSize:'100px', position:'absolute'}}  />
+                    <MdVolumeDown fontSize="large" style={{fontSize:'56px', position:'absolute'}}  />
                   )}
                 </div>
 
-      </div>
+      {/* </div> */}
       
       </>
     );
