@@ -183,7 +183,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto" style={{textAlign:''}}>
-              <Link className="navbar-item txtshadow" to="/">
+              <Link className="navbar-item txtshadow" to="/projects">
       <div style={{display:'flex', gap:'10px'}}>
         {/* <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} /> */}
         View By Project
@@ -193,22 +193,20 @@ Contact Me<span>Ordering Questions?</span>
 
 
 <li className="carto">
-      <Link className="navbar-item txtshadow" to="/posts/">
+      <Link className="navbar-item txtshadow" to="/minutes/">
       <div style={{display:'flex', gap:'10px'}}>
-      {/* <BsStopwatch style={{fontSize:'2vw'}} /> */}
       View All Minutes
       </div>
         </Link>
 </li>
 
-<li className="carto" style={{textAlign:'center'}}>
-      <Link className="navbar-item txtshadow" to="/posts/">
+{/* <li className="carto" style={{textAlign:'center'}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
       <div style={{display:'flex', gap:'10px'}}>
-      {/* <GiBackwardTime style={{fontSize:'2vw'}} /> */}
-      Latest Minutes
+      Current Minutes
       </div>
         </Link>
-</li>
+</li> */}
 
 
 <li className="carto" style={{textAlign:'center'}}>
