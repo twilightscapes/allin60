@@ -3990,7 +3990,7 @@ height:100vh;
 
             /* HORIZONTAL PANELS */
             .horizontal-scroll-wrapper  img{
-              cursor:zoom-in !important; 
+              /* cursor:zoom-in !important;  */
               object-fit: contain !important;
               /* max-height: 65vh ; */
              }
@@ -4533,7 +4533,7 @@ height:100vh;
 }
 
 .horizontal-scroll  img{
-  cursor:zoom-in !important; 
+  /* cursor:zoom-in !important;  */
   object-fit: contain !important;
   max-height: 85vh;
  }

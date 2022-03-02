@@ -4,10 +4,10 @@ import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Footer } from "../components/footer";
 import { Seo } from "../components/seo"
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
-import Controls from "../components/Controls";
+// import Controls from "../components/Controls";
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 import BlogListHome from "../components/blog-list-home"
@@ -16,7 +16,7 @@ import Newsignup from "../components/newssign"
 import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import BackgroundImage from 'gatsby-background-image'
-// import Panel1 from "../pages/panel1"
+import Panel1 from "../components/panel1"
 
 
 
@@ -405,6 +405,10 @@ showCaption: false
 
 <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'45vh', position:'absolute', top:'0', zIndex:''}}>
 
+
+
+
+
 {/* <ReactPlayer
             // ref={playerRef}
             width="100%"
@@ -484,6 +488,7 @@ showCaption: false
       className=""
       fluid={imageData}
       backgroundColor={`#111`}
+      style={{}}
      >
 
 
@@ -498,11 +503,11 @@ showCaption: false
 
 
 
-{/* <div className="custom-cursor fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<div className="custom-cursor fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 
   <Panel1 />
 
-</div> */}
+</div>
 
 
 
