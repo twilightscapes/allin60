@@ -586,10 +586,10 @@ const svgUrl = frontmatter.svgImage.publicURL
             url={iframeUrl}
             // url="https://youtu.be/lZzai6at_xA"
             playing={playing}
-            controls={false}
+            controls={true}
             light={light}
             loop={loop}
-            muted={true}
+            muted={muted}
             config={{
               file: {
                 attributes: {
@@ -619,7 +619,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
             </button>}
-        //  light="../assets/transparent.png"
+         light="../assets/transparent.png"
           />
 
 

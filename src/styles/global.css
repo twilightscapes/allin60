@@ -19,8 +19,8 @@ body {
 
 
 body.blogpost, body.homepage{
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
+  /* overflow-y: hidden !important;
+  overflow-x: hidden !important; */
 }
 
 /* body.homepage, body.bloglist {

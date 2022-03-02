@@ -10,12 +10,12 @@ youtuber: ""
 youtubeautostart: "1"
 title: All In 60 Seconds - allin60.com
 svgImage: /assets/null.svg
-showPosts: true
+showPosts: "1"
 cta:
   ctaText: Fight for the user!
   ctaLink: /photos/
 youtubeend: ""
-showFeature: ""
+showFeature: "1"
 nftredeem: ""
 youtubecontrols: ""
 template: index-page
