@@ -74,18 +74,17 @@ const CustomBox = styled.div`
 
 
 `
+
+
+
 const Pagination = props => (
-  <div className="pagination -post" style={{maxWidth:''}}>
+  <div className="pagination -post1" style={{maxWidth:''}}>
     <ul className="" style={{display:'flex', justifyContent:'end', gap:"30px"}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
-        <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
-          <Link  to= {props.previous.frontmatter.slug + "/"} rel="prev">
-            <p
-              style={{
-                color: "inherit",
-                fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'
-              }}
-            >
+        // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
+        <li style={{fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}>
+          <Link style={{color:'#fff'}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
+            <p>
               <span className="icon -left">
                 <RiArrowLeftLine />
               </span>{" "}
@@ -98,12 +97,10 @@ const Pagination = props => (
         </li>
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
+        <li style={{fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}>
           <Link  to={props.next.frontmatter.slug + "/"} rel="next">
             <p
               style={{
-                color: "inherit",
-                fontSize:'14px', fontWeight:'', padding:'0 .5rem', filter:'drop-shadow(2px 2px 2px #000)'
               }}
             >
               Next Up{" "}
@@ -266,6 +263,8 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playsinline
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+
+
 {/*   
         <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
           
@@ -297,7 +296,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     return (
       <div>
               <ReactPlayer
-              className='react-player661'
+              className='react repo'
               // url={iframeUrl}
               // style={{position:'absolute', top:'0', zIndex:'100'}}
               url={[
@@ -369,12 +368,12 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-130px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-200px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
 
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Audio Extras</div></div>
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Audio Extras</div></div>
           
           </div>
           </button>}

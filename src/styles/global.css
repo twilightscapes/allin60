@@ -1168,10 +1168,13 @@ display: none;
 
 .repo iframe{
   position:absolute;
-  margin-top:50px;
-  z-index:;
-
+  padding:0;
+  bottom:0;
+  height:100vh;
+  width:100vw;
+  /* padding-top:200px; */
   }
+  
 
 .fullscreenButt{
   position:fixed;
@@ -1736,8 +1739,6 @@ border: 0px solid red;
     /* background:rgba(145, 26, 103, 0.829) !important; */
 
   }
-
-
 
 
 

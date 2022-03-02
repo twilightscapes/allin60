@@ -53,12 +53,7 @@ const Controls = forwardRef(
                     placeContent:'center',
                     width:'60px',
                     height:'60px',
-                    borderRadius:'50px',
-                    padding:'10px',
-                    opacity: '.8',
-                    filter:'drop-shadow(0px 0px 10px #fff)',
-                    textShadow:'2px 2px 10px var(--primary-color)',
-                    cursor:'pointer',
+                    fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer',
                 }}
                 >
                   {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -94,12 +89,7 @@ const Controls = forwardRef(
                     placeContent:'center',
                     width:'60px',
                     height:'60px',
-                    borderRadius:'50px',
-                    padding:'10px',
-                    opacity: '.8',
-                    filter:'drop-shadow(0px 0px 10px #fff)',
-                    textShadow:'2px 2px 10px var(--primary-color)',
-                    cursor:'pointer',
+                    fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer',
                 }}
                 >
                   {muted ? (

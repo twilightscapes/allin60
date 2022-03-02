@@ -5,6 +5,7 @@ slug: /mystery-science-theater-3022
 date: 2021-10-18 10:43
 description: A bit of a tribute to the great MST3000
 youtuber: "https://youtu.be/XjuLZwlDxh8"
+youtuber2: "3lyudrx1pJo"
 youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/yvjE8uSb8G4"
 youtubersuggestion2: "https://youtu.be/3lyudrx1pJo"
@@ -16,7 +17,7 @@ youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: ""
+comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/mystery-science.jpg
