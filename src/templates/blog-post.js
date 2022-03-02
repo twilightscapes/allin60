@@ -5,7 +5,7 @@ import React, { useState, useRef } from "react";
 
 import Controls from "../components/Controls";
 
-
+import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -17,13 +17,13 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Countdown from 'react-countdown'
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-// import { AiOutlineAudioMuted } from "react-icons/ai"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
-// import {CopyToClipboard} from 'react-copy-to-clipboard'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 
-// import YouTubed from "../pages/youtube"
+import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 // import ShareSocial from '../components/share' 
@@ -53,6 +53,10 @@ const CustomBox = styled.div`
 }
 
 
+
+// .pagination{ position:relative; top:-205px;}
+
+
 @media (max-width: 48em) {
   .wrap-element {
     padding-bottom: 0;
@@ -65,7 +69,7 @@ const CustomBox = styled.div`
 
 
 @media (min-width: 1300px) {
-  .pagination{display:; position:relative; top:-185px; z-index:;}
+  .pagination{position:relative; top:-185px;}
   }
 
 
@@ -134,9 +138,9 @@ const Post = ({ data, pageContext }) => {
     : ""
 
 
-    // const NftLink = frontmatter.nftlink
-    // const NftRedeem = frontmatter.nftredeem
-    // const NftDrop = frontmatter.nftdrop
+    const NftLink = frontmatter.nftlink
+    const NftRedeem = frontmatter.nftredeem
+    const NftDrop = frontmatter.nftdrop
 
 
 
@@ -151,10 +155,10 @@ const Post = ({ data, pageContext }) => {
 // }
 
 
-// const IsNft = frontmatter.isnftforsale
+const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
-// const ShareThis = frontmatter.shareable
-// const Comments = frontmatter.comments
+const ShareThis = frontmatter.shareable
+const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
@@ -162,67 +166,236 @@ const YouTubeMute = frontmatter.youtubemute
 const YouTubeControls = frontmatter.youtubecontrols
 const YouTubeAutostart = frontmatter.youtubeautostart
 
-// const Suggestion1 = frontmatter.youtubersuggestion1
-// const Suggestion2 = frontmatter.youtubersuggestion2
-// const Suggestion3 = frontmatter.youtubersuggestion3
+const Suggestion1 = frontmatter.youtubersuggestion1
+const Suggestion2 = frontmatter.youtubersuggestion2
+const Suggestion3 = frontmatter.youtubersuggestion3
 
 
+if (Suggestion1) {
+  <ShowSuggestion />
+}
+else{
 
+  
+}
 
+function ShowSuggestion() {
 
-function Iframer2() {
-  const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
   return (
+<div style={{}}>
+  
+
+  
+<div style={{width:'100%', maxWidth:'400px', margin:'0 auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', zIndex:'1', display:'grid', justifyContent:'center'}}>
+<IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
+<IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
+  
+  
+  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This is interactive!</span> 
+<br />
+
+We recommend these alternatives:
+<br /><br />
+Click to Copy:<br />
+<CopyToClipboard text={Suggestion1}>
+  <button>{Suggestion1} </button>
+</CopyToClipboard><br />
 
 
-<ReactPlayer
-        className='react-player1'
-        url={iframeUrl2}
-        width="100%"
-        height="100%"
-        style={{zIndex:'0', position:'relative'}}
-        playing
-        playsinline
-        config={{
-          youtube: {
-            playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:0  }
-          },
-        }}
-        playIcon={
-          <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
-            
-    
-    
-    
-      <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-        <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-    
-        <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To Play</span>
-        
-        </div>
-        </button>}
-    
-    
-    
-          light="../assets/transparent.png"
-        /> 
+  <CopyToClipboard text={Suggestion2}>
+  <button>{Suggestion2} </button>
+</CopyToClipboard><br />
 
+<CopyToClipboard text={Suggestion3}>
+  <button>{Suggestion3} </button>
+</CopyToClipboard><br />
 
+<br />
+Add your own in the comments below!
 
+</div>
 
+<span style={{fontSize:'150%'}}></span>
+<div className="mobilespace" style={{ border:'0px solid red'}}></div>
+</div>
   )
 }
 
+const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
+  const YouTube = frontmatter.youtuber
+
+
+
+  if (!YoutuberSuggestion1) {
+    <IframeSuggestions />
+  }
+  else{
+  
+    
+  }
+
+
+
+
+  function Iframer2() {
+    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
+    return (
+
+<div>
+<ReactPlayer
+          className='react-player66'
+          url={iframeUrl2}
+          width="100%"
+          height="100%"
+
+          // playing={playing}
+          // controls={true}
+          // light={true}
+          // loop={loop}
+          // muted={muted}
+          config={{
+            youtube: {
+              playerVars: { showinfo:1, autoplay:0, controls:1, start:0, mute:0  }
+            },
+          }}
+          playsinline
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+{/*   
+        <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
+          
+
+          {/* <div style={{position:'relative', maxWidth:'100vw', height:'70vh', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div> */}
+      
+          <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%'}}>Click To Play
+
+  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
+          {/* </div> */}
+
+
+          </button>}
+       light="../assets/transparent.png"
+          />
+</div>
+
+
+
+    )
+  }
+
+
+
+  function IframeSuggestions() {
+    
+    return (
+      <div>
+              <ReactPlayer
+              className='react-player661'
+              // url={iframeUrl}
+              // style={{position:'absolute', top:'0', zIndex:'100'}}
+              url={[
+                iframeUrl,
+                YoutuberSuggestion1,
+                YoutuberSuggestion2,
+                YoutuberSuggestion3
+              ]}
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              
+    
+              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    </div>
+          
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                // light="../assets/transparent.png"
+              />
+
+              
+</div>
+
+    )
+
+  }
+
+
+
+  function Iframer3() {
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    return (
+
+<ReactPlayer
+          className='audioframe'
+          url={iframeUrl3}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          width="150px"
+          height="150px"
+          style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          playIcon={
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+          
+        <div className="" style={{position:'absolute', top:'-70px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          
+      
+          {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
+
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Click For Audio</div></div>
+          
+          </div>
+          </button>}
+   
+            light="../assets/transparent.png"
+          />
+     
+
+
+
+
+    )
+  }
 
 
 const svgUrl = frontmatter.svgImage.publicURL
   
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
+    
 
 
-  // const YouTube2 = frontmatter.youtuber2
-  // const AudioStart = frontmatter.audiostart
-  // const AudioEnd = frontmatter.audioend
+  const YouTube2 = frontmatter.youtuber2
+  const AudioStart = frontmatter.audiostart
+  const AudioEnd = frontmatter.audioend
 
   
 
@@ -306,7 +479,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 <div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'0', right:'', display:'flex', justifyContent:'center', width:'300px', margin:'0 auto', gap:'30px'}}>
-  <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
+  <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>contact</Link>
   <Link to="#original" style={{border:'0px solid', }}>
   credits &amp; legal
         </Link>
@@ -320,7 +493,7 @@ const svgUrl = frontmatter.svgImage.publicURL
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', position:'absolute', top:'0', zIndex:'-2',  border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw', position:'absolute', top:'-1', zIndex:'-2',  border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (
@@ -361,17 +534,17 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-
-
-
-{/* {Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', zIndex:'1',}}>
+{Suggestion1 ? (
+            <div style={{position:'absolute', top:'-60px', left:'0', bottom:'0', zIndex:'1', maxWidth:'100vw', height:'85vh'}}>
             <YouTubed />
             </div>
        
           ) : (
             ""
-          )} */}
+          )}
+
+
+
 
 
 
@@ -388,8 +561,8 @@ const svgUrl = frontmatter.svgImage.publicURL
             url={iframeUrl}
             // url="https://youtu.be/lZzai6at_xA"
             playing={playing}
-            controls={true}
-            // light={light}
+            controls={false}
+            light={false}
             loop={loop}
             muted={muted}
             config={{
@@ -445,22 +618,22 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-
+      
 
 
 {/* {Suggestion1 ? (
-            <ShowSuggestion style={{position:'relative', top:'', zIndex:'10',}} />
+            <ShowSuggestion style={{position:'relative', top:'', zIndex:'0',}} />
        
           ) : (
             ""
-          )}
+          )} */}
 
 { !YouTube2 ? (
             ""
        
           ) : (
             <Iframer3 />
-          )} */}
+          )}
 
 
 <div style={{padding:'0 5vw', color:'inherit !important'}}>
@@ -502,7 +675,9 @@ const svgUrl = frontmatter.svgImage.publicURL
           <br />
 
 
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
+            Legal:<br />
+            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
 
 <br />
   <GoBack />
