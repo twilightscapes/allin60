@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Layout } from "../components/layout"
+// import { Layout } from "../components/layout"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import {Link} from "gatsby"
 import ReactPlayer from "react-player/lazy";
@@ -78,7 +78,7 @@ const CustomBox = styled.div`
 
     return (
     <CustomBox>
-<Layout className="page">
+{/* <Layout className="page"> */}
 
       <div className="wrap-element" style={{overflow:'hidden'}}>
 
@@ -88,9 +88,9 @@ const CustomBox = styled.div`
             url="https://youtu.be/6hB3S9bIaco"
             playing={playing}
             controls={true}
-            light={false}
+            light={true}
             loop={loop}
-            muted={muted}
+            muted={true}
             config={{
               file: {
                 attributes: {
@@ -142,7 +142,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 
 
 
-      </Layout>
+      {/* </Layout> */}
       </CustomBox>
 
 

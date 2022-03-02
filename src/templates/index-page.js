@@ -17,6 +17,7 @@ import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import BackgroundImage from 'gatsby-background-image'
 import Panel1 from "../components/panel1"
+// import Panel2 from "../pages/shawshank-trailer"
 
 
 
@@ -514,6 +515,34 @@ showCaption: false
 {/* <Panel2 /> */}
 
 
+<div>
+<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
+<StaticImage className=""
+alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</Link>
+</div>
+
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
+</Link>
+</div>
+
+
+
+<div>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<StaticImage className=""
+alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
+</Link>
+</div>
+
+
+
 {/* <div>
 <Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
 <Panel3 />
@@ -561,7 +590,7 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
 </div> */}
 
 
-<BlogListHome data={posts} />
+{/* <BlogListHome data={posts} /> */}
 
 
 {/* <div style={{overflow:'hidden'}}>
@@ -581,11 +610,11 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
 </div> */}
 
 
-<div className="allin60panel actionJackson custom-cursor" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100vh', paddingTop:'0', background:''}}>
+{/* <div className="allin60panel actionJackson custom-cursor" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100vh', paddingTop:'0', background:''}}>
 <div style={{ background:'rgba(0,0,0,0.10)', width:'80vw', position:'relative', top:'', margin:'5vh auto', padding:'4% 5%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
   <Newsignup />
   </div>
-</div>
+</div> */}
 
 
 
@@ -878,12 +907,12 @@ Through NFT
 {ShowPosts ? (
 
 <div id="posts" name="posts">
-        <BlogListHome data={posts} />
+        {/* <BlogListHome data={posts} /> */}
 
 
-        <div style={{textAlign:'center',}}><Link className="post-card button " to="/posts/" style={{textDecoration:'none', color:'inherit',}}> More Posts <RiArrowRightSLine style={{fontSize:'50px'}} /></Link></div>
+        <div style={{textAlign:'center',}}><Link className="post-card button " to="/minutes/" style={{textDecoration:'none', color:'inherit',}}> More Minutes <RiArrowRightSLine style={{fontSize:'50px'}} /></Link></div>
 
-
+<br /><br />
         {/* <section style={{height:'auto'}}>
   <Link to="/posts/" style={{display:'block', width:''}}>
     <article className="button" style={{height:'', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'', fontSize:'', textAlign:'center' }}>
