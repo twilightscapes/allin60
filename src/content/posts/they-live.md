@@ -6,7 +6,7 @@ date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
 youtuber: "iOZcb9Otojk"
 youtuber2: "https://youtu.be/yjw_DuNkOUw"
-youtubeshoworiginal: ""
+youtubeshoworiginal: "1"
 youtubersuggestion1: 
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
@@ -17,8 +17,8 @@ youtubecontrols: ""
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: ""
-shareable: "1"
+comments: "1"
+shareable: "11"
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
 nftlink: ""

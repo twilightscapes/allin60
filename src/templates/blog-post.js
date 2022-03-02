@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-// import CommentBox from "../components/commentbox"
+import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Countdown from 'react-countdown'
@@ -26,7 +26,7 @@ import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-// import ShareSocial from '../components/share' 
+import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 // import TimeAgo from 'react-timeago'
@@ -478,12 +478,40 @@ const svgUrl = frontmatter.svgImage.publicURL
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 
 
-<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'0', right:'', display:'flex', justifyContent:'center', width:'300px', margin:'0 auto', gap:'30px'}}>
+<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'0', right:'', display:'flex', justifyContent:'center', width:'400px', margin:'0 auto', gap:'30px'}}>
+
   <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>contact</Link>
+
   <Link to="#original" style={{border:'0px solid', }}>
   credits &amp; legal
         </Link>
+
+        {ShareThis ? (
+<Link to="#sharethis" style={{}}>
+  share this
+        </Link>
+ ) : (
+  ""
+)}
+
+{Comments ? (
+          <Link to="#comments" style={{}}>
+  comments
+        </Link>
+       
+          ) : (
+            ""
+          )}
+
 </div>
+
+
+
+
+        
+
+
+
 
 
 <div className="wrap-element">
@@ -695,6 +723,26 @@ const svgUrl = frontmatter.svgImage.publicURL
    
 
 
+{ShareThis ? (
+
+<div id="sharethis" style={{height:'100vh', display:'block', width:'80%', padding:'0', margin:'0 auto'}}>
+
+  <br />
+<ShareSocial />
+<br />
+<GoBack />
+
+
+<div style={{padding:'0 5vw', marginTop:'200px',  color:'inherit !important'}}>
+{(previous || next) && <Pagination {...props} />}
+</div>
+</div>
+          ) : (
+            ""
+          )}
+
+
+
 
 
        
@@ -702,11 +750,46 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div style={{padding:'0 5vw', color:'inherit !important'}}>
-      {(previous || next) && <Pagination {...props} />}
-      </div>
 
-      <GoBack />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {Comments ? (
+
+<div id="comments" style={{height:'100vh', display:'block', width:'80%', padding:'0', margin:'0 auto'}}>
+  <GoBack />
+  <br />
+<CommentBox />
+<br />
+<GoBack />
+
+
+<div style={{padding:'0 5vw', marginTop:'200px',  color:'inherit !important'}}>
+{(previous || next) && <Pagination {...props} />}
+</div>
+</div>
+          ) : (
+            ""
+          )}
+
+
+
+
+
+
+
+
 
 
 
