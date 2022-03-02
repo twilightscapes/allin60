@@ -292,7 +292,7 @@ const HomePage = ({ data }) => {
             height="100%"
    
             // url={iframeUrl}
-            url="https://youtu.be/BAwoqiMgDk4"
+            url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
             playing={playing}
             controls={controls}
             light={light}

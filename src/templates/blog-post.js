@@ -33,10 +33,6 @@ import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
-.MuiSlider-root {
-  color:#ff00000 !important;
-}
-
 .wrap-element {
   position: relative;
   overflow: hidden;
@@ -64,23 +60,21 @@ const CustomBox = styled.div`
     overflow:visible;
     border:0px solid red;
   }
+  .pagination{maxWidth:'100vw'}
 }
 
-@media (min-width: 1100px) {
-.pagination{display:; position:relative; top:-175px; z-index:;}
-}
 
-@media (min-width: 1100px) {
-  .pagination{display:; position:relative; top:-175px; z-index:;}
+@media (min-width: 1300px) {
+  .pagination{display:; position:relative; top:-185px; z-index:;}
   }
 
 
 `
 const Pagination = props => (
-  <div className="pagination -post">
-    <ul className="" style={{display:'flex',}}>
+  <div className="pagination -post" style={{maxWidth:''}}>
+    <ul className="" style={{display:'flex', justifyContent:'end', gap:"30px"}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
-        <li>
+        <li style={{border:'1px solid #555', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
           <Link  to= {props.previous.frontmatter.slug + "/"} rel="prev">
             <p
               style={{
@@ -99,14 +93,14 @@ const Pagination = props => (
         </li>
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li>
+        <li style={{border:'1px solid #555', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
           <Link  to={props.next.frontmatter.slug + "/"} rel="next">
             <p
               style={{
                 color: "inherit",
               }}
             >
-              Next{" "}
+              Next Up{" "}
               <span className="icon -right">
                 <RiArrowRightLine />
               </span>
@@ -152,7 +146,7 @@ const Post = ({ data, pageContext }) => {
 // function AddSvg(){
   
 //   return (
-//     <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'', top:'', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
+//     <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'', top:'', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
 //   )
 // }
 
@@ -182,11 +176,11 @@ function Iframer2() {
 
 
 <ReactPlayer
-        className='react-player '
+        className='react-player1'
         url={iframeUrl2}
         width="100%"
         height="100%"
-        style={{zIndex:''}}
+        style={{zIndex:'0', position:'relative'}}
         playing
         playsinline
         config={{
@@ -247,8 +241,8 @@ const svgUrl = frontmatter.svgImage.publicURL
 
   const [state, setState] = useState({
     playing: true,
-    controls: true,
-    light: true,
+    controls: false,
+    light: false,
     muted: false,
     loop: true,
   });
@@ -311,8 +305,11 @@ const svgUrl = frontmatter.svgImage.publicURL
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 
 
-<div className="contact" style={{position:'fixed', bottom:'10px', zIndex:'1',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
-  <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me</Link>
+<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'0', right:'', display:'flex', justifyContent:'center', width:'300px', margin:'0 auto', gap:'30px'}}>
+  <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
+  <Link to="#original" style={{border:'0px solid', }}>
+  credits &amp; legal
+        </Link>
 </div>
 
 
@@ -349,7 +346,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" >You need a new browser</object>
+            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
     
 
     
@@ -392,7 +389,7 @@ const svgUrl = frontmatter.svgImage.publicURL
             // url="https://youtu.be/lZzai6at_xA"
             playing={playing}
             controls={true}
-            light={false}
+            // light={light}
             loop={loop}
             muted={muted}
             config={{
@@ -408,20 +405,23 @@ const svgUrl = frontmatter.svgImage.publicURL
 
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-  
-          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+{/*   
+          <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
             
   
-            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+            {/* <div style={{position:'relative', maxWidth:'100vw', height:'70vh', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
     <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-  </div>
+  </div> */}
         
-            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-            </div>
+            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%'}}>Click To Play
+
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
+            {/* </div> */}
+
+
             </button>}
-         
+         light="../assets/transparent.png"
           />
 
 
@@ -468,39 +468,7 @@ const svgUrl = frontmatter.svgImage.publicURL
       </div>
 
 
-<article className="blog-post">
-        <header style={{height:'60vh', display:'grid', placeContent:'center'}}>
-          <section className="article-header" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
-            <h1 className="tronText" style={{fontSize:'7vw'}}>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
-          </section>
-        </header>
 
-
-
-
-<br />
-      <GoBack />
- <br />
-
-
-
-
-
-
-
-
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
-
-
-      <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />    
-  
- 
-</div>
 
 
 
@@ -509,30 +477,36 @@ const svgUrl = frontmatter.svgImage.publicURL
         
 
 
-      </article>
+     
   
 
 
-      <div style={{padding:'0 5vw', color:'inherit !important'}}>
-      {(previous || next) && <Pagination {...props} />}
-      </div>
 
 
 
+<div id="original" style={{height:'100vh', marginTop:'100vh'}}>
 
       {ShowOriginal ? (
-          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
+          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
-                    
-       </div></div>
+                   
+       </div>
+       Please visit our video sponsor and be sure to click to view original video above. Thank you.
+       </div>
        
           ) : (
             ""
           )}
+          <br />
 
 
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+
+<br />
+  <GoBack />
+</div>
 
 
 
@@ -553,9 +527,44 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
+<div style={{padding:'0 5vw', color:'inherit !important'}}>
+      {(previous || next) && <Pagination {...props} />}
+      </div>
+
+      <GoBack />
 
 
 
+      <article className="blog-post">
+        <header style={{height:'', display:'grid', placeContent:'center'}}>
+          <section className="article-header1" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
+            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+          </section>
+        </header>
+ </article>
+
+
+
+
+
+
+
+
+
+
+
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+
+
+      <div
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />    
+  
+ 
+</div>
 
       
 

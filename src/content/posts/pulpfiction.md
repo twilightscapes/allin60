@@ -4,14 +4,14 @@ title: Pulp Fiction
 slug: /pulpfiction
 date: 2022-02-17 01:43
 description: Pulp Fiction in 60 seconds
-youtuber: "tGpTpVyI_OQ"
+youtuber: "https://youtube.com/playlist?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
 youtuber2: ""
-youtubeshoworiginal: ""
+youtubeshoworiginal: "1"
 youtubersuggestion1: ""
 youtubersuggestion2: ""
 youtubersuggestion3: ""
 youtubestart: "20"
-youtubeend: "41"
+youtubeend: "68"
 youtubemute: "0"
 audiostart: "0"
 audioend: ""
@@ -29,7 +29,7 @@ nftdrop: ""
 nftredeem: ""
 ---
 
-<h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:12vw;">
+<h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:4vw;">
         <div class="">Coming Soon!</div>
       </h2>
 

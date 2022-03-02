@@ -5,7 +5,7 @@ import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
 import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
-
+import { Link } from "gatsby"
 const Controls = forwardRef(
   (
     {
@@ -29,22 +29,25 @@ const Controls = forwardRef(
         </>
       ) : (
   <>
-  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center' }}>allin60.com</div>
-  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center' }}></div>
+  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>allin60.com</div>
+  <div style={{position:'absolute', display:'block', background:'#000', height:'180px', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center' }}></div>
   </>
       )}
 
-{/* 
-      <div ref={ref} className="" style={{width:'100vw', height:'', border:'0px solid red', display:'grid', placeContent:'center',zIndex:'105', bottom:'100px', position:'absolute', zIndex:''}}> */}
-       
+
+      <div ref={ref} className="" style={{width:'', height:'', border:'0px solid red', display:'flex', justifyContent:'center', bottom:'20px', position:'absolute', right:'4vw', zIndex:'1', gap:'40px'}}>
+
+      {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
+  <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
+</div> */}
                 <div
                   onClick={onPlayPause}
                   className=""
                   style={{
-                    position:'absolute',
-                    zIndex:'105',
-                    left:'4vw',
-                    bottom:'5vh',
+                    position:'relative',
+                    zIndex:'',
+                    right:'',
+                    bottom:'',
                     border:'2px solid ',
                     display:'grid',
                     placeContent:'center',
@@ -55,6 +58,7 @@ const Controls = forwardRef(
                     opacity: '.8',
                     filter:'drop-shadow(0px 0px 10px #fff)',
                     textShadow:'2px 2px 10px var(--primary-color)',
+                    cursor:'pointer',
                 }}
                 >
                   {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -81,10 +85,10 @@ const Controls = forwardRef(
                   onClick={onMute}
                   className=""
                   style={{
-                    position:'absolute',
-                    zIndex:'105',
-                    right:'4vw',
-                    bottom:'5vh',
+                    position:'relative',
+                    zIndex:'',
+                    right:'',
+                    bottom:'',
                     border:'2px solid ',
                     display:'grid',
                     placeContent:'center',
@@ -95,6 +99,7 @@ const Controls = forwardRef(
                     opacity: '.8',
                     filter:'drop-shadow(0px 0px 10px #fff)',
                     textShadow:'2px 2px 10px var(--primary-color)',
+                    cursor:'pointer',
                 }}
                 >
                   {muted ? (
@@ -106,7 +111,7 @@ const Controls = forwardRef(
                   )}
                 </div>
 
-      {/* </div> */}
+      </div>
       
       </>
     );
