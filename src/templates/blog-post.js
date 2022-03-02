@@ -78,7 +78,7 @@ const CustomBox = styled.div`
 
 
 const Pagination = props => (
-  <div className="pagination -post1" style={{maxWidth:''}}>
+  <div className="pagination -post1" style={{maxWidth:'', position:'relative', right:'2vw'}}>
     <ul className="" style={{display:'flex', justifyContent:'end', gap:"30px"}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
@@ -262,7 +262,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           }}
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
 
 {/*   
@@ -273,9 +273,11 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div> */}
       
-          <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%'}}>Click To Play
+          <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%'}}>Support Our Video Sponsors
 
-  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
+  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+  Click to play original video
+  </div>
           {/* </div> */}
 
 
@@ -416,7 +418,7 @@ const svgUrl = frontmatter.svgImage.publicURL
   const [state, setState] = useState({
     playing: true,
     controls: false,
-    light: false,
+    light: true,
     muted: false,
     loop: true,
   });
