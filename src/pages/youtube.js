@@ -108,7 +108,7 @@ const CustomBox = styled.div`
               return (
         
                 <ReactPlayer
-  className='react-player'
+  className='react-player repo'
       url={FinalUrl}
       width='100%'
       height='100%'
@@ -187,6 +187,7 @@ const CustomBox = styled.div`
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           
           className="youtubelinker"
+          style={{background:'', opacity:'.6'}}
         />
 
 </form>

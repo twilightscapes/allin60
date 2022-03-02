@@ -78,11 +78,12 @@ const Pagination = props => (
   <div className="pagination -post" style={{maxWidth:''}}>
     <ul className="" style={{display:'flex', justifyContent:'end', gap:"30px"}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
-        <li style={{border:'1px solid #555', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
+        <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
           <Link  to= {props.previous.frontmatter.slug + "/"} rel="prev">
             <p
               style={{
                 color: "inherit",
+                fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'
               }}
             >
               <span className="icon -left">
@@ -97,11 +98,12 @@ const Pagination = props => (
         </li>
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li style={{border:'1px solid #555', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
+        <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
           <Link  to={props.next.frontmatter.slug + "/"} rel="next">
             <p
               style={{
                 color: "inherit",
+                fontSize:'14px', fontWeight:'', padding:'0 .5rem', filter:'drop-shadow(2px 2px 2px #000)'
               }}
             >
               Next Up{" "}
@@ -367,12 +369,12 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-70px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-130px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
 
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Click For Audio</div></div>
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Audio Extras</div></div>
           
           </div>
           </button>}
@@ -478,7 +480,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 
 
-<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'0', right:'', display:'flex', justifyContent:'center', width:'400px', margin:'0 auto', gap:'30px'}}>
+<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'400px', margin:'0 auto', gap:'30px'}}>
 
   <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>contact</Link>
 
@@ -547,7 +549,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-            <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'1', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
+   
     
 
     
@@ -562,14 +564,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-{Suggestion1 ? (
-            <div style={{position:'absolute', top:'-60px', left:'0', bottom:'0', zIndex:'1', maxWidth:'100vw', height:'85vh'}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -584,6 +579,7 @@ const svgUrl = frontmatter.svgImage.publicURL
         > */}
           <ReactPlayer
             // ref={playerRef}
+            style={{position:'', zIndex:'0'}}
             width="100%"
             height="100%"
             url={iframeUrl}
@@ -627,6 +623,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
+
 <Controls
             ref={controlsRef}
             onPlayPause={handlePlayPause}
@@ -635,6 +632,22 @@ const svgUrl = frontmatter.svgImage.publicURL
             onMute={hanldeMute}
             muted={muted}
           />
+
+
+
+{Suggestion1 ? (
+            <div style={{position:'absolute', top:'-130px', left:'0', bottom:'', zIndex:'', maxWidth:'100vw', height:'85vh'}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
+
+
+<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
+
+
         </div>
 
 
