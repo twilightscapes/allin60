@@ -45,14 +45,14 @@ const Characters = () => (
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'hidden'}}>
+<div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100%', width:'100vw', position:'relative', overflow:'hidden'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
 
 
 
-<div id="" className="wrap-element tronpanel" style={{overflow:'hidden', height:'100%',}}>
+<div id="" className="wrap-element tronpanel" style={{overflow:'hidden', height:'',}}>
 <ReactPlayer
          className='frontbg'
          url="https://www.youtube.com/embed/c_V1iD6F1kk"
@@ -127,7 +127,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/tr
  </a>
 
 
- <div id="characters" className="characters" style={{position:'absolute', zIndex:'0', width:'', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', padding:'20vh 0 0 0',}}>
+ <div id="characters" className="characters" style={{position:'absolute', zIndex:'0', width:'', bottom:'0', height:'100%', top:'0', background:'none', filter:'none', boxShadow:'none', padding:'20vh 0 0 0',}}>
 
  {/* <ReactPlayer
           className='playerpp'

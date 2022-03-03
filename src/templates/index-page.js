@@ -398,11 +398,11 @@ showCaption: false
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'' }}>
+<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'', overflow:'' }}>
 {/* <div className="RArrow"><span></span></div> */}
 
 
-<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'100%', position:'absolute', top:'0', zIndex:''}}>
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'', position:'absolute', top:'0', zIndex:''}}>
 
 
 
@@ -503,7 +503,7 @@ showCaption: false
 
 
 
-<div className="custom-cursor fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<div className="custom-cursor " style={{margin:'', height:'100%', textDecoration:'none'}}>
 
   <Panel1 />
 
@@ -515,7 +515,7 @@ showCaption: false
 
 
 <div>
-<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="Pulp Fiction by Quentin Tarantino - All In 60 Seconds"  to="/pulp-fiction-trailer/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}>
 {/* <Panel3 /> */}
 <StaticImage className=""
 alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
@@ -524,7 +524,7 @@ alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/as
 
 
 <div>
-<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button " style={{margin:'', height:'100%', textDecoration:'none'}}>
 {/* <Panel3 /> */}
 <StaticImage className=""
 alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
@@ -534,7 +534,7 @@ alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static
 
 
 <div>
-<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}>
 <StaticImage className=""
 alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
 </Link>
@@ -543,7 +543,7 @@ alt="They Live by John Carpenter - All In 60 Seconds" src="../../static/assets/T
 
 
 <div>
-<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+<Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}>
 <StaticImage className=""
 alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
 </Link>
