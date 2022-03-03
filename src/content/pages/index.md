@@ -24,6 +24,8 @@ svgzindex: ""
 youtubestart: ""
 ---
 
-Today's most popular subjects are recreated in a dynamic multimedia presentation and it's all in 60 seconds.
+Today's most popular subjects are recreated in a dynamic multimedia format and it's all in 60 seconds (a "Minute").
 
-Everyday, a new Minute is released. Check back everyday at 3p.m. CST for the day's Minute. Be sure to sign up for notifications so you don't miss a Minute.
+<em>New Minutes are released at 3p.m. CST.</em>
+
+Be sure to sign up for notifications so you won't miss a Minute.

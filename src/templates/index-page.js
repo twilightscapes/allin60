@@ -402,7 +402,7 @@ showCaption: false
 {/* <div className="RArrow"><span></span></div> */}
 
 
-<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'45vh', position:'absolute', top:'0', zIndex:''}}>
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'100%', position:'absolute', top:'0', zIndex:''}}>
 
 
 
@@ -482,7 +482,7 @@ showCaption: false
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
-<BackgroundImage
+{/* <BackgroundImage
       Tag="section"
       className=""
       fluid={imageData}
@@ -499,7 +499,7 @@ showCaption: false
   <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 5vw 20vh 5vw', position:'', top:'', border:'0px solid', diplay:'', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">All that's cool </div> <div className="lineTwo">in 60 seconds</div><br /><span style={{fontSize:'2rem'}}>allin60.com</span></h1>
   
 </div>
-</BackgroundImage>
+</BackgroundImage> */}
 
 
 

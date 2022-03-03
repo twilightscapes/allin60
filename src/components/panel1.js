@@ -223,7 +223,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
 
     </div> 
     
-<div className="" style={{display:'flex', flexDiection:'', justifyContent:'center',  position:'absolute', left:'', right:'', bottom:'20vh', zIndex:'', width:'100vw', margin:'0 auto', height:'', border:'0px solid red', textAlign:'center'}}>
+{/* <div className="" style={{display:'flex', flexDiection:'', justifyContent:'center',  position:'absolute', left:'', right:'', bottom:'20vh', zIndex:'', width:'100vw', margin:'0 auto', height:'', border:'0px solid red', textAlign:'center'}}>
 
    
           
@@ -237,7 +237,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/cl
           
         
         
-        </div>
+        </div> */}
     
 
        

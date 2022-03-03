@@ -35,7 +35,7 @@ const Controls = forwardRef(
       )}
 
 
-      <div ref={ref} className="" style={{width:'', height:'', border:'0px solid red', display:'flex', justifyContent:'center', bottom:'20px', position:'absolute', right:'4vw', zIndex:'1', gap:'40px'}}>
+      <div ref={ref} className="" style={{width:'', height:'', border:'0px solid red', display:'flex', justifyContent:'center', bottom:'20px', position:'absolute', right:'4vw', zIndex:'55', gap:'40px'}}>
 
       {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
   <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>

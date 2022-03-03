@@ -79,7 +79,7 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{maxWidth:'', position:'relative', right:'2vw'}}>
-    <ul className="" style={{display:'flex', justifyContent:'end', gap:"30px"}}>
+    <ul className="" style={{display:'flex', justifyContent:'flex-end', gap:"30px", border:'0px solid purple',}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}>
@@ -375,7 +375,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
 
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Audio Extras</div></div>
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Extra Audio</div></div>
           
           </div>
           </button>}
@@ -517,7 +517,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div className="wrap-element">
+<div className="wrap-element" style={{overflow:'hidden', height:'50vh'}}>
 
 {Image ? (
             <GatsbyImage
@@ -532,18 +532,7 @@ const svgUrl = frontmatter.svgImage.publicURL
           )}
     
 
-{UnderlayImage ? (
-            <GatsbyImage
-              image={UnderlayImage}
-              alt={frontmatter.title + " - image"}
-              className="mcboaty"
-              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'1',
-             objectFit:'contain', border:'0px solid red !important'}}
-            />
-            
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -636,16 +625,31 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-{Suggestion1 ? (
+{/* {Suggestion1 ? (
             <div style={{position:'absolute', top:'-130px', left:'0', bottom:'', zIndex:'', maxWidth:'100vw', height:'85vh'}}>
             <YouTubed />
             </div>
        
           ) : (
             ""
+          )} */}
+
+
+
+{UnderlayImage ? (
+            <GatsbyImage
+              image={UnderlayImage}
+              alt={frontmatter.title + " - image"}
+              className="mcboaty"
+              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'',
+             objectFit:'contain', border:'0px solid red !important'}}
+            />
+            
+          ) : (
+            ""
           )}
 
-
+          
 <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
 
 

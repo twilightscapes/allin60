@@ -6,8 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Controls from "../components/Controls";
 import {Link} from "gatsby"
 import styled from "styled-components"
-import { Layout } from "../components/layout";
-import PulpLoader from "../../static/assets/Pulp-Loader.svg"
+// import { Layout } from "../components/layout";
 const CustomBox = styled.div`
 
 .wrap-element {
@@ -54,7 +53,7 @@ const CustomBox = styled.div`
 
 `
 
-function VideoPage() {
+function Video() {
   const [state, setState] = useState({
     playing: true,
     controls: true,
@@ -92,7 +91,7 @@ function VideoPage() {
   return (
 
     <CustomBox>
-<Layout>
+{/* <Layout> */}
 
 
       <div className="wrap-element" style={{overflow:'hidden'}}>
@@ -212,7 +211,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 
 
 
-<PulpLoader style={{position:'absolute', top:'0', zIndex:'2'}} />
+
 
 
         </div>
@@ -227,7 +226,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
 </div>
 
 
-</Layout>
+{/* </Layout> */}
 
 
 
@@ -235,7 +234,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
   );
 }
 
-export default VideoPage;
+export default Video;
 
 
 // https://youtu.be/NmzuHjWmXOc
