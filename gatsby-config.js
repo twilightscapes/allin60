@@ -17,16 +17,16 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: false },
   siteMetadata: settings.meta,
   plugins: [
-    {
-      resolve: "gatsby-source-shopify",
-      options: {
-        // apiKey: process.env.SHOPIFY_API_KEY,
-        password: process.env.SHOPIFY_SHOP_PASSWORD,
-        storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
-        shopifyConnections: ["collections"],
-        salesChannel:"Secure3",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-shopify",
+    //   options: {
+    //     // apiKey: process.env.SHOPIFY_API_KEY,
+    //     password: process.env.SHOPIFY_SHOP_PASSWORD,
+    //     storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
+    //     shopifyConnections: ["collections"],
+    //     salesChannel:"Secure3",
+    //   },
+    // },
 
 {
     resolve: `gatsby-transformer-remark`,
