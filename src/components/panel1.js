@@ -45,14 +45,14 @@ const Characters = () => (
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'visible'}}>
+<div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'100vh', width:'100vw', position:'relative', overflow:'hidden'}}>
 
 {/* <div style={{position:'absolute', right:'20vh', top:'0', width:'300px', height:'200px', background:'red', color:'#fff'}}>DAMN</div> */}
 
 
 
 
-<div id="" className="wrap-element tronpanel" style={{overflow:'hidden'}}>
+<div id="" className="wrap-element tronpanel" style={{overflow:'hidden', height:'100%',}}>
 <ReactPlayer
          className='frontbg'
          url="https://www.youtube.com/embed/c_V1iD6F1kk"
@@ -70,7 +70,7 @@ const Characters = () => (
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, controls:0, start:20, end:41, mute:1 }
+                playerVars: { showinfo:0, controls:0, start:20, end:500, mute:1 }
               },
             }}
 

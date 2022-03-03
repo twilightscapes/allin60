@@ -210,7 +210,7 @@ class BlogIndex extends React.Component {
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
 
 
- <div className="" style={{height:'100%'}}></div>
+ <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
  {/* <article style={{textAlign:'center',}}><Link className="post-card button " to="/#posts" style={{textDecoration:'none', color:'inherit',}}><RiArrowLeftLine style={{fontSize:'20px'}} />  View Newest</Link></article> */}
 
 

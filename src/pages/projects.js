@@ -56,8 +56,7 @@ export default function Projects() {
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
 
 
-
-<div className="" style={{height:'1px'}}></div>
+<div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
 <div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>

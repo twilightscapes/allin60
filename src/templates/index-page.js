@@ -400,7 +400,7 @@ showCaption: false
 
 {/* <HomeHolder /> */}
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden' }}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'' }}>
 {/* <div className="RArrow"><span></span></div> */}
 
 
@@ -474,7 +474,7 @@ showCaption: false
 
 
 
-<div className="" style={{height:'100%'}}></div>
+<div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
 
@@ -498,7 +498,8 @@ showCaption: false
 <div className="donation2" style={{display:'grid',
   placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
 
-  <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 8vw 20vh 8vw', position:'', top:'', border:'0px solid', diplay:'grid', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">What Can You Do</div> <div className="lineTwo">In 60 Seconds?</div></h1>
+  <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 5vw 20vh 5vw', position:'', top:'', border:'0px solid', diplay:'', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">All that's cool </div> <div className="lineTwo">in 60 seconds</div><br /><span style={{fontSize:'2rem'}}>allin60.com</span></h1>
+  
 </div>
 </BackgroundImage>
 
@@ -520,6 +521,15 @@ showCaption: false
 {/* <Panel3 /> */}
 <StaticImage className=""
 alt="Pulp Fiction by Quentin Tarantino - All In 60 Seconds" src="../../static/assets/pulpfiction.jpg" />
+</Link>
+</div>
+
+
+<div>
+<Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <Panel3 /> */}
+<StaticImage className=""
+alt="Shawshank Redemption by Stephen King - All In 60 Seconds" src="../../static/assets/shawshank.jpg" />
 </Link>
 </div>
 
@@ -749,8 +759,9 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
 
 
           <h1 className="title1">
-            {/* {frontmatter.title} */}
-            Unique Night Photography <br />by Todd Lambert
+            {frontmatter.title}
+            {/* Today's Popular Subjects <br /> */}
+            {/* All In 60 Seconds */}
           </h1>
           <h2
             className="tagline1"
@@ -762,6 +773,9 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
           </h2>
 
 
+
+
+
           <div
           style={{padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}
             className="description"
@@ -770,7 +784,7 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
 
 
   
-  {/* <br />
+  <br />
           <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
@@ -790,7 +804,7 @@ alt="Mystery Science Theater 3000 - All In 60 Seconds" src="../../static/assets/
             </span>
 
             
-          </Link> */}
+          </Link>
 
          
 
@@ -903,26 +917,32 @@ Through NFT
 {/* end show Info */}
 
 
+
+<div style={{textAlign:'center', fontSize:'5vw', margin:'10vh 0 0 0'}}>Latest Minutes:</div>
+
+
+
+
 {/* end show Posts */}
 {ShowPosts ? (
 
 <div id="posts" name="posts">
-        {/* <BlogListHome data={posts} /> */}
+  
+ 
+        <BlogListHome data={posts} />
 
 
-        <div style={{textAlign:'center',}}><Link className="post-card button " to="/minutes/" style={{textDecoration:'none', color:'inherit',}}> More Minutes <RiArrowRightSLine style={{fontSize:'50px'}} /></Link></div>
+       
+        
+        <div style={{textAlign:'center'}}><Link className="post-card button " to="/minutes/" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>More Minutes <RiArrowRightSLine style={{fontSize:'50px'}} /></Link>
+        </div>
 
-<br /><br />
-        {/* <section style={{height:'auto'}}>
-  <Link to="/posts/" style={{display:'block', width:''}}>
-    <article className="button" style={{height:'', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'', fontSize:'', textAlign:'center' }}>
-    More Posts <RiArrowRightSLine style={{fontSize:'50px'}} />
-    </article></Link>
-    </section> */}
 
-   </div>
+
+ 
 
   
+</div>
 
    ) : (
     ""

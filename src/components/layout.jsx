@@ -31,7 +31,7 @@ import { CartButton } from "./cart-button"
 
 // import { StaticImage } from "gatsby-plugin-image"
 // import Consent from './Consent'
-// import Install from './install-discount'
+import Install from './install-discount'
 // import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
@@ -140,7 +140,7 @@ export function Layout({ children }) {
 
 
 
-  {/* <Install /> */}
+  <Install />
 
 
 
