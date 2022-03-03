@@ -5,8 +5,11 @@ import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
 import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { Link } from "gatsby"
 const Controls = forwardRef(
+
+  
   (
     {
       onPlayPause,
@@ -19,6 +22,8 @@ const Controls = forwardRef(
     ref
   ) => {
 
+    const { iconimage } = useSiteMetadata()
+
 
     return (
 
@@ -30,12 +35,17 @@ const Controls = forwardRef(
       ) : (
   <>
       <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>allin60.com</div>
-  <div style={{position:'absolute', display:'block', background:'#000', height:'180px', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center' }}></div>
+
+  <div style={{position:'absolute', display:'block', background:'#000', height:'100vh', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center' }}>
+ 
+  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'30vw', height:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+
+  </div>
   </>
       )}
 
 
-      <div ref={ref} className="" style={{width:'', height:'', border:'0px solid red', display:'flex', justifyContent:'center', bottom:'20px', position:'absolute', right:'4vw', zIndex:'55', gap:'40px'}}>
+      <div ref={ref} className="" style={{width:'', height:'', border:'0px solid red', display:'flex', justifyContent:'center', bottom:'22px', position:'absolute', right:'4vw', zIndex:'55', gap:'40px'}}>
 
       {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
   <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
