@@ -102,9 +102,7 @@ export const pageQuery = graphql`
 
     desktop: file(relativePath: { eq: "curtains.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
     }
 

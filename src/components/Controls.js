@@ -25,11 +25,11 @@ const Controls = forwardRef(
 <>
       {playing ? (
         <>
-    
+
         </>
       ) : (
   <>
-  <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>allin60.com</div>
+      <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>allin60.com</div>
   <div style={{position:'absolute', display:'block', background:'#000', height:'180px', width:'100%', zIndex:'1', bottom:'0', right:'0', textAlign:'center' }}></div>
   </>
       )}
@@ -44,6 +44,11 @@ const Controls = forwardRef(
                   onClick={onPlayPause}
                   className=""
                   style={{
+                    animation:'fade',
+                    animationDuration:'1s',
+                    animationDelay:'5s',
+                    opacity:'0',
+                    animationFillMode:'forwards',
                     position:'relative',
                     zIndex:'',
                     right:'',

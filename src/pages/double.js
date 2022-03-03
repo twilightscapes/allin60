@@ -28,7 +28,7 @@ const CustomBox = styled.div`
   overflow:hidden;
 }
 
-.frontbg iframe{z-index: !important;}
+
 
 // .pagination{ position:relative; top:-205px;}
 
@@ -51,7 +51,7 @@ const CustomBox = styled.div`
 
 `
 
-function VideoPage() {
+function Double() {
   const [state, setState] = useState({
     playing: true,
     controls: true,
@@ -152,7 +152,6 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/pu
 
 
 
-
 <ReactPlayer
          className='frontbg'
          url="https://www.youtube.com/embed/c_V1iD6F1kk"
@@ -160,9 +159,9 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/pu
          height="100vh"
          playing={true}
             controls={false}
-            light={true}
+            light={false}
             loop={true}
-            muted={false}
+            muted={true}
             config={{
               file: {
                 attributes: {
@@ -170,7 +169,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/pu
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, controls:0, start:20, end:500, mute:0 }
+                playerVars: { showinfo:0, controls:0, start:20, end:500, mute:1 }
               },
             }}
 
@@ -178,16 +177,16 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/pu
             playIcon={
               <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'1', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
   
-          {/* <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
             
   
 
         
             <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-            </div> */}
+            </div>
             </button>}
-         light="../assets/transparent.png"
+         
           />
 
 
@@ -195,6 +194,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/pu
 <StaticImage className=""
 alt="Todd Lambert Web development for photographers" src="../../static/assets/shawshank-stuff.png" style={{height:'100%', position:'absolute', top:'0', zIndex:'1'}}  />
 {/* </div> */}
+
 
 
 <Controls
@@ -205,7 +205,6 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
             onMute={hanldeMute}
             muted={muted}
           />
-
 
 
 
@@ -232,7 +231,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/sh
   );
 }
 
-export default VideoPage;
+export default Double;
 
 
 // https://youtu.be/NmzuHjWmXOc
