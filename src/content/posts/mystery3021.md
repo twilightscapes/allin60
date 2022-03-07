@@ -19,6 +19,7 @@ isnftforsale: ""
 svgzindex: "0"
 comments: "1"
 shareable: "1"
+youtubeloop: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/mystery-science.jpg
 svgImage: /assets/MysteryScience3000.svg

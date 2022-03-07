@@ -363,7 +363,7 @@ showCaption: false
 
     <Layout>
     <Helmet>
-  <body className="homepage" style={{background:'#111'}} />
+  <body className="homepage" style={{background:''}} />
 </Helmet>
 {/* <Seo
           title={`VidSock - Video Multimedia NFT Platform`}
@@ -398,11 +398,11 @@ showCaption: false
 
 {/* <HomeHolder /> */}
 
-<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'', overflow:'' }}>
+<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'70vh', overflow:'hidden' }}>
 {/* <div className="RArrow"><span></span></div> */}
 
 
-<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'', position:'absolute', top:'0', zIndex:''}}>
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'70vh', position:'absolute', top:'0', zIndex:''}}>
 
 
 
@@ -473,7 +473,7 @@ showCaption: false
 
 
 <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
-
+{/* <div></div> */}
 
 
 
