@@ -20,7 +20,7 @@ import SocialMe from "../components/share"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 // import BackgroundImage from 'gatsby-background-image'
 import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
@@ -484,9 +484,28 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/al
 
 
         
+<div>
+  <a aria-label="View Tron In 60 Seconds" title="View Tron In 60 Seconds" className="" rel="noreferrer" href="https://tron.allin60.com" >
+<StaticImage className=""
+alt="Tron In 60 Seconds" src="../../static/assets/tronin60.jpg" />
+</a>
+</div>
 
+<div>
+  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="" >
+<StaticImage className=""
+alt="Mystery Science Theater In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
+</Link>
+</div>
 
-<Panel1 />
+<div>
+  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="" >
+<StaticImage className=""
+alt="They Live In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
+</Link>
+</div>
+
+{/* <Panel1 /> */}
 
 
 
@@ -530,11 +549,11 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 
-{ShowPosts ? (
+{/* {ShowPosts ? (
         <BlogListHome data={posts} style={{}} />
    ) : (
     ""
-  )}
+  )} */}
 
 <div>
 </div>
@@ -853,7 +872,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
   <Newsignup />
   </div>
 
@@ -1095,8 +1114,9 @@ Virtual Tour<br />
 <br /><br /> */}
 
 
+<div style={{position:'relative', top:'', margin:'10vh 0', padding:'0',  width:'', }}>
 <SocialMe />
-
+</div>
 
 
 
