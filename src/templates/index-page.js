@@ -558,7 +558,7 @@ Order Online
 <section style={{ display:'',}}>
   <article>
 
-  <div className='' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='' style={{ display:'', position:'relative', top:'0', zIndex:'0', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -570,9 +570,9 @@ Order Online
               alt={frontmatter.title + " - Featured image"}
               className=""
               placeholder="blurred"
-              loading="eager"
+              // loading="eager"
               layout="constrained"
-              style={{height:'auto', width:'100vw', height:'', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'70vh', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
             />
             
           ) : (
