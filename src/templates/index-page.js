@@ -486,66 +486,26 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/al
         
 <div>
   <a aria-label="View Tron In 60 Seconds" title="View Tron In 60 Seconds" className="" rel="noreferrer" href="https://tron.allin60.com" >
-<StaticImage className=""
+<StaticImage className="" placeholder="blurred" layout="constrained" 
 alt="Tron In 60 Seconds" src="../../static/assets/tronin60.jpg" />
 </a>
 </div>
 
 <div>
-  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="" >
-<StaticImage className=""
+  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="/mystery-science-theater-3022/" >
+<StaticImage className="" placeholder="blurred" layout="constrained" 
 alt="Mystery Science Theater In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
 </Link>
 </div>
 
 <div>
-  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="https://tron.allin60.com" >
-<StaticImage className=""
+  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="/they-live/" >
+<StaticImage className="" placeholder="blurred" layout="constrained" 
 alt="They Live In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
 </Link>
 </div>
 
 {/* <Panel1 /> */}
-
-
-
-
-
-
-{/* 
-        <div>
-
-<StaticImage className=""
-alt="Super Yummy" src="../../static/assets/FILET-SMALL.jpg" />
-
-</div>
-
-
-<div>
-
-<StaticImage className=""
-alt="Delicious!" src="../../static/assets/FAROE-ISLAND-SALMON-scaled.jpg" />
-
-</div>
-
-
-
-<div>
-
-<StaticImage className=""
-alt="Get Racked at the Rack House" src="../../static/assets/NEW-ZEALAND-RACK.jpg" />
-
-</div> */}
-
-
-
-{/* <div>
-
-<StaticImage className=""
-alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
-
-</div> */}
-
 
 
 
@@ -609,7 +569,8 @@ Order Online
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className=""
-              placeholder="blurred" loading="eager"
+              placeholder="blurred"
+              // loading="eager"
               layout="constrained"
               style={{height:'auto', width:'100vw', height:'', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
             />
@@ -872,7 +833,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
   <Newsignup />
   </div>
 
@@ -1054,7 +1015,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between',}}>
     <a className="noexit" href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    <StaticImage src="../../static/assets/twilightscapes-button.jpg" alt="Todd Lambert Night photos"  /></a>
+    <StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/twilightscapes-button.jpg" alt="Todd Lambert Night photos"  /></a>
     <br />
     Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the night like you&apos;ve never seen it before.
     <br /><br />
@@ -1076,7 +1037,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between',}}>
     <a className="noexit" href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    <StaticImage src="../../static/assets/toddlambert-promo-banner.png" alt="Todd Lambert is an independent artist, creator, design, developer and generally a unicorn" style={{borderRadius:'8px'}}  /></a>
+    <StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/toddlambert-promo-banner.png" alt="Todd Lambert is an independent artist, creator, design, developer and generally a unicorn" style={{borderRadius:'8px'}}  /></a>
     <br />
     Todd Lambert excels in design, development, marketing, conceptual photography and online strategy that bring results. Learn more about Todd and maybe hire him to help you?
     <br /><br />
@@ -1086,7 +1047,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
     <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
-    <StaticImage src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  style={{borderRadius:'8px'}} /></a>
+    <StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  style={{borderRadius:'8px'}} /></a>
     <br />
 Todd sells exceptionally fast and well-built multimedia web apps called VidSocks. They are a complete website solution that costs nothing to run and get top ranks in Google!
     <br /><br />
@@ -1114,8 +1075,9 @@ Virtual Tour<br />
 <br /><br /> */}
 
 
+<div style={{position:'relative', top:'', margin:'10vh 0', padding:'0',  width:'', }}>
 <SocialMe />
-
+</div>
 
 
 
