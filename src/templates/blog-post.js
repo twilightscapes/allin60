@@ -320,7 +320,6 @@ const svgUrl = frontmatter.svgImage.publicURL
     duration: 0,
     playbackRate: 1.0,
     volume: 1,
-    // loop={YoutubeLoop},
     seeking: false,
     url: iframeUrl,
     // url:[

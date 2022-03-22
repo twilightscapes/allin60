@@ -21,6 +21,7 @@ isnftforsale: "1"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
+youtubeloop: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/pulpfiction.jpg
 svgImage: /assets/Pulp-Loader.svg
