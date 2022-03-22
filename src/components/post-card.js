@@ -132,9 +132,9 @@ date={Date.now() + 60000} className="countdown">
           )}
 
 
+<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', color:'#fff', textAlign:'left', padding:'.5rem 0', borderRadius:'12px', border:'0px solid #111', textShadow:'1px 2px 0px #000'}}>
 
-
-<h2 className="title">
+<h2 className="title" style={{fontSize:'clamp(2rem, 3.5vw, 3.8rem)', }}>
   <Link 
     to={data.frontmatter.slug}
   >
@@ -152,11 +152,11 @@ date={Date.now() + 60000} className="countdown">
   </Link>
 </h2>
 
-{/* <p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
+<p style={{minWidth:'150px', position:'', textAlign:'center', border:'0px solid red'}}>
   <TimeAgo date={data.frontmatter.date}/>
-</p> */}
+</p>
 </div>
-
+</div>
 
   </article>
 

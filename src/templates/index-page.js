@@ -400,7 +400,7 @@ function Iframer() {
 
 {ShowFeature ? (
 <>
-<div className="RArrow"><span></span></div>
+{/* <div className="RArrow"><span></span></div> */}
 <div className="horizontal-holder allin60panel" style={{position:'relative',  overflow:'hidden', color:'#ccc', border:'1px solid transparent'}}>
 
 
@@ -570,7 +570,7 @@ Order Online
               alt={frontmatter.title + " - Featured image"}
               className=""
               placeholder="blurred"
-              // loading="eager"
+              loading="eager"
               layout="constrained"
               style={{height:'auto', width:'100vw', height:'', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
             />
@@ -895,7 +895,7 @@ Through NFT
 <div id="posts" name="posts" style={{padding:'0 3%'}}>
   
  
-<div style={{textAlign:'center', fontSize:'5vw', margin:'0 0 0 0',}}>Latest Minutes:</div>
+<div style={{textAlign:'center', fontSize:'5vw', margin:'0 0',}}>Latest Minutes:</div>
 
         <BlogListHome data={posts} />
 
@@ -1006,7 +1006,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'0 auto 2rem auto'}}>Todd's Other Work</h3>
+<h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'10vh auto 2rem auto'}}>Todd's Other Work</h3>
  
  <div className="flexbutt noexit print" style={{padding:'0 4%',
 position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>

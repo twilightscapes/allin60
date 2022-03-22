@@ -24,7 +24,7 @@ svgzindex: ""
 youtubestart: ""
 ---
 
-Today's most popular subjects are recreated in a dynamic multimedia format and it's all in 60 seconds (a "Minute").
+Today's most popular subjects are recreated in a dynamic multimedia format and it's all in 60 seconds (aka "A Minute").
 
 <em>New Minutes are released at 3p.m. CST.</em>
 
