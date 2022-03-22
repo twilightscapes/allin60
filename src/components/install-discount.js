@@ -4,7 +4,7 @@ import React from 'react'
 // import { IoShareOutline } from 'react-icons/io5';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import ScrollAnimation from 'react-animate-on-scroll'
-import CookieConsent from "react-cookie-consent"
+// import CookieConsent from "react-cookie-consent"
 // import { StaticImage } from "gatsby-plugin-image"
 // import ReactPlayer from 'react-player/lazy'
 import { Link } from "gatsby"
@@ -39,8 +39,8 @@ const CustomBox = styled.div`
 
 `
 
-const current = new Date();
-const date = `${current.getMonth()+2}/${current.getDate()+2}/${current.getFullYear()}`;
+// const current = new Date();
+// const date = `${current.getMonth()+2}/${current.getDate()+2}/${current.getFullYear()}`;
 
 const InstallDiscount = () => (
 <>
@@ -50,8 +50,7 @@ const InstallDiscount = () => (
 
 
 
-<div id="installer" className="popper1" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'-90vw', alignItems:'center', background:'transparent', padding:'0', zIndex:'15'}}>
+<div id="" className="" style={{ position:'', top:'', zIndex:'', maxWidth:''}}>
 
 
 {/* <ReactPlayer
@@ -107,7 +106,8 @@ left:'-90vw', alignItems:'center', background:'transparent', padding:'0', zIndex
 
 
 
-<CookieConsent
+{/* <CookieConsent
+  id="consenter"
 	debug={false}
 	location="none"
   className=""
@@ -119,34 +119,34 @@ left:'-90vw', alignItems:'center', background:'transparent', padding:'0', zIndex
   height:'auto',
   filter:' drop-shadow(0px 0px 10px rgba(0,0,0,.9))',
 }}
-    buttonText="HIDE THIS"
+    buttonText="CLOSE"
 	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "16px", position:'relative', bottom:'20px',  right:'0', display:'flex', flexDirection:'column', justifyContent:'center', margin:'0 auto', color:'#fff', fontWeight:'normal', padding:'4px 50px', border:'0px solid #666'}}
     expires={1}
-    cookieName="tron.allin60.com-install-cookie"
->
+    cookieName="rackhouse-app-install-cookie"
+> */}
 
 
 
 
 
-<div className="container" style={{padding:'1rem 2rem', border:'0px solid #555',  color:'#fff', textAlign:'center', position:'relative', textShadow:'2px 2px 0 #000', overflow:'hidden', borderRadius:'12px', background:'rgb(0, 0, 0, .5)' }}>
+<div className="" style={{marginTop:'10vh', padding:'2rem', border:'0px solid #555',  color:'#fff', textAlign:'center', position:'relative',  }}>
 
 
 
-	
-	<p style={{textAlign:'center', fontSize:'clamp(1.3rem, 2.4vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>I'm Accepting New Clients <br /> <strong></strong></p>
+	<p style={{fontSize:'clamp(.9rem, 1.5vw, 2rem)', textAlign:'center'}}>
+Looking for innovative design in a top-performing website app?</p>
+	{/* <p style={{textAlign:'center', fontSize:'clamp(1.3rem, 2.4vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>Like This? <br /> <strong></strong></p> */}
 
 
     
-  <p style={{fontSize:'1.2rem', textAlign:'center', fontWeight:'bold'}}>
+  {/* <p style={{fontSize:'1.2rem', textAlign:'center', fontWeight:'bold'}}>
 Current Availability: &nbsp; {date}
-</p>
+</p> */}
 
 
-    <p style={{fontSize:'clamp(.9rem, 1.5vw, 2rem)', textAlign:'center'}}>
-Looking for innovative design in a top-performing website app?</p>
-<p style={{fontSize:'clamp(1.2rem, 2.2vw, 3.8rem)', fontWeight:'bold', textAlign:'center', textShadow:'1px 1px 0 #666'}}>
-  Let's create something <span>great together</span>.</p>
+    
+<p style={{fontSize:'clamp(1.2rem, 2vw, 3.8rem)', fontWeight:'bold', textAlign:'center', textShadow:'1px 1px 0 #666'}}>
+  Let's create something <span>great together</span></p>
 
 
 
@@ -171,7 +171,7 @@ Looking for innovative design in a top-performing website app?</p>
 
  <div className="" style={{display:'grid', flexDiection:'', placeContent:'center', height:'', position:'absolute', left:'', right:'', top:'', width:'500px'}}> */}
 
-<button aria-label="Click To Play" className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'100%', borderRadius:'50px',fontSize:'2vw', padding:'5% 8%', }}>
+<button aria-label="Click To Play" className="actionJackson tronText" style={{display:'flex', justifyContent:'center', zIndex:'2', filter:'drop-shadow(2px 2px 2px #000)', width:'100%', borderRadius:'50px',fontSize:'3vw', padding:'5% 8%', }}>
   
   <Link state={{modal: true}} to="/contact/" style={{color:''}}>HIRE ME!</Link>
   
@@ -188,7 +188,7 @@ Looking for innovative design in a top-performing website app?</p>
     <br />
     </div>
     
-</CookieConsent>
+{/* </CookieConsent> */}
 
 
 </div>

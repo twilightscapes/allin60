@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: ""
 shareable: "1"
 underlayImage: /assets/shawshank-stuff.png
-featuredImage: /assets/shawshank-redemption-in-60seconds.jpg
+featuredImage: /assets/shawshank.jpg
 svgImage: /assets/ShawshankLoader.svg
 nftlink: ""
 nftdrop: ""

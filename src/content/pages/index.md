@@ -6,7 +6,7 @@ featuredImage: /assets/allin60seconds.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
-youtuber: ""
+youtuber: "https://youtu.be/14zqZsUzplg"
 youtubeautostart: "1"
 title: All In 60 Seconds
 svgImage: /assets/null.svg

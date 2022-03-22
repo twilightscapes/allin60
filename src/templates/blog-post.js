@@ -11,7 +11,7 @@ import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+// import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -22,7 +22,7 @@ import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -85,20 +85,14 @@ const CustomBox = styled.div`
 
 
 const Pagination = props => (
-  <div className="pagination -post1" style={{position:'fixed', bottom:'10px'}}>
+  <div className="pagination -post1" style={{position:'fixed', bottom:'20px',}}>
     <ul className="" style={{}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{}}>
           <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
-          <button className="">
-              <span className="TronType icon -left">
-                <RiArrowLeftLine />
-            
-              </span>{" "}
-             
-            
-            <span className="page-title">
+          <button className="" style={{display:'flex', justifyContent:'flex-end', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'}}>
+&#10094; &nbsp; {" "} <span className="page-title">
               {props.previous.frontmatter.title}
             </span></button>
           </Link>
@@ -107,13 +101,9 @@ const Pagination = props => (
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{}}>
           <Link to={props.next.frontmatter.slug + "/"} rel="next">
-          <button className="">
-            
-            
-            <span className="page-title">{props.next.frontmatter.title}</span> {" "}
-              <span className="icon -right">
-                <RiArrowRightLine />
-              </span></button>
+          <button className="" style={{display:'flex', justifyContent:'flex-start', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'}}>
+            <span className="page-title">{props.next.frontmatter.title}</span> {" "} &nbsp; &#10095;
+          </button>
           </Link>
         </li>
       )}
@@ -146,7 +136,7 @@ const Post = ({ data, pageContext }) => {
   const { frontmatter, html, excerpt } = markdownRemark
 
 
-  const Image = frontmatter.featuredImage
+  const FrontImage = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
   
@@ -155,13 +145,13 @@ const Post = ({ data, pageContext }) => {
     : ""
 
 
-    const NftLink = frontmatter.nftlink
-    const NftRedeem = frontmatter.nftredeem
-    const NftDrop = frontmatter.nftdrop
+  //   const NftLink = frontmatter.nftlink
+  //   const NftRedeem = frontmatter.nftredeem
+  //   const NftDrop = frontmatter.nftdrop
 
 
 
-  const Svg = frontmatter.svgImage
+  // const Svg = frontmatter.svgImage
   // const svgZindex = frontmatter.svgzindex
 
 // function AddSvg(){
@@ -172,7 +162,7 @@ const Post = ({ data, pageContext }) => {
 // }
 
 
-const IsNft = frontmatter.isnftforsale
+// const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
 const ShareThis = frontmatter.shareable
 const Comments = frontmatter.comments
@@ -240,175 +230,51 @@ Add your own in the comments below!
   )
 }
 
-const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+// const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
 
 
-  if (!YoutuberSuggestion1) {
-    <IframeSuggestions />
-  }
-  else{
+  // if (!YoutuberSuggestion1) {
+  //   <IframeSuggestions />
+  // }
+  // else{
   
     
-  }
+  // }
 
 
 
 
-  function Iframer2() {
-    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
-    return (
+//   function Iframer2() {
+//     const YouTube = frontmatter.youtuber
+//     return (
 
-<div>
-<ReactPlayer
-          className='react-player66'
-          url={iframeUrl2}
-          width="100%"
-          height="100%"
+// <a href={YouTube} title="Original"  rel="noreferrer" target="_blank">
+// <button aria-label="Click To Play" className="" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'300px', margin:'0 auto', height:'300px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
 
-          // playing={playing}
-          // controls={true}
-          // light={true}
-          // loop={loop}
-          // muted={muted}
-          config={{
-            youtube: {
-              playerVars: { showinfo:1, autoplay:0, controls:1, start:0, mute:0  }
-            },
-          }}
-          playsinline
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//               <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+//                 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+            
+//                 <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To View Original</span>
+                
+//                 </div>
+//                 </button>
+// </a>
 
-
-{/*   
-        <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
-          
-
-          {/* <div style={{position:'relative', maxWidth:'100vw', height:'70vh', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div> */}
-      
-          <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%'}}>Support Our Video Sponsors
-
-  <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-  Click to play original video
-  </div>
-          {/* </div> */}
-
-
-          </button>}
-       light="../assets/transparent.png"
-          />
-</div>
+//     )
+//   }
 
 
 
-    )
-  }
+  
 
 
 
-  function IframeSuggestions() {
-    
-    return (
-      <div>
-              <ReactPlayer
-              className='react repo'
-              // url={iframeUrl}
-              // style={{position:'absolute', top:'0', zIndex:'100'}}
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
-              width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
-                },
-              }}
-              loop
-              playing
-              playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-    
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              
-    
-              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-    </div>
-          
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-                // light="../assets/transparent.png"
-              />
-
-              
-</div>
-
-    )
-
-  }
-
-
-
-  function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
-    return (
-
-<ReactPlayer
-          className='audioframe'
-          url={iframeUrl3}
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
-          width="150px"
-          height="150px"
-          style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
-            },
-          }}
-          loop
-          playing
-          playsinline
-          playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
-          
-        <div className="" style={{position:'absolute', top:'-200px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
-          
-      
-          {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
-
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Extra Audio</div></div>
-          
-          </div>
-          </button>}
-   
-            light="../assets/transparent.png"
-          />
-     
-
-
-
-
-    )
-  }
+ 
 
 
 const svgUrl = frontmatter.svgImage.publicURL
@@ -416,9 +282,9 @@ const svgUrl = frontmatter.svgImage.publicURL
     
 
 
-  const YouTube2 = frontmatter.youtuber2
-  const AudioStart = frontmatter.audiostart
-  const AudioEnd = frontmatter.audioend
+  // const YouTube2 = frontmatter.youtuber2
+  // const AudioStart = frontmatter.audiostart
+  // const AudioEnd = frontmatter.audioend
 
   
 
@@ -438,9 +304,9 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-  const [showControls, setShowControls] = useState(false);
+  // const [showControls, setShowControls] = useState(false);
   // const [count, setCount] = useState(0);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
   const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
   const [bookmarks, setBookmarks] = useState([]);
   const [state, setState] = useState({
@@ -454,7 +320,7 @@ const svgUrl = frontmatter.svgImage.publicURL
     duration: 0,
     playbackRate: 1.0,
     volume: 1,
-    loop: true,
+    // loop={YoutubeLoop},
     seeking: false,
     url: iframeUrl,
     // url:[
@@ -470,15 +336,15 @@ const svgUrl = frontmatter.svgImage.publicURL
   const canvasRef = useRef(null);
   const {
     playing,
-    controls,
+    // controls,
     light,
     url,
     muted,
-    loop,
+    // loop,
     playbackRate,
     pip,
     played,
-    seeking,
+    // seeking,
     volume,
   } = state;
 
@@ -499,7 +365,7 @@ const svgUrl = frontmatter.svgImage.publicURL
       controlsRef.current.style.visibility = "visible";
       count = 0;
     }
-    if (controlsRef.current.style.visibility == "visible") {
+    if (controlsRef.current.style.visibility === "visible") {
       count += 1;
     }
     if (!state.seeking) {
@@ -556,7 +422,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
   const handleDisplayFormat = () => {
     setTimeDisplayFormat(
-      timeDisplayFormat == "normal" ? "remaining" : "normal"
+      timeDisplayFormat === "normal" ? "remaining" : "normal"
     );
   };
 
@@ -601,7 +467,7 @@ const svgUrl = frontmatter.svgImage.publicURL
   const duration =
     playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
   const elapsedTime =
-    timeDisplayFormat == "normal"
+    timeDisplayFormat === "normal"
       ? format(currentTime)
       : `-${format(duration - currentTime)}`;
 
@@ -614,7 +480,7 @@ const svgUrl = frontmatter.svgImage.publicURL
     <Layout className="page">
 <CustomBox style={{}}>
 <Helmet>
-  <body className="blogpost" style={{background:''}} />
+  <body id="body" className="blogpost" style={{background:''}} />
   {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
@@ -639,32 +505,42 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
+<div id="top"></div>
+
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
+
+<label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label>
 
 
-<div className="contact" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'400px', margin:'0 auto', gap:'30px'}}>
+  {/* <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>Contact</Link> */}
 
-  <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>contact</Link>
+  <AnchorLink to="#top" style={{}}>
+  Top
+        </AnchorLink>
 
-  <Link to="#original" style={{border:'0px solid', }}>
-  credits &amp; legal
-        </Link>
 
-        {ShareThis ? (
-<Link to="#sharethis" style={{}}>
-  share this
-        </Link>
+    {ShareThis ? (
+<AnchorLink to="#sharethis" style={{}}>
+  Share
+        </AnchorLink>
  ) : (
   ""
 )}
 
 {Comments ? (
-          <Link to="#comments" style={{}}>
-  comments
-        </Link>
+          <AnchorLink to="#comments" style={{}}>
+  Comments
+        </AnchorLink>
        
           ) : (
             ""
           )}
+
+
+<AnchorLink to="#footer" style={{border:'0px solid', }}>
+  Footer
+        </AnchorLink>
+
 
 </div>
 
@@ -673,18 +549,49 @@ const svgUrl = frontmatter.svgImage.publicURL
 
         
 
+<Controls
+            ref={controlsRef}
+            onSeek={handleSeekChange}
+            onSeekMouseDown={handleSeekMouseDown}
+            onSeekMouseUp={handleSeekMouseUp}
+            onDuration={handleDuration}
+            onRewind={handleRewind}
+            onPlayPause={handlePlayPause}
+            onFastForward={handleFastForward}
+            playing={playing}
+            played={played}
+            elapsedTime={elapsedTime}
+            totalDuration={totalDuration}
+            onMute={hanldeMute}
+            muted={muted}
+            onVolumeChange={handleVolumeChange}
+            onVolumeSeekDown={handleVolumeSeekDown}
+            onChangeDispayFormat={handleDisplayFormat}
+            playbackRate={playbackRate}
+            onPlaybackRateChange={handlePlaybackRate}
+            // onToggleFullScreen={toggleFullScreen}
+            volume={volume}
+            onBookmark={addBookmark}
+            style={{positon:'absolute', top:'0', zIndex:'900'}}
+          />
+
+
+
+<div className="wrap-element" style={{
+  overflow:'hidden',
+  // height:'clamp(30vh, 80vh, 100vh)'
+  aspectRatio:'16/9',
+  }}>
 
 
 
 
-<div className="wrap-element" style={{overflow:'hidden', height:'50vh'}}>
-
-{Image ? (
+{FrontImage ? (
             <GatsbyImage
-              image={Image}
+              image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', position:'absolute', top:'-1', zIndex:'-2',  border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (
@@ -721,7 +628,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div
+<button
           onMouseMove={handleMouseMove}
           onMouseLeave={hanldeMouseLeave}
           ref={playerContainerRef}
@@ -769,7 +676,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
           playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 {/*   
           <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
             
@@ -780,19 +687,19 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-{Image ? (
+{/* {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', position:'absolute', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:'', height:'100vh'}}
+              style={{ width:'100vw', position:'absolute', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:'', height:'100vh', background:'#111'}}
             />
 
           ) : (
           ""
-          )}
+          )} */}
         
-            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:'30%'}}>Click To Play
+            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:''}}>Click To Play
 
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
             {/* </div> */}
@@ -805,42 +712,12 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<Controls
-            ref={controlsRef}
-            onSeek={handleSeekChange}
-            onSeekMouseDown={handleSeekMouseDown}
-            onSeekMouseUp={handleSeekMouseUp}
-            onDuration={handleDuration}
-            onRewind={handleRewind}
-            onPlayPause={handlePlayPause}
-            onFastForward={handleFastForward}
-            playing={playing}
-            played={played}
-            elapsedTime={elapsedTime}
-            totalDuration={totalDuration}
-            onMute={hanldeMute}
-            muted={muted}
-            onVolumeChange={handleVolumeChange}
-            onVolumeSeekDown={handleVolumeSeekDown}
-            onChangeDispayFormat={handleDisplayFormat}
-            playbackRate={playbackRate}
-            onPlaybackRateChange={handlePlaybackRate}
-            // onToggleFullScreen={toggleFullScreen}
-            volume={volume}
-            onBookmark={addBookmark}
-          />
-</div>
+
+</button>
 
 
+{/* <Iframer2 /> */}
 
-{/* {Suggestion1 ? (
-            <div style={{position:'absolute', top:'-130px', left:'0', bottom:'', zIndex:'', maxWidth:'100vw', height:'85vh'}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )} */}
 
 
 
@@ -848,9 +725,9 @@ const svgUrl = frontmatter.svgImage.publicURL
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
-              className="mcboaty"
-              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'',
-             objectFit:'contain', border:'0px solid red !important'}}
+              className="mcboaty1"
+              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'',
+             objectFit:'contain', border:'0px solid red !important', background:'transparent'}}
             />
             
           ) : (
@@ -858,7 +735,7 @@ const svgUrl = frontmatter.svgImage.publicURL
           )}
 
           
-<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'', right:'', bottom:'', overflow:'', border:'0px solid red', zIndex:'', width:'100vw', height:'100%', background:'transparent', objectFit:'contain'   }} alt="animated content" title="animated content" ></object>
+
 
 
 
@@ -868,13 +745,15 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
         <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', height:'100vh', padding:'10vh 0', margin:'0 auto', color:'inherit !important', border:'0px solid yellow', position:'absolute', top:'0', left:'0', zindex:'1', display:'grid', placeContent:'center'}}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', aspectRatio:'16/9', padding:'10vh 0', margin:'0 auto', color:'inherit !important', border:'0px solid yellow', position:'', top:'0', left:'0', zindex:'1', display:'grid', placeContent:'center'}}
         dangerouslySetInnerHTML={{ __html: html }}
       >
 
 
 </div>
 
+
+<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
 
 
 
@@ -890,23 +769,32 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
       
+      {Suggestion1 ? (
+            <div style={{position:'relative', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:'85vh'}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
 
-
-{/* {Suggestion1 ? (
+{Suggestion1 ? (
             <ShowSuggestion style={{position:'relative', top:'', zIndex:'0',}} />
        
           ) : (
             ""
-          )} */}
+          )}
 
-{ !YouTube2 ? (
+{/* { !YouTube2 ? (
             ""
        
           ) : (
             <Iframer3 />
-          )}
+          )} */}
 
-
+{/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>
+                About Us 
+              </AnchorLink> */}
 <div style={{padding:'0 5vw', color:'inherit !important'}}>
       {(previous || next) && <Pagination {...props} />}
       </div>
@@ -928,13 +816,23 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div id="original" style={{height:'100vh', marginTop:'100vh'}}>
+      <section id="original" style={{height:'100vh', marginTop:'100vh',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
-<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
-                    <Iframer2 />
+ <a href={YouTube} title="Original"  rel="noreferrer" target="_blank">
+ <button aria-label="Click To Play" className="" style={{position:'relative',  top:'0', border:'0px solid red', width:'300px', margin:'0 auto', height:'300px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+
+              <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+                <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+            
+                <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To View Original</span>
+                
+               </div>
+              </button>
+ </a>
                    
        </div>
        Please visit our video sponsor and be sure to click to view original video above. Thank you.
@@ -946,13 +844,11 @@ const svgUrl = frontmatter.svgImage.publicURL
           <br />
 
 
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
-            Legal:<br />
-            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Service</Link></div>
 
 <br />
   <GoBack />
-</div>
+</section>
 
 
 
@@ -968,7 +864,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 {ShareThis ? (
 
-<div id="sharethis" style={{height:'100vh', display:'block', width:'80%', padding:'0', margin:'0 auto'}}>
+<section id="sharethis" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center',}}>
 
   <br />
 <ShareSocial />
@@ -976,10 +872,9 @@ const svgUrl = frontmatter.svgImage.publicURL
 <GoBack />
 
 
-<div style={{padding:'0 5vw', marginTop:'200px',  color:'inherit !important'}}>
-{(previous || next) && <Pagination {...props} />}
-</div>
-</div>
+
+
+</section>
           ) : (
             ""
           )}
@@ -1008,20 +903,15 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-      {Comments ? (
+{Comments ? (
 
-<div id="comments" style={{height:'100vh', display:'block', width:'80%', padding:'0', margin:'0 auto'}}>
-  <GoBack />
-  <br />
+<section id="comments" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center'}}>
+
 <CommentBox />
 <br />
 <GoBack />
 
-
-<div style={{padding:'0 5vw', marginTop:'200px',  color:'inherit !important'}}>
-{(previous || next) && <Pagination {...props} />}
-</div>
-</div>
+</section>
           ) : (
             ""
           )}
@@ -1036,15 +926,15 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-      <article className="blog-post">
+      {/* <article className="blog-post">
         <header style={{height:'', display:'grid', placeContent:'center'}}>
           <section className="article-header1" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
             <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} />
           </section>
         </header>
- </article>
+ </article> */}
 
 
 
@@ -1056,7 +946,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+{/* <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
 
       <div
@@ -1065,19 +955,20 @@ const svgUrl = frontmatter.svgImage.publicURL
       />    
   
  
-</div>
+</div> */}
 
       
 
       
 
    
-   <br />
-   <GoBack />
-   <br />
-   <br />
+
    </CustomBox>
+
+   <section id="footer" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)',}}>
    <Footer />
+
+   </section>
     </Layout>
 
 

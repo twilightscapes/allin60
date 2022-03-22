@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-
+// import GoBack from "../components/goBack"
 // import Theme from "../components/theme"
 import Consent from "../components/Consent"
-// import Install from "../components/Install-footer"
+import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,
@@ -21,7 +21,7 @@ import {
   RiMediumFill,
   RiBehanceFill,
 } from "react-icons/ri"
-import { FaWordpress, FaVk, FaHeart } from "react-icons/fa"
+import { FaWordpress, FaVk } from "react-icons/fa"
 
 
 import { Link } from "gatsby"
@@ -199,12 +199,15 @@ export function Footer() {
       <footer className="" style={{display:'flex', flexDirection:'column', padding:'1rem 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
+<br />
 
+    <Install />
+<br />
     
       <div className="" style={{textAlign:'center'}}>
 
 
-      <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'1rem 2rem 0 2rem', textDecoration:'none'}}>Contact Me - I&nbsp;<FaHeart />&nbsp;feedback!</Link>
+      <Link state={{modal: true}} to="/contact/" className="button fire specialfont" style={{margin:'2rem 2rem', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px'}}>Contact Us - We &#9825; Feedback!</Link>
 
  <div >
      
@@ -213,8 +216,8 @@ export function Footer() {
     ""
 
   ) : (
-    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', alignItems:'center'}}>
-       <div className="socialtext" style={{fontSize:'14px',}}>Social<br />Links</div> {sIcons}
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', alignItems:'center', margin:'3rem 0'}}>
+       <div className="socialtext" style={{fontSize:'14px',}}>We're<br />Social</div> {sIcons}
         </div>
   )}
   
@@ -224,7 +227,7 @@ export function Footer() {
         
       </div>
       <nav className="footerlinks" aria-label="footer">
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link> |  <Link to="/faq/">FAQ</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Service</Link></div>
   
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
@@ -239,8 +242,7 @@ export function Footer() {
 
 
 
-<br />
-<br />
+
       </nav>
    
     </footer>
@@ -254,5 +256,4 @@ export function Footer() {
     
   )
 }
-
 

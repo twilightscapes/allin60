@@ -10,10 +10,10 @@ import Countdown from 'react-countdown'
 const Completionist = () => <span>All In 60 Seconds</span>
 const renderer = ({ hours, minutes, seconds, completed }) => {
   if (completed) {
-    // Render a complete state
+
     return <a href="https://tron.allin60.com/"><Completionist /></a>;
   } else {
-    // Render a countdown
+
     return (
        <span>
         All In {seconds} Seconds
@@ -46,7 +46,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', background:'rgba(0, 0, 0, 0.2)' }}
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', background:'#111' }}
   >
 
 
@@ -78,7 +78,7 @@ const PostCard = ({ data }) => (
               }}
            >
 
-           <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+           {/* <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
     <g fill="none" fillRule="evenodd">
         <g transform="translate(1 1)" strokeWidth="2">
             <circle strokeOpacity=".5" cx="18" cy="18" r="18"/>
@@ -93,7 +93,7 @@ const PostCard = ({ data }) => (
             </path>
         </g>
     </g>
-</svg>
+</svg> */}
         </div>
       </Link>
       
@@ -119,7 +119,7 @@ date={Date.now() + 60000} className="countdown">
 <Completionist />
 </Countdown> */}
 
-{/* <Countdown date={Date.now() + 60000} renderer={renderer} /> */}
+<Countdown date={Date.now() + 60000} renderer={renderer} />
 </div>
 
 </div>
@@ -152,9 +152,9 @@ date={Date.now() + 60000} className="countdown">
   </Link>
 </h2>
 
-<p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
+{/* <p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
   <TimeAgo date={data.frontmatter.date}/>
-</p>
+</p> */}
 </div>
 
 
