@@ -895,7 +895,7 @@ Through NFT
 <div id="posts" name="posts" style={{padding:'0 3%'}}>
   
  
-<div style={{textAlign:'center', fontSize:'5vw', margin:'0 0',}}>Latest Minutes:</div>
+<div className="specialfont" style={{textAlign:'center', fontSize:'5vw', margin:'0 0',}}>Latest Minutes:</div>
 
         <BlogListHome data={posts} />
 
