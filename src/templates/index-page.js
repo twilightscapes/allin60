@@ -492,20 +492,60 @@ alt="Tron In 60 Seconds" src="../../static/assets/tronin60.jpg" />
 </div>
 
 <div>
-  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="/mystery-science-theater-3022/" >
+  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="" >
 <StaticImage className=""
 alt="Mystery Science Theater In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
 </Link>
 </div>
 
 <div>
-  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="/they-live/" >
+  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="https://tron.allin60.com" >
 <StaticImage className=""
 alt="They Live In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
 </Link>
 </div>
 
 {/* <Panel1 /> */}
+
+
+
+
+
+
+{/* 
+        <div>
+
+<StaticImage className=""
+alt="Super Yummy" src="../../static/assets/FILET-SMALL.jpg" />
+
+</div>
+
+
+<div>
+
+<StaticImage className=""
+alt="Delicious!" src="../../static/assets/FAROE-ISLAND-SALMON-scaled.jpg" />
+
+</div>
+
+
+
+<div>
+
+<StaticImage className=""
+alt="Get Racked at the Rack House" src="../../static/assets/NEW-ZEALAND-RACK.jpg" />
+
+</div> */}
+
+
+
+{/* <div>
+
+<StaticImage className=""
+alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
+
+</div> */}
+
 
 
 
@@ -832,7 +872,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<div style={{position:'relative', top:'', margin:'0', padding:'0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+<div style={{position:'relative', top:'', margin:'0', padding:'25% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
   <Newsignup />
   </div>
 
@@ -1074,9 +1114,8 @@ Virtual Tour<br />
 <br /><br /> */}
 
 
-<div style={{position:'relative', top:'', margin:'10vh 0', padding:'0',  width:'', }}>
 <SocialMe />
-</div>
+
 
 
 
