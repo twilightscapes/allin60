@@ -1347,7 +1347,9 @@ animation: fadeout .5s forwards;
 
 @media (max-width: 35rem) {
 body.blogpost::before{
-	content:" PLEASE ROTATE YOUR DEVICE \2B6E ";
+	content:" \21BB  PLEASE ROTATE YOUR DEVICE \21BB ";
+	animation: fadeout 4s forwards;
+	animation-delay:4s;
 	position:fixed;
 	z-index: 30;
 	display: inline-block;
