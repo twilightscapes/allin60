@@ -1345,6 +1345,31 @@ animation: fadeout .5s forwards;
 }
 
 
+@media (max-width: 35rem) {
+body.blogpost::before{
+	content:" PLEASE ROTATE YOUR DEVICE \2B6E ";
+	position:fixed;
+	z-index: 30;
+	display: inline-block;
+	margin:50vh 0 0 15%;
+	padding:10px 10px;
+	background:rgba(0, 0, 0, .9);
+	opacity:1;
+	display:grid;
+	place-content: center;
+	// display:flex;
+	// flex-direction:column;
+	// justify-content:flex-start;
+	// align-self: center;
+	// border-radius:12px;
+	width:70vw;
+	color:rgb(204, 13, 13) !important;
+	text-shadow:2px 2px 2px #333;
+	text-align:center;
+	border:2px solid red;
+}
+}
+
 .react-player__preview{
 	background-color:transparent !important;
 	z-index:40 !important;
