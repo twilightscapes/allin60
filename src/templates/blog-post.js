@@ -571,14 +571,14 @@ const svgUrl = frontmatter.svgImage.publicURL
             // onToggleFullScreen={toggleFullScreen}
             volume={volume}
             onBookmark={addBookmark}
-            style={{positon:'absolute', top:'0', zIndex:'900'}}
+            style={{positon:'absolute', top:'0', zIndex:'5'}}
           />
 
 
 
 <div className="wrap-element" style={{
   overflow:'hidden',
-  // height:'clamp(30vh, 80vh, 100vh)'
+  // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
   }}>
 
@@ -818,7 +818,7 @@ const svgUrl = frontmatter.svgImage.publicURL
       <section id="original" style={{height:'100vh', marginTop:'100vh',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
-          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
+          <div style={{position:'relative', width:'80%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
  <a href={YouTube} title="Original"  rel="noreferrer" target="_blank">
