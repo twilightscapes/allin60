@@ -777,7 +777,7 @@ a [aria-current]:hover{
 #sidebarMenu {
 	height: 75vh;
 	position: fixed;
-	z-index:3;
+	z-index:10;
 	right: 0;
 	top:0;
 	display:flex;
@@ -863,7 +863,7 @@ input[type=checkbox] {
 	box-sizing: border-box;
 	cursor: pointer;
 	position: fixed;
-	z-index: 3;
+	z-index: 10;
 	bottom: 20vh;
 	right: 2%;
 	color: #999;
