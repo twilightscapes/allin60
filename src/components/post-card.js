@@ -3,24 +3,24 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
-import Countdown from 'react-countdown'
+// import Countdown from 'react-countdown'
 
 // const Completionist = () => ""
 
-const Completionist = () => <span>All In 60 Seconds</span>
-const renderer = ({ hours, minutes, seconds, completed }) => {
-  if (completed) {
+// const Completionist = () => <span>All In 60 Seconds</span>
+// const renderer = ({ hours, minutes, seconds, completed }) => {
+//   if (completed) {
 
-    return <a href="https://tron.allin60.com/"><Completionist /></a>;
-  } else {
+//     return <a href="https://tron.allin60.com/"><Completionist /></a>;
+//   } else {
 
-    return (
-       <span>
-        All In {seconds} Seconds
-      </span> 
-    )
-  }
-}
+//     return (
+//        <span>
+//         All In {seconds} Seconds
+//       </span> 
+//     )
+//   }
+// }
 
 // const ViewIt = () => <span>All In 60 Seconds - VIEW NOW!</span>
 // const renderer1 = ({ hours, minutes, seconds, completed }) => {
@@ -119,7 +119,7 @@ date={Date.now() + 60000} className="countdown">
 <Completionist />
 </Countdown> */}
 
-<Countdown date={Date.now() + 60000} renderer={renderer} />
+{/* <Countdown date={Date.now() + 60000} renderer={renderer} /> */}
 </div>
 
 </div>
@@ -138,7 +138,8 @@ date={Date.now() + 60000} className="countdown">
   <Link 
     to={data.frontmatter.slug}
   >
-    {data.frontmatter.title} - <Countdown date={Date.now() + 60000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0} /> 
+    {data.frontmatter.title}
+     {/* - <Countdown date={Date.now() + 60000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0} />  */}
     {/* <Countdown
 date={Date.now() + 60000} className="countdown">
   date={Date.now() + 10000}

@@ -22,7 +22,7 @@ import SocialMe from "../components/share"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { AnchorLink } from "gatsby-plugin-anchor-links";
 // import BackgroundImage from 'gatsby-background-image'
-import Panel1 from "../components/panel1"
+// import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
 
 
