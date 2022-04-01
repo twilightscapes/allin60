@@ -357,7 +357,7 @@ body.homepage .ReactModalPortal .nextbutt {
 	border:none !important;
 	box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5);
 	box-shadow: none !important;
-	inset:40px 0 0 0 !important;
+	// inset:40px 0 0 0 !important;
 	// color:#fff;
 }
 
@@ -439,9 +439,9 @@ body.homepage .ReactModalPortal .nextbutt {
 
 /* Safari Desktop NO SNAP */
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
-	.horizontal-scroll-wrapper, .horizontal-scroll {
-		scroll-snap-type:none !important;
-	}
+	// .horizontal-scroll-wrapper, .horizontal-scroll {
+	// 	scroll-snap-type:none !important;
+	// }
 	
 }
 /* iOS ONLY browsers */
@@ -1378,7 +1378,7 @@ body.blogpost::before{
 	position:relative !important;
 }
 .frontbg iframe{
-	filter:brightness(1.2)contrast(2.4)hue-rotate(0deg)saturate(1.6);
+	filter:brightness(1.2) contrast(2.4) hue-rotate(0deg) saturate(1.6);
 	opacity: .4 ;
 }
 

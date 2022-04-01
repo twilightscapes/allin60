@@ -1,5 +1,5 @@
-// import React from "react"
-import React, { useState, useRef } from "react";
+import React from "react"
+// import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
 import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
@@ -163,11 +163,12 @@ const HomePage = ({ data }) => {
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
+
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-    const SecondaryImage = frontmatter.secondaryImage
+  const SecondaryImage = frontmatter.secondaryImage
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
   
@@ -209,28 +210,28 @@ const HomePage = ({ data }) => {
 
 
 
-    const [state, setState] = useState({
-      playing: true,
-      controls: false,
-      light: true,
-      muted: true,
-      loop: true,
-    });
-    const playerRef = useRef(null);
+    // const [state] = useState({
+    //   playing: true,
+    //   controls: false,
+    //   light: true,
+    //   muted: true,
+    //   loop: true,
+    // });
+    // const playerRef = useRef(null);
     // const controlsRef = useRef(null);
     
-    const {
-      playing,
-      controls,
-      light,
-      muted,
-      loop,
-      // playbackRate,
-      // pip,
-      // played,
-      // seeking,
-      // volume,
-    } = state;
+    // const {
+    //   playing,
+    //   controls,
+    //   light,
+    //   muted,
+    //   loop,
+    //   // playbackRate,
+    //   // pip,
+    //   // played,
+    //   // seeking,
+    //   // volume,
+    // } = state;
     
     // const handlePlayPause = () => {
     //   setState({ ...state, playing: !state.playing });
@@ -816,18 +817,18 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-           {/* {SecondaryImage ? (
+           {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
               layout="constrained"
               placeholder="blurred"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'',  borderRadius:'12px', position:'', backgroundSize:'', objectFit:'', top:'0', zIndex:'0'}}
+              style={{border:'1px solid red', width:'100%', height:'', maxHeight:'',  borderRadius:'12px', position:'', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
-          )} */}
+          )}
 
 
 
