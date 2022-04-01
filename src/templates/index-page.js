@@ -570,7 +570,7 @@ Order Online
               alt={frontmatter.title + " - Featured image"}
               className=""
               placeholder="blurred"
-              // loading="eager"
+              loading="eager"
               layout="constrained"
               style={{height:'auto', width:'100vw', maxHeight:'70vh', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
             />
