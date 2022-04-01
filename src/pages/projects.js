@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
 import { Seo } from "../components/seo"
-import Panel1 from "../components/panel1"
+// import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
 // import Panel3 from "../pages/pulp-fiction-trailer"
 import { StaticImage } from "gatsby-plugin-image"
@@ -59,11 +59,7 @@ export default function Projects() {
 <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
-<div className=" fire" style={{margin:'', height:'100%', textDecoration:'none'}}>
-{/* <a title="Shawshank Redemption by Stephen King - All In 60 Seconds" href="/shawshank/" className="navbar-item button fire" style={{margin:'', height:'100%', textDecoration:'none'}}> */}
-  <Panel1 />
-  {/* </a> */}
-</div>
+
 
 
 
