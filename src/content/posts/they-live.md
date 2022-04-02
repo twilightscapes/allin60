@@ -4,7 +4,7 @@ title: They Live
 slug: /they-live
 date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
-youtuber: "iOZcb9Otojk"
+youtuber: "https://youtu.be/iOZcb9Otojk"
 youtuber2: "https://youtu.be/yjw_DuNkOUw"
 youtubeshoworiginal: "1"
 youtubersuggestion1: 

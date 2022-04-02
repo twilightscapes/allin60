@@ -3,7 +3,7 @@ slug: /
 tagline: ""
 description: "Everything cool in ONLY 60 seconds"
 featuredImage: /assets/allin60seconds.jpg
-secondaryImage: /assets/allin60seconds.jpg
+secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: "https://youtu.be/14zqZsUzplg"

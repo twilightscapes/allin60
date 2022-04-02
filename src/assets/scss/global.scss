@@ -24,7 +24,7 @@ body.blogpost{
 // body{position:relative;}
 // body:after{content: (''); background-image: url('../../../static/assets/hytron-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; }
 
-body.blogpost .sidebarIconToggle, body.blogpost #menu {display: none !important;}
+// body.blogpost .sidebarIconToggle, body.blogpost #menu {display: none !important;}
 
 
 #posts article{
@@ -142,6 +142,7 @@ p{
 	align-self: center;
 	padding: 15px 20px;
 	border:1px solid rgb(104, 87, 102);
+	border-radius: 8px;
 	align-items: center;
 	height:auto ;
 	justify-content: center;
@@ -986,7 +987,7 @@ footer{
 	animation: fadeout .5s forwards;
 	background:rgba(2, 83, 83, 0.219)
 }
-.horizontal-scroll-wrapper::after{
+.horizontal-scroll::after{
 	content:'\276E \276E scroll';
 	position:relative;
 	z-index: 3;
@@ -1105,10 +1106,10 @@ animation: fadeout .5s forwards;
 
 @media (hover: hover) {
 .horizontal-scroll-wrapper::before, .sliderholder1::before{
-  content:' scroll \276F \276F ' !important;
+  content:' Scroll Projects  \276F \276F ' !important;
 }
 .horizontal-scroll::before, .sliderholder1::before{
-  content:' scroll \276F \276F ' !important;
+  content:' Scroll Projects \276F \276F ' !important;
 }
 
 }

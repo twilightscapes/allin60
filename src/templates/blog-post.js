@@ -17,7 +17,7 @@ import CommentBox from "../components/commentbox"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Countdown from 'react-countdown'
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-// import { AiOutlineAudioMuted } from "react-icons/ai"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
@@ -230,51 +230,125 @@ Add your own in the comments below!
   )
 }
 
-// const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
-  const YouTube = frontmatter.youtuber
+  // const YouTube = frontmatter.youtuber
 
+const OriginalUrl = frontmatter.youtuber 
 
-
-  // if (!YoutuberSuggestion1) {
-  //   <IframeSuggestions />
-  // }
-  // else{
+  if (!YoutuberSuggestion1) {
+    <IframeSuggestions />
+  }
+  else{
   
     
-  // }
+  }
 
-
-
-
-//   function Iframer2() {
-//     const YouTube = frontmatter.youtuber
-//     return (
-
-// <a href={YouTube} title="Original"  rel="noreferrer" target="_blank">
-// <button aria-label="Click To Play" className="" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'300px', margin:'0 auto', height:'300px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
-
-//               <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-//                 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-            
-//                 <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To View Original</span>
-                
-//                 </div>
-//                 </button>
-// </a>
-
-//     )
-//   }
-
-
-
-  
 
 
 
  
+
+
+
+  function IframeSuggestions() {
+    
+    return (
+      <div>
+              <ReactPlayer
+              className='react repo'
+              // url={iframeUrl}
+              // style={{position:'absolute', top:'0', zIndex:'100'}}
+              url={[
+                iframeUrl,
+                YoutuberSuggestion1,
+                YoutuberSuggestion2,
+                YoutuberSuggestion3
+              ]}
+              width="100%"
+              height="100%"
+              config={{
+                youtube: {
+                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+                },
+              }}
+              loop
+              playing
+              playsinline
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              
+    
+              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    </div>
+          
+              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+              </div>
+              </button>}
+                // light="../assets/transparent.png"
+              />
+
+              
+</div>
+
+    )
+
+  }
+
+
+
+  function Iframer3() {
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    return (
+
+<ReactPlayer
+          className='audioframe'
+          url={iframeUrl3}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          width="150px"
+          height="150px"
+          style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          playIcon={
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+          
+        <div className="" style={{position:'absolute', top:'-200px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          
+      
+          {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
+
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Extra Audio</div></div>
+          
+          </div>
+          </button>}
+   
+            light="../assets/transparent.png"
+          />
+     
+
+
+
+
+    )
+  }
 
 
 const svgUrl = frontmatter.svgImage.publicURL
@@ -282,9 +356,9 @@ const svgUrl = frontmatter.svgImage.publicURL
     
 
 
-  // const YouTube2 = frontmatter.youtuber2
-  // const AudioStart = frontmatter.audiostart
-  // const AudioEnd = frontmatter.audioend
+  const YouTube2 = frontmatter.youtuber2
+  const AudioStart = frontmatter.audiostart
+  const AudioEnd = frontmatter.audioend
 
   
 
@@ -298,7 +372,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
   const { siteUrl } = useSiteMetadata()
-  // const { iconimage } = useSiteMetadata()
+  const { iconimage } = useSiteMetadata()
 
 
 
@@ -320,6 +394,7 @@ const svgUrl = frontmatter.svgImage.publicURL
     duration: 0,
     playbackRate: 1.0,
     volume: 1,
+    loop: true,
     seeking: false,
     url: iframeUrl,
     // url:[
@@ -508,10 +583,13 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 <div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
 
-<label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label>
+{/* <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label> */}
 
 
   {/* <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>Contact</Link> */}
+
+
+
 
   <AnchorLink to="#top" style={{}}>
   Top
@@ -536,9 +614,19 @@ const svgUrl = frontmatter.svgImage.publicURL
           )}
 
 
-<AnchorLink to="#footer" style={{border:'0px solid', }}>
-  Footer
+{ShowOriginal ? (
+          <AnchorLink to="#original" style={{}}>
+  Credits
         </AnchorLink>
+       
+          ) : (
+            ""
+          )}
+
+
+{/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
+  Footer
+        </AnchorLink> */}
 
 
 </div>
@@ -571,14 +659,14 @@ const svgUrl = frontmatter.svgImage.publicURL
             // onToggleFullScreen={toggleFullScreen}
             volume={volume}
             onBookmark={addBookmark}
-            style={{positon:'absolute', top:'0', zIndex:'5'}}
+            style={{positon:'absolute', top:'0', zIndex:'900'}}
           />
 
 
 
 <div className="wrap-element" style={{
   overflow:'hidden',
-  // height:'clamp(30vh, 80vh, 100vh)',
+  // height:'clamp(30vh, 80vh, 100vh)'
   aspectRatio:'16/9',
   }}>
 
@@ -715,7 +803,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 </button>
 
 
-{/* <Iframer2 /> */}
+
 
 
 
@@ -784,12 +872,12 @@ const svgUrl = frontmatter.svgImage.publicURL
             ""
           )}
 
-{/* { !YouTube2 ? (
+{ !YouTube2 ? (
             ""
        
           ) : (
             <Iframer3 />
-          )} */}
+          )}
 
 {/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>
                 About Us 
@@ -815,25 +903,22 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-      <section id="original" style={{height:'100vh', marginTop:'100vh',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center'}}>
+      <section id="original" style={{height:'100vh', marginTop:'100vh',   display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
-          <div style={{position:'relative', width:'80%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
-<div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
+<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
- <a href={YouTube} title="Original"  rel="noreferrer" target="_blank">
- <button aria-label="Click To Play" className="" style={{position:'relative',  top:'0', border:'0px solid red', width:'300px', margin:'0 auto', height:'300px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+                    {/* <Iframer2 /> */}
+<a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
+ <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', height:'300px', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
 
-              <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-                <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-            
-                <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To View Original</span>
-                
-               </div>
-              </button>
- </a>
-                   
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+Click to play original video
+</div>
+</a>                   
        </div>
+       
        Please visit our video sponsor and be sure to click to view original video above. Thank you.
        </div>
        
@@ -843,7 +928,9 @@ const svgUrl = frontmatter.svgImage.publicURL
           <br />
 
 
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Service</Link></div>
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
+            Legal:<br />
+            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
 
 <br />
   <GoBack />
@@ -863,7 +950,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 {ShareThis ? (
 
-<section id="sharethis" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center',}}>
+<section id="sharethis" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
 
   <br />
 <ShareSocial />
@@ -904,7 +991,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 {Comments ? (
 
-<section id="comments" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)', display:'grid', placeContent:'center'}}>
+<section id="comments" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
 
 <CommentBox />
 <br />
@@ -925,15 +1012,15 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-      {/* <article className="blog-post">
+      <article className="blog-post">
         <header style={{height:'', display:'grid', placeContent:'center'}}>
           <section className="article-header1" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
             <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-            <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} />
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </section>
         </header>
- </article> */}
+ </article>
 
 
 
@@ -961,13 +1048,15 @@ const svgUrl = frontmatter.svgImage.publicURL
       
 
    
-
+   <br />
+   <GoBack />
+   <br />
+   <br />
    </CustomBox>
 
-   <section id="footer" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)',}}>
+   <section id="footer" style={{height:'100vh', marginTop:'',  }}>
    <Footer />
-
-   </section>
+   <GoBack /></section>
     </Layout>
 
 

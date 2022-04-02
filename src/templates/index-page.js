@@ -168,9 +168,9 @@ const HomePage = ({ data }) => {
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-  const SecondaryImage = frontmatter.secondaryImage
-    ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
-    : ""
+  // const SecondaryImage = frontmatter.secondaryImage
+  //   ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
+  //   : ""
   
     // const UnderlayImage = frontmatter.underlayImage
     // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
@@ -817,7 +817,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-           {SecondaryImage ? (
+           {/* {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
@@ -828,7 +828,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
             />
           ) : (
             ""
-          )}
+          )} */}
 
 
 
