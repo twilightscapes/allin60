@@ -5,7 +5,7 @@ slug: /they-live
 date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
 youtuber: "https://youtu.be/iOZcb9Otojk"
-youtuber2: "https://youtu.be/yjw_DuNkOUw"
+youtuber2: ""
 youtubeshoworiginal: "1"
 youtubersuggestion1: 
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"

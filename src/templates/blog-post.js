@@ -581,7 +581,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div id="top"></div>
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
+<div className="pagemenu actionJackson" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
 
 {/* <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label> */}
 
@@ -911,22 +911,22 @@ const svgUrl = frontmatter.svgImage.publicURL
   
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
- <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', height:'300px', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
+ <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'300px', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
 
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 Click to play original video
 </div>
 </a>                   
        </div>
-       
-       Please visit our video sponsor and be sure to click to view original video above. Thank you.
+ 
        </div>
        
           ) : (
             ""
           )}
           <br />
-
+          <br />
+          <br />
 
           <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
             Legal:<br />
