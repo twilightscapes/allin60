@@ -2,8 +2,8 @@ import * as React from "react"
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import GoBack from "../components/goBack"
 // import Theme from "../components/theme"
-import Consent from "../components/Consent"
-import Install from "../components/Install-footer"
+import Consent from "./Consent"
+import Install from "./install-footer"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,

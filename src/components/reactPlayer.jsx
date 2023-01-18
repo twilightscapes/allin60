@@ -1,6 +1,6 @@
 
 /** @jsx jsx */
-import * as React from "react"
+// import * as React from "react"
 import { jsx } from "theme-ui"
 import styled from "styled-components"
 
@@ -63,4 +63,4 @@ const Player = () => (
   
 )
 
-export default GoBack
+export default Player

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-// import React from "react"
+// import * as React from "react"
 
 import React, { useState, useRef } from "react";
 
@@ -20,7 +20,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import YouTubed from "../pages/youtube"

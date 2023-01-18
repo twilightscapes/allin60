@@ -15,7 +15,7 @@ import GoBack from "../components/goBack"
 
 
 
-export default function CookiesPage() {
+function CookiesPage() {
    return (
 
 
@@ -66,3 +66,4 @@ us with your question or comments.</p>
 
   )
 }
+export default CookiesPage

@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { graphql } from "gatsby"
 
 import Seo from "../components/seo"
@@ -16,7 +16,7 @@ export const pageQuery = graphql`
     }
   }
 `
-const About1Page = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -31,4 +31,4 @@ const About1Page = ({ data }) => {
   )
 }
 
-export default About1Page
+export default AboutPage

@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 // import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
 import ReactPlayer from 'react-player/lazy'

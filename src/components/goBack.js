@@ -8,7 +8,7 @@ import { navigate } from "gatsby";
 const CustomBox = styled.div`
 
 .themed{margin-top:20px;}
-=
+
 
 `
 

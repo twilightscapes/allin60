@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 // import { Link } from "gatsby"
 // import Layout from "../components/Layout"
 // import { ProductListing } from "../components/product-listing"
@@ -47,7 +47,7 @@ const CustomBox = styled.div`
 
 
         
-        export default class IndexPage extends React.Component {
+        export default class youTubePage extends React.Component {
           
           
           state = {

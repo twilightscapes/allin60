@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from "react"
 // import Layout from '../components/Layout'
 // import Footer from '../../components/Footer'
 // import Navbar from '../../components/Navbar'

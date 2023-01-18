@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import * as React from "react"
+// import { Link } from "gatsby"
 
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
@@ -8,11 +8,11 @@ import styled from "styled-components"
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
 // import Seo from "../components/seo"
-import { FaRegPlusSquare } from 'react-icons/fa';
-import { IoShareOutline } from 'react-icons/io5';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+// import { FaRegPlusSquare } from 'react-icons/fa';
+// import { IoShareOutline } from 'react-icons/io5';
+// import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -43,7 +43,7 @@ const CustomBox = styled.div`
 
 
         
-        export default class BlogPost extends React.Component {
+        export default class YouTubePage extends React.Component {
           
           
           state = {

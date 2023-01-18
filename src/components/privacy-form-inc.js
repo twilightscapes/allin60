@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 // import { FaEnvelope } from 'react-icons/fa'
-import Layout from "../components/Layout"
+import Layout from "../components/siteLayout"
 
 
 // const Contact = class extends React.Component {

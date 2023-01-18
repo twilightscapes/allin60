@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from "react"
 // import { navigate } from 'gatsby-link'
 // import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
@@ -56,13 +56,13 @@ export default class Installer extends React.Component {
     
     <div style={{textAlign:'center', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
    <IoShareOutline style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} />
-    1) Press the 'Share' button 
+    1 Press the 'Share' button 
   </div>
   
    <div style={{textAlign:'center', display:'flex', alignContent:'center',}}>
    <FaRegPlusSquare style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} /> 
    
-  2) Press 'Add to Home Screen'
+  2 Press 'Add to Home Screen'
    </div>
    
    </div>

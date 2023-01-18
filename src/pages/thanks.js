@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
 

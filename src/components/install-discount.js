@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from "react"
 // import { navigate } from 'gatsby-link'
 // import { FiShare } from 'react-icons/fi';
 // import { IoShareOutline } from 'react-icons/io5';
