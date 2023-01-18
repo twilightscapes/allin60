@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/siteLayout"
 // import useSiteMetadata from "../hooks/SiteMetadata"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import GoBack from "../components/goBack"

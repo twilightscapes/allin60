@@ -2,7 +2,7 @@ import React from "react"
 // import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
 import ReactPlayer from 'react-player/lazy'
-import Layout from "../components/Layout"
+import Layout from "../components/siteLayout"
 import Footer from "../components/footer";
 import Seo from "../components/seo"
 import { ImPlay } from "react-icons/im"

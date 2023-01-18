@@ -25,7 +25,7 @@ import ReactPlayer from 'react-player/lazy'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import YouTubed from "../pages/youtube"
 import Seo from "../components/seo"
-import Layout from "../components/Layout"
+import Layout from "../components/siteLayout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
