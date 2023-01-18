@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 
-export function Seo({
+export default function Seo({
   title = "",
   description = "",
   pathname = "",

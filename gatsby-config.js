@@ -120,7 +120,7 @@ module.exports = {
               maxWidth: 1024,
               showCaptions: true,
               linkImagesToOriginal: false,
-              tracedSVG: true,
+              // tracedSVG: true,
               loading: "lazy",
             },
           },
@@ -211,22 +211,22 @@ module.exports = {
 
     
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://allin60.com',
-        sitemap: 'https://allin60.com/sitemap.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', allow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     host: 'https://allin60.com',
+    //     sitemap: 'https://allin60.com/sitemap.xml',
+    //     resolveEnv: () => process.env.GATSBY_ENV,
+    //     env: {
+    //       development: {
+    //         policy: [{ userAgent: '*', allow: ['/'] }]
+    //       },
+    //       production: {
+    //         policy: [{ userAgent: '*', allow: '/' }]
+    //       }
+    //     }
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

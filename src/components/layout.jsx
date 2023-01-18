@@ -1,15 +1,18 @@
 import React, { } from "react"
-import { Seo } from "./seo"
+import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
+import "../assets/scss/reset.scss"
+import "../assets/scss/global.scss"
+import "../assets/scss/styles.css"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
 import Bug from "../../static/assets/logo.svg"
 import SiteLogo from "../../static/assets/logo.svg"
 // import Install from './install-discount'
-import Theme from "../components/theme"
+import Theme from "./theme"
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
 
@@ -19,8 +22,7 @@ import Theme from "../components/theme"
 
 // import Install from './install-discount'
 // import { navigate } from "gatsby";
-
-export function Layout({ children }) {
+const TemplateWrapper = ({ children }) => {
 
   // const { iconimage } = useSiteMetadata()
   // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
@@ -227,5 +229,7 @@ This is 2nd menu
       </>
     </div>
     
-  )
-}
+    );
+  };
+  
+  export default TemplateWrapper;

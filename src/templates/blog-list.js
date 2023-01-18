@@ -8,15 +8,15 @@ import React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 import { ImPlay } from "react-icons/im"
 import ReactPlayer from 'react-player/lazy'
-// import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import useSiteMetadata from "../hooks/SiteMetadata"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 // import { Footer } from "../components/footer"
 
 import PostCard from "../components/post-card"
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import Seo from "../components/seo"
+import Layout from "../components/Layout"
 
 
 

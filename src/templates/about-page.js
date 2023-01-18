@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import Seo from "../components/seo"
+import Layout from "../components/Layout"
 
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {

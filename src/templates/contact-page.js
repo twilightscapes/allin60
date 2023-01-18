@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import Seo from "../components/seo"
+import Layout from "../components/Layout"
 import { Helmet } from "react-helmet"
 // import { Footer } from "../components/footer"
 export const pageQuery = graphql`

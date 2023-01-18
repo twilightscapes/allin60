@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 // import GoBack from "../components/goBack"
 // import Theme from "../components/theme"
 import Consent from "../components/Consent"
@@ -169,7 +169,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 
-export function Footer() {
+export default function Footer() {
   const { siteUrl } = useSiteMetadata();
 
   const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"

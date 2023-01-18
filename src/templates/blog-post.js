@@ -14,18 +14,18 @@ import { getSrc } from "gatsby-plugin-image"
 // import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-import { Footer } from "../components/footer"
+import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import YouTubed from "../pages/youtube"
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import Seo from "../components/seo"
+import Layout from "../components/Layout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"

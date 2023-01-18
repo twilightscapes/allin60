@@ -1,13 +1,13 @@
 import React from "react"
 // import { Link } from "gatsby"
-// import { Layout } from "../components/layout"
+// import Layout from "../components/Layout"
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 // import ShareSocial from '../components/share' 
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
-// import { Seo } from "../components/seo"
+// import Seo from "../components/seo"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';

@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
-import { Seo } from "../components/seo"
+import Layout from "../components/Layout"
+import Seo from "../components/seo"
 // import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
 // import Panel3 from "../pages/pulp-fiction-trailer"

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import commentbox from 'commentbox.io'
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 
 
 const ComBox = ()=>{

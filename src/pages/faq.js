@@ -1,7 +1,7 @@
 import * as React from "react"
-import { Layout } from "../components/layout"
-// import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import Layout from "../components/Layout"
+// import useSiteMetadata from "../hooks/SiteMetadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 import GoBack from "../components/goBack"
 
 

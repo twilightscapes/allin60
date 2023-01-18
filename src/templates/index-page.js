@@ -2,9 +2,9 @@ import React from "react"
 // import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
 import ReactPlayer from 'react-player/lazy'
-import { Layout } from "../components/layout"
-import { Footer } from "../components/footer";
-import { Seo } from "../components/seo"
+import Layout from "../components/Layout"
+import Footer from "../components/footer";
+import Seo from "../components/seo"
 import { ImPlay } from "react-icons/im"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
@@ -19,7 +19,7 @@ import SocialMe from "../components/share"
 
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import { RiArrowRightSLine } from "react-icons/ri"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 // import { AnchorLink } from "gatsby-plugin-anchor-links";
 // import BackgroundImage from 'gatsby-background-image'
 // import Panel1 from "../components/panel1"
