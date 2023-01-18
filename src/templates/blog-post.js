@@ -23,7 +23,7 @@ import Footer from "../components/footer"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import YouTubed from "../pages/youtube"
+import YouTubed from "../components/youtube"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
 import ShareSocial from '../components/share' 

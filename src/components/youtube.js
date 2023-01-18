@@ -3,7 +3,7 @@ import * as React from "react"
 
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
-import styled from "styled-components"
+// import styled from "styled-components"
 // import ShareSocial from '../components/share' 
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
@@ -22,12 +22,12 @@ import styled from "styled-components"
 // import CommentBox from "../components/commentbox"
 import ReactPlayer from 'react-player/lazy'
 // import ReactPlayer from '../components/react-player'
-const CustomBox = styled.div`
-@media (max-width: 48em) {
-}
-@media (min-width: 58em) {
-}
-`
+// const CustomBox = styled.div`
+// @media (max-width: 48em) {
+// }
+// @media (min-width: 58em) {
+// }
+// `
 
 
 
@@ -170,7 +170,6 @@ const CustomBox = styled.div`
           // onChangeCapture={this.handleShow}
           // value="https://youtu.be/Ahas9vPsFW8"
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
-          autoFocus
           className="youtubelinker"
         />
         
