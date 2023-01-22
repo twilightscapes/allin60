@@ -22,9 +22,9 @@ isnftforsale: "1"
 svgzindex: "0"
 comments: "0"
 shareable: "1"
-underlayImage: /assets/transparent.png
+underlayImage: 
 featuredImage: /assets/pulpfiction.jpg
-svgImage: /assets/transparent.png
+svgImage: 
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
