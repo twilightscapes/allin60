@@ -15,8 +15,9 @@ youtubeend: "68"
 youtubemute: true
 audiostart: "0"
 audioend: ""
-youtubecontrols: true
+youtubecontrols: false
 youtubeautostart: true
+youtubeloop: true
 isnftforsale: ""
 svgzindex: "0"
 comments: "0"

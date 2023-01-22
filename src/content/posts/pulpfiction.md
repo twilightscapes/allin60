@@ -13,9 +13,10 @@ youtubersuggestion3: ""
 youtubestart: "20"
 youtubeend: "68"
 youtubemute: true
+youtubeloop: true
 audiostart: "0"
 audioend: ""
-youtubecontrols: true
+youtubecontrols: false
 youtubeautostart: true
 isnftforsale: "1"
 svgzindex: "0"
