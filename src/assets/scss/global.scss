@@ -1339,15 +1339,15 @@ animation: fadeout .5s forwards;
 		// max-height:300px;
 	}
 	.horizontal-holder{
-		height:280px !important;
+		height:380px !important;
 	}
-	.wrap-element{height:280px !important;}
+	.wrap-element{height:380px !important;}
 
 }
 
 
-@media (max-width: 35rem) {
-body.blogpost::before{
+@media (max-width: 48rem) {
+body::before{
 	content:" \21BB  PLEASE ROTATE YOUR DEVICE \21BB ";
 	animation: fadeout 4s forwards;
 	animation-delay:4s;

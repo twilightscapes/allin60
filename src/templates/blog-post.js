@@ -595,7 +595,7 @@ const OriginalUrl = frontmatter.youtuber
                 },
               },
               youtube: {
-                playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+                playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:0, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
               },
             }}
           
