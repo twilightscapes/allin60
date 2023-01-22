@@ -285,7 +285,7 @@ const Controls = forwardRef(
                   ) : volume > 0.5 ? (
                     <MdVolumeUp className="hudicon" fontSize="large" style={{}}  />
                   ) : (
-                    <MdVolumeDown className="hudicon" fontSize="large" style={{}}  />
+                    <MdVolumeUp className="hudicon" fontSize="large" style={{}}  />
                   )}
                 </button>
 
