@@ -88,7 +88,7 @@ import ReactPlayer from 'react-player/lazy'
             const Url = this.state.youtubelink
 
             const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
-            const FinalUrl = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
+            const FinalUrl = "https://www.youtube-nocookie.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
             function Iframed() {
   

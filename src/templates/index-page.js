@@ -31,115 +31,92 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
 
 export const pageQuery = graphql`
-  query HomeQueryHomeQuery($id: String! ) {
-    
-    
-    site {
-      siteMetadata {
-        title
-        titleDefault
-        siteUrl
-        description
-        image
-        twitterUsername
-        companyname
-        showfooter
-      }
-
-
-
-
-      
-
-      
-
+query HomeQueryHomeQuery($id: String!) {
+  site {
+    siteMetadata {
+      title
+      titleDefault
+      siteUrl
+      description
+      image
+      twitterUsername
+      companyname
+      showfooter
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "YYYY-MM-DD-HH-MM-SS")
-        slug
-        title
-        description
-        showFeature
-        showPosts
-        showInfo
-        youtuber
-        youtubestart
-        youtubeend
-        youtubemute
-        youtubecontrols
-        youtubeautostart
-        svgzindex
-        tagline
-        featuredImage {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
-          }
-        }
-        secondaryImage {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 800)
-          }
-        }
-        underlayImage {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
-          }
-        }
-        cta {
-          ctaText
-          ctaLink
-        }
-        svgImage{
-          relativePath
+  }
+  markdownRemark(id: {eq: $id}) {
+    id
+    html
+    excerpt(pruneLength: 148)
+    frontmatter {
+      date(formatString: "YYYY-MM-DD-HH-MM-SS")
+      slug
+      title
+      description
+      showFeature
+      showPosts
+      showInfo
+      youtuber
+      youtubestart
+      youtubeend
+      youtubemute
+      youtubeloop
+      youtubecontrols
+      youtubeautostart
+      svgzindex
+      tagline
+      featuredImage {
+        publicURL
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
         }
       }
+      secondaryImage {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, width: 800)
+        }
+      }
+      underlayImage {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+        }
+      }
+      cta {
+        ctaText
+        ctaLink
+      }
+      svgImage {
+        relativePath
+      }
     }
-
-
-
-
-
-  
-
-
-
-
-    
-
-    
-
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 3
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD-HH-MM-SS")
-            slug
-            title
-            nftdrop
-  
-            
-            featuredImage {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-              }
+  }
+  posts: allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "blog-post"}}}
+    limit: 3
+  ) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          date(formatString: "YYYY-MM-DD-HH-MM-SS")
+          slug
+          title
+          nftdrop
+          youtubemute
+          youtubeloop
+          featuredImage {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
             }
           }
         }
       }
     }
   }
+}
 `
 
 
@@ -183,9 +160,10 @@ const HomePage = ({ data }) => {
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
-    const YouTubeMute = frontmatter.youtubemute
-    const YouTubeControls = frontmatter.youtubecontrols
-    const YouTubeAutostart = frontmatter.youtubeautostart
+
+    // const YouTubeMute = frontmatter.youtubemute
+    // const YouTubeControls = frontmatter.youtubecontrols
+    // const YouTubeAutostart = frontmatter.youtubeautostart
 
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
@@ -261,7 +239,7 @@ else{
 function Iframer() {
   
 
-  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+  const Url = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
   return (
     <ReactPlayer
     className='react-player66'
@@ -278,7 +256,7 @@ function Iframer() {
 
     config={{
       youtube: {
-        playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+        playerVars: { showinfo:1, autoplay:frontmatter.youtubestart, controls:frontmatter.youtubecontrols, start:YouTubeStart, end:YouTubeEnd, mute:frontmatter.youtubemute  }
       },
     }}
     loop

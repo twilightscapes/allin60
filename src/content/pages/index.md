@@ -7,7 +7,7 @@ secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: "https://youtu.be/14zqZsUzplg"
-youtubeautostart: "1"
+youtubeautostart: true
 title: All In 60 Seconds
 svgImage: /assets/null.svg
 showPosts: "1"
@@ -17,9 +17,9 @@ cta:
 youtubeend: ""
 showFeature: "1"
 nftredeem: ""
-youtubecontrols: ""
+youtubecontrols: false
 template: index-page
-youtubemute: "1"
+youtubemute: true
 svgzindex: ""
 youtubestart: ""
 ---

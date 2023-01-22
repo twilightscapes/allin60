@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // import * as React from "react"
 
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 import Controls from "../components/Controls";
 
@@ -114,21 +114,7 @@ const Pagination = props => (
 
 
 
-const format = (seconds) => {
-  if (isNaN(seconds)) {
-    return `00:00`;
-  }
-  const date = new Date(seconds * 1000);
-  const hh = date.getUTCHours();
-  const mm = date.getUTCMinutes();
-  const ss = date.getUTCSeconds().toString().padStart(2, "0");
-  if (hh) {
-    return `${hh}:${mm.toString().padStart(2, "0")}:${ss}`;
-  }
-  return `${mm}:${ss}`;
-};
 
-let count = 0;
 
 const Post = ({ data, pageContext }) => {
 
@@ -151,7 +137,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-  // const Svg = frontmatter.svgImage
+  const Svg = frontmatter.svgImage
   // const svgZindex = frontmatter.svgzindex
 
 // function AddSvg(){
@@ -233,7 +219,7 @@ Add your own in the comments below!
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
 const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
 const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
-const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
+const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + ""
   // const YouTube = frontmatter.youtuber
 
 const OriginalUrl = frontmatter.youtuber 
@@ -320,9 +306,11 @@ const OriginalUrl = frontmatter.youtuber
           height="150px"
           style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
           config={{
+            
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
             },
+            
           }}
           loop
           playing
@@ -351,10 +339,18 @@ const OriginalUrl = frontmatter.youtuber
   }
 
 
-const svgUrl = frontmatter.svgImage.publicURL
-  
-    
 
+  function AddSvg(){
+    const svgUrl = frontmatter.svgImage.publicURL
+    return (
+      <object className="" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
+    )
+  }
+
+
+      //  const svgUrl = frontmatter.svgImage.publicURL
+// const svgUrl = "../assets/" + frontmatter.svgImage.publicURL + ""
+// const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
 
   const YouTube2 = frontmatter.youtuber2
   const AudioStart = frontmatter.audiostart
@@ -381,171 +377,33 @@ const svgUrl = frontmatter.svgImage.publicURL
   // const [showControls, setShowControls] = useState(false);
   // const [count, setCount] = useState(0);
   // const [anchorEl, setAnchorEl] = React.useState(null);
-  const [timeDisplayFormat, setTimeDisplayFormat] = React.useState("normal");
-  const [bookmarks, setBookmarks] = useState([]);
   const [state, setState] = useState({
-    pip: false,
-    playing: true,
-    controls: false,
+    playing: YouTubeAutostart,
+    controls: YouTubeControls,
     light: false,
-
-    muted: false,
-    played: 0,
-    duration: 0,
-    playbackRate: 1.0,
-    volume: 1,
-    loop: true,
-    seeking: false,
-    url: iframeUrl,
-    // url:[
-    //   iframeUrl,
-    //   YoutuberSuggestion1,
-    // ],
-
+    muted: YouTubeMute,
+    loop: YoutubeLoop,
   });
 
   const playerRef = useRef(null);
-  const playerContainerRef = useRef(null);
   const controlsRef = useRef(null);
-  const canvasRef = useRef(null);
+
   const {
     playing,
-    // controls,
+    controls,
     light,
-    url,
     muted,
-    // loop,
-    playbackRate,
-    pip,
+    loop,
     played,
-    // seeking,
-    volume,
   } = state;
 
   const handlePlayPause = () => {
     setState({ ...state, playing: !state.playing });
   };
 
-  const handleRewind = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() - 10);
-  };
-
-  const handleFastForward = () => {
-    playerRef.current.seekTo(playerRef.current.getCurrentTime() + 10);
-  };
-
-  const handleProgress = (changeState) => {
-    if (count > 3) {
-      controlsRef.current.style.visibility = "visible";
-      count = 0;
-    }
-    if (controlsRef.current.style.visibility === "visible") {
-      count += 1;
-    }
-    if (!state.seeking) {
-      setState({ ...state, ...changeState });
-    }
-  };
-
-  const handleSeekChange = (e, newValue) => {
-    console.log({ newValue });
-    setState({ ...state, played: parseFloat(newValue / 100) });
-  };
-
-  const handleSeekMouseDown = (e) => {
-    setState({ ...state, seeking: true });
-  };
-
-  const handleSeekMouseUp = (e, newValue) => {
-    console.log({ value: e.target });
-    setState({ ...state, seeking: false });
-    // console.log(sliderRef.current.value)
-    playerRef.current.seekTo(newValue / 100, "fraction");
-  };
-
-  const handleDuration = (duration) => {
-    setState({ ...state, duration });
-  };
-
-  const handleVolumeSeekDown = (e, newValue) => {
-    setState({ ...state, seeking: false, volume: parseFloat(newValue / 100) });
-  };
-  const handleVolumeChange = (e, newValue) => {
-    // console.log(newValue);
-    setState({
-      ...state,
-      volume: parseFloat(newValue / 100),
-      muted: newValue === 0 ? true : false,
-    });
-  };
-
-  // const toggleFullScreen = () => {
-  //   screenful.toggle(playerContainerRef.current);
-  // };
-
-  const handleMouseMove = () => {
-    console.log("mousemove");
-    controlsRef.current.style.visibility = "visible";
-    count = 0;
-  };
-
-  const hanldeMouseLeave = () => {
-    controlsRef.current.style.visibility = "visible";
-    count = 0;
-  };
-
-  const handleDisplayFormat = () => {
-    setTimeDisplayFormat(
-      timeDisplayFormat === "normal" ? "remaining" : "normal"
-    );
-  };
-
-  const handlePlaybackRate = (rate) => {
-    setState({ ...state, playbackRate: rate });
-  };
-
   const hanldeMute = () => {
     setState({ ...state, muted: !state.muted });
   };
-
-  const addBookmark = () => {
-    const canvas = canvasRef.current;
-    canvas.width = 160;
-    canvas.height = 90;
-    const ctx = canvas.getContext("2d");
-
-    ctx.drawImage(
-      playerRef.current.getInternalPlayer(),
-      0,
-      0,
-      canvas.width,
-      canvas.height
-    );
-    const dataUri = canvas.toDataURL();
-    canvas.width = 0;
-    canvas.height = 0;
-    const bookmarksCopy = [...bookmarks];
-    bookmarksCopy.push({
-      time: playerRef.current.getCurrentTime(),
-      display: format(playerRef.current.getCurrentTime()),
-      image: dataUri,
-    });
-    setBookmarks(bookmarksCopy);
-  };
-
-  const currentTime =
-    playerRef && playerRef.current
-      ? playerRef.current.getCurrentTime()
-      : "00:00";
-
-  const duration =
-    playerRef && playerRef.current ? playerRef.current.getDuration() : "00:00";
-  const elapsedTime =
-    timeDisplayFormat === "normal"
-      ? format(currentTime)
-      : `-${format(duration - currentTime)}`;
-
-  const totalDuration = format(duration);
 
   
 
@@ -638,28 +496,11 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 <Controls
             ref={controlsRef}
-            onSeek={handleSeekChange}
-            onSeekMouseDown={handleSeekMouseDown}
-            onSeekMouseUp={handleSeekMouseUp}
-            onDuration={handleDuration}
-            onRewind={handleRewind}
             onPlayPause={handlePlayPause}
-            onFastForward={handleFastForward}
             playing={playing}
             played={played}
-            elapsedTime={elapsedTime}
-            totalDuration={totalDuration}
             onMute={hanldeMute}
             muted={muted}
-            onVolumeChange={handleVolumeChange}
-            onVolumeSeekDown={handleVolumeSeekDown}
-            onChangeDispayFormat={handleDisplayFormat}
-            playbackRate={playbackRate}
-            onPlaybackRateChange={handlePlaybackRate}
-            // onToggleFullScreen={toggleFullScreen}
-            volume={volume}
-            onBookmark={addBookmark}
-            style={{positon:'absolute', top:'0', zIndex:'900'}}
           />
 
 
@@ -692,7 +533,6 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-
    
     
 
@@ -716,12 +556,13 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 <button
-          onMouseMove={handleMouseMove}
-          onMouseLeave={hanldeMouseLeave}
-          ref={playerContainerRef}
+          // onMouseMove={handleMouseMove}
+          // onMouseLeave={hanldeMouseLeave}
+          // ref={playerContainerRef}
           // className={classes.playerWrapper}
         >
           <ReactPlayer
+            allow="autoplay"
             ref={playerRef}
             style={{position:'', zIndex:''}}
             width="100%"
@@ -740,16 +581,13 @@ const svgUrl = frontmatter.svgImage.publicURL
           // ]}
             // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
             // url="https://youtu.be/lZzai6at_xA"
-            url={url}
-            pip={pip}
+            url={iframeUrl}
             playing={playing}
-            controls={false}
+            controls={controls}
             light={light}
-            loop={YoutubeLoop}
-            playbackRate={playbackRate}
-            volume={volume}
+            loop={loop}
             muted={muted}
-            onProgress={handleProgress}
+            playsinline
             config={{
               file: {
                 attributes: {
@@ -760,40 +598,7 @@ const svgUrl = frontmatter.svgImage.publicURL
                 playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, }
               },
             }}
-
-          playsinline
-            playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-{/*   
-          <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
-            
-  
-            {/* <div style={{position:'relative', maxWidth:'100vw', height:'70vh', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-  </div> */}
-
-
-
-{/* {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{ width:'100vw', position:'absolute', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:'', height:'100vh', background:'#111'}}
-            />
-
-          ) : (
-          ""
-          )} */}
-        
-            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:''}}>Click To Play
-
-    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
-            {/* </div> */}
-
-
-            </button>}
-        //  light="../assets/transparent.png"
+          
           />
 
 
@@ -839,8 +644,24 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 </div>
 
+ {Svg ? (
+  <AddSvg />
+     ) : (
+       ""
+       )}
 
-<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
+
+
+
+
+{/* if (!Svg) {
+    
+  }
+  else{
+    <AddSvg />
+  } */}
+
+
 
 
 

@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: false },
+  flags: {},
   siteMetadata: settings.meta,
   plugins: [
     // {
@@ -167,20 +167,20 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
-  
+    `gatsby-plugin-static-cms`,
 
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        modulePath: ``, // default: undefined
-        enableIdentityWidget: true,
-        publicPath: `admin`,
-        htmlTitle: `All in 60 CMS`,
-        htmlFavicon: `static/siteimages/manifest-icon-192.png`,
-        includeRobots: false,
-        logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-netlify-cms`,
+    //   options: {
+    //     modulePath: ``, // default: undefined
+    //     enableIdentityWidget: true,
+    //     publicPath: `admin`,
+    //     htmlTitle: `All in 60 CMS`,
+    //     htmlFavicon: `static/siteimages/manifest-icon-192.png`,
+    //     includeRobots: false,
+    //     logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
+    //   },
+    // },
 
     // {
     //   resolve: `gatsby-source-filesystem`,
