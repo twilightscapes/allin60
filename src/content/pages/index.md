@@ -15,7 +15,7 @@ cta:
   ctaText: How does this work?
   ctaLink: /howitworks/
 youtubeend: ""
-showFeature: "1"
+showFeature: true
 nftredeem: ""
 youtubecontrols: false
 template: index-page

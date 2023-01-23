@@ -16,6 +16,8 @@ import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
+
+import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 import Footer from "../components/footer"
@@ -85,13 +87,15 @@ const CustomBox = styled.div`
 
 
 const Pagination = props => (
-  <div className="pagination -post1" style={{position:'fixed', bottom:'20px',}}>
+  <div className="pagination -post1" style={{position:'', bottom:'',}}>
     <ul className="" style={{}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{}}>
           <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
-          <button className="" style={{display:'flex', justifyContent:'flex-end', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'}}>
+          <button className="" style={{display:'flex', justifyContent:'flex-end',
+          // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
+        }}>
 &#10094; &nbsp; {" "} <span className="page-title">
               {props.previous.frontmatter.title}
             </span></button>
@@ -101,7 +105,9 @@ const Pagination = props => (
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{}}>
           <Link to={props.next.frontmatter.slug + "/"} rel="next">
-          <button className="" style={{display:'flex', justifyContent:'flex-start', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'}}>
+<button className="" style={{display:'flex', justifyContent:'flex-start',
+          // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
+          }}>
             <span className="page-title">{props.next.frontmatter.title}</span> {" "} &nbsp; &#10095;
           </button>
           </Link>
@@ -164,6 +170,8 @@ const Suggestion2 = frontmatter.youtubersuggestion2
 const Suggestion3 = frontmatter.youtubersuggestion3
 
 const YoutubeLoop = frontmatter.youtubeloop
+
+const ContentinVideo = frontmatter.contentinvideo
 
 
 if (Suggestion1) {
@@ -351,7 +359,7 @@ const OriginalUrl = frontmatter.youtuber
   function AddSvg(){
     const svgUrl = frontmatter.svgImage.publicURL
     return (
-      <object className="" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
+      <object className="" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
     )
   }
 
@@ -446,15 +454,17 @@ const OriginalUrl = frontmatter.youtuber
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div id="top"></div>
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px',
+textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'5px 10px', borderRadius:'12px',
 
-<label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label>
-
-
+ }}>
 
   <AnchorLink to="#top" style={{}}>
-  Top
+  <RxDoubleArrowUp />
         </AnchorLink>
+
+
+        <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer'}}>Menu</label>
 
 
     {ShareThis ? (
@@ -537,33 +547,6 @@ const OriginalUrl = frontmatter.youtuber
     
 
 
-
-
-
-
-
-   
-    
-
-    
-
-
-{/* if (!Svg) {
-    
-  }
-  else{
-    <AddSvg />
-  } */}
-
-
-
-
-
-
-
-
-
-
 <button
           // onMouseMove={handleMouseMove}
           // onMouseLeave={hanldeMouseLeave}
@@ -609,11 +592,6 @@ const OriginalUrl = frontmatter.youtuber
             }}
           
           />
-
-
-
-
-
 </button>
 
 
@@ -651,34 +629,25 @@ const OriginalUrl = frontmatter.youtuber
 
 
 
-
-        <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', aspectRatio:'16/9', padding:'10vh 0', margin:'0 auto', color:'inherit !important', border:'0px solid yellow', position:'', top:'0', left:'0', zindex:'1', display:'grid', placeContent:'center'}}
+{ContentinVideo ? (
+  <div id="contentvideo"
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', aspectRatio:'16/9', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'1',}}
         dangerouslySetInnerHTML={{ __html: html }}
-      >
+      ></div>
+ ) : (
+  ""
+)}
 
 
-</div>
+        
+
+
 
  {Svg ? (
   <AddSvg />
      ) : (
        ""
        )}
-
-
-
-
-
-{/* if (!Svg) {
-    
-  }
-  else{
-    <AddSvg />
-  } */}
-
-
-
 
 
         </div>
@@ -935,6 +904,7 @@ export const pageQuery = graphql`
         youtubeloop
         youtubecontrols
         youtubeautostart
+        contentinvideo
         comments
         shareable
         isnftforsale

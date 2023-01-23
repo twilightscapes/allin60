@@ -24,10 +24,11 @@ comments: "0"
 shareable: "1"
 underlayImage: /assets/shawshank-stuff.png
 featuredImage: /assets/shawshank-redemption-in-60seconds.jpg
-svgImage: /assets/ShawshankLoader.svg
+svgImage: 
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
+contentinvideo: true
 ---
 
 

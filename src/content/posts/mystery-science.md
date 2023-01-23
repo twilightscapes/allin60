@@ -21,13 +21,14 @@ audioend: ""
 isnftforsale: ""
 svgzindex: "0"
 comments: "1"
-shareable: "1"
+shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/mystery-science.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
+contentinvideo: false
 ---
 Seeing as this is my frist post !1!, woot, woot!
 

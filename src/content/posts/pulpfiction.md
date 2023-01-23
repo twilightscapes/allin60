@@ -28,8 +28,9 @@ svgImage:
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
+contentinvideo: false
 ---
 
-<h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:4vw;">
+<!-- <h2 class="tronText" style="display:grid; place-content:center; text-align:center; font-size:4vw;">
         <div class="">Coming Soon!</div>
-      </h2>
+      </h2> -->
