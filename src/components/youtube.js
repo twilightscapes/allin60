@@ -1,17 +1,17 @@
-import * as React from "react"
+import React from "react"
 // import { Link } from "gatsby"
-
+// import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
 // import styled from "styled-components"
 // import ShareSocial from '../components/share' 
 // import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
-// import Seo from "../components/seo"
+// import { Seo } from "../components/seo"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
-
+// import { StaticImage } from "gatsby-plugin-image"
 // import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
@@ -21,6 +21,7 @@ import * as React from "react"
 // import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
 import ReactPlayer from 'react-player/lazy'
+// import {CopyToClipboard} from 'react-copy-to-clipboard'
 // import ReactPlayer from '../components/react-player'
 // const CustomBox = styled.div`
 // @media (max-width: 48em) {
@@ -31,25 +32,29 @@ import ReactPlayer from 'react-player/lazy'
 
 
 
+// export const query = graphql`
+//   query {
+//     shopifyCollection(handle: { eq: "feature" }) {
+//       products {
+//         ...ProductCard
+//       }
+//     }
+//   }
+// `
 
-// const CustomButton = (props) => {
-// 	return (
-
-
-// <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={props.FinalUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
-
-// 	)
-// }
+       // export default function nftPage({ data: { products } }) {
+  
 
 
         
-        export default class YouTubePage extends React.Component {
+        export default class IndexPage extends React.Component {
           
           
           state = {
             youtubelink: "",
-            isActive:true,
-
+            isActive: false,
+            value: '',
+            copied: false,
           }
 
           
@@ -79,37 +84,47 @@ import ReactPlayer from 'react-player/lazy'
 
           handleSubmit = event => {
             event.preventDefault()
+            // alert(`Your Url ${this.state.youtubelink}!`)
+            
           }
 
 
-          render() {
 
           
+          render() {
+
+            
+
             const Url = this.state.youtubelink
 
             const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
-            const FinalUrl = "https://www.youtube-nocookie.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
+            const FinalUrl = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
-            function Iframed() {
+
+
+            
+            function Iframer() {
   
               return (
         
-                
-
                 <ReactPlayer
   className='react-player'
+  style={{position: '', top: '0',}}
       url={FinalUrl}
-      width='100%'
-      height='100%'
-      shownfo={false}
-      controls={false}
-      autoplay={true}
+      width='100vw'
+      height='100vh'
+      config={{
+        youtube: {
+          playerVars: { showinfo:1, controls:1, mute:1, }
+        },
+      }}
       playing
-      fullscreen
       color="white"
-      muted={true}
-      // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'10', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+
+      // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
         
+
+
 
       //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
       //   <div style={{ textAlign:'center', fontSize:'30px'}}>
@@ -122,11 +137,13 @@ import ReactPlayer from 'react-player/lazy'
       // light="../static/assets/transparent.png"
     />
 
+
               )
             }
 
             
             return (
+
 
 <>
 
@@ -134,13 +151,15 @@ import ReactPlayer from 'react-player/lazy'
 
 
 
+<div className='player-wrapper' style={{position:'relative', width:'99.9vw',  top:'0', zIndex:'0', height:'', overflow:'', border:'0px solid yellow',  aspectRatio:'16/9', }}>
+
 {urlNoProtocol ? (
-     <Iframed />
+     <Iframer />
         ) : (
-          ""
+        ""
         )}
 
-
+      </div>
 
 
 {!this.state.isActive ? 
@@ -149,43 +168,77 @@ import ReactPlayer from 'react-player/lazy'
 
 
 
-    
-    
-    </>
-  : 
 
-<div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-      
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'15', position:'relative', bottom:'40vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
 
-<p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
+
+   
+
+
+
+<div className="" style={{display:'flex', placeContent:'center', width:'100%', margin:'0 auto', maxWidth:'1000px', border:'0px solid red',   height:'', background:'', position:'absolute', bottom:'0', left:'', right:'',}}>
+
+  
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'center', alignItems:'center',  }}>
+
+    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link1:
 </p>
 <input
           id=""
           type="text"
           name="youtubelink"
           value={this.state.youtubelink}
-          onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-          onLoad={this.handleInputChange}
-          // onChangeCapture={this.handleShow}
-          // value="https://youtu.be/Ahas9vPsFW8"
+          // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+          onInput={this.handleInputChange}
+          onChange={this.handleShow}
+           
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
+          
           className="youtubelinker"
         />
-        
+
+
+
+
 </form>
     
     </div>
+    
+
+
+
+
+    </>
+  : 
+
+  
+<div className="" style={{display:'flex', placeContent:'center', width:'100%', margin:'0 auto', maxWidth:'1000px', border:'0px solid red',   height:'', background:'', position:'absolute', top:'75vh', zIndex:'', left:'', right:'',}}>
+
+
+<form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'center', alignItems:'center',  }}>
+
+    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
+</p>
+<input
+      id=""
+      type="text"
+      name="youtubelink"
+      value={this.state.youtubelink}
+      // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+      onInput={this.handleInputChange}
+      onChange={this.handleShow}
+       
+      placeholder="example: https://youtu.be/cVsQLlk-T0s"
+      
+      className="youtubelinker"
+    />
+
+</form>
+
+</div>
   }
   
 
-
-
-
-
-
-
-
+{/*  */}
 
 
 

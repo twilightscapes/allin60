@@ -243,42 +243,50 @@ const OriginalUrl = frontmatter.youtuber
     
     return (
       <div>
-              <ReactPlayer
-              className='react repo'
-              // url={iframeUrl}
-              // style={{position:'absolute', top:'0', zIndex:'100'}}
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
-              width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+
+<ReactPlayer
+            allow="autoplay"
+            ref={playerRef}
+            style={{position:'absolute', top:'0', zIndex:''}}
+            width="100%"
+            height="1000px"
+            className='react repo'
+          //       url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          // url={[
+          //   iframeUrl,
+          //   YoutuberSuggestion1,
+          //   YoutuberSuggestion2,
+          //   YoutuberSuggestion3
+          // ]}
+            // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
+            // url="https://youtu.be/lZzai6at_xA"
+            // url={iframeUrl}
+            playing={playing}
+            controls={controls}
+            light={light}
+            loop={loop}
+            muted={muted}
+            playsinline
+            config={{
+              file: {
+                attributes: {
+                  crossorigin: "anonymous",
                 },
-              }}
-              loop
-              playing
-              playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-    
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              
-    
-              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-    </div>
+              },
+              youtube: {
+                playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+              },
+            }}
           
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-                // light="../assets/transparent.png"
-              />
+          />
+
+
+              
 
               
 </div>
@@ -413,7 +421,6 @@ const OriginalUrl = frontmatter.youtuber
 <CustomBox style={{}}>
 <Helmet>
   <body id="body" className="blogpost" style={{background:''}} />
-  {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
       <Seo
@@ -439,13 +446,9 @@ const OriginalUrl = frontmatter.youtuber
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div id="top"></div>
 
-<div className="pagemenu actionJackson" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px', textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff' }}>
 
-{/* <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label> */}
-
-
-  {/* <Link state={{modal: true}}  to="/contact/" className=" " style={{margin:'', textDecoration:''}}>Contact</Link> */}
-
+<label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{textDecoration:'2px underline #fff', cursor:'pointer'}}>Nav</label>
 
 
 
@@ -491,10 +494,11 @@ const OriginalUrl = frontmatter.youtuber
 
 
 
-
-        
-
-<Controls
+{YouTubeControls ? (
+""
+       
+          ) : (
+            <Controls
             ref={controlsRef}
             onPlayPause={handlePlayPause}
             playing={playing}
@@ -502,12 +506,17 @@ const OriginalUrl = frontmatter.youtuber
             onMute={hanldeMute}
             muted={muted}
           />
+          )}
+
+        
+
+
 
 
 
 <div className="wrap-element" style={{
   overflow:'hidden',
-  // height:'clamp(30vh, 80vh, 100vh)'
+  // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
   }}>
 
@@ -595,7 +604,7 @@ const OriginalUrl = frontmatter.youtuber
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:0, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+                playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
               },
             }}
           
@@ -631,7 +640,14 @@ const OriginalUrl = frontmatter.youtuber
 
 
 
- 
+ {Suggestion1 ? (
+            <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
 
 
 
@@ -677,14 +693,7 @@ const OriginalUrl = frontmatter.youtuber
 
 
       
-      {Suggestion1 ? (
-            <div style={{position:'relative', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:'85vh'}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
+
 
 {Suggestion1 ? (
             <ShowSuggestion style={{position:'relative', top:'', zIndex:'0',}} />

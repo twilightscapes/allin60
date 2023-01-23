@@ -13,7 +13,7 @@ youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: true
-youtubecontrols: false
+youtubecontrols: true
 youtubeloop: true
 youtubeautostart: true
 isnftforsale: ""

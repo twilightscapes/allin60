@@ -16,86 +16,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 
 
-// const useStyles = makeStyles((theme) => ({
-//   controlsWrapper: {
-//     visibility: "",
-//     position: "absolute",
-//     top: 0,
-//     left: 0,
-//     right: 0,
-//     bottom: 0,
-//     height: "100%",
-//     // background: "rgba(0,0,0,0.6)",
-//     display: "flex",
-//     flexDirection: "column",
-//     justifyContent: "space-between",
-//   },
 
-//   button: {
-//     margin: theme.spacing(1),
-//   },
-//   controlIcons: {
-//     color: "#777",
-
-//     fontSize: 50,
-//     transform: "scale(0.9)",
-//     "&:hover": {
-//       color: "#fff",
-//       transform: "scale(1)",
-//     },
-//   },
-
-//   bottomIcons: {
-//     color: "#999",
-//     "&:hover": {
-//       color: "#fff",
-//     },
-//   },
-
-//   volumeSlider: {
-//     width: 100,
-//   },
-// }));
-
-// const PrettoSlider = withStyles({
-//   root: {
-//     height: 8,
-//   },
-//   thumb: {
-//     height: 24,
-//     width: 24,
-//     backgroundColor: "#fff",
-//     border: "2px solid currentColor",
-//     marginTop: -8,
-//     marginLeft: -12,
-//     "&:focus, &:hover, &$active": {
-//       boxShadow: "inherit",
-//     },
-//   },
-//   active: {},
-//   valueLabel: {
-//     left: "calc(-50% + 4px)",
-//   },
-//   track: {
-//     height: 8,
-//     borderRadius: 4,
-//   },
-//   rail: {
-//     height: 8,
-//     borderRadius: 4,
-//   },
-// })(Slider);
-
-// function ValueLabelComponent(props) {
-//   const { children, open, value } = props;
-
-//   return (
-//     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-//       {children}
-//     </Tooltip>
-
-//   );
-// }
 
 const Controls = forwardRef(
   (
@@ -146,56 +67,6 @@ const Controls = forwardRef(
 
 
 
-{/* <div style={{position:'relative', background:'', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center',  }}>
- 
- <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'30vw', height:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-
-<div onClick={onPlayPause} style={{fontSize:'56px', position:'relative', top:'0', height:'100vw', width:'100vw', border:'1px solid red', animation:'fadeout1', animationDuration:'1s', animationDelay:'5s', opacity:'', animationFillMode:'forwards', display:'block',}}>
-
-</div>
-
- </div> */}
-
-
-{/* <div
-                  onClick={onPlayPause}
-                  className="controls"
-                  style={{
-                    animation:'fade1',
-                    animationDuration:'1s',
-                    animationDelay:'5s',
-                    opacity:'1',
-                    animationFillMode:'forwards',
-                    position:'relative',
-                    zIndex:'2',
-                    right:'0',
-                    left:'0',
-                    top:'0',
-                    bottom:'',
-                    border:'0px solid red',
-                    display:'grid',
-                    placeContent:'center',
-                    width:'100vw',
-                    height:'100vh',
-                    fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', cursor:'pointer',
-                }}
-                >
-                  
-                  {playing ? (
-                    <>
-                    <MdPause style={{fontSize:'56px', position:'absolute'}} />
-                    </>
-                  ) : (
-              <>
-              <MdPlayArrow style={{fontSize:'56px', position:'absolute'}}  />
-              </>
-                  )}
-                </div> */}
-
-
-
-
-
       {playing ? (
         <>
 
@@ -225,7 +96,7 @@ const Controls = forwardRef(
 </div> */}
                 <button
                   onClick={onPlayPause}
-                  className="controls actionJackson" 
+                  className="controls" 
                   style={{
                     // animation:'fade1',
                     // animationDuration:'1s',
@@ -266,18 +137,8 @@ const Controls = forwardRef(
                 <button
                   // onClick={() => setState({ ...state, muted: !state.muted })}
                   onClick={onMute}
-                  className="controls actionJackson"
+                  className="controls "
                   style={{
-                    // position:'relative',
-                    // zIndex:'',
-                    // right:'',
-                    // bottom:'',
-                    // border:'2px solid ',
-                    // display:'grid',
-                    // placeContent:'center',
-                    // width:'60px',
-                    // height:'60px',
-                    // fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', border:'1px solid #666', cursor:'pointer',
                 }}
                 >
                   {muted ? (
@@ -316,6 +177,9 @@ Controls.propTypes = {
   muted: PropTypes.bool,
   playbackRate: PropTypes.number,
 };
+
+
+
 export default Controls;
 
 

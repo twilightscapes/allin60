@@ -16,7 +16,7 @@ youtubemute: true
 youtubeloop: true
 audiostart: "0"
 audioend: ""
-youtubecontrols: false
+youtubecontrols: true
 youtubeautostart: true
 isnftforsale: "1"
 svgzindex: "0"
